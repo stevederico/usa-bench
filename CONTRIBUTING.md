@@ -49,7 +49,7 @@ When the pulse advances or a model release changes:
 
 1. Edit `data/usabench.json` — update `pulseDate`, `pulseLabel`, and/or model `released` / `baseScore`
 2. Run `node scripts/usabench.mjs` — prints recalculated scores + README table rows
-3. Copy updated scores into `README.md` (Frontier Models table + Flagged section)
+3. Copy updated scores into `README.md` (Models table + Flagged table)
 4. Update the pulse line at the top of `README.md` to match `pulseLabel`
 
 Add new frontier models to the `frontier` array; China-base entries go in `flagged`.

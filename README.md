@@ -6,7 +6,7 @@ image credit @levelsio https://x.com/levelsio/status/2070979198928277842
 
 **US AI Pulse** • July 2026 • **0 days** since major US activity • 15+ open US models ready to run locally.
 
-### Frontier Models
+### Models
 
 | Rank | Model / Family                  | Company     | Released   | Open Source | USAbench   | Access                  | Notes |
 |------|-------------------------------|-------------|------------|-------------|------------|-------------------------|-------|
@@ -23,15 +23,26 @@ image credit @levelsio https://x.com/levelsio/status/2070979198928277842
 | 11   | MAI Code / Image / Thinking   | Microsoft  | Sep 2025   | ❌ No       | **78** ⭐ | Azure                  | In-house coding + multimodal • use Phi-4 / Nemotron for open |
 | 12   | INTELLECT-1                   | Prime Intellect | Nov 2024 | ✅ Yes      | **74** ⭐ | HF                     | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
 
+### Flagged
+Models with a **China-base foundation** (full or partial). US companies and international labs with major open US-facing releases. Open weights earn a small bonus; scores stay in the hybrid band.
+
+| Rank | Model | Company | China Base | Released | Open Source | USAbench | Access | Why flagged |
+|------|-------|---------|------------|----------|-------------|----------|--------|-------------|
+| 1 | Ornith-1.0 | DeepReinforce | ❌ Qwen 3.5 + Gemma 4 | Jun 2026 | ✅ Yes | **68** ⭐ | HF | 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
+| 2 | INTELLECT-3.1 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Feb 2026 | ✅ Yes | **63** ⭐ | HF | Post-trained on Chinese foundation; US RL only |
+| 3 | INTELLECT-3 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) on GLM base |
+| 4 | INTELLECT-2 | Prime Intellect | ❌ QwQ-32B (Qwen) | Mar 2025 | ✅ Yes | **52** | HF | Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
+| 5 | Composer 2.5 | Cursor | ❌ Kimi K2.5 (Moonshot) | — | ❌ No | **42** | Cursor | US company; closed API on Kimi checkpoint |
+
 ### Table of Contents
-- [Frontier Models](#frontier-models)
+- [Models](#models)
+- [Flagged](#flagged)
 - [US Open-Weights & Local Stack](#us-open-weights--local-stack)
 - [Multimodal](#multimodal)
 - [Dev Tools](#dev-tools)
 - [US Tools for Running Models Locally & on Edge](#us-tools-for-running-models-locally--on-edge)
 - [US University Labs & Research Contributions](#us-university-labs--research-contributions)
 - [Discover More on Hugging Face](#discover-more-on-hugging-face)
-- [Flagged](#flagged)
 - [Contributing](#contributing)
 
 ### Criteria
@@ -149,18 +160,9 @@ Search these orgs for additional American contributions:
 | [nvidia](https://huggingface.co/nvidia) | Nemotron, optimized models |
 | [primeintellect](https://huggingface.co/PrimeIntellect) | INTELLECT-1/2/3/3.1, `prime-rl`, verifiers, Environments Hub |
 | [arcee-ai](https://huggingface.co/arcee-ai) | Trinity Large/Mini/Nano, AFM-4.5B |
+| [deepreinforce-ai](https://huggingface.co/deepreinforce-ai) | Ornith-1.0 (9B/35B/397B) — [flagged](#flagged) |
 
-Use tags like `llama`, `gemma`, `phi`, `nemotron`, `intellect` + filter for open licenses to stay US-focused.
-
-### Flagged
-Models built on a **China-base foundation** by a US company. Open weights earn a small bonus, but scores stay in the hybrid band.
-
-| Rank | Model | Company | China Base | Released | Open Source | USAbench | Access | Why flagged |
-|------|-------|---------|------------|----------|-------------|----------|--------|-------------|
-| 1 | INTELLECT-3.1 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Feb 2026 | ✅ Yes | **63** ⭐ | HF | Post-trained on Chinese foundation; US RL only |
-| 2 | INTELLECT-3 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) on GLM base |
-| 3 | INTELLECT-2 | Prime Intellect | ❌ QwQ-32B (Qwen) | Mar 2025 | ✅ Yes | **52** | HF | Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
-| 4 | Composer 2.5 | Cursor | ❌ Kimi K2.5 (Moonshot) | — | ❌ No | **42** | Cursor | US company; closed API on Kimi checkpoint |
+Use tags like `llama`, `gemma`, `phi`, `nemotron`, `intellect`, `ornith` + filter for open licenses to stay US-focused.
 
 ### Contributing
 - Add new pure-US entries with **Released** date, USAbench score + runtime command if available  

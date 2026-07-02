@@ -135,7 +135,7 @@ if (process.argv.includes("--json")) {
 
 console.log(`USAbench pulse: ${data.pulseLabel} (${data.pulseDate})\n`);
 
-console.log("## Frontier Models (sorted by score)\n");
+console.log("## Models (sorted by score)\n");
 for (const e of frontier) {
   console.log(
     `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}  (${e.releasedLabel}, −${e.penalty})`
@@ -153,7 +153,7 @@ for (const e of openStack) {
   console.log(`  ${e.score}  ${e.model}  (${e.releasedLabel})`);
 }
 
-console.log("\n## README table rows (Frontier Models)\n");
+console.log("\n## README table rows (Models)\n");
 console.log(
   "| Rank | Model / Family                  | Company     | Released   | Open Source | USAbench   | Access                  | Notes |"
 );

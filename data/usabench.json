@@ -132,6 +132,17 @@
   ],
   "flagged": [
     {
+      "model": "Ornith-1.0",
+      "company": "DeepReinforce",
+      "released": "2026-06-01",
+      "baseScore": 68,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen 3.5 + Gemma 4",
+      "access": "HF",
+      "whyFlagged": "397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL"
+    },
+    {
       "model": "INTELLECT-3.1",
       "company": "Prime Intellect",
       "released": "2026-02-01",
