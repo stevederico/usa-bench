@@ -1,0 +1,29 @@
+# Awesome USA Banner Prompt
+
+Generate this with Grok Imagine (or Midjourney/Flux) to create the official banner image for the repo.
+
+## Prompt (copy-paste):
+
+Create an insanely intense patriotic banner for GitHub README inspired by levelsio Come and Take It GPU meme: A ferocious bald eagle with glowing eyes, wings spread, defending a massive GPU cluster 'cannon' with 'COME AND TAKE IT' banner in bold, clutching a glowing AI orb and American flag, dramatic waving flag background with stars and stripes, lightning, fireworks, red white blue explosion, Silicon Valley skyline, bold 'AWESOME USA 🇺🇸 AI MODELS & TOOLS' text, 'Sovereign • Pure • Built in America' subtitle, intense patriotic power, ultra detailed, cinematic, maximum American pride and hardware sovereignty, 16:9 banner format, masterpiece.
+
+## Instructions:
+1. Generate the image (landscape / 16:9 recommended)
+2. Save as `banner.png`
+3. Upload to your repo root
+4. Add at the very top of README.md:
+
+```markdown
+![Awesome USA 🇺🇸 Banner](banner.png)
+```
+
+## Credit (add in README footer or new section):
+Banner inspired by @levelsio "Come and Take It" GPU memes — hoarding hardware for sovereign AI 🇺🇸
+
+The banner should feature:
+- Fierce bald eagle
+- Waving American flag
+- "Come and Take It" style GPU cannon (levelsio inspired)
+- Glowing AI neural network orb
+- Patriotic red/white/blue + lightning/fireworks
+- Bold text for the repo name
+- Epic, high-energy, professional yet badass vibe
