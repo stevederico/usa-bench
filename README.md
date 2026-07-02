@@ -7,37 +7,31 @@
 ### Free + open source models, made in the land of the free 
 
 ### Models
+Ranked by USAbench score. **China Base** marks models built on Chinese foundations (US post-train or wrapper); see Notes for details.
 
-| Rank | Model / Family                  | Company     | Released   | Open Source | USAbench   | Access                  | Notes |
-|------|-------------------------------|-------------|------------|-------------|------------|-------------------------|-------|
-| 1    | Nemotron Super / Ultra / 3    | NVIDIA      | Jun 2026   | ✅ Yes      | **98** ⭐⭐⭐ | NGC + HF               | Enterprise, agentic |
-| 2    | Gemma 4                       | Google      | May 2026   | ✅ Yes      | **98** ⭐⭐⭐ | HF                     | Efficient local + multimodal |
-| 3    | Liquid LFM2.5 / LFM2          | Liquid AI   | Jun 2026   | ✅ Yes      | **96** ⭐⭐⭐ | HF + LEAP + Ollama     | MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
-| 4    | Arcee Trinity Large           | Arcee AI    | Mar 2026   | ✅ Yes      | **95** ⭐⭐⭐ | HF                     | Agentic open |
-| 5    | Claude Opus 4.6 / Fable 5     | Anthropic   | Jun 2026   | ❌ No       | **88** ⭐⭐ | claude.ai / API        | Reasoning, safety, agents |
-| 6    | GPT-5.6 (Sol/Terra/Luna)      | OpenAI      | May 2026   | ❌ No       | **87** ⭐⭐ | API (vetted)           | All-round + elite |
-| 7    | Grok 4.3 / 4.20 / 5           | xAI         | Apr 2026   | ❌ No       | **86** ⭐⭐ | x.ai / X / API         | Coding, real-time |
-| 8    | Gemini 3 + Nano Banana / Veo  | Google      | Jun 2026   | ❌ No       | **85** ⭐⭐ | gemini.google.com      | Multimodal, video • use Gemma 4 for open |
-| 9    | Llama 4 Maverick / Scout      | Meta        | Apr 2025   | ✅ Yes      | **85** ⭐⭐ | Hugging Face           | Open weights pioneer • ⚠️ aging (~15 mo) |
-| 10   | **Muse Spark (Muse family)**  | **Meta**    | Mar 2026   | ❌ No       | **82** ⭐⭐ | meta.ai / apps / API   | Multimodal reasoning, agents • Meta's current frontier |
-| 11   | Phi-4 + Reflection            | Microsoft / Reflection | Dec 2024 | ✅ Yes      | **81** ⭐⭐ | HF                     | Small & efficient open • ⚠️ aging (~19 mo) |
-| 12   | MAI Code / Image / Thinking   | Microsoft   | Sep 2025   | ❌ No       | **78** ⭐ | Azure                  | In-house coding + multimodal • use Phi-4 / Nemotron for open |
-| 13   | INTELLECT-1                   | Prime Intellect | Nov 2024 | ✅ Yes      | **74** ⭐ | HF                     | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
-
-### Flagged
-Models with a **China-base foundation** (full or partial). US companies and international labs with major open US-facing releases. Open weights earn a small bonus; scores stay in the hybrid band.
-
-| Rank | Model | Company | China Base | Released | Open Source | USAbench | Access | Why flagged |
-|------|-------|---------|------------|----------|-------------|----------|--------|-------------|
-| 1 | Ornith-1.0 | DeepReinforce | ❌ Qwen 3.5 + Gemma 4 | Jun 2026 | ✅ Yes | **68** ⭐ | HF | 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
-| 2 | INTELLECT-3.1 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Feb 2026 | ✅ Yes | **63** ⭐ | HF | Post-trained on Chinese foundation; US RL only |
-| 3 | INTELLECT-3 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) on GLM base |
-| 4 | INTELLECT-2 | Prime Intellect | ❌ QwQ-32B (Qwen) | Mar 2025 | ✅ Yes | **52** | HF | Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
-| 5 | Composer 2.5 | Cursor | ❌ Kimi K2.5 (Moonshot) | — | ❌ No | **42** | Cursor | US company; closed API on Kimi checkpoint |
+| Rank | Model / Family | Company | China Base | Released | Open Source | USAbench | Access | Notes |
+|------|----------------|---------|------------|----------|-------------|----------|--------|-------|
+| 1 | Nemotron Super / Ultra / 3 | NVIDIA | — | Jun 2026 | ✅ Yes | **98** ⭐⭐⭐ | NGC + HF | Enterprise, agentic |
+| 2 | Gemma 4 | Google | — | May 2026 | ✅ Yes | **98** ⭐⭐⭐ | HF | Efficient local + multimodal |
+| 3 | Liquid LFM2.5 / LFM2 | Liquid AI | — | Jun 2026 | ✅ Yes | **96** ⭐⭐⭐ | HF + LEAP + Ollama | MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
+| 4 | Arcee Trinity Large | Arcee AI | — | Mar 2026 | ✅ Yes | **95** ⭐⭐⭐ | HF | Agentic open |
+| 5 | Claude Opus 4.6 / Fable 5 | Anthropic | — | Jun 2026 | ❌ No | **88** ⭐⭐ | claude.ai / API | Reasoning, safety, agents |
+| 6 | GPT-5.6 (Sol/Terra/Luna) | OpenAI | — | May 2026 | ❌ No | **87** ⭐⭐ | API (vetted) | All-round + elite |
+| 7 | Grok 4.3 / 4.20 / 5 | xAI | — | Apr 2026 | ❌ No | **86** ⭐⭐ | x.ai / X / API | Coding, real-time |
+| 8 | Gemini 3 + Nano Banana / Veo | Google | — | Jun 2026 | ❌ No | **85** ⭐⭐ | gemini.google.com | Multimodal, video • use Gemma 4 for open |
+| 9 | Llama 4 Maverick / Scout | Meta | — | Apr 2025 | ✅ Yes | **85** ⭐⭐ | Hugging Face | Open weights pioneer • ⚠️ aging (~15 mo) |
+| 10 | **Muse Spark (Muse family)** | **Meta** | — | Mar 2026 | ❌ No | **82** ⭐⭐ | meta.ai / apps / API | Multimodal reasoning, agents • Meta's current frontier |
+| 11 | Phi-4 + Reflection | Microsoft / Reflection | — | Dec 2024 | ✅ Yes | **81** ⭐⭐ | HF | Small & efficient open • ⚠️ aging (~19 mo) |
+| 12 | MAI Code / Image / Thinking | Microsoft | — | Sep 2025 | ❌ No | **78** ⭐ | Azure | In-house coding + multimodal • use Phi-4 / Nemotron for open |
+| 13 | INTELLECT-1 | Prime Intellect | — | Nov 2024 | ✅ Yes | **74** ⭐ | HF | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
+| 14 | Ornith-1.0 | DeepReinforce | ❌ Qwen 3.5 + Gemma 4 | Jun 2026 | ✅ Yes | **68** ⭐ | HF | 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
+| 15 | INTELLECT-3.1 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Feb 2026 | ✅ Yes | **63** ⭐ | HF | Post-trained on Chinese foundation; US RL only |
+| 16 | INTELLECT-3 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) on GLM base |
+| 17 | INTELLECT-2 | Prime Intellect | ❌ QwQ-32B (Qwen) | Mar 2025 | ✅ Yes | **52** | HF | Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
+| 18 | Composer 2.5 | Cursor | ❌ Kimi K2.5 (Moonshot) | — | ❌ No | **42** | Cursor | US company; closed API on Kimi checkpoint |
 
 ### Table of Contents
 - [Models](#models)
-- [Flagged](#flagged)
 - [Multimodal](#multimodal)
 - [Dev Tools](#dev-tools)
 - [US Tools for Running Models Locally & on Edge](#us-tools-for-running-models-locally--on-edge)
@@ -63,7 +57,7 @@ Models with a **China-base foundation** (full or partial). US companies and inte
 | 95–100 | ⭐⭐⭐ | Pure US + open weights, released within ~6 months |
 | 80–94 | ⭐⭐ | Strong US open (aging) or closed API-only (caps here) |
 | 60–79 | ⭐ | Older open releases, or hybrid/flagged (China base + US post-train) |
-| &lt;60 | — | Mostly non-US or heavy China dependency → [Flagged](#flagged) |
+| &lt;60 | — | Mostly non-US or heavy China dependency (see **China Base** column) |
 
 **Recency decay** (from pulse date)
 
@@ -96,7 +90,7 @@ Closed frontier models (Claude, GPT, Grok, etc.) can be excellent — they just 
 
 | Tool | Company | Open Source | Notes |
 |------|---------|-------------|-------|
-| Cursor | Cursor | ❌ No | Composer 2.5 flagged — [see Flagged](#flagged) |
+| Cursor | Cursor | ❌ No | Composer 2.5 — China-base Kimi K2.5 ([Models](#models)) |
 | GitHub Copilot | Microsoft / GitHub | ❌ No | IDE coding assistant |
 | Claude Code | Anthropic | ❌ No | Agentic coding |
 | Cognition (Devin) | Cognition | ❌ No | Autonomous software engineer |
@@ -153,7 +147,7 @@ Search these orgs for additional American contributions:
 | [primeintellect](https://huggingface.co/PrimeIntellect) | INTELLECT-1/2/3/3.1, `prime-rl`, verifiers, Environments Hub |
 | [arcee-ai](https://huggingface.co/arcee-ai) | Trinity Large/Mini/Nano, AFM-4.5B |
 | [LiquidAI](https://huggingface.co/LiquidAI) | LFM2.5 (230M–8B MoE), LFM2-24B, VL + Audio, ColBERT retrievers |
-| [deepreinforce-ai](https://huggingface.co/deepreinforce-ai) | Ornith-1.0 (9B/35B/397B) — [flagged](#flagged) |
+| [deepreinforce-ai](https://huggingface.co/deepreinforce-ai) | Ornith-1.0 (9B/35B/397B) — China-base Qwen 3.5 |
 
 Use tags like `llama`, `gemma`, `phi`, `nemotron`, `lfm`, `intellect`, `ornith` + filter for open licenses to stay US-focused.
 

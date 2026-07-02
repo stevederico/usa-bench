@@ -88,35 +88,33 @@ function scoreEntry(entry, pulse, decayTable) {
 }
 
 const pulse = parseDate(data.pulseDate);
-const frontier = data.frontier
-  .map((e) => scoreEntry(e, pulse, data.decay))
-  .sort((a, b) => b.score - a.score)
-  .map((e, i) => ({ ...e, rank: i + 1 }));
 
-const flagged = data.flagged
-  .map((e) => scoreEntry(e, pulse, data.decay))
-  .sort((a, b) => b.score - a.score)
-  .map((e, i) => ({ ...e, rank: i + 1 }));
-
-function frontierRow(e) {
-  return `| ${String(e.rank).padEnd(4)} | ${e.model.padEnd(29)} | ${e.company.padEnd(11)} | ${e.releasedLabel.padEnd(10)} | ${e.openLabel.padEnd(6)} | **${e.score}** ${e.starLabel} | ${e.access.padEnd(22)} | ${e.notes} |`;
+function entryNotes(e) {
+  let text = e.chinaBase ? (e.whyFlagged ?? e.notes ?? "—") : (e.notes ?? "—");
+  if (e.released && text.includes("⚠️ aging") && e.ageMonths !== null) {
+    text = text.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${e.ageMonths} mo)`);
+  }
+  return text;
 }
 
-function flaggedRow(e) {
+function chinaBaseLabel(e) {
+  return e.chinaBaseLabel ? `❌ ${e.chinaBaseLabel}` : "—";
+}
+
+const models = [...data.frontier, ...data.flagged]
+  .map((e) => scoreEntry(e, pulse, data.decay))
+  .sort((a, b) => b.score - a.score)
+  .map((e, i) => ({ ...e, rank: i + 1 }));
+
+function modelRow(e) {
   const released = e.releasedLabel ?? "—";
-  const china = e.chinaBaseLabel ? `❌ ${e.chinaBaseLabel}` : "—";
-  let why = e.whyFlagged ?? e.notes ?? "—";
-  if (e.released && why.includes("⚠️ aging") && e.ageMonths !== null) {
-    why = why.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${e.ageMonths} mo)`);
-  }
-  return `| ${e.rank} | ${e.model} | ${e.company} | ${china} | ${released} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${why} |`;
+  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${chinaBaseLabel(e)} | ${released} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${entryNotes(e)} |`;
 }
 
 const output = {
   pulseDate: data.pulseDate,
   pulseLabel: data.pulseLabel,
-  frontier,
-  flagged,
+  models,
 };
 
 if (process.argv.includes("--json")) {
@@ -133,36 +131,21 @@ console.log(`> **US AI Pulse · ${data.pulseLabel}**  `);
 console.log(`> ${daysLabel} since the last major US release — USAbench recency anchor\n`);
 
 console.log("## Models (sorted by score)\n");
-for (const e of frontier) {
-  console.log(
-    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}  (${e.releasedLabel}, −${e.penalty})`
-  );
-}
-
-console.log("\n## Flagged\n");
-for (const e of flagged) {
+for (const e of models) {
   const rel = e.releasedLabel ?? "no date";
-  console.log(`${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}  (${rel}, −${e.penalty})`);
+  const flag = e.chinaBase ? " [China base]" : "";
+  console.log(
+    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}, −${e.penalty})`
+  );
 }
 
 console.log("\n## README table rows (Models)\n");
 console.log(
-  "| Rank | Model / Family                  | Company     | Released   | Open Source | USAbench   | Access                  | Notes |"
+  "| Rank | Model / Family | Company | China Base | Released | Open Source | USAbench | Access | Notes |"
 );
 console.log(
-  "|------|-------------------------------|-------------|------------|-------------|------------|-------------------------|-------|"
+  "|------|----------------|---------|------------|----------|-------------|----------|--------|-------|"
 );
-for (const e of frontier) {
-  console.log(frontierRow(e));
-}
-
-console.log("\n## README table rows (Flagged)\n");
-console.log(
-  "| Rank | Model | Company | China Base | Released | Open Source | USAbench | Access | Why flagged |"
-);
-console.log(
-  "|------|-------|---------|------------|----------|-------------|----------|--------|-------------|"
-);
-for (const e of flagged) {
-  console.log(flaggedRow(e));
+for (const e of models) {
+  console.log(modelRow(e));
 }
