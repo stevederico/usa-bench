@@ -1,3 +1,5 @@
+<img width="2912" height="2278" alt="comeandtake" src="https://github.com/user-attachments/assets/02664f18-a2e1-4a84-bfd4-b5e3b5ec330d" />
+
 # Awesome USA 🇺🇸
 
 > Curated list of the **best AI models, LLMs, multimodal tools, and developer tools** from American companies and labs.  
