@@ -9,6 +9,8 @@ Thank you for your interest in contributing to **Awesome USA** — the curated l
 3. **Make your edits** (add models, tools, runtimes, academic projects, etc.)
 4. **Follow the format**:
    - Use the existing table structure for models
+   - Include **Released** date (month + year)
+   - Set **openSource** (`true` / `false`) in `data/usabench.json`
    - Include **USAbench** score (0-100)
    - Add **runtime command** if applicable (especially for open-weights)
    - Note any China fine-tunes in the Flagged section
@@ -24,10 +26,33 @@ Thank you for your interest in contributing to **Awesome USA** — the curated l
 
 ## USAbench Scoring Guide
 
-- **90-100**: Pure US (HQ + training + team + IP all American)
-- **70-89**: Strong US (minor international elements but core is American)
-- **40-69**: Hybrid (US company but significant China base/fine-tune)
-- **0-39**: Mostly non-US (flag in Flagged section)
+USAbench weights **open-weights sovereignty + recency** over raw capability. Scores are refreshed against the README pulse date (currently **July 2026**). A closed API-only model caps at the 80–94 band even if it's frontier-class.
+
+- **95-100** ⭐⭐⭐: Pure US + open weights, released within ~6 months
+- **80-94** ⭐⭐: Strong US closed API, or open US that is aging (13+ months)
+- **60-79** ⭐: Older open releases, hybrid US + China base, or flagged entries
+- **0-59**: Mostly non-US or heavy China dependency (flag in Flagged section)
+
+**Scoring checklist**
+1. Start with US purity (HQ + primary dev in USA)
+2. **+15** open weights on Hugging Face or equivalent with permissive license
+3. **+5** full recipe open (training code, data, or evals released)
+4. **Cap at 88** if closed API-only — no exceptions for capability
+5. Apply **recency decay** from pulse date: 0–3 mo (0) • 4–6 mo (−2) • 7–12 mo (−5) • 13–18 mo (−10) • 19+ mo (−15)
+6. China base → Flagged section (`chinaBase: true`), typically 40–69 band; mark with <span style="color:red">❌</span> in README
+
+## Refreshing scores (pulse date)
+
+USAbench scores are anchored to **`data/usabench.json`** → `pulseDate` (currently July 2026).
+
+When the pulse advances or a model release changes:
+
+1. Edit `data/usabench.json` — update `pulseDate`, `pulseLabel`, and/or model `released` / `baseScore`
+2. Run `node scripts/usabench.mjs` — prints recalculated scores + README table rows
+3. Copy updated scores into `README.md` (Frontier Models table + Flagged section)
+4. Update the pulse line at the top of `README.md` to match `pulseLabel`
+
+Add new frontier models to the `frontier` array; China-base entries go in `flagged`.
 
 ## Code of Conduct
 

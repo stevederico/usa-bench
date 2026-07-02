@@ -1,0 +1,175 @@
+{
+  "pulseDate": "2026-07-01",
+  "pulseLabel": "July 2026",
+  "decay": [
+    { "maxMonths": 3, "penalty": 0 },
+    { "maxMonths": 6, "penalty": 2 },
+    { "maxMonths": 12, "penalty": 5 },
+    { "maxMonths": 18, "penalty": 10 },
+    { "maxMonths": null, "penalty": 15 }
+  ],
+  "frontier": [
+    {
+      "model": "Nemotron Super / Ultra / 3",
+      "company": "NVIDIA",
+      "released": "2026-06-01",
+      "baseScore": 98,
+      "openSource": true,
+      "closed": false,
+      "access": "NGC + HF",
+      "notes": "Enterprise, agentic"
+    },
+    {
+      "model": "Gemma 4",
+      "company": "Google",
+      "released": "2026-05-01",
+      "baseScore": 98,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Efficient local + multimodal"
+    },
+    {
+      "model": "Arcee Trinity Large",
+      "company": "Arcee AI",
+      "released": "2026-03-01",
+      "baseScore": 97,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Agentic open"
+    },
+    {
+      "model": "Claude Opus 4.6 / Fable 5",
+      "company": "Anthropic",
+      "released": "2026-06-01",
+      "baseScore": 88,
+      "openSource": false,
+      "closed": true,
+      "access": "claude.ai / API",
+      "notes": "Reasoning, safety, agents"
+    },
+    {
+      "model": "GPT-5.6 (Sol/Terra/Luna)",
+      "company": "OpenAI",
+      "released": "2026-05-01",
+      "baseScore": 87,
+      "openSource": false,
+      "closed": true,
+      "access": "API (vetted)",
+      "notes": "All-round + elite"
+    },
+    {
+      "model": "Grok 4.3 / 4.20 / 5",
+      "company": "xAI",
+      "released": "2026-04-01",
+      "baseScore": 86,
+      "openSource": false,
+      "closed": true,
+      "access": "x.ai / X / API",
+      "notes": "Coding, real-time"
+    },
+    {
+      "model": "Gemini 3 + Nano Banana / Veo",
+      "company": "Google",
+      "released": "2026-06-01",
+      "baseScore": 85,
+      "openSource": false,
+      "closed": true,
+      "access": "gemini.google.com",
+      "notes": "Multimodal, video • use Gemma 4 for open"
+    },
+    {
+      "model": "Llama 4 Maverick / Scout",
+      "company": "Meta",
+      "released": "2025-04-01",
+      "baseScore": 95,
+      "openSource": true,
+      "closed": false,
+      "access": "Hugging Face",
+      "notes": "Open weights pioneer • ⚠️ aging"
+    },
+    {
+      "model": "**Muse Spark (Muse family)**",
+      "company": "**Meta**",
+      "released": "2026-03-01",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "meta.ai / apps / API",
+      "notes": "Multimodal reasoning, agents • Meta's current frontier"
+    },
+    {
+      "model": "Phi-4 + Reflection",
+      "company": "Microsoft / Reflection",
+      "released": "2024-12-01",
+      "baseScore": 96,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Small & efficient open • ⚠️ aging"
+    },
+    {
+      "model": "MAI Code / Image / Thinking",
+      "company": "Microsoft",
+      "released": "2025-09-01",
+      "baseScore": 83,
+      "openSource": false,
+      "closed": true,
+      "access": "Azure",
+      "notes": "In-house coding + multimodal • use Phi-4 / Nemotron for open"
+    },
+    {
+      "model": "INTELLECT-1",
+      "company": "Prime Intellect",
+      "released": "2024-11-01",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "First fully decentralized 10B • ⚠️ aging • Arcee post-train"
+    }
+  ],
+  "flagged": [
+    {
+      "model": "INTELLECT-3",
+      "company": "Prime Intellect",
+      "released": "2025-11-01",
+      "baseScore": 63,
+      "openSource": true,
+      "chinaBase": true,
+      "access": "HF",
+      "notes": "106B MoE (12B active) • US RL stack • GLM-4.5-Air base"
+    },
+    {
+      "model": "INTELLECT-3.1",
+      "company": "Prime Intellect",
+      "released": "2026-02-01",
+      "baseScore": 65,
+      "openSource": true,
+      "chinaBase": true,
+      "access": "HF",
+      "notes": "INTELLECT-3 continuation • continued RL • GLM-4.5-Air base"
+    },
+    {
+      "model": "INTELLECT-2",
+      "company": "Prime Intellect",
+      "released": "2025-03-01",
+      "baseScore": 62,
+      "openSource": true,
+      "chinaBase": true,
+      "access": "HF",
+      "notes": "32B • globally distributed RL • QwQ-32B base • ⚠️ aging"
+    },
+    {
+      "model": "Composer 2.5",
+      "company": "Cursor",
+      "released": null,
+      "baseScore": 42,
+      "openSource": false,
+      "chinaBase": true,
+      "access": "Cursor",
+      "notes": "US company • closed"
+    }
+  ]
+}

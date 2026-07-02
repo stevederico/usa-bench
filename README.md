@@ -9,8 +9,8 @@ image credit @levelsio https://x.com/levelsio/status/2070979198928277842
 **US AI Pulse** • July 2026 • **0 days** since major US activity • 15+ open US models ready to run locally.
 
 ### Table of Contents
-- [US Open-Weights & Local Stack](#us-open-weights--local-stack)
 - [Frontier Models](#frontier-models)
+- [US Open-Weights & Local Stack](#us-open-weights--local-stack)
 - [Multimodal](#multimodal)
 - [Dev Tools](#dev-tools)
 - [US Tools for Running Models Locally & on Edge](#us-tools-for-running-models-locally--on-edge)
@@ -21,35 +21,49 @@ image credit @levelsio https://x.com/levelsio/status/2070979198928277842
 
 ### Criteria
 - US-headquartered company + primary development in the USA  
-- USAbench score (0–100) shown for transparency  
+- USAbench score (0–100) — **open-weights sovereignty + recency**, not raw capability alone  
 - Flag any China fine-tunes  
 - Strong emphasis on open-weights + self-hosting tools
 
-### US Open-Weights & Local Stack
-**One-command sovereign stack** — all pure US, open-weights, private, zero cost.
+**USAbench tiers** (scores refreshed against **July 2026** pulse date)
+- **95–100** ⭐⭐⭐ — Pure US + open weights, released within ~6 months  
+- **80–94** ⭐⭐ — Strong US open (aging) or closed API-only (caps here no matter how good)  
+- **60–79** ⭐ — Older open releases, or hybrid/flagged (China base + US post-train)  
+- **<60** — Mostly non-US or heavy China dependency → [Flagged](#flagged)
 
-- `ollama run llama4` → Meta Llama 4  
-- `ollama run gemma4` → Google Gemma 4  
-- `ollama run phi4` → Microsoft Phi 4  
-- `ollama run nemotron-3-super` → NVIDIA agentic MoE  
+**Recency decay** (from pulse date): 0–3 mo → no penalty • 4–6 mo → −2 • 7–12 mo → −5 • 13–18 mo → −10 • 19+ mo → −15
 
-Meta does both: **Llama 4** for full open control + **Muse Spark** for powerful hosted use.
+Scores are computed from `data/usabench.json` — run `node scripts/usabench.mjs` after advancing the pulse date or updating releases.
+
+Closed frontier models (Claude, GPT, Grok, etc.) can be excellent — they just don't score sovereign-open tier, and stale weights fall fast.
 
 ### Frontier Models
 
-| Model / Family                  | Company     | USAbench   | Strengths                          | Access                  | Notes |
-|-------------------------------|-------------|------------|------------------------------------|-------------------------|-------|
-| Grok 4.3 / 4.20 / 5           | xAI        | **100** ⭐⭐⭐ | Coding, real-time                  | x.ai / X / API         | Pure US |
-| GPT-5.6 (Sol/Terra/Luna)      | OpenAI     | **100** ⭐⭐⭐ | All-round + elite                  | API (vetted)           | Pure US |
-| Claude Opus 4.6 / Fable 5     | Anthropic  | **100** ⭐⭐⭐ | Reasoning, safety, agents          | claude.ai / API        | Pure US |
-| Gemini 3 + Nano Banana / Veo  | Google     | **100** ⭐⭐⭐ | Multimodal, video                  | gemini.google.com      | Pure US |
-| Llama 4 Maverick / Scout      | Meta       | **98** ⭐⭐⭐ | Open weights king                  | Hugging Face           | ✅ Open |
-| **Muse Spark (Muse family)**  | **Meta**   | **98** ⭐⭐⭐ | Multimodal reasoning, agents       | meta.ai / apps / API   | First from Superintelligence Labs • Complements Llama |
-| Nemotron Super / Ultra / 3    | NVIDIA     | **97** ⭐⭐⭐ | Enterprise, agentic                | NGC + HF               | ✅ Open |
-| MAI Code / Image / Thinking   | Microsoft  | **96** ⭐⭐⭐ | In-house coding + multimodal       | Azure                  | Pure US |
-| Phi-4 + Reflection            | Microsoft / Reflection | **94–100** | Small & frontier open              | HF                     | ✅ Open |
-| Gemma 4                       | Google     | **100** ⭐⭐⭐ | Efficient local + multimodal       | HF                     | ✅ Open |
-| Arcee Trinity Large           | Arcee AI   | **92**     | Agentic open                       | HF                     | ✅ Open |
+| Model / Family                  | Company     | Released   | Open Source | USAbench   | Access                  | Notes |
+|-------------------------------|-------------|------------|-------------|------------|-------------------------|-------|
+| Nemotron Super / Ultra / 3    | NVIDIA     | Jun 2026   | ✅ Yes      | **98** ⭐⭐⭐ | NGC + HF               | Enterprise, agentic |
+| Gemma 4                       | Google     | May 2026   | ✅ Yes      | **98** ⭐⭐⭐ | HF                     | Efficient local + multimodal |
+| Arcee Trinity Large           | Arcee AI   | Mar 2026   | ✅ Yes      | **95** ⭐⭐⭐ | HF                     | Agentic open |
+| Claude Opus 4.6 / Fable 5     | Anthropic  | Jun 2026   | ❌ No       | **88** ⭐⭐ | claude.ai / API        | Reasoning, safety, agents |
+| GPT-5.6 (Sol/Terra/Luna)      | OpenAI     | May 2026   | ❌ No       | **87** ⭐⭐ | API (vetted)           | All-round + elite |
+| Grok 4.3 / 4.20 / 5           | xAI        | Apr 2026   | ❌ No       | **86** ⭐⭐ | x.ai / X / API         | Coding, real-time |
+| Gemini 3 + Nano Banana / Veo  | Google     | Jun 2026   | ❌ No       | **85** ⭐⭐ | gemini.google.com      | Multimodal, video • use Gemma 4 for open |
+| Llama 4 Maverick / Scout      | Meta       | Apr 2025   | ✅ Yes      | **85** ⭐⭐ | Hugging Face           | Open weights pioneer • ⚠️ aging (~15 mo) |
+| **Muse Spark (Muse family)**  | **Meta**   | Mar 2026   | ❌ No       | **82** ⭐⭐ | meta.ai / apps / API   | Multimodal reasoning, agents • Meta's current frontier |
+| Phi-4 + Reflection            | Microsoft / Reflection | Dec 2024 | ✅ Yes      | **81** ⭐⭐ | HF                     | Small & efficient open • ⚠️ aging (~19 mo) |
+| MAI Code / Image / Thinking   | Microsoft  | Sep 2025   | ❌ No       | **78** ⭐ | Azure                  | In-house coding + multimodal • use Phi-4 / Nemotron for open |
+| INTELLECT-1                   | Prime Intellect | Nov 2024 | ✅ Yes      | **74** ⭐ | HF                     | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
+
+### US Open-Weights & Local Stack
+**One-command sovereign stack** — freshest pure US open-weights first; private, zero cost.
+
+- `ollama run nemotron-3-super` → NVIDIA Nemotron 3 (Jun 2026)  
+- `ollama run gemma4` → Google Gemma 4 (May 2026)  
+- `ollama run arcee-trinity` → Arcee Trinity Large (Mar 2026)  
+- `ollama run phi4` → Microsoft Phi 4 (Dec 2024 — aging)  
+- `ollama run llama4` → Meta Llama 4 (Apr 2025 — legacy, still widely deployed)  
+
+Meta does both: **Muse Spark** for current hosted frontier + **Llama 4** for open control (due for refresh).
 
 ### Multimodal
 - Grok Imagine (xAI)  
@@ -59,7 +73,7 @@ Meta does both: **Llama 4** for full open control + **Muse Spark** for powerful 
 - Midjourney, Runway Gen-4, HeyGen, Krea  
 
 ### Dev Tools (All US)
-- Cursor (flag Composer) • GitHub Copilot • Claude Code • Cognition  
+- Cursor (<span style="color:red">❌</span> Composer 2.5) • GitHub Copilot • Claude Code • Cognition  
 - LangChain / LangGraph • Vercel AI + v0 • Hugging Face (NYC)  
 - Groq • Fireworks • Together.ai (US inference)  
 - Perplexity • Sierra • Palantir • Databricks • Scale AI  
@@ -96,14 +110,22 @@ Search these orgs for additional American contributions:
 - **stanford-crfm** — BioMedLM, research models, datasets
 - **stanfordaimi** — Medical imaging models
 - **nvidia** — Nemotron, optimized models
+- **primeintellect** — INTELLECT-1/2/3/3.1, `prime-rl`, verifiers, Environments Hub
 
-Use tags like "llama", "gemma", "phi", "nemotron" + filter for open licenses to stay US-focused.
+Use tags like "llama", "gemma", "phi", "nemotron", "intellect" + filter for open licenses to stay US-focused.
 
 ### Flagged
-- Composer 2.5 (Cursor) → **42** ⭐ (US company + China base)
+<span style="color:red">❌</span> = China base model. US company + foreign foundation; open weights still earn a bonus, but scores stay in the hybrid band.
+
+| Model | Company | Released | Open Source | USAbench | Access | Notes |
+|-------|---------|----------|-------------|----------|--------|-------|
+| <span style="color:red">❌</span> INTELLECT-3.1 | Prime Intellect | Feb 2026 | ✅ Yes | **63** ⭐ | HF | INTELLECT-3 continuation • continued RL • GLM-4.5-Air base |
+| <span style="color:red">❌</span> INTELLECT-3 | Prime Intellect | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) • US RL stack • GLM-4.5-Air base |
+| <span style="color:red">❌</span> INTELLECT-2 | Prime Intellect | Mar 2025 | ✅ Yes | **52** | HF | 32B • globally distributed RL • QwQ-32B base • ⚠️ aging (~16 mo) |
+| <span style="color:red">❌</span> Composer 2.5 | Cursor | — | ❌ No | **42** | Cursor | US company • closed |
 
 ### Contributing
-- Add new pure-US entries with USAbench score + runtime command if available  
+- Add new pure-US entries with **Released** date, USAbench score + runtime command if available  
 - PRs welcome — help keep the pulse and open list updated!  
 - See [CONTRIBUTING.md](CONTRIBUTING.md) (coming soon)
 
