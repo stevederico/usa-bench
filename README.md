@@ -1,4 +1,4 @@
-<img width="1912" height="1278" alt="comeandtake" src="https://github.com/user-attachments/assets/02664f18-a2e1-4a84-bfd4-b5e3b5ec330d" /> 
+<img width="1456" height="1139" alt="comeandtake" src="https://github.com/user-attachments/assets/02664f18-a2e1-4a84-bfd4-b5e3b5ec330d" /> 
 image credit @levelsio https://x.com/levelsio/status/2070979198928277842
 
 # Awesome USA 🇺🇸
