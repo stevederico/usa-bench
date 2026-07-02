@@ -54,66 +54,66 @@ function stars(score) {
   return "";
 }
 
-function scoreEntry(entry, pulse, decayTable) {
-  let penalty = 0;
+function entryNotes(entry, ageMonths) {
+  let text = entry.chinaBase
+    ? `❌ China base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`
+    : (entry.notes ?? "");
+  if (entry.released && text.includes("⚠️ aging") && ageMonths !== null) {
+    text = text.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${ageMonths} mo)`);
+  }
+  return text.trim() || "—";
+}
+
+function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
+  let recency = 0;
   let ageMonths = null;
 
   if (entry.released) {
     const released = parseDate(entry.released);
     ageMonths = monthsBetween(released, pulse);
-    penalty = recencyPenalty(ageMonths, decayTable);
+    recency = recencyPenalty(ageMonths, decayTable);
   }
 
-  let score = entry.baseScore - penalty;
+  const china = entry.chinaBase ? chinaBasePenalty : 0;
+  const totalPenalty = recency + china;
+
+  let score = entry.baseScore - totalPenalty;
   if (entry.closed) score = Math.min(score, 88);
   score = Math.max(0, Math.min(100, score));
-
-  let notes = entry.notes ?? "";
-  if (entry.released && notes.includes("⚠️ aging") && ageMonths !== null) {
-    notes = notes.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${ageMonths} mo)`);
-  }
 
   const openLabel = entry.openSource ? "✅ Yes" : "❌ No";
 
   return {
     ...entry,
     score,
-    penalty,
+    recencyPenalty: recency,
+    chinaPenalty: china,
+    totalPenalty,
     ageMonths,
     releasedLabel: entry.released ? formatReleased(entry.released) : null,
     starLabel: stars(score),
     openLabel,
-    notes: notes || "—",
+    notes: entryNotes(entry, ageMonths),
   };
 }
 
 const pulse = parseDate(data.pulseDate);
-
-function entryNotes(e) {
-  let text = e.chinaBase ? (e.whyFlagged ?? e.notes ?? "—") : (e.notes ?? "—");
-  if (e.released && text.includes("⚠️ aging") && e.ageMonths !== null) {
-    text = text.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${e.ageMonths} mo)`);
-  }
-  return text;
-}
-
-function chinaBaseLabel(e) {
-  return e.chinaBaseLabel ? `❌ ${e.chinaBaseLabel}` : "—";
-}
+const chinaBasePenalty = data.chinaBasePenalty ?? 25;
 
 const models = [...data.frontier, ...data.flagged]
-  .map((e) => scoreEntry(e, pulse, data.decay))
+  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty))
   .sort((a, b) => b.score - a.score)
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
 function modelRow(e) {
   const released = e.releasedLabel ?? "—";
-  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${chinaBaseLabel(e)} | ${released} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${entryNotes(e)} |`;
+  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${released} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${e.notes} |`;
 }
 
 const output = {
   pulseDate: data.pulseDate,
   pulseLabel: data.pulseLabel,
+  chinaBasePenalty,
   models,
 };
 
@@ -134,17 +134,20 @@ console.log("## Models (sorted by score)\n");
 for (const e of models) {
   const rel = e.releasedLabel ?? "no date";
   const flag = e.chinaBase ? " [China base]" : "";
+  const penaltyDetail = e.chinaPenalty
+    ? `−${e.recencyPenalty} recency, −${e.chinaPenalty} China`
+    : `−${e.totalPenalty}`;
   console.log(
-    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}, −${e.penalty})`
+    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}, ${penaltyDetail})`
   );
 }
 
 console.log("\n## README table rows (Models)\n");
 console.log(
-  "| Rank | Model / Family | Company | China Base | Released | Open Source | USAbench | Access | Notes |"
+  "| Rank | Model / Family | Company | Released | Open Source | USAbench | Access | Notes |"
 );
 console.log(
-  "|------|----------------|---------|------------|----------|-------------|----------|--------|-------|"
+  "|------|----------------|---------|----------|-------------|----------|--------|-------|"
 );
 for (const e of models) {
   console.log(modelRow(e));

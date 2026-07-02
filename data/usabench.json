@@ -2,6 +2,7 @@
   "pulseDate": "2026-07-01",
   "pulseLabel": "July 2026",
   "daysSinceMajorRelease": 0,
+  "chinaBasePenalty": 25,
   "decay": [
     { "maxMonths": 3, "penalty": 0 },
     { "maxMonths": 6, "penalty": 2 },

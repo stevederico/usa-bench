@@ -29,8 +29,8 @@ USAbench weights **open-weights sovereignty + recency** over raw capability. Sco
 
 - **95-100** ⭐⭐⭐: Pure US + open weights, released within ~6 months
 - **80-94** ⭐⭐: Strong US closed API, or open US that is aging (13+ months)
-- **60-79** ⭐: Older open releases, hybrid US + China base, or flagged entries
-- **0-59**: Mostly non-US or heavy China dependency (China Base column in Models table)
+- **60-79** ⭐: Older pure-US open releases
+- **0-59**: China-base foundations (−25 penalty) or heavy foreign dependency
 
 **Scoring checklist**
 1. Start with US purity (HQ + primary dev in USA)
@@ -38,7 +38,7 @@ USAbench weights **open-weights sovereignty + recency** over raw capability. Sco
 3. **+5** full recipe open (training code, data, or evals released)
 4. **Cap at 88** if closed API-only — no exceptions for capability
 5. Apply **recency decay** from pulse date: 0–3 mo (0) • 4–6 mo (−2) • 7–12 mo (−5) • 13–18 mo (−10) • 19+ mo (−15)
-6. China base → `flagged` array (`chinaBase: true`, `chinaBaseLabel`, `whyFlagged`), typically 40–69 band
+6. China base → `flagged` array (`chinaBase: true`, `chinaBaseLabel`, `whyFlagged`) — **−25** `chinaBasePenalty` applied automatically (see Notes column)
 
 ## Refreshing scores (pulse date)
 

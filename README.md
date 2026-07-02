@@ -7,28 +7,28 @@
 ### Free + open source models, made in the land of the free 
 
 ### Models
-Ranked by USAbench score. **China Base** marks models built on Chinese foundations (US post-train or wrapper); see Notes for details.
+Ranked by USAbench score. China-base foundations are called out in **Notes** and take a **−25** sovereignty penalty.
 
-| Rank | Model / Family | Company | China Base | Released | Open Source | USAbench | Access | Notes |
-|------|----------------|---------|------------|----------|-------------|----------|--------|-------|
-| 1 | Nemotron Super / Ultra / 3 | NVIDIA | — | Jun 2026 | ✅ Yes | **98** ⭐⭐⭐ | NGC + HF | Enterprise, agentic |
-| 2 | Gemma 4 | Google | — | May 2026 | ✅ Yes | **98** ⭐⭐⭐ | HF | Efficient local + multimodal |
-| 3 | Liquid LFM2.5 / LFM2 | Liquid AI | — | Jun 2026 | ✅ Yes | **96** ⭐⭐⭐ | HF + LEAP + Ollama | MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
-| 4 | Arcee Trinity Large | Arcee AI | — | Mar 2026 | ✅ Yes | **95** ⭐⭐⭐ | HF | Agentic open |
-| 5 | Claude Opus 4.6 / Fable 5 | Anthropic | — | Jun 2026 | ❌ No | **88** ⭐⭐ | claude.ai / API | Reasoning, safety, agents |
-| 6 | GPT-5.6 (Sol/Terra/Luna) | OpenAI | — | May 2026 | ❌ No | **87** ⭐⭐ | API (vetted) | All-round + elite |
-| 7 | Grok 4.3 / 4.20 / 5 | xAI | — | Apr 2026 | ❌ No | **86** ⭐⭐ | x.ai / X / API | Coding, real-time |
-| 8 | Gemini 3 + Nano Banana / Veo | Google | — | Jun 2026 | ❌ No | **85** ⭐⭐ | gemini.google.com | Multimodal, video • use Gemma 4 for open |
-| 9 | Llama 4 Maverick / Scout | Meta | — | Apr 2025 | ✅ Yes | **85** ⭐⭐ | Hugging Face | Open weights pioneer • ⚠️ aging (~15 mo) |
-| 10 | **Muse Spark (Muse family)** | **Meta** | — | Mar 2026 | ❌ No | **82** ⭐⭐ | meta.ai / apps / API | Multimodal reasoning, agents • Meta's current frontier |
-| 11 | Phi-4 + Reflection | Microsoft / Reflection | — | Dec 2024 | ✅ Yes | **81** ⭐⭐ | HF | Small & efficient open • ⚠️ aging (~19 mo) |
-| 12 | MAI Code / Image / Thinking | Microsoft | — | Sep 2025 | ❌ No | **78** ⭐ | Azure | In-house coding + multimodal • use Phi-4 / Nemotron for open |
-| 13 | INTELLECT-1 | Prime Intellect | — | Nov 2024 | ✅ Yes | **74** ⭐ | HF | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
-| 14 | Ornith-1.0 | DeepReinforce | ❌ Qwen 3.5 + Gemma 4 | Jun 2026 | ✅ Yes | **68** ⭐ | HF | 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
-| 15 | INTELLECT-3.1 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Feb 2026 | ✅ Yes | **63** ⭐ | HF | Post-trained on Chinese foundation; US RL only |
-| 16 | INTELLECT-3 | Prime Intellect | ❌ GLM-4.5-Air (Zhipu) | Nov 2025 | ✅ Yes | **58** | HF | 106B MoE (12B active) on GLM base |
-| 17 | INTELLECT-2 | Prime Intellect | ❌ QwQ-32B (Qwen) | Mar 2025 | ✅ Yes | **52** | HF | Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
-| 18 | Composer 2.5 | Cursor | ❌ Kimi K2.5 (Moonshot) | — | ❌ No | **42** | Cursor | US company; closed API on Kimi checkpoint |
+| Rank | Model / Family | Company | Released | Open Source | USAbench | Access | Notes |
+|------|----------------|---------|----------|-------------|----------|--------|-------|
+| 1 | Nemotron Super / Ultra / 3 | NVIDIA | Jun 2026 | ✅ Yes | **98** ⭐⭐⭐ | NGC + HF | Enterprise, agentic |
+| 2 | Gemma 4 | Google | May 2026 | ✅ Yes | **98** ⭐⭐⭐ | HF | Efficient local + multimodal |
+| 3 | Liquid LFM2.5 / LFM2 | Liquid AI | Jun 2026 | ✅ Yes | **96** ⭐⭐⭐ | HF + LEAP + Ollama | MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
+| 4 | Arcee Trinity Large | Arcee AI | Mar 2026 | ✅ Yes | **95** ⭐⭐⭐ | HF | Agentic open |
+| 5 | Claude Opus 4.6 / Fable 5 | Anthropic | Jun 2026 | ❌ No | **88** ⭐⭐ | claude.ai / API | Reasoning, safety, agents |
+| 6 | GPT-5.6 (Sol/Terra/Luna) | OpenAI | May 2026 | ❌ No | **87** ⭐⭐ | API (vetted) | All-round + elite |
+| 7 | Grok 4.3 / 4.20 / 5 | xAI | Apr 2026 | ❌ No | **86** ⭐⭐ | x.ai / X / API | Coding, real-time |
+| 8 | Gemini 3 + Nano Banana / Veo | Google | Jun 2026 | ❌ No | **85** ⭐⭐ | gemini.google.com | Multimodal, video • use Gemma 4 for open |
+| 9 | Llama 4 Maverick / Scout | Meta | Apr 2025 | ✅ Yes | **85** ⭐⭐ | Hugging Face | Open weights pioneer • ⚠️ aging (~15 mo) |
+| 10 | **Muse Spark (Muse family)** | **Meta** | Mar 2026 | ❌ No | **82** ⭐⭐ | meta.ai / apps / API | Multimodal reasoning, agents • Meta's current frontier |
+| 11 | Phi-4 + Reflection | Microsoft / Reflection | Dec 2024 | ✅ Yes | **81** ⭐⭐ | HF | Small & efficient open • ⚠️ aging (~19 mo) |
+| 12 | MAI Code / Image / Thinking | Microsoft | Sep 2025 | ❌ No | **78** ⭐ | Azure | In-house coding + multimodal • use Phi-4 / Nemotron for open |
+| 13 | INTELLECT-1 | Prime Intellect | Nov 2024 | ✅ Yes | **74** ⭐ | HF | First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
+| 14 | Ornith-1.0 | DeepReinforce | Jun 2026 | ✅ Yes | **43** | HF | ❌ China base: Qwen 3.5 + Gemma 4 • 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
+| 15 | INTELLECT-3.1 | Prime Intellect | Feb 2026 | ✅ Yes | **38** | HF | ❌ China base: GLM-4.5-Air (Zhipu) • Post-trained on Chinese foundation; US RL only |
+| 16 | INTELLECT-3 | Prime Intellect | Nov 2025 | ✅ Yes | **33** | HF | ❌ China base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base |
+| 17 | INTELLECT-2 | Prime Intellect | Mar 2025 | ✅ Yes | **27** | HF | ❌ China base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
+| 18 | Composer 2.5 | Cursor | — | ❌ No | **17** | Cursor | ❌ China base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint |
 
 ### Table of Contents
 - [Models](#models)
@@ -56,8 +56,8 @@ Ranked by USAbench score. **China Base** marks models built on Chinese foundatio
 |-------|------|---------|
 | 95–100 | ⭐⭐⭐ | Pure US + open weights, released within ~6 months |
 | 80–94 | ⭐⭐ | Strong US open (aging) or closed API-only (caps here) |
-| 60–79 | ⭐ | Older open releases, or hybrid/flagged (China base + US post-train) |
-| &lt;60 | — | Mostly non-US or heavy China dependency (see **China Base** column) |
+| 60–79 | ⭐ | Older pure-US open releases |
+| &lt;60 | — | China-base foundations, heavy foreign dependency, or stale hybrids |
 
 **Recency decay** (from pulse date)
 
@@ -68,6 +68,8 @@ Ranked by USAbench score. **China Base** marks models built on Chinese foundatio
 | 7–12 mo | −5 |
 | 13–18 mo | −10 |
 | 19+ mo | −15 |
+
+**China-base penalty** — **−25** on top of recency (Qwen, GLM, Kimi, etc. foundations; see Notes)
 
 Scores are computed from `data/usabench.json` — run `node scripts/usabench.mjs` after advancing the pulse date or updating releases.
 
