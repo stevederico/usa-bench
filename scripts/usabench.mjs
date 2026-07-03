@@ -87,7 +87,7 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
   // China-base / foreign foundations are disqualified — hard 0, not a ranked score
   if (entry.chinaBase) score = 0;
 
-  const openLabel = entry.openSource ? "✅ Yes" : "❌ No";
+  const openLabel = entry.openSource ? "Yes" : "No";
 
   return {
     ...entry,
@@ -183,7 +183,7 @@ function modelRow(e) {
   const scoreCell = dq ? `**${e.score}** ❌` : `**${e.score}** ${e.starLabel}`;
   const company = dq ? e.company : linkifyCompany(e.company);
   const access = dq ? (e.access ?? "—") : linkifyAccess(e.access);
-  const openLabel = dq ? "❌ No" : e.openLabel;
+  const openLabel = dq ? "No" : e.openLabel;
   return `| ${String(e.rank).padEnd(4)} | ${model} | ${company} | ${openLabel} | ${scoreCell} | ${e.notes} | ${access} |`;
 }
 
