@@ -54,13 +54,13 @@
 > **US AI Pulse · July 2026** — **0 days** since the last major US release
 
 ### Criteria
-- US-headquartered company + primary development in the USA
-- **USAbench (v2, 0–100)** rewards open-weights sovereignty + recency + full transparency (data+code), not raw capability alone. Single table.
-- Tiers: **95–100** ⭐⭐⭐ recent strong US open • **80–94** ⭐⭐ good open or capped closed • **60–79** ⭐ older open
-- **Foreign-base foundations are disqualified → ❌ USAbench 0** (see Notes), no matter how good the US post-training
-- Recency decay: 0 (0–3mo) • 3 (4–6) • 8 (7–12) • 15 (13–18) • 22 (19+). +5 fullOpen, +3 permissive (Apache/MIT). Closed cap 82.
-- Scores computed from `data/usabench.json` — run `node scripts/usabench.mjs` after changing the pulse date or releases
-- Closed frontier models (Claude, GPT, Grok) can be excellent — they just don't score sovereign-open tier, and stale weights fall fast
+- US HQ + US-built
+- **USAbench (v2, 0–100)**: open-weights sovereignty + recency + transparency, not raw capability
+- Tiers: **95–100** ⭐⭐⭐ • **80–94** ⭐⭐ • **60–79** ⭐
+- **Foreign-base foundations → ❌ 0**, however good the US post-training
+- Decay: 0 (0–3mo) • 3 • 8 • 15 • 22 (19+). +5 fullOpen, +3 permissive, closed cap 82
+- Scores from `data/usabench.json` — run `node scripts/usabench.mjs` after edits
+- Closed models (Claude, GPT, Grok) can be great — just not sovereign-open; stale weights fall fast
 
 ### US Tools & Infrastructure (All US)
 
@@ -108,13 +108,11 @@
 | Ray Serve | San Francisco, CA (Anyscale) | Serving | Distributed multi-model serving |
 
 ### Contributing
-- Add new pure-US entries with **Released** date and USAbench score in `data/usabench.json`
-- PRs welcome — help keep the pulse and open list updated!  
-- See [CONTRIBUTING.md](CONTRIBUTING.md) (coming soon)
+- Add pure-US entries (Released date + score) to `data/usabench.json`
+- PRs welcome • [CONTRIBUTING.md](CONTRIBUTING.md) (soon)
 
-Made with ❤️ for builders who want **sovereign American AI**.  
-Star ⭐ if helpful. Contributions always welcome!
+Made with ❤️ for **sovereign American AI**. Star ⭐ if useful.
 
 ---
 
-**License**: CC0 / MIT-style for awesome lists (feel free to use).
+**License**: CC0 / MIT-style
