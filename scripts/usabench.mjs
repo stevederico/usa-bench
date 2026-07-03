@@ -158,6 +158,16 @@ const COMPANY_LINKS = {
   "Microsoft": "microsoft",
   "Prime Intellect": "PrimeIntellect",
   "DeepReinforce": "deepreinforce-ai",
+  "Hugging Face": "HuggingFaceTB",
+  "Salesforce": "Salesforce",
+  "Snowflake": "Snowflake",
+  "ServiceNow": "ServiceNow-AI",
+  "Deep Cogito": "deepcogito",
+  "Nous Research": "NousResearch",
+  "Moondream": "moondream",
+  "H2O.ai": "h2oai",
+  "Cognitive Computations": "cognitivecomputations",
+  "Fireworks AI": "fireworks-ai",
 };
 
 function linkifyCompany(company) {

@@ -172,6 +172,26 @@
       "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) • Strong reasoning • Transparent research model"
     },
     {
+      "model": "SmolLM3-3B",
+      "company": "Hugging Face",
+      "released": "2025-09-01",
+      "baseScore": 85,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Small efficient open LLM from NYC-based company (founded by French entrepreneurs) • Strong reasoning for size • Part of Smol series with datasets"
+    },
+    {
+      "model": "xLAM (1B/7B/8x7B/8x22B)",
+      "company": "Salesforce",
+      "released": "2024-09-01",
+      "baseScore": 83,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Large Action Models for agents • Strong function calling & planning • Open research versions (xLAM)"
+    },
+    {
       "model": "Grok Imagine",
       "company": "xAI",
       "released": "2026-06-01",
@@ -230,19 +250,119 @@
       "closed": true,
       "access": "krea.ai",
       "notes": "Image • closed"
+    },
+    {
+      "model": "gpt-oss-120b / 20b",
+      "company": "OpenAI",
+      "released": "2025-08-05",
+      "baseScore": 91,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open weights MoE reasoning models • 120b (5B active) runs on single 80GB GPU • Apache 2.0 • Strong agentic & local"
+    },
+    {
+      "model": "Arctic",
+      "company": "Snowflake",
+      "released": "2024-04-24",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open enterprise LLM (Apache 2.0) • Efficient hybrid dense-MoE for SQL, coding, RAG • Fully open with data recipes"
+    },
+    {
+      "model": "Apriel-1.5-15B-Thinker",
+      "company": "ServiceNow",
+      "released": "2025-10-01",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open small multimodal reasoning model (MIT) • Frontier-level perf on single GPU • Built with NVIDIA Nemotron tech"
+    },
+    {
+      "model": "MolmoMotion 4B",
+      "company": "Ai2 (allenai)",
+      "released": "2026-06-01",
+      "baseScore": 85,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open VLM for 3D motion forecasting • Fully open (weights + dataset + code)"
+    },
+    {
+      "model": "Deep Cogito v2.1",
+      "company": "Deep Cogito",
+      "released": "2025-08-01",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + Ollama",
+      "notes": "SF startup • Open hybrid reasoning (IDA self-improvement) • Llama-based variants qualify"
+    },
+    {
+      "model": "Nous Hermes 3",
+      "company": "Nous Research",
+      "released": "2024-08-01",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + Ollama",
+      "notes": "On Llama 3.1 (US base) • Flagship open community fine-tune • ⚠️ aging"
+    },
+    {
+      "model": "Moondream 3",
+      "company": "Moondream",
+      "released": "2026-03-01",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + Ollama",
+      "notes": "Tiny open vision-language model • from-scratch • edge/on-device"
+    },
+    {
+      "model": "H2OVL Mississippi",
+      "company": "H2O.ai",
+      "released": "2024-10-01",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open multimodal OCR / document vision • Mountain View • ⚠️ aging"
+    },
+    {
+      "model": "Dolphin 3.0",
+      "company": "Cognitive Computations",
+      "released": "2025-01-01",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + Ollama",
+      "notes": "On Llama 3.1 (US base) • Open uncensored instruct fine-tune • ⚠️ aging"
+    },
+    {
+      "model": "Firefunction v2",
+      "company": "Fireworks AI",
+      "released": "2024-06-01",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "On Llama 3 70B (US base) • Open function-calling model • ⚠️ aging"
     }
   ],
   "flagged": [
     {
       "model": "Ornith-1.0",
       "company": "DeepReinforce",
-      "released": "2026-06-01",
+      "released": "2026-06-25",
       "baseScore": 68,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen 3.5 + Gemma 4",
       "access": "HF",
-      "whyFlagged": "397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL"
+      "whyFlagged": "Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); China foundation on large MoEs"
     },
     {
       "model": "INTELLECT-3.1",
