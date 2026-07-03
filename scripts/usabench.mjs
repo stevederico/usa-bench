@@ -115,9 +115,37 @@ const models = [...data.frontier, ...data.flagged]
   .sort((a, b) => b.score - a.score)
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
+const ACCESS_LINKS = {
+  "HF": "https://huggingface.co",
+  "Hugging Face": "https://huggingface.co",
+  "NGC": "https://catalog.ngc.nvidia.com",
+  "LEAP": "https://leap.liquid.ai",
+  "Ollama": "https://ollama.com",
+  "claude.ai": "https://claude.ai",
+  "x.ai": "https://x.ai",
+  "X": "https://x.com",
+  "gemini.google.com": "https://gemini.google.com",
+  "meta.ai": "https://meta.ai",
+  "Azure": "https://azure.microsoft.com",
+  "Cursor": "https://cursor.com",
+  "midjourney.com": "https://midjourney.com",
+  "runwayml.com": "https://runwayml.com",
+  "heygen.com": "https://heygen.com",
+  "krea.ai": "https://krea.ai",
+};
+
+// Linkify each known token in an access string, preserving " + " / " / " separators
+function linkifyAccess(access) {
+  if (!access) return "—";
+  return access
+    .split(/(\s*[+/]\s*)/)
+    .map((part) => (ACCESS_LINKS[part.trim()] ? `[${part.trim()}](${ACCESS_LINKS[part.trim()]})` : part))
+    .join("");
+}
+
 function modelRow(e) {
   const scoreCell = e.chinaBase ? "❌ **0**" : `**${e.score}** ${e.starLabel}`;
-  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${e.openLabel} | ${scoreCell} | ${e.access ?? "—"} | ${e.notes} |`;
+  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${e.openLabel} | ${scoreCell} | ${linkifyAccess(e.access)} | ${e.notes} |`;
 }
 
 const output = {

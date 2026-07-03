@@ -12,31 +12,31 @@
 
 | Rank | Model / Family | Company | Open Source | USAbench | Access | Notes |
 |------|----------------|---------|-------------|----------|--------|-------|
-| 1 | Nemotron Super / Ultra / 3 | NVIDIA | ✅ Yes | **98** ⭐⭐⭐ | NGC + HF | Released Jun 2026 • Enterprise, agentic |
-| 2 | Gemma 4 | Google | ✅ Yes | **98** ⭐⭐⭐ | HF | Released May 2026 • Efficient local + multimodal |
-| 3 | Liquid LFM2.5 / LFM2 | Liquid AI | ✅ Yes | **96** ⭐⭐⭐ | HF + LEAP + Ollama | Released Jun 2026 • MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
-| 4 | Arcee Trinity Large | Arcee AI | ✅ Yes | **95** ⭐⭐⭐ | HF | Released Mar 2026 • Agentic open |
-| 5 | Claude Opus 4.6 / Fable 5 | Anthropic | ❌ No | **88** ⭐⭐ | claude.ai / API | Released Jun 2026 • Reasoning, safety, agents |
-| 6 | OLMo 2 | Ai2 (allenai) | ✅ Yes | **88** ⭐⭐ | HF | Released Nov 2025 • Fully open — weights + data + training code |
+| 1 | Nemotron Super / Ultra / 3 | NVIDIA | ✅ Yes | **98** ⭐⭐⭐ | [NGC](https://catalog.ngc.nvidia.com) + [HF](https://huggingface.co) | Released Jun 2026 • Enterprise, agentic |
+| 2 | Gemma 4 | Google | ✅ Yes | **98** ⭐⭐⭐ | [HF](https://huggingface.co) | Released May 2026 • Efficient local + multimodal |
+| 3 | Liquid LFM2.5 / LFM2 | Liquid AI | ✅ Yes | **96** ⭐⭐⭐ | [HF](https://huggingface.co) + [LEAP](https://leap.liquid.ai) + [Ollama](https://ollama.com) | Released Jun 2026 • MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap) |
+| 4 | Arcee Trinity Large | Arcee AI | ✅ Yes | **95** ⭐⭐⭐ | [HF](https://huggingface.co) | Released Mar 2026 • Agentic open |
+| 5 | Claude Opus 4.6 / Fable 5 | Anthropic | ❌ No | **88** ⭐⭐ | [claude.ai](https://claude.ai) / API | Released Jun 2026 • Reasoning, safety, agents |
+| 6 | OLMo 2 | Ai2 (allenai) | ✅ Yes | **88** ⭐⭐ | [HF](https://huggingface.co) | Released Nov 2025 • Fully open — weights + data + training code |
 | 7 | GPT-5.6 (Sol/Terra/Luna) | OpenAI | ❌ No | **87** ⭐⭐ | API (vetted) | Released May 2026 • All-round + elite |
-| 8 | Grok 4.3 / 4.20 / 5 | xAI | ❌ No | **86** ⭐⭐ | x.ai / X / API | Released Apr 2026 • Coding, real-time |
-| 9 | Gemini 3 + Nano Banana / Veo | Google | ❌ No | **85** ⭐⭐ | gemini.google.com | Released Jun 2026 • Multimodal, video • use Gemma 4 for open |
-| 10 | Llama 4 Maverick / Scout | Meta | ✅ Yes | **85** ⭐⭐ | Hugging Face | Released Apr 2025 • Open weights pioneer • ⚠️ aging (~15 mo) |
-| 11 | Grok Imagine | xAI | ❌ No | **84** ⭐⭐ | x.ai / X | Released Jun 2026 • Image + video • real-time generation |
+| 8 | Grok 4.3 / 4.20 / 5 | xAI | ❌ No | **86** ⭐⭐ | [x.ai](https://x.ai) / [X](https://x.com) / API | Released Apr 2026 • Coding, real-time |
+| 9 | Gemini 3 + Nano Banana / Veo | Google | ❌ No | **85** ⭐⭐ | [gemini.google.com](https://gemini.google.com) | Released Jun 2026 • Multimodal, video • use Gemma 4 for open |
+| 10 | Llama 4 Maverick / Scout | Meta | ✅ Yes | **85** ⭐⭐ | [Hugging Face](https://huggingface.co) | Released Apr 2025 • Open weights pioneer • ⚠️ aging (~15 mo) |
+| 11 | Grok Imagine | xAI | ❌ No | **84** ⭐⭐ | [x.ai](https://x.ai) / [X](https://x.com) | Released Jun 2026 • Image + video • real-time generation |
 | 12 | Sora 2 / DALL·E | OpenAI | ❌ No | **83** ⭐⭐ | API | Released Jun 2026 • Video + image • closed API |
-| 13 | **Muse Spark (Muse family)** | **Meta** | ❌ No | **82** ⭐⭐ | meta.ai / apps / API | Released Mar 2026 • Multimodal reasoning, agents • Meta's current frontier |
-| 14 | Midjourney | Midjourney | ❌ No | **82** ⭐⭐ | midjourney.com | Released May 2026 • Image • closed |
-| 15 | Phi-4 + Reflection | Microsoft / Reflection | ✅ Yes | **81** ⭐⭐ | HF | Released Dec 2024 • Small & efficient open • ⚠️ aging (~19 mo) |
-| 16 | Runway Gen-4 | Runway | ❌ No | **80** ⭐⭐ | runwayml.com | Released Jun 2026 • Video • closed |
-| 17 | MAI Code / Image / Thinking | Microsoft | ❌ No | **78** ⭐ | Azure | Released Sep 2025 • In-house coding + multimodal • use Phi-4 / Nemotron for open |
-| 18 | HeyGen | HeyGen | ❌ No | **77** ⭐ | heygen.com | Released Jun 2026 • Avatar video • closed |
-| 19 | Krea | Krea | ❌ No | **76** ⭐ | krea.ai | Released May 2026 • Image • closed |
-| 20 | INTELLECT-1 | Prime Intellect | ✅ Yes | **74** ⭐ | HF | Released Nov 2024 • First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
-| 21 | Ornith-1.0 | DeepReinforce | ✅ Yes | ❌ **0** | HF | Released Jun 2026 • ❌ China base: Qwen 3.5 + Gemma 4 • 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
-| 22 | INTELLECT-3.1 | Prime Intellect | ✅ Yes | ❌ **0** | HF | Released Feb 2026 • ❌ China base: GLM-4.5-Air (Zhipu) • Post-trained on Chinese foundation; US RL only |
-| 23 | INTELLECT-3 | Prime Intellect | ✅ Yes | ❌ **0** | HF | Released Nov 2025 • ❌ China base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base |
-| 24 | INTELLECT-2 | Prime Intellect | ✅ Yes | ❌ **0** | HF | Released Mar 2025 • ❌ China base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
-| 25 | Composer 2.5 | Cursor | ❌ No | ❌ **0** | Cursor | ❌ China base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint |
+| 13 | **Muse Spark (Muse family)** | **Meta** | ❌ No | **82** ⭐⭐ | [meta.ai](https://meta.ai) / apps / API | Released Mar 2026 • Multimodal reasoning, agents • Meta's current frontier |
+| 14 | Midjourney | Midjourney | ❌ No | **82** ⭐⭐ | [midjourney.com](https://midjourney.com) | Released May 2026 • Image • closed |
+| 15 | Phi-4 + Reflection | Microsoft / Reflection | ✅ Yes | **81** ⭐⭐ | [HF](https://huggingface.co) | Released Dec 2024 • Small & efficient open • ⚠️ aging (~19 mo) |
+| 16 | Runway Gen-4 | Runway | ❌ No | **80** ⭐⭐ | [runwayml.com](https://runwayml.com) | Released Jun 2026 • Video • closed |
+| 17 | MAI Code / Image / Thinking | Microsoft | ❌ No | **78** ⭐ | [Azure](https://azure.microsoft.com) | Released Sep 2025 • In-house coding + multimodal • use Phi-4 / Nemotron for open |
+| 18 | HeyGen | HeyGen | ❌ No | **77** ⭐ | [heygen.com](https://heygen.com) | Released Jun 2026 • Avatar video • closed |
+| 19 | Krea | Krea | ❌ No | **76** ⭐ | [krea.ai](https://krea.ai) | Released May 2026 • Image • closed |
+| 20 | INTELLECT-1 | Prime Intellect | ✅ Yes | **74** ⭐ | [HF](https://huggingface.co) | Released Nov 2024 • First fully decentralized 10B • ⚠️ aging (~20 mo) • Arcee post-train |
+| 21 | Ornith-1.0 | DeepReinforce | ✅ Yes | ❌ **0** | [HF](https://huggingface.co) | Released Jun 2026 • ❌ China base: Qwen 3.5 + Gemma 4 • 397B/35B on Qwen 3.5 (Alibaba); 9B/31B also use Gemma 4 • MIT open • agentic coding RL |
+| 22 | INTELLECT-3.1 | Prime Intellect | ✅ Yes | ❌ **0** | [HF](https://huggingface.co) | Released Feb 2026 • ❌ China base: GLM-4.5-Air (Zhipu) • Post-trained on Chinese foundation; US RL only |
+| 23 | INTELLECT-3 | Prime Intellect | ✅ Yes | ❌ **0** | [HF](https://huggingface.co) | Released Nov 2025 • ❌ China base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base |
+| 24 | INTELLECT-2 | Prime Intellect | ✅ Yes | ❌ **0** | [HF](https://huggingface.co) | Released Mar 2025 • ❌ China base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
+| 25 | Composer 2.5 | Cursor | ❌ No | ❌ **0** | [Cursor](https://cursor.com) | ❌ China base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint |
 
 
 ### Criteria
