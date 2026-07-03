@@ -123,8 +123,6 @@ For maximum sovereignty — desktop, server, mobile, Apple Silicon, edge:
 
 **Recommendation**: Desktop → Ollama or LM Studio • Mac → MLX • Android/edge → LiteRT • Production → NIM or vLLM.
 
-> Banner and hardware sovereignty vibe inspired by [@levelsio](https://x.com/levelsio) "Come and Take It" GPU memes — hoarding hardware for sovereign AI 🇺🇸
-
 ### US University Labs & Research Contributions
 US universities drive much of the open innovation:
 
