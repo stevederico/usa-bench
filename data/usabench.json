@@ -152,6 +152,26 @@
       "notes": "Fully open — weights + data + training code"
     },
     {
+      "model": "Granite 4.1",
+      "company": "IBM",
+      "released": "2026-04-29",
+      "baseScore": 94,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + Ollama",
+      "notes": "Hybrid Mamba-Transformer • Enterprise, RAG, coding, tool calling • Apache 2.0 • ISO 42001 certified"
+    },
+    {
+      "model": "OLMo 3.1 32B (Instruct / Think)",
+      "company": "Ai2 (allenai)",
+      "released": "2025-12-15",
+      "baseScore": 94,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) • Strong reasoning • Transparent research model"
+    },
+    {
       "model": "Grok Imagine",
       "company": "xAI",
       "released": "2026-06-01",

@@ -150,6 +150,7 @@ const COMPANY_LINKS = {
   "Liquid AI": "LiquidAI",
   "Arcee AI": "arcee-ai",
   "Ai2 (allenai)": "allenai",
+  "IBM": "ibm-granite",
   "OpenAI": "openai",
   "xAI": "xai-org",
   "Meta": "meta-llama",
