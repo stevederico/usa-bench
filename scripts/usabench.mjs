@@ -54,14 +54,18 @@ function stars(score) {
   return "";
 }
 
-function entryNotes(entry, ageMonths) {
+function entryNotes(entry, ageMonths, releasedLabel) {
   let text = entry.chinaBase
     ? `❌ China base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`
     : (entry.notes ?? "");
   if (entry.released && text.includes("⚠️ aging") && ageMonths !== null) {
     text = text.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${ageMonths} mo)`);
   }
-  return text.trim() || "—";
+  text = text.trim();
+  if (releasedLabel) {
+    text = text ? `Released ${releasedLabel} • ${text}` : `Released ${releasedLabel}`;
+  }
+  return text || "—";
 }
 
 function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
@@ -93,7 +97,11 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
     releasedLabel: entry.released ? formatReleased(entry.released) : null,
     starLabel: stars(score),
     openLabel,
-    notes: entryNotes(entry, ageMonths),
+    notes: entryNotes(
+      entry,
+      ageMonths,
+      entry.released ? formatReleased(entry.released) : null
+    ),
   };
 }
 
@@ -106,8 +114,7 @@ const models = [...data.frontier, ...data.flagged]
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
 function modelRow(e) {
-  const released = e.releasedLabel ?? "—";
-  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${released} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${e.notes} |`;
+  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${e.notes} |`;
 }
 
 const output = {
@@ -144,10 +151,10 @@ for (const e of models) {
 
 console.log("\n## README table rows (Models)\n");
 console.log(
-  "| Rank | Model / Family | Company | Released | Open Source | USAbench | Access | Notes |"
+  "| Rank | Model / Family | Company | Open Source | USAbench | Access | Notes |"
 );
 console.log(
-  "|------|----------------|---------|----------|-------------|----------|--------|-------|"
+  "|------|----------------|---------|-------------|----------|--------|-------|"
 );
 for (const e of models) {
   console.log(modelRow(e));

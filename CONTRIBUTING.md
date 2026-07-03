@@ -9,7 +9,7 @@ Thank you for your interest in contributing to **Awesome USA** — the curated l
 3. **Make your edits** (add models, tools, runtimes, academic projects, etc.)
 4. **Follow the format**:
    - Use the existing table structure for models
-   - Include **Released** date (month + year)
+   - Set **`released`** in `data/usabench.json` (ISO date) — script prepends it to Notes
    - Set **openSource** (`true` / `false`) in `data/usabench.json`
    - Include **USAbench** score (0-100)
    - China-base models go in the `flagged` array — set `chinaBaseLabel` and `whyFlagged` in `data/usabench.json` (merged into Models table)
