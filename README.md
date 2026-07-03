@@ -55,10 +55,10 @@
 
 ### Criteria
 - US-headquartered company + primary development in the USA
-- **USAbench (0–100)** rewards open-weights sovereignty + recency, not raw capability alone
-- Tiers: **95–100** ⭐⭐⭐ pure US open, ~6 mo • **80–94** ⭐⭐ aging US open or closed API-only (caps here) • **60–79** ⭐ older US open
+- **USAbench (v2, 0–100)** rewards open-weights sovereignty + recency + full transparency (data+code), not raw capability alone. Single table.
+- Tiers: **95–100** ⭐⭐⭐ recent strong US open • **80–94** ⭐⭐ good open or capped closed • **60–79** ⭐ older open
 - **China-base / foreign foundations are disqualified → ❌ USAbench 0** (Qwen, GLM, Kimi, etc. — see Notes), no matter how good the US post-training
-- Recency decay on qualifying models: −2 at 4–6 mo → −15 at 19+ mo
+- Recency decay: 0 (0–3mo) • 3 (4–6) • 8 (7–12) • 15 (13–18) • 22 (19+). +5 fullOpen, +3 permissive (Apache/MIT). Closed cap 82.
 - Scores computed from `data/usabench.json` — run `node scripts/usabench.mjs` after changing the pulse date or releases
 - Closed frontier models (Claude, GPT, Grok) can be excellent — they just don't score sovereign-open tier, and stale weights fall fast
 

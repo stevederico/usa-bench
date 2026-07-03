@@ -1,3 +1,5 @@
+- Improve USAbench to v2 (steeper recency, fullOpen + permissive bonuses, closedCap=82 in single table)
+- Update scoring docs in CONTRIBUTING + README criteria
 - Add CONTRIBUTING.md
 - Automate pulse date
 

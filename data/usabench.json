@@ -3,12 +3,15 @@
   "pulseLabel": "July 2026",
   "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
+  "fullOpenBonus": 5,
+  "permissiveBonus": 3,
+  "closedCap": 82,
   "decay": [
     { "maxMonths": 3, "penalty": 0 },
-    { "maxMonths": 6, "penalty": 2 },
-    { "maxMonths": 12, "penalty": 5 },
-    { "maxMonths": 18, "penalty": 10 },
-    { "maxMonths": null, "penalty": 15 }
+    { "maxMonths": 6, "penalty": 3 },
+    { "maxMonths": 12, "penalty": 8 },
+    { "maxMonths": 18, "penalty": 15 },
+    { "maxMonths": null, "penalty": 22 }
   ],
   "frontier": [
     {
@@ -148,6 +151,8 @@
       "baseScore": 93,
       "openSource": true,
       "closed": false,
+      "fullOpen": true,
+      "permissive": true,
       "access": "HF",
       "notes": "Fully open — weights + data + training code"
     },
@@ -158,6 +163,7 @@
       "baseScore": 94,
       "openSource": true,
       "closed": false,
+      "permissive": true,
       "access": "HF + Ollama",
       "notes": "Hybrid Mamba-Transformer • Enterprise, RAG, coding, tool calling • Apache 2.0 • ISO 42001 certified"
     },
@@ -168,6 +174,8 @@
       "baseScore": 94,
       "openSource": true,
       "closed": false,
+      "fullOpen": true,
+      "permissive": true,
       "access": "HF",
       "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) • Strong reasoning • Transparent research model"
     },
@@ -258,6 +266,7 @@
       "baseScore": 91,
       "openSource": true,
       "closed": false,
+      "permissive": true,
       "access": "HF",
       "notes": "Open weights MoE reasoning models • 120b (5B active) runs on single 80GB GPU • Apache 2.0 • Strong agentic & local"
     },
@@ -268,6 +277,8 @@
       "baseScore": 78,
       "openSource": true,
       "closed": false,
+      "fullOpen": true,
+      "permissive": true,
       "access": "HF",
       "notes": "Open enterprise LLM (Apache 2.0) • Efficient hybrid dense-MoE for SQL, coding, RAG • Fully open with data recipes"
     },
@@ -278,6 +289,7 @@
       "baseScore": 82,
       "openSource": true,
       "closed": false,
+      "permissive": true,
       "access": "HF",
       "notes": "Open small multimodal reasoning model (MIT) • Frontier-level perf on single GPU • Built with NVIDIA Nemotron tech"
     },
@@ -288,6 +300,8 @@
       "baseScore": 85,
       "openSource": true,
       "closed": false,
+      "fullOpen": true,
+      "permissive": true,
       "access": "HF",
       "notes": "Open VLM for 3D motion forecasting • Fully open (weights + dataset + code)"
     },

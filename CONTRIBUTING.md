@@ -25,20 +25,26 @@ Thank you for your interest in contributing to **Awesome USA** — the curated l
 
 ## USAbench Scoring Guide
 
-USAbench weights **open-weights sovereignty + recency** over raw capability. Scores are refreshed against the README pulse date (currently **July 2026**). A closed API-only model caps at the 80–94 band even if it's frontier-class.
+USAbench (v2) weights **US open-weights sovereignty + recency + full transparency**. One table for everything (no separate closed section). Closed models simply get a stricter cap. baseScore is the curator's quality anchor; bonuses are mechanical.
 
-- **95-100** ⭐⭐⭐: Pure US + open weights, released within ~6 months
-- **80-94** ⭐⭐: Strong US closed API, or open US that is aging (13+ months)
-- **60-79** ⭐: Older pure-US open releases
-- **0-59**: China-base foundations (−25 penalty) or heavy foreign dependency
+- **95-100** ⭐⭐⭐: Recent pure-US open with strong base + bonuses
+- **80-94** ⭐⭐: Strong open or capped closed frontier
+- **60-79** ⭐: Older US open (recency hurts)
+- **0**: China-base (hard disqualify) or heavy foreign foundation
+
+**Scoring formula (in script)**
+baseScore + fullOpenBonus (5) + permissiveBonus (3) − recency − chinaPenalty(25)
+if closed: min(score, closedCap=82)
+clamp 0-100; chinaBase forces 0
 
 **Scoring checklist**
-1. Start with US purity (HQ + primary dev in USA)
-2. **+15** open weights on Hugging Face or equivalent with permissive license
-3. **+5** full recipe open (training code, data, or evals released)
-4. **Cap at 88** if closed API-only — no exceptions for capability
-5. Apply **recency decay** from pulse date: 0–3 mo (0) • 4–6 mo (−2) • 7–12 mo (−5) • 13–18 mo (−10) • 19+ mo (−15)
-6. China base → `flagged` array (`chinaBase: true`, `chinaBaseLabel`, `whyFlagged`) — **−25** `chinaBasePenalty` applied automatically (see Notes column)
+1. US HQ + primary dev in USA (required)
+2. Set `openSource: true` for open-weights
+3. Set `fullOpen: true` when weights + training code + data/recipes are released
+4. Set `permissive: true` for clean Apache 2.0 / MIT (no weird commercial caps)
+5. Steeper recency decay (0–3mo:0 • 4–6:3 • 7–12:8 • 13–18:15 • 19+:22)
+6. China base → `flagged` + `chinaBase: true` + labels → hard 0
+7. Closed models capped at 82 (stricter than before)
 
 ## Refreshing scores (pulse date)
 

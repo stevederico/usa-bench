@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 /**
- * USAbench score calculator — anchored to data/usabench.json pulseDate.
- * Run after advancing the pulse date or adding/updating model releases.
+ * USAbench score calculator (v2) — anchored to data/usabench.json pulseDate.
+ * Rewards US open-weights sovereignty + recency + full transparency.
+ * No separate closed section — closed models just get stricter cap.
+ *
+ * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china
+ * Closed models capped (default 82). China-base → hard 0.
  *
  * Usage:
  *   node scripts/usabench.mjs           # print scores + markdown rows
@@ -68,7 +72,7 @@ function entryNotes(entry, ageMonths, releasedLabel) {
   return text || "—";
 }
 
-function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
+function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, permissiveBonus, closedCap) {
   let recency = 0;
   let ageMonths = null;
 
@@ -78,11 +82,17 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
     recency = recencyPenalty(ageMonths, decayTable);
   }
 
+  let score = entry.baseScore;
+  const fullOpen = entry.fullOpen ? fullOpenBonus : 0;
+  const permissive = entry.permissive ? permissiveBonus : 0;
+  const bonuses = fullOpen + permissive;
+  score += bonuses;
+
   const china = entry.chinaBase ? chinaBasePenalty : 0;
   const totalPenalty = recency + china;
 
-  let score = entry.baseScore - totalPenalty;
-  if (entry.closed) score = Math.min(score, 88);
+  score -= totalPenalty;
+  if (entry.closed) score = Math.min(score, closedCap);
   score = Math.max(0, Math.min(100, score));
   // China-base / foreign foundations are disqualified — hard 0, not a ranked score
   if (entry.chinaBase) score = 0;
@@ -95,6 +105,9 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
     recencyPenalty: recency,
     chinaPenalty: china,
     totalPenalty,
+    fullOpenBonus: fullOpen,
+    permissiveBonus: permissive,
+    bonuses,
     ageMonths,
     releasedLabel: entry.released ? formatReleased(entry.released) : null,
     starLabel: stars(score),
@@ -109,9 +122,12 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
 
 const pulse = parseDate(data.pulseDate);
 const chinaBasePenalty = data.chinaBasePenalty ?? 25;
+const fullOpenBonus = data.fullOpenBonus ?? 0;
+const permissiveBonus = data.permissiveBonus ?? 0;
+const closedCap = data.closedCap ?? 82;
 
 const models = [...data.frontier, ...data.flagged]
-  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty))
+  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty, fullOpenBonus, permissiveBonus, closedCap))
   .sort((a, b) => b.score - a.score)
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
@@ -191,6 +207,9 @@ const output = {
   pulseDate: data.pulseDate,
   pulseLabel: data.pulseLabel,
   chinaBasePenalty,
+  fullOpenBonus,
+  permissiveBonus,
+  closedCap,
   models,
 };
 
@@ -202,7 +221,9 @@ if (process.argv.includes("--json")) {
 const days = data.daysSinceMajorRelease ?? 0;
 const daysLabel = days === 0 ? "**0 days**" : days === 1 ? "**1 day**" : `**${days} days**`;
 
-console.log(`USAbench pulse: ${data.pulseLabel} (${data.pulseDate})\n`);
+console.log(`USAbench pulse (v2): ${data.pulseLabel} (${data.pulseDate})\n`);
+console.log(`params: fullOpenBonus=${fullOpenBonus}, permissiveBonus=${permissiveBonus}, closedCap=${closedCap}, chinaPenalty=${chinaBasePenalty}`);
+console.log(`recency decay: ${JSON.stringify(data.decay)}\n`);
 console.log("## README pulse callout\n");
 console.log(`> **US AI Pulse · ${data.pulseLabel}**  `);
 console.log(`> ${daysLabel} since the last major US release — USAbench recency anchor\n`);
@@ -211,11 +232,12 @@ console.log("## Models (sorted by score)\n");
 for (const e of models) {
   const rel = e.releasedLabel ?? "no date";
   const flag = e.chinaBase ? " [China base]" : "";
+  const bonusPart = e.bonuses ? ` +${e.bonuses}b` : "";
   const penaltyDetail = e.chinaPenalty
     ? `−${e.recencyPenalty} recency, −${e.chinaPenalty} China`
     : `−${e.totalPenalty}`;
   console.log(
-    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}, ${penaltyDetail})`
+    `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}${bonusPart}, ${penaltyDetail})`
   );
 }
 
