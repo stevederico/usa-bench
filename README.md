@@ -65,6 +65,8 @@
 ### US Tools & Infrastructure (All US)
 Image/video generators are ranked in the [Models](#models) table. Everything else — IDEs, agents, frameworks, inference, and local runtimes:
 
+**Run locally**: Desktop → Ollama or LM Studio • Mac → MLX • Android/edge → LiteRT • Production → NIM, vLLM, or SGLang.
+
 | Tool | Company / HQ | Category | Notes |
 |------|--------------|----------|-------|
 | Cursor | Cursor | IDE | Composer 2.5 — China-base Kimi K2.5 ([Models](#models)) |
@@ -107,9 +109,6 @@ Image/video generators are ranked in the [Models](#models) table. Everything els
 | NVIDIA TensorRT-LLM | Santa Clara, CA | Serving | Peak throughput on NVIDIA GPUs |
 | Modular MAX | Los Altos, CA | Serving | Mojo-powered inference engine |
 | Ray Serve | San Francisco, CA (Anyscale) | Serving | Distributed multi-model serving |
-
-
-**Run locally**: Desktop → Ollama or LM Studio • Mac → MLX • Android/edge → LiteRT • Production → NIM, vLLM, or SGLang.
 
 ### Contributing
 - Add new pure-US entries with **Released** date and USAbench score in `data/usabench.json`
