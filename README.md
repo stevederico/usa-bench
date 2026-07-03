@@ -63,7 +63,6 @@
 - Closed frontier models (Claude, GPT, Grok) can be excellent — they just don't score sovereign-open tier, and stale weights fall fast
 
 ### US Tools & Infrastructure (All US)
-Image/video generators are ranked in the [Models](#models) table. Everything else — IDEs, agents, frameworks, inference, and local runtimes:
 
 | Tool | Company / HQ | Category | Notes |
 |------|--------------|----------|-------|
