@@ -45,11 +45,11 @@
 | 32   | Arctic | [Snowflake](https://huggingface.co/Snowflake) | ✅ Yes | **63** ⭐ | [HF](https://huggingface.co) | Released Apr 2024 • Open enterprise LLM (Apache 2.0) • Efficient hybrid dense-MoE for SQL, coding, RAG • Fully open with data recipes |
 | 33   | H2OVL Mississippi | [H2O.ai](https://huggingface.co/h2oai) | ✅ Yes | **63** ⭐ | [HF](https://huggingface.co) | Released Oct 2024 • Open multimodal OCR / document vision • Mountain View • ⚠️ aging (~21 mo) |
 | 34   | Firefunction v2 | [Fireworks AI](https://huggingface.co/fireworks-ai) | ✅ Yes | **61** ⭐ | [HF](https://huggingface.co) | Released Jun 2024 • On Llama 3 70B (US base) • Open function-calling model • ⚠️ aging (~25 mo) |
-| 35   | ❌ Ornith-1.0 | DeepReinforce | ❌ No | ❌ **0** | HF | Released Jun 2026 • ❌ China base: Qwen 3.5 + Gemma 4 • Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); China foundation on large MoEs |
-| 36   | ❌ INTELLECT-3.1 | Prime Intellect | ❌ No | ❌ **0** | HF | Released Feb 2026 • ❌ China base: GLM-4.5-Air (Zhipu) • Post-trained on Chinese foundation; US RL only |
-| 37   | ❌ INTELLECT-3 | Prime Intellect | ❌ No | ❌ **0** | HF | Released Nov 2025 • ❌ China base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base |
-| 38   | ❌ INTELLECT-2 | Prime Intellect | ❌ No | ❌ **0** | HF | Released Mar 2025 • ❌ China base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
-| 39   | ❌ Composer 2.5 | Cursor | ❌ No | ❌ **0** | Cursor | ❌ China base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint |
+| 35   | Ornith-1.0 | DeepReinforce | ❌ No | **0** ❌ | HF | Released Jun 2026 • ❌ China base: Qwen 3.5 + Gemma 4 • Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); China foundation on large MoEs |
+| 36   | INTELLECT-3.1 | Prime Intellect | ❌ No | **0** ❌ | HF | Released Feb 2026 • ❌ China base: GLM-4.5-Air (Zhipu) • Post-trained on Chinese foundation; US RL only |
+| 37   | INTELLECT-3 | Prime Intellect | ❌ No | **0** ❌ | HF | Released Nov 2025 • ❌ China base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base |
+| 38   | INTELLECT-2 | Prime Intellect | ❌ No | **0** ❌ | HF | Released Mar 2025 • ❌ China base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) |
+| 39   | Composer 2.5 | Cursor | ❌ No | **0** ❌ | Cursor | ❌ China base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint |
 
 ### Criteria
 - US-headquartered company + primary development in the USA

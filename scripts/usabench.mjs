@@ -179,8 +179,8 @@ function linkifyCompany(company) {
 function modelRow(e) {
   // Disqualified models (USAbench < 10): red ❌ on name + score, no green check, no promotional links
   const dq = e.score < 10;
-  const model = dq ? `❌ ${e.model}` : e.model;
-  const scoreCell = dq ? `❌ **${e.score}**` : `**${e.score}** ${e.starLabel}`;
+  const model = e.model;
+  const scoreCell = dq ? `**${e.score}** ❌` : `**${e.score}** ${e.starLabel}`;
   const company = dq ? e.company : linkifyCompany(e.company);
   const access = dq ? (e.access ?? "—") : linkifyAccess(e.access);
   const openLabel = dq ? "❌ No" : e.openLabel;
