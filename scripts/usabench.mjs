@@ -184,7 +184,7 @@ function modelRow(e) {
   const company = dq ? e.company : linkifyCompany(e.company);
   const access = dq ? (e.access ?? "—") : linkifyAccess(e.access);
   const openLabel = dq ? "❌ No" : e.openLabel;
-  return `| ${String(e.rank).padEnd(4)} | ${model} | ${company} | ${openLabel} | ${scoreCell} | ${access} | ${e.notes} |`;
+  return `| ${String(e.rank).padEnd(4)} | ${model} | ${company} | ${openLabel} | ${scoreCell} | ${e.notes} | ${access} |`;
 }
 
 const output = {
@@ -221,10 +221,10 @@ for (const e of models) {
 
 console.log("\n## README table rows (Models)\n");
 console.log(
-  "| Rank | Model / Family | Company | Open Source | USAbench | Access | Notes |"
+  "| Rank | Model / Family | Company | Open Source | USAbench | Notes | Access |"
 );
 console.log(
-  "|------|----------------|---------|-------------|----------|--------|-------|"
+  "|------|----------------|---------|-------------|----------|-------|--------|"
 );
 for (const e of models) {
   console.log(modelRow(e));
