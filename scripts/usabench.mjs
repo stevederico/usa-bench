@@ -184,6 +184,16 @@ const COMPANY_LINKS = {
   "H2O.ai": "h2oai",
   "Cognitive Computations": "cognitivecomputations",
   "Fireworks AI": "fireworks-ai",
+  "Essential AI": "essentialai",
+  "Nomic AI": "nomic-ai",
+  "Arc Institute": "arcinstitute",
+  "Cisco Foundation AI": "fdtn-ai",
+  "Canopy Labs": "canopylabs",
+  "Fixie AI": "fixie-ai",
+  "Ultralytics": "ultralytics",
+  "Databricks": "databricks",
+  "Together AI": "togethercomputer",
+  "Suno": "suno",
 };
 
 function linkifyCompany(company) {

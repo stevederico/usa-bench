@@ -260,6 +260,27 @@
       "notes": "Image • closed"
     },
     {
+      "model": "Mochi 1",
+      "company": "Genmo",
+      "released": "2024-10-22",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open text-to-video (Apache 2.0) • 10B AsymmDiT from-scratch • high-fidelity motion & prompt adherence • largest open video at release"
+    },
+    {
+      "model": "Oasis 500M",
+      "company": "Etched (Decart)",
+      "released": "2024-10-31",
+      "baseScore": 71,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open interactive world model (MIT) • action-conditional video gameplay (Minecraft-like) • 500M preview (full larger demo-only) • collab Etched hardware + Decart"
+    },
+    {
       "model": "gpt-oss-120b / 20b",
       "company": "OpenAI",
       "released": "2025-08-05",
@@ -364,6 +385,114 @@
       "closed": false,
       "access": "HF",
       "notes": "On Llama 3 70B (US base) • Open function-calling model • ⚠️ aging"
+    },
+    {
+      "model": "Rnj-1 (Ramanujan)",
+      "company": "Essential AI",
+      "released": "2025-12-01",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "8B open-weights base + instruct (Apache 2.0) • Trained from scratch • Code / STEM / tool-calling • Released Essential-Web v1.0 corpus • Founded by 'Attention Is All You Need' co-authors • SF"
+    },
+    {
+      "model": "Nomic Embed Text v2 (MoE)",
+      "company": "Nomic AI",
+      "released": "2025-02-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF + Ollama",
+      "notes": "First MoE text-embedding model (Apache 2.0) • Fully open — weights + training code + data • Multilingual (~100 langs) • Matryoshka dims • NYC"
+    },
+    {
+      "model": "Evo 2",
+      "company": "Arc Institute",
+      "released": "2025-02-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open DNA / genomics foundation model up to 40B (Apache 2.0) • Fully open — weights + code + OpenGenome2 (~9T bp) • Predicts & designs genetic code • Palo Alto nonprofit"
+    },
+    {
+      "model": "Foundation-Sec-8B",
+      "company": "Cisco Foundation AI",
+      "released": "2025-04-01",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Cybersecurity LLM continued-pretrained from Llama 3.1 (Apache 2.0, US base) • Matches ~10x larger models on security benchmarks • San Jose (Cisco)"
+    },
+    {
+      "model": "Orpheus TTS",
+      "company": "Canopy Labs",
+      "released": "2025-03-01",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Human-sounding TTS LLM on Llama-3B (Apache 2.0, US base) • Zero-shot voice cloning, emotion control • ~200ms streaming • SF"
+    },
+    {
+      "model": "Ultravox",
+      "company": "Fixie AI",
+      "released": "2025-05-01",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Real-time speech-native multimodal LLM (MIT projector, Llama base) • Understands audio directly — no separate ASR • Open alt to GPT-4o Realtime • Seattle"
+    },
+    {
+      "model": "YOLO11",
+      "company": "Ultralytics",
+      "released": "2024-09-01",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Ubiquitous real-time vision framework (AGPL-3.0 — commercial needs Enterprise license) • Detect, segment, pose, track, classify • ⚠️ aging • Frederick, MD"
+    },
+    {
+      "model": "DBRX",
+      "company": "Databricks",
+      "released": "2024-03-01",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "132B fine-grained MoE (36B active) • Databricks Open License (commercial limits) • Trained on 12T tokens • ⚠️ aging • SF"
+    },
+    {
+      "model": "StripedHyena / RedPajama",
+      "company": "Together AI",
+      "released": "2023-12-01",
+      "baseScore": 66,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "In-house open models (Apache 2.0) • StripedHyena: from-scratch Hyena + attention hybrid arch • RedPajama: open weights + full RedPajama-Data-1T • ⚠️ aging • SF"
+    },
+    {
+      "model": "Bark",
+      "company": "Suno",
+      "released": "2023-04-01",
+      "baseScore": 68,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open text-to-audio / TTS (MIT) • Suno's only open model (music model closed) • EnCodec codec is CC BY-NC • ⚠️ aging • Cambridge, MA"
     }
   ],
   "flagged": [
