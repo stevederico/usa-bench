@@ -140,6 +140,76 @@
       "closed": false,
       "access": "HF",
       "notes": "First fully decentralized 10B • ⚠️ aging • Arcee post-train"
+    },
+    {
+      "model": "OLMo 2",
+      "company": "Ai2 (allenai)",
+      "released": "2025-11-01",
+      "baseScore": 93,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Fully open — weights + data + training code"
+    },
+    {
+      "model": "Grok Imagine",
+      "company": "xAI",
+      "released": "2026-06-01",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "x.ai / X",
+      "notes": "Image + video • real-time generation"
+    },
+    {
+      "model": "Sora 2 / DALL·E",
+      "company": "OpenAI",
+      "released": "2026-06-01",
+      "baseScore": 83,
+      "openSource": false,
+      "closed": true,
+      "access": "API",
+      "notes": "Video + image • closed API"
+    },
+    {
+      "model": "Midjourney",
+      "company": "Midjourney",
+      "released": "2026-05-01",
+      "baseScore": 82,
+      "openSource": false,
+      "closed": true,
+      "access": "midjourney.com",
+      "notes": "Image • closed"
+    },
+    {
+      "model": "Runway Gen-4",
+      "company": "Runway",
+      "released": "2026-06-01",
+      "baseScore": 80,
+      "openSource": false,
+      "closed": true,
+      "access": "runwayml.com",
+      "notes": "Video • closed"
+    },
+    {
+      "model": "HeyGen",
+      "company": "HeyGen",
+      "released": "2026-06-01",
+      "baseScore": 77,
+      "openSource": false,
+      "closed": true,
+      "access": "heygen.com",
+      "notes": "Avatar video • closed"
+    },
+    {
+      "model": "Krea",
+      "company": "Krea",
+      "released": "2026-05-01",
+      "baseScore": 76,
+      "openSource": false,
+      "closed": true,
+      "access": "krea.ai",
+      "notes": "Image • closed"
     }
   ],
   "flagged": [

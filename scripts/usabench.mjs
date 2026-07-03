@@ -84,6 +84,8 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty) {
   let score = entry.baseScore - totalPenalty;
   if (entry.closed) score = Math.min(score, 88);
   score = Math.max(0, Math.min(100, score));
+  // China-base / foreign foundations are disqualified — hard 0, not a ranked score
+  if (entry.chinaBase) score = 0;
 
   const openLabel = entry.openSource ? "✅ Yes" : "❌ No";
 
@@ -114,7 +116,8 @@ const models = [...data.frontier, ...data.flagged]
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
 function modelRow(e) {
-  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${e.openLabel} | **${e.score}** ${e.starLabel} | ${e.access ?? "—"} | ${e.notes} |`;
+  const scoreCell = e.chinaBase ? "❌ **0**" : `**${e.score}** ${e.starLabel}`;
+  return `| ${String(e.rank).padEnd(4)} | ${e.model} | ${e.company} | ${e.openLabel} | ${scoreCell} | ${e.access ?? "—"} | ${e.notes} |`;
 }
 
 const output = {
