@@ -62,6 +62,7 @@
 | 49   | INTELLECT-3 | Prime Intellect | No | **0** ❌ | Released Nov 2025 • ❌ Foreign base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base | HF |
 | 50   | INTELLECT-2 | Prime Intellect | No | **0** ❌ | Released Mar 2025 • ❌ Foreign base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) | HF |
 | 51   | Composer 2.5 | Cursor | No | **0** ❌ | ❌ Foreign base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint | Cursor |
+| 52   | Bonsai 27B / Bonsai family | PrismML | No | **0** ❌ | Released Jul 2026 • ❌ Foreign base: Qwen3.6 (Alibaba) • Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch) | HF |
 
 > **US AI Pulse · July 2026** — **0 days** since the last major US release
 

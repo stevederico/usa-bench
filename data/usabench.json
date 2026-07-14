@@ -550,6 +550,17 @@
       "chinaBaseLabel": "Kimi K2.5 (Moonshot)",
       "access": "Cursor",
       "whyFlagged": "US company; closed API on Kimi checkpoint"
+    },
+    {
+      "model": "Bonsai 27B / Bonsai family",
+      "company": "PrismML",
+      "released": "2026-07-14",
+      "baseScore": 70,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.6 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch)"
     }
   ]
 }
