@@ -196,6 +196,14 @@ const COMPANY_LINKS = {
   "Suno": "suno",
   "Poolside": "poolside",
   "PrismML": "prism-ml",
+  "Boson AI": "bosonai",
+  "Resemble AI": "ResembleAI",
+  "Hexgrad": "hexgrad",
+  "Cactus Compute": "Cactus-Compute",
+  "SupraLabs": "SupraLabs",
+  "Circlestone Labs": "circlestone-labs",
+  "National Design Studio": "nationaldesignstudio",
+  "NemoStation": "NemoStation",
 };
 
 function linkifyCompany(company) {

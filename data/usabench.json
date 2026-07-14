@@ -679,6 +679,229 @@
       "permissive": true,
       "access": "HF + GitHub",
       "notes": "Open FTPO method + dataset to kill reasoning doom-loops • not a foundation model • weights optional LoRA recipe"
+    },
+    {
+      "model": "parakeet-tdt-0.6b-v3",
+      "company": "NVIDIA",
+      "released": "2025-08-14",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open multilingual ASR (0.6B FastConformer-TDT) • 25 European languages • high-throughput NeMo"
+    },
+    {
+      "model": "LocateAnything-3B",
+      "company": "NVIDIA",
+      "released": "2026-06-12",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open 3B VLM for localization / grounding • open weights"
+    },
+    {
+      "model": "Cosmos3-Nano / Super",
+      "company": "NVIDIA",
+      "released": "2026-07-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open world-model family (Cosmos3 Nano ~16B + Super ~65B) • physical AI / simulation"
+    },
+    {
+      "model": "GR00T-N1.7-3B",
+      "company": "NVIDIA",
+      "released": "2026-04-23",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open humanoid robotics foundation model (3B) • GR00T N1.7 line"
+    },
+    {
+      "model": "embeddinggemma-300m",
+      "company": "Google",
+      "released": "2025-09-01",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open 300M text embedding model (Gemma line) • on-device / retrieval"
+    },
+    {
+      "model": "medgemma-1.5-4b-it",
+      "company": "Google",
+      "released": "2026-04-13",
+      "baseScore": 87,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open medical multimodal Gemma (4B instruct) • clinical imaging + text"
+    },
+    {
+      "model": "Gemma 3 4B / PaliGemma 3B",
+      "company": "Google",
+      "released": "2025-03-01",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open older small Gemma 3 / PaliGemma VLMs • still widely used • ⚠️ aging"
+    },
+    {
+      "model": "whisper-large-v3 / turbo",
+      "company": "OpenAI",
+      "released": "2024-10-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open ASR standard (large-v3 + turbo) • Apache-class ecosystem ubiquity • ⚠️ aging"
+    },
+    {
+      "model": "Llama 3.1 / 3.2 / 3 (8B–70B class)",
+      "company": "Meta",
+      "released": "2024-07-23",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open Llama 3 family still heavily deployed (3.1-8B, 3.2-3B, Meta-Llama-3-8B) • ⚠️ aging • Llama 4 is the current flagship"
+    },
+    {
+      "model": "SAM 3 / SAM 3.1",
+      "company": "Meta",
+      "released": "2025-11-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open Segment Anything 3 / 3.1 mask generation • facebook research"
+    },
+    {
+      "model": "DINOv3",
+      "company": "Meta",
+      "released": "2025-08-01",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open self-supervised vision backbone (ViT-L etc.) • feature extraction / pretrain"
+    },
+    {
+      "model": "tribev2",
+      "company": "Meta",
+      "released": "2026-03-01",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open facebook research model card (tribev2) • lower confidence entry • research weights"
+    },
+    {
+      "model": "TRELLIS.2-4B",
+      "company": "Microsoft",
+      "released": "2025-12-01",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open image-to-3D generation (4B) • TRELLIS.2"
+    },
+    {
+      "model": "Higgs TTS 3 (4B)",
+      "company": "Boson AI",
+      "released": "2026-06-04",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open conversational TTS (100+ langs, cloning) • research/non-commercial license • Santa Clara"
+    },
+    {
+      "model": "Chatterbox",
+      "company": "Resemble AI",
+      "released": "2025-05-28",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open expressive TTS (MIT) • zero-shot cloning • ⚠️ aging"
+    },
+    {
+      "model": "Ideogram 4",
+      "company": "Ideogram",
+      "released": "2026-05-01",
+      "baseScore": 80,
+      "openSource": false,
+      "closed": true,
+      "access": "ideogram.ai",
+      "notes": "Closed text-to-image flagship • US company • strong typography"
+    },
+    {
+      "model": "Kokoro-82M",
+      "company": "Hexgrad",
+      "released": "2025-01-27",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open tiny TTS (82M, Apache 2.0) • local/edge speech • ⚠️ aging"
+    },
+    {
+      "model": "needle",
+      "company": "Cactus Compute",
+      "released": "2026-07-01",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open edge micro-model (~30M) • on-device utility"
+    },
+    {
+      "model": "Supra-Router-51M",
+      "company": "SupraLabs",
+      "released": "2026-07-01",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open 51M model router • multi-model dispatch"
+    },
+    {
+      "model": "Anima",
+      "company": "Circlestone Labs",
+      "released": "2026-07-01",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open weights trending card • limited public docs • provisional score"
+    },
+    {
+      "model": "rampart",
+      "company": "National Design Studio",
+      "released": "2026-06-30",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open token-classification / guardrails-style model"
+    },
+    {
+      "model": "Marlin-2B",
+      "company": "NemoStation",
+      "released": "2026-05-30",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open 2B video-text model • NVIDIA ecosystem adjacent"
     }
   ],
   "flagged": [
