@@ -2,11 +2,11 @@
 
 *Image credit: [@levelsio](https://x.com/levelsio/status/2070979198928277842)*
 
-<h1 align="center">🇺🇸 AWESOME-USA 🇺🇸</h1>
+<h1 align="center">🇺🇸 USA-Bench 🇺🇸</h1>
 
-## 🦅 Free & Open-Source AI — Made in the Land of the Free  🦅
+## 🦅 US AI sovereignty leaderboard — open-weights, recency, transparency  🦅
 
-*Inspired by the [American-Made Cars Index](https://www.cars.com/american-made-index/) — where [Tesla](https://www.tesla.com) tops the list*
+*Ranked by [USAbench](#criteria) (0–100). Inspired by the [American-Made Cars Index](https://www.cars.com/american-made-index/) — where [Tesla](https://www.tesla.com) tops the list*
 
 ### Models
 | Rank | Model / Family | Company | Open Source | USAbench | Notes | Access |
@@ -122,7 +122,7 @@
 
 ### Contributing
 - Add pure-US entries (Released date + score) to `data/usabench.json`
-- PRs welcome • [CONTRIBUTING.md](CONTRIBUTING.md) (soon)
+- PRs welcome • [CONTRIBUTING.md](CONTRIBUTING.md)
 
 Made with ❤️ for **sovereign American AI**. Star ⭐ if useful.
 

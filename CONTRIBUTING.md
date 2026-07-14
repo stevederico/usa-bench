@@ -1,6 +1,6 @@
-# Contributing to Awesome USA
+# Contributing to USA-Bench
 
-Thank you for your interest in contributing to **Awesome USA** — the curated list of the best US-made AI models, tools, and sovereign infrastructure.
+Thank you for your interest in contributing to **USA-Bench** — the US AI sovereignty leaderboard (models, tools, infrastructure).
 
 ## How to Contribute
 
@@ -61,14 +61,14 @@ Add new frontier models to the `frontier` array; China-base entries go in `flagg
 
 ## Code of Conduct
 
-Be respectful. This list celebrates American innovation in AI while staying factual and transparent.
+Be respectful. This leaderboard celebrates American innovation in AI while staying factual and transparent.
 
 ## Questions?
 
 Open an issue or reach out on X (@stevederico).
 
-Let's keep building the best sovereign AI resource together! 🇺🇸🦅
+Let's keep building the best sovereign AI leaderboard together! 🇺🇸🦅
 
 ---
 
-*Inspired by the awesome-list community and @levelsio's hardware sovereignty memes.*
+*Inspired by @levelsio's hardware sovereignty memes and ranked-index formats like the American-Made Cars Index.*
