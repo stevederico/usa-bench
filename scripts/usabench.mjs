@@ -194,6 +194,8 @@ const COMPANY_LINKS = {
   "Databricks": "databricks",
   "Together AI": "togethercomputer",
   "Suno": "suno",
+  "Poolside": "poolside",
+  "PrismML": "prism-ml",
 };
 
 function linkifyCompany(company) {

@@ -493,6 +493,192 @@
       "closed": false,
       "access": "HF",
       "notes": "Open text-to-audio / TTS (MIT) • Suno's only open model (music model closed) • EnCodec codec is CC BY-NC • ⚠️ aging • Cambridge, MA"
+    },
+    {
+      "model": "Laguna M.1 / XS-2.1",
+      "company": "Poolside",
+      "released": "2026-07-01",
+      "baseScore": 95,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "SF coding lab • Laguna-M.1 ~226B + Laguna-XS-2.1 33B open weights • agentic software engineering focus"
+    },
+    {
+      "model": "Nemotron-Cascade-2 30B-A3B",
+      "company": "NVIDIA",
+      "released": "2026-06-26",
+      "baseScore": 93,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Nemotron Labs cascade/reasoning open weights • 30B-A3B MoE"
+    },
+    {
+      "model": "Nemotron-Labs Audex / Puzzle",
+      "company": "NVIDIA",
+      "released": "2026-07-01",
+      "baseScore": 91,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Specialist open Nemotron Labs drops • Audex (audio/code) + Puzzle 75B-A9B"
+    },
+    {
+      "model": "Nemotron-3 Embed + ASR 3.5",
+      "company": "NVIDIA",
+      "released": "2026-07-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Nemotron-3-Embed 1B/8B + nemotron-3.5 streaming ASR 0.6B • retrieval + speech"
+    },
+    {
+      "model": "diffusiongemma-26B-A4B",
+      "company": "Google",
+      "released": "2026-07-01",
+      "baseScore": 92,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open diffusion language model family (Gemma line) • 26B-A4B instruct"
+    },
+    {
+      "model": "Granite Vision / Speech / Switch / Swash",
+      "company": "IBM",
+      "released": "2026-05-01",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + Ollama",
+      "notes": "Granite 4.1 multimodal + Switch MoE previews + Swash small models • Apache 2.0 enterprise stack"
+    },
+    {
+      "model": "Sapiens2",
+      "company": "Meta",
+      "released": "2026-06-15",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open human-centric vision suite (pose, seg, normals, pointmap) • facebook research"
+    },
+    {
+      "model": "tmax (2B–27B)",
+      "company": "Ai2 (allenai)",
+      "released": "2026-06-22",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open Ai2 tmax family • research post-trains + sizes 2B–27B"
+    },
+    {
+      "model": "MolmoAct2",
+      "company": "Ai2 (allenai)",
+      "released": "2026-05-23",
+      "baseScore": 87,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open robotics / action VLM (LIBERO etc.) • weights + research stack"
+    },
+    {
+      "model": "OlmoEarth-v1.2",
+      "company": "Ai2 (allenai)",
+      "released": "2026-07-01",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open Earth observation foundation models (Nano→Base) • fully open research"
+    },
+    {
+      "model": "Claude Sonnet 5",
+      "company": "Anthropic",
+      "released": "2026-06-30",
+      "baseScore": 85,
+      "openSource": false,
+      "closed": true,
+      "access": "claude.ai / API",
+      "notes": "Closed mid-frontier Claude • coding + agents • use open US weights for sovereignty"
+    },
+    {
+      "model": "GPT-Live",
+      "company": "OpenAI",
+      "released": "2026-07-08",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "ChatGPT / API",
+      "notes": "Closed full-duplex voice model • natural conversation + live translation"
+    },
+    {
+      "model": "ChatGPT Work",
+      "company": "OpenAI",
+      "released": "2026-07-09",
+      "baseScore": 83,
+      "openSource": false,
+      "closed": true,
+      "access": "ChatGPT",
+      "notes": "Closed work agent (Codex + GPT-5.6) • multi-app project execution • not open weights"
+    },
+    {
+      "model": "TabFM 1.0",
+      "company": "Google",
+      "released": "2026-07-01",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open tabular foundation model (PyTorch + JAX) • structured data classification"
+    },
+    {
+      "model": "GELab-Zero-4B-preview",
+      "company": "Microsoft",
+      "released": "2026-07-03",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open GUI / computer-use agent preview (4B) • research weights"
+    },
+    {
+      "model": "privacy-filter",
+      "company": "OpenAI",
+      "released": "2026-04-22",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open 1B privacy / PII token classifier • safety utility model"
+    },
+    {
+      "model": "HARC (Llama path)",
+      "company": "Microsoft",
+      "released": "2026-07-01",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Research harness models • Llama-3.1-8B path qualifies (US base) • Qwen variant exists but foreign-base"
+    },
+    {
+      "model": "Antidoom",
+      "company": "Liquid AI",
+      "released": "2026-07-07",
+      "baseScore": 72,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + GitHub",
+      "notes": "Open FTPO method + dataset to kill reasoning doom-loops • not a foundation model • weights optional LoRA recipe"
     }
   ],
   "flagged": [
@@ -561,6 +747,17 @@
       "chinaBaseLabel": "Qwen3.6 (Alibaba)",
       "access": "HF",
       "whyFlagged": "Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch)"
+    },
+    {
+      "model": "Arctic-LSTM-Speculator",
+      "company": "Snowflake",
+      "released": "2026-06-26",
+      "baseScore": 55,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-32B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "US company speculative-decoding draft models • trained against Qwen3-32B targets • foreign foundation, not US from-scratch LLM"
     }
   ]
 }

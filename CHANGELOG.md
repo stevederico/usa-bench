@@ -4,6 +4,20 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.7.0
+
+  Score session models
+  Add Poolside Laguna
+  Add Nemotron Labs
+  Add diffusiongemma TabFM
+  Add Granite multimodal
+  Add Meta Sapiens2
+  Add Ai2 tmax MolmoAct OlmoEarth
+  Add Sonnet GPT-Live Work
+  Add GELab HARC privacy
+  Add Liquid Antidoom
+  Flag Arctic Speculator
+
 0.6.0
 
   Rename to USA-Bench
