@@ -4,7 +4,7 @@
 
 <h1 align="center">🇺🇸 USA-Bench 🇺🇸</h1>
 
-## 🦅 Free + Open Models from the Land of the Free 🦅
+<h2 align="center">🦅 Free + Open Models from the Land of the Free 🦅</h2>
 
 *Ranked by [USAbench](#criteria) (0–100). Inspired by the [American-Made Cars Index](https://www.cars.com/american-made-index/) — where [Tesla](https://www.tesla.com) tops the list*
 
