@@ -5,7 +5,7 @@
  * No separate closed section — closed models just get stricter cap.
  *
  * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china
- * Closed models capped (default 82). foreign-base → hard 0.
+ * Closed models capped (default 82). foreign-base OR foreign-teacher → hard 0.
  *
  * Usage:
  *   node scripts/usabench.mjs           # print scores + markdown rows
@@ -59,9 +59,14 @@ function stars(score) {
 }
 
 function entryNotes(entry, ageMonths, releasedLabel) {
-  let text = entry.chinaBase
-    ? `❌ Foreign base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`
-    : (entry.notes ?? "");
+  let text;
+  if (entry.chinaBase) {
+    text = `❌ Foreign base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`;
+  } else if (entry.foreignTeacher) {
+    text = `❌ Foreign teacher: ${entry.foreignTeacherLabel} • ${entry.whyFlagged ?? ""}`;
+  } else {
+    text = entry.notes ?? "";
+  }
   if (entry.released && text.includes("⚠️ aging") && ageMonths !== null) {
     text = text.replace(/⚠️ aging(?:\s*\(~\d+\s*mo\))?/, `⚠️ aging (~${ageMonths} mo)`);
   }
@@ -70,6 +75,11 @@ function entryNotes(entry, ageMonths, releasedLabel) {
     text = text ? `Released ${releasedLabel} • ${text}` : `Released ${releasedLabel}`;
   }
   return text || "—";
+}
+
+function isForeignDisqualified(entry) {
+  // Zero-foreign bar: weight lineage OR foreign SFT/RL teacher/synth generators
+  return Boolean(entry.chinaBase || entry.foreignTeacher);
 }
 
 function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, permissiveBonus, closedCap) {
@@ -94,8 +104,8 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, p
   score -= totalPenalty;
   if (entry.closed) score = Math.min(score, closedCap);
   score = Math.max(0, Math.min(100, score));
-  // foreign-base / foreign foundations are disqualified — hard 0, not a ranked score
-  if (entry.chinaBase) score = 0;
+  // foreign base OR foreign teacher/synth → hard 0 (zero-foreign sovereignty bar)
+  if (isForeignDisqualified(entry)) score = 0;
 
   const openLabel = entry.openSource ? "Yes" : "No";
 
@@ -195,6 +205,7 @@ const COMPANY_LINKS = {
   "Together AI": "togethercomputer",
   "Suno": "suno",
   "Poolside": "poolside",
+  "Thinking Machines Lab": "thinkingmachines",
   "PrismML": "prism-ml",
   "Boson AI": "bosonai",
   "Resemble AI": "ResembleAI",
@@ -265,11 +276,17 @@ console.log(`> ${daysLabel} since the last major US release — USAbench recency
 console.log("## Models (sorted by score)\n");
 for (const e of models) {
   const rel = e.releasedLabel ?? "no date";
-  const flag = e.chinaBase ? " [Foreign base]" : "";
+  const flag = e.chinaBase
+    ? " [Foreign base]"
+    : e.foreignTeacher
+      ? " [Foreign teacher]"
+      : "";
   const bonusPart = e.bonuses ? ` +${e.bonuses}b` : "";
   const penaltyDetail = e.chinaPenalty
     ? `−${e.recencyPenalty} recency, −${e.chinaPenalty} China`
-    : `−${e.totalPenalty}`;
+    : e.foreignTeacher
+      ? `−${e.recencyPenalty} recency, foreign teacher → 0`
+      : `−${e.totalPenalty}`;
   console.log(
     `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}${bonusPart}, ${penaltyDetail})`
   );

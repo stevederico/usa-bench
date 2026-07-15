@@ -38,7 +38,9 @@ Agent instructions for **USA-Bench** — US AI sovereignty leaderboard.
 }
 ```
 
-- **Foreign foundation** (Qwen / GLM / Kimi / DeepSeek / etc. as base): put in `flagged` with `chinaBase: true`, `chinaBaseLabel`, `whyFlagged` → hard score **0**
+- **Zero-foreign bar** — any foreign influence in the training stack → `flagged` + hard score **0** (not a partial hit)
+- **Foreign foundation** (Qwen / GLM / Kimi / DeepSeek / etc. as weight base): `chinaBase: true`, `chinaBaseLabel`, `whyFlagged`
+- **Foreign teacher** (SFT/RL synth from foreign generators, e.g. Kimi writing bootstrap labels): `foreignTeacher: true`, `foreignTeacherLabel`, `whyFlagged` — still **0** even if pretrain is own-US
 - **US org quantizing foreign bases** (e.g. `nvidia/*-NVFP4` of GLM): flag, do not rank as US-open
 - **Closed US** (`closed: true`): cap 82
 
@@ -80,7 +82,8 @@ Track last reviewed page in the session; do not re-summarize already-scored dupl
 | Pure community GGUF of foreign bases | random `*Qwen*-abliterated*`, Mythos/Fable distill dumps with no US lab |
 | Comfy LoRA spam | style LoRAs, workflows — not foundation entries |
 
-**US org + foreign base** → list under “flag candidates”, not frontier.
+**US org + foreign base** → list under “flag candidates”, not frontier.  
+**US org + foreign teacher/synth** (admitted SFT/distill from Kimi/Qwen/GLM/DeepSeek/etc.) → same: flag candidates, not frontier.
 
 ### Output format for discovery passes
 
@@ -97,19 +100,21 @@ Then a short **vs USAbench** list: already scored vs **not scored yet**.
 For each **not scored** A row (when asked to score):
 
 1. Confirm US HQ + whether base is from-scratch US (own paper / Base checkpoint / not “finetuned from Qwen…”)
-2. Set `released` (ISO), `baseScore` (calibrate vs peers in `usabench.json`), flags, notes
-3. Run scoring loop above
-4. Prefer **family rows** over every GGUF/quant card (`Gemma 4`, not 40 QAT variants)
+2. Confirm **zero foreign teachers**: no SFT/RL bootstrap synth from Kimi/Qwen/GLM/DeepSeek/etc. (blog, model card, paper)
+3. Set `released` (ISO), `baseScore` (calibrate vs peers in `usabench.json`), flags, notes
+4. Run scoring loop above
+5. Prefer **family rows** over every GGUF/quant card (`Gemma 4`, not 40 QAT variants)
 
-### Own-base check (quick)
+### Own-base + zero-foreign check (quick)
 
-| Signal | US own base | Foreign base |
-|--------|-------------|--------------|
-| HF “Base model” / model tree | Points to same org base | Points to Qwen/Llama-CN/GLM/… |
+| Signal | Clean US | Foreign → flag 0 |
+|--------|----------|------------------|
+| HF “Base model” / model tree | Same org base | Qwen/Llama-CN/GLM/Kimi/… |
 | Arch notes | Own paper (e.g. LFM hybrid, Nemotron) | “Based on Qwen3.6”, “continued from …” |
 | Compare language | “beats Qwen on …” | “fine-tune of Qwen …” |
+| Post-train / SFT | Own or US-only teachers | “SFT from Kimi…”, “distilled from …”, foreign synth teachers |
 
-Example: **Liquid LFM2.5 = own US base** (LFM hybrid + own pretrain). **PrismML Bonsai = foreign** (Qwen3.6 compress).
+Example: **Liquid LFM2.5 = own US base** (LFM hybrid + own pretrain). **PrismML Bonsai = foreign base** (Qwen3.6 compress). **Inkling = foreign teacher** (own pretrain claimed; Kimi+peers SFT synth bootstrap → still 0).
 
 ### API note
 

@@ -1317,6 +1317,19 @@
   ],
   "flagged": [
     {
+      "model": "Inkling",
+      "company": "Thinking Machines Lab",
+      "released": "2026-07-15",
+      "baseScore": 95,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "Kimi K2.5 (Moonshot) + open peers as SFT synth generators",
+      "access": "HF",
+      "whyFlagged": "SF lab (Murati) • 975B/41B MoE • own pretrain claimed • native multimodal + Apache 2.0 • SFT bootstrap used Chinese/foreign model outputs as teachers — zero-foreign bar fails"
+    },
+    {
       "model": "Ornith-1.0",
       "company": "DeepReinforce",
       "released": "2026-06-25",

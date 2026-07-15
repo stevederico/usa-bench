@@ -30,12 +30,12 @@ USAbench (v2) weights **US open-weights sovereignty + recency + full transparenc
 - **95-100** ⭐⭐⭐: Recent pure-US open with strong base + bonuses
 - **80-94** ⭐⭐: Strong open or capped closed frontier
 - **60-79** ⭐: Older US open (recency hurts)
-- **0**: China-base (hard disqualify) or heavy foreign foundation
+- **0**: Any foreign base **or** foreign teacher/synth (zero-foreign bar)
 
 **Scoring formula (in script)**
 baseScore + fullOpenBonus (5) + permissiveBonus (3) − recency − chinaPenalty(25)
 if closed: min(score, closedCap=82)
-clamp 0-100; chinaBase forces 0
+clamp 0-100; `chinaBase` **or** `foreignTeacher` forces **0**
 
 **Scoring checklist**
 1. US HQ + primary dev in USA (required)
@@ -43,8 +43,11 @@ clamp 0-100; chinaBase forces 0
 3. Set `fullOpen: true` when weights + training code + data/recipes are released
 4. Set `permissive: true` for clean Apache 2.0 / MIT (no weird commercial caps)
 5. Steeper recency decay (0–3mo:0 • 4–6:3 • 7–12:8 • 13–18:15 • 19+:22)
-6. China base → `flagged` + `chinaBase: true` + labels → hard 0
-7. Closed models capped at 82 (stricter than before)
+6. Foreign weight base → `flagged` + `chinaBase: true` + labels → hard 0
+7. Foreign SFT/RL teacher/synth (e.g. Kimi generators) → `flagged` + `foreignTeacher: true` + labels → hard 0
+8. Closed models capped at 82 (stricter than before)
+
+**Zero-foreign bar:** no foreign foundation weights **and** no foreign model as SFT/distill/synth teacher. Own pretrain + foreign teacher still scores **0**.
 
 ## Refreshing scores (pulse date)
 

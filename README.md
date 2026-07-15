@@ -138,14 +138,16 @@
 | 125  | Oasis 500M | Etched (Decart) | Yes | **49**  | Released Oct 2024 • Open interactive world model (MIT) • action-conditional video gameplay (Minecraft-like) • 500M preview (full larger demo-only) • collab Etched hardware + Decart | [HF](https://huggingface.co) |
 | 126  | StripedHyena / RedPajama | [Together AI](https://huggingface.co/togethercomputer) | Yes | **47**  | Released Dec 2023 • In-house open models (Apache 2.0) • StripedHyena: from-scratch Hyena + attention hybrid arch • RedPajama: open weights + full RedPajama-Data-1T • ⚠️ aging (~31 mo) • SF | [HF](https://huggingface.co) |
 | 127  | Bark | [Suno](https://huggingface.co/suno) | Yes | **46**  | Released Apr 2023 • Open text-to-audio / TTS (MIT) • Suno's only open model (music model closed) • EnCodec codec is CC BY-NC • ⚠️ aging (~39 mo) • Cambridge, MA | [HF](https://huggingface.co) |
-| 128  | Ornith-1.0 | DeepReinforce | No | **0** ❌ | Released Jun 2026 • ❌ Foreign base: Qwen 3.5 + Gemma 4 • Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); foreign foundation on large MoEs | HF |
-| 129  | INTELLECT-3.1 | Prime Intellect | No | **0** ❌ | Released Feb 2026 • ❌ Foreign base: GLM-4.5-Air (Zhipu) • Post-trained on foreign foundation; US RL only | HF |
-| 130  | INTELLECT-3 | Prime Intellect | No | **0** ❌ | Released Nov 2025 • ❌ Foreign base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base | HF |
-| 131  | INTELLECT-2 | Prime Intellect | No | **0** ❌ | Released Mar 2025 • ❌ Foreign base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) | HF |
-| 132  | Composer 2.5 | Cursor | No | **0** ❌ | ❌ Foreign base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint | Cursor |
-| 133  | Bonsai 27B / Bonsai family | PrismML | No | **0** ❌ | Released Jul 2026 • ❌ Foreign base: Qwen3.6 (Alibaba) • Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch) | HF |
-| 134  | Arctic-LSTM-Speculator | Snowflake | No | **0** ❌ | Released Jun 2026 • ❌ Foreign base: Qwen3-32B (Alibaba) • US company speculative-decoding draft models • trained against Qwen3-32B targets • foreign foundation, not US from-scratch LLM | HF |
-| 135  | canary-qwen-2.5b | NVIDIA | No | **0** ❌ | Released Apr 2025 • ❌ Foreign base: Qwen (Alibaba) • NVIDIA ASR hybrid card naming Qwen foundation • foreign base path disqualifies USAbench sovereignty score | HF + NGC |
+| 128  | Inkling | Thinking Machines Lab | No | **0** ❌ | Released Jul 2026 • ❌ Foreign teacher: Kimi K2.5 (Moonshot) + open peers as SFT synth generators • SF lab (Murati) • 975B/41B MoE • own pretrain claimed • native multimodal + Apache 2.0 • SFT bootstrap used Chinese/foreign model outputs as teachers — zero-foreign bar fails | HF |
+| 129  | Ornith-1.0 | DeepReinforce | No | **0** ❌ | Released Jun 2026 • ❌ Foreign base: Qwen 3.5 + Gemma 4 • Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); foreign foundation on large MoEs | HF |
+| 130  | INTELLECT-3.1 | Prime Intellect | No | **0** ❌ | Released Feb 2026 • ❌ Foreign base: GLM-4.5-Air (Zhipu) • Post-trained on foreign foundation; US RL only | HF |
+| 131  | INTELLECT-3 | Prime Intellect | No | **0** ❌ | Released Nov 2025 • ❌ Foreign base: GLM-4.5-Air (Zhipu) • 106B MoE (12B active) on GLM base | HF |
+| 132  | INTELLECT-2 | Prime Intellect | No | **0** ❌ | Released Mar 2025 • ❌ Foreign base: QwQ-32B (Qwen) • Distributed US RL on Qwen base • ⚠️ aging (~16 mo) | HF |
+| 133  | Composer 2.5 | Cursor | No | **0** ❌ | ❌ Foreign base: Kimi K2.5 (Moonshot) • US company; closed API on Kimi checkpoint | Cursor |
+| 134  | Bonsai 27B / Bonsai family | PrismML | No | **0** ❌ | Released Jul 2026 • ❌ Foreign base: Qwen3.6 (Alibaba) • Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch) | HF |
+| 135  | Arctic-LSTM-Speculator | Snowflake | No | **0** ❌ | Released Jun 2026 • ❌ Foreign base: Qwen3-32B (Alibaba) • US company speculative-decoding draft models • trained against Qwen3-32B targets • foreign foundation, not US from-scratch LLM | HF |
+| 136  | canary-qwen-2.5b | NVIDIA | No | **0** ❌ | Released Apr 2025 • ❌ Foreign base: Qwen (Alibaba) • NVIDIA ASR hybrid card naming Qwen foundation • foreign base path disqualifies USAbench sovereignty score | HF + NGC |
+
 
 > **US AI Pulse · July 2026** — **0 days** since the last major US release
 
@@ -153,7 +155,7 @@
 - US HQ + US-built
 - **USAbench (v2, 0–100)**: open-weights sovereignty + recency + transparency, not raw capability
 - Tiers: **95–100** ⭐⭐⭐ • **80–94** ⭐⭐ • **60–79** ⭐
-- **Foreign-base foundations → ❌ 0**, however good the US post-training
+- **Zero-foreign bar → ❌ 0**: foreign weight base **or** foreign SFT/RL teacher/synth generators (e.g. Kimi writing bootstrap labels) — no partial credit for “own pretrain”
 - Decay: 0 (0–3mo) • 3 • 8 • 15 • 22 (19+). +5 fullOpen, +3 permissive, closed cap 82
 - Scores from `data/usabench.json` — run `node scripts/usabench.mjs` after edits
 - Closed models (Claude, GPT, Grok) can be great — just not sovereign-open; stale weights fall fast
