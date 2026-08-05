@@ -3,6 +3,7 @@
   "pulseLabel": "July 2026",
   "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
+  "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
   "permissiveBonus": 3,
   "closedCap": 82,
@@ -1313,9 +1314,7 @@
       "closed": false,
       "access": "HF",
       "notes": "Open small NVIDIA research card (CWIP-1.0) • provisional"
-    }
-  ],
-  "flagged": [
+    },
     {
       "model": "Inkling",
       "company": "Thinking Machines Lab",
@@ -1327,8 +1326,10 @@
       "foreignTeacher": true,
       "foreignTeacherLabel": "Kimi K2.5 (Moonshot) + open peers as SFT synth generators",
       "access": "HF",
-      "whyFlagged": "SF lab (Murati) • 975B/41B MoE • own pretrain claimed • native multimodal + Apache 2.0 • SFT bootstrap used Chinese/foreign model outputs as teachers — zero-foreign bar fails"
-    },
+      "whyFlagged": "SF lab (Murati) • 975B/41B MoE • own pretrain claimed • native multimodal + Apache 2.0 • SFT bootstrap used foreign model outputs as teachers — noted, soft −15 (not hard 0)"
+    }
+  ],
+  "flagged": [
     {
       "model": "Ornith-1.0",
       "company": "DeepReinforce",

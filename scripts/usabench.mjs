@@ -4,8 +4,8 @@
  * Rewards US open-weights sovereignty + recency + full transparency.
  * No separate closed section — closed models just get stricter cap.
  *
- * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china
- * Closed models capped (default 82). foreign-base OR foreign-teacher → hard 0.
+ * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china − foreignTeacher
+ * Closed models capped (default 82). foreign weight base → hard 0; foreign teacher → soft note + penalty.
  *
  * Usage:
  *   node scripts/usabench.mjs           # print scores + markdown rows
@@ -63,7 +63,8 @@ function entryNotes(entry, ageMonths, releasedLabel) {
   if (entry.chinaBase) {
     text = `❌ Foreign base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`;
   } else if (entry.foreignTeacher) {
-    text = `❌ Foreign teacher: ${entry.foreignTeacherLabel} • ${entry.whyFlagged ?? ""}`;
+    // Soft note: own pretrain ranks; foreign SFT/synth teachers ding score, do not zero
+    text = `⚠️ Foreign teacher: ${entry.foreignTeacherLabel} • ${entry.whyFlagged ?? entry.notes ?? ""}`;
   } else {
     text = entry.notes ?? "";
   }
@@ -78,11 +79,11 @@ function entryNotes(entry, ageMonths, releasedLabel) {
 }
 
 function isForeignDisqualified(entry) {
-  // Zero-foreign bar: weight lineage OR foreign SFT/RL teacher/synth generators
-  return Boolean(entry.chinaBase || entry.foreignTeacher);
+  // Hard zero only for foreign weight foundation (Qwen/GLM/Kimi bases, etc.)
+  return Boolean(entry.chinaBase);
 }
 
-function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, permissiveBonus, closedCap) {
+function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedCap) {
   let recency = 0;
   let ageMonths = null;
 
@@ -99,12 +100,13 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, p
   score += bonuses;
 
   const china = entry.chinaBase ? chinaBasePenalty : 0;
-  const totalPenalty = recency + china;
+  const teacher = entry.foreignTeacher && !entry.chinaBase ? foreignTeacherPenalty : 0;
+  const totalPenalty = recency + china + teacher;
 
   score -= totalPenalty;
   if (entry.closed) score = Math.min(score, closedCap);
   score = Math.max(0, Math.min(100, score));
-  // foreign base OR foreign teacher/synth → hard 0 (zero-foreign sovereignty bar)
+  // foreign weight base → hard 0; foreign teacher is soft penalty only
   if (isForeignDisqualified(entry)) score = 0;
 
   const openLabel = entry.openSource ? "Yes" : "No";
@@ -114,6 +116,7 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, p
     score,
     recencyPenalty: recency,
     chinaPenalty: china,
+    foreignTeacherPenalty: teacher,
     totalPenalty,
     fullOpenBonus: fullOpen,
     permissiveBonus: permissive,
@@ -132,12 +135,13 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, fullOpenBonus, p
 
 const pulse = parseDate(data.pulseDate);
 const chinaBasePenalty = data.chinaBasePenalty ?? 25;
+const foreignTeacherPenalty = data.foreignTeacherPenalty ?? 15;
 const fullOpenBonus = data.fullOpenBonus ?? 0;
 const permissiveBonus = data.permissiveBonus ?? 0;
 const closedCap = data.closedCap ?? 82;
 
 const models = [...data.frontier, ...data.flagged]
-  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty, fullOpenBonus, permissiveBonus, closedCap))
+  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedCap))
   .sort((a, b) => b.score - a.score)
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
@@ -252,6 +256,7 @@ const output = {
   pulseDate: data.pulseDate,
   pulseLabel: data.pulseLabel,
   chinaBasePenalty,
+  foreignTeacherPenalty,
   fullOpenBonus,
   permissiveBonus,
   closedCap,
@@ -267,7 +272,7 @@ const days = data.daysSinceMajorRelease ?? 0;
 const daysLabel = days === 0 ? "**0 days**" : days === 1 ? "**1 day**" : `**${days} days**`;
 
 console.log(`USAbench pulse (v2): ${data.pulseLabel} (${data.pulseDate})\n`);
-console.log(`params: fullOpenBonus=${fullOpenBonus}, permissiveBonus=${permissiveBonus}, closedCap=${closedCap}, chinaPenalty=${chinaBasePenalty}`);
+console.log(`params: fullOpenBonus=${fullOpenBonus}, permissiveBonus=${permissiveBonus}, closedCap=${closedCap}, chinaPenalty=${chinaBasePenalty}, foreignTeacherPenalty=${foreignTeacherPenalty}`);
 console.log(`recency decay: ${JSON.stringify(data.decay)}\n`);
 console.log("## README pulse callout\n");
 console.log(`> **US AI Pulse · ${data.pulseLabel}**  `);
@@ -282,11 +287,15 @@ for (const e of models) {
       ? " [Foreign teacher]"
       : "";
   const bonusPart = e.bonuses ? ` +${e.bonuses}b` : "";
-  const penaltyDetail = e.chinaPenalty
-    ? `−${e.recencyPenalty} recency, −${e.chinaPenalty} China`
-    : e.foreignTeacher
-      ? `−${e.recencyPenalty} recency, foreign teacher → 0`
-      : `−${e.totalPenalty}`;
+  const parts = [`−${e.recencyPenalty} recency`];
+  if (e.chinaPenalty) parts.push(`−${e.chinaPenalty} China`);
+  if (e.foreignTeacherPenalty) parts.push(`−${e.foreignTeacherPenalty} foreign teacher`);
+  if (!e.chinaPenalty && !e.foreignTeacherPenalty) {
+    // keep compact −N when only recency
+  }
+  const penaltyDetail = e.chinaPenalty || e.foreignTeacherPenalty
+    ? parts.join(", ")
+    : `−${e.totalPenalty}`;
   console.log(
     `${String(e.score).padStart(3)} ${e.starLabel}  ${e.model}${flag}  (${rel}${bonusPart}, ${penaltyDetail})`
   );
