@@ -8,11 +8,26 @@
   "permissiveBonus": 3,
   "closedCap": 82,
   "decay": [
-    { "maxMonths": 3, "penalty": 0 },
-    { "maxMonths": 6, "penalty": 3 },
-    { "maxMonths": 12, "penalty": 8 },
-    { "maxMonths": 18, "penalty": 15 },
-    { "maxMonths": null, "penalty": 22 }
+    {
+      "maxMonths": 3,
+      "penalty": 0
+    },
+    {
+      "maxMonths": 6,
+      "penalty": 3
+    },
+    {
+      "maxMonths": 12,
+      "penalty": 8
+    },
+    {
+      "maxMonths": 18,
+      "penalty": 15
+    },
+    {
+      "maxMonths": null,
+      "penalty": 22
+    }
   ],
   "frontier": [
     {
@@ -53,7 +68,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + LEAP + Ollama",
-      "notes": "MIT spinoff • edge/on-device • 230M–24B MoE • VL + Audio • LFM Open License ($10M commercial cap)"
+      "notes": "MIT spinoff \u2022 edge/on-device \u2022 230M\u201324B MoE \u2022 VL + Audio \u2022 LFM Open License ($10M commercial cap)"
     },
     {
       "model": "Claude Opus 4.6 / Fable 5",
@@ -93,7 +108,7 @@
       "openSource": false,
       "closed": true,
       "access": "gemini.google.com",
-      "notes": "Multimodal, video • use Gemma 4 for open"
+      "notes": "Multimodal, video \u2022 use Gemma 4 for open"
     },
     {
       "model": "Llama 4 Maverick / Scout",
@@ -103,17 +118,17 @@
       "openSource": true,
       "closed": false,
       "access": "Hugging Face",
-      "notes": "Open weights pioneer • ⚠️ aging"
+      "notes": "Open weights pioneer \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "**Muse Spark 1.1 (Muse family)**",
-      "company": "**Meta**",
-      "released": "2026-07-09",
-      "baseScore": 86,
+      "model": "Muse Spark 1.2 / Muse Code",
+      "company": "Meta",
+      "released": "2026-08-05",
+      "baseScore": 87,
       "openSource": false,
       "closed": true,
-      "access": "meta.ai / Meta Model API",
-      "notes": "Agentic + coding upgrade • multimodal • Meta Model API public preview (US)"
+      "access": "meta.ai / Meta Model API / Muse Code",
+      "notes": "MSL coding agent + Muse Spark 1.2 \u2022 multi-agent harness \u2022 1M ctx \u2022 co-trained model+agent \u2022 closed US"
     },
     {
       "model": "Phi-4 + Reflection",
@@ -123,7 +138,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Small & efficient open • ⚠️ aging"
+      "notes": "Small & efficient open \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "MAI Code / Image / Thinking",
@@ -133,7 +148,7 @@
       "openSource": false,
       "closed": true,
       "access": "Azure",
-      "notes": "In-house coding + multimodal • use Phi-4 / Nemotron for open"
+      "notes": "In-house coding + multimodal \u2022 use Phi-4 / Nemotron for open"
     },
     {
       "model": "INTELLECT-1",
@@ -143,7 +158,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "First fully decentralized 10B • ⚠️ aging • Arcee post-train"
+      "notes": "First fully decentralized 10B \u2022 \u26a0\ufe0f aging \u2022 Arcee post-train"
     },
     {
       "model": "OLMo 2",
@@ -155,7 +170,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Fully open — weights + data + training code"
+      "notes": "Fully open \u2014 weights + data + training code"
     },
     {
       "model": "Granite 4.1",
@@ -166,7 +181,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "Hybrid Mamba-Transformer • Enterprise, RAG, coding, tool calling • Apache 2.0 • ISO 42001 certified"
+      "notes": "Hybrid Mamba-Transformer \u2022 Enterprise, RAG, coding, tool calling \u2022 Apache 2.0 \u2022 ISO 42001 certified"
     },
     {
       "model": "OLMo 3.1 32B (Instruct / Think)",
@@ -178,7 +193,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) • Strong reasoning • Transparent research model"
+      "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) \u2022 Strong reasoning \u2022 Transparent research model"
     },
     {
       "model": "SmolLM3-3B",
@@ -188,7 +203,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Small efficient open LLM from NYC-based company (founded by French entrepreneurs) • Strong reasoning for size • Part of Smol series with datasets"
+      "notes": "Small efficient open LLM from NYC-based company (founded by French entrepreneurs) \u2022 Strong reasoning for size \u2022 Part of Smol series with datasets"
     },
     {
       "model": "xLAM (1B/7B/8x7B/8x22B)",
@@ -198,7 +213,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Large Action Models for agents • Strong function calling & planning • Open research versions (xLAM)"
+      "notes": "Large Action Models for agents \u2022 Strong function calling & planning \u2022 Open research versions (xLAM)"
     },
     {
       "model": "Grok Imagine",
@@ -208,17 +223,17 @@
       "openSource": false,
       "closed": true,
       "access": "x.ai / X",
-      "notes": "Image + video • real-time generation"
+      "notes": "Image + video \u2022 real-time generation"
     },
     {
-      "model": "Sora 2 / DALL·E",
+      "model": "Sora 2 / DALL\u00b7E",
       "company": "OpenAI",
       "released": "2026-06-01",
       "baseScore": 83,
       "openSource": false,
       "closed": true,
       "access": "API",
-      "notes": "Video + image • closed API"
+      "notes": "Video + image \u2022 closed API"
     },
     {
       "model": "Midjourney",
@@ -228,7 +243,7 @@
       "openSource": false,
       "closed": true,
       "access": "midjourney.com",
-      "notes": "Image • closed"
+      "notes": "Image \u2022 closed"
     },
     {
       "model": "Runway Gen-4",
@@ -238,7 +253,7 @@
       "openSource": false,
       "closed": true,
       "access": "runwayml.com",
-      "notes": "Video • closed"
+      "notes": "Video \u2022 closed"
     },
     {
       "model": "HeyGen",
@@ -248,17 +263,17 @@
       "openSource": false,
       "closed": true,
       "access": "heygen.com",
-      "notes": "Avatar video • closed"
+      "notes": "Avatar video \u2022 closed"
     },
     {
-      "model": "Krea",
+      "model": "Krea 2 (Turbo / Raw)",
       "company": "Krea",
-      "released": "2026-05-01",
-      "baseScore": 76,
-      "openSource": false,
-      "closed": true,
-      "access": "krea.ai",
-      "notes": "Image • closed"
+      "released": "2026-06-22",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + krea.ai",
+      "notes": "Open-weight T2I DiT ~12\u201313B \u2022 Turbo + Raw checkpoints \u2022 community license \u2022 SF"
     },
     {
       "model": "Mochi 1",
@@ -269,7 +284,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open text-to-video (Apache 2.0) • 10B AsymmDiT from-scratch • high-fidelity motion & prompt adherence • largest open video at release"
+      "notes": "Open text-to-video (Apache 2.0) \u2022 10B AsymmDiT from-scratch \u2022 high-fidelity motion & prompt adherence \u2022 largest open video at release"
     },
     {
       "model": "Oasis 500M",
@@ -279,7 +294,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open interactive world model (MIT) • action-conditional video gameplay (Minecraft-like) • 500M preview (full larger demo-only) • collab Etched hardware + Decart"
+      "notes": "Open interactive world model (MIT) \u2022 action-conditional video gameplay (Minecraft-like) \u2022 500M preview (full larger demo-only) \u2022 collab Etched hardware + Decart"
     },
     {
       "model": "gpt-oss-120b / 20b",
@@ -290,7 +305,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open weights MoE reasoning models • 120b (5B active) runs on single 80GB GPU • Apache 2.0 • Strong agentic & local"
+      "notes": "Open weights MoE reasoning models \u2022 120b (5B active) runs on single 80GB GPU \u2022 Apache 2.0 \u2022 Strong agentic & local"
     },
     {
       "model": "Arctic",
@@ -302,7 +317,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Open enterprise LLM (Apache 2.0) • Efficient hybrid dense-MoE for SQL, coding, RAG • Fully open with data recipes"
+      "notes": "Open enterprise LLM (Apache 2.0) \u2022 Efficient hybrid dense-MoE for SQL, coding, RAG \u2022 Fully open with data recipes"
     },
     {
       "model": "Apriel-1.5-15B-Thinker",
@@ -313,7 +328,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open small multimodal reasoning model (MIT) • Frontier-level perf on single GPU • Built with NVIDIA Nemotron tech"
+      "notes": "Open small multimodal reasoning model (MIT) \u2022 Frontier-level perf on single GPU \u2022 Built with NVIDIA Nemotron tech"
     },
     {
       "model": "MolmoMotion 4B",
@@ -325,7 +340,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Open VLM for 3D motion forecasting • Fully open (weights + dataset + code)"
+      "notes": "Open VLM for 3D motion forecasting \u2022 Fully open (weights + dataset + code)"
     },
     {
       "model": "Deep Cogito v2.1",
@@ -335,7 +350,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + Ollama",
-      "notes": "SF startup • Open hybrid reasoning (IDA self-improvement) • Llama-based variants qualify"
+      "notes": "SF startup \u2022 Open hybrid reasoning (IDA self-improvement) \u2022 Llama-based variants qualify"
     },
     {
       "model": "Nous Hermes 3",
@@ -345,7 +360,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + Ollama",
-      "notes": "On Llama 3.1 (US base) • Flagship open community fine-tune • ⚠️ aging"
+      "notes": "On Llama 3.1 (US base) \u2022 Flagship open community fine-tune \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Moondream 3",
@@ -355,7 +370,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + Ollama",
-      "notes": "Tiny open vision-language model • from-scratch • edge/on-device"
+      "notes": "Tiny open vision-language model \u2022 from-scratch \u2022 edge/on-device"
     },
     {
       "model": "H2OVL Mississippi",
@@ -365,7 +380,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open multimodal OCR / document vision • Mountain View • ⚠️ aging"
+      "notes": "Open multimodal OCR / document vision \u2022 Mountain View \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Dolphin 3.0",
@@ -375,7 +390,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + Ollama",
-      "notes": "On Llama 3.1 (US base) • Open uncensored instruct fine-tune • ⚠️ aging"
+      "notes": "On Llama 3.1 (US base) \u2022 Open uncensored instruct fine-tune \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Firefunction v2",
@@ -385,7 +400,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "On Llama 3 70B (US base) • Open function-calling model • ⚠️ aging"
+      "notes": "On Llama 3 70B (US base) \u2022 Open function-calling model \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Rnj-1 (Ramanujan)",
@@ -396,7 +411,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "8B open-weights base + instruct (Apache 2.0) • Trained from scratch • Code / STEM / tool-calling • Released Essential-Web v1.0 corpus • Founded by 'Attention Is All You Need' co-authors • SF"
+      "notes": "8B open-weights base + instruct (Apache 2.0) \u2022 Trained from scratch \u2022 Code / STEM / tool-calling \u2022 Released Essential-Web v1.0 corpus \u2022 Founded by 'Attention Is All You Need' co-authors \u2022 SF"
     },
     {
       "model": "Nomic Embed Text v2 (MoE)",
@@ -408,7 +423,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "First MoE text-embedding model (Apache 2.0) • Fully open — weights + training code + data • Multilingual (~100 langs) • Matryoshka dims • NYC"
+      "notes": "First MoE text-embedding model (Apache 2.0) \u2022 Fully open \u2014 weights + training code + data \u2022 Multilingual (~100 langs) \u2022 Matryoshka dims \u2022 NYC"
     },
     {
       "model": "Evo 2",
@@ -420,7 +435,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Open DNA / genomics foundation model up to 40B (Apache 2.0) • Fully open — weights + code + OpenGenome2 (~9T bp) • Predicts & designs genetic code • Palo Alto nonprofit"
+      "notes": "Open DNA / genomics foundation model up to 40B (Apache 2.0) \u2022 Fully open \u2014 weights + code + OpenGenome2 (~9T bp) \u2022 Predicts & designs genetic code \u2022 Palo Alto nonprofit"
     },
     {
       "model": "Foundation-Sec-8B",
@@ -431,7 +446,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Cybersecurity LLM continued-pretrained from Llama 3.1 (Apache 2.0, US base) • Matches ~10x larger models on security benchmarks • San Jose (Cisco)"
+      "notes": "Cybersecurity LLM continued-pretrained from Llama 3.1 (Apache 2.0, US base) \u2022 Matches ~10x larger models on security benchmarks \u2022 San Jose (Cisco)"
     },
     {
       "model": "Orpheus TTS",
@@ -442,7 +457,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Human-sounding TTS LLM on Llama-3B (Apache 2.0, US base) • Zero-shot voice cloning, emotion control • ~200ms streaming • SF"
+      "notes": "Human-sounding TTS LLM on Llama-3B (Apache 2.0, US base) \u2022 Zero-shot voice cloning, emotion control \u2022 ~200ms streaming \u2022 SF"
     },
     {
       "model": "Ultravox",
@@ -452,7 +467,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Real-time speech-native multimodal LLM (MIT projector, Llama base) • Understands audio directly — no separate ASR • Open alt to GPT-4o Realtime • Seattle"
+      "notes": "Real-time speech-native multimodal LLM (MIT projector, Llama base) \u2022 Understands audio directly \u2014 no separate ASR \u2022 Open alt to GPT-4o Realtime \u2022 Seattle"
     },
     {
       "model": "YOLO11",
@@ -462,7 +477,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Ubiquitous real-time vision framework (AGPL-3.0 — commercial needs Enterprise license) • Detect, segment, pose, track, classify • ⚠️ aging • Frederick, MD"
+      "notes": "Ubiquitous real-time vision framework (AGPL-3.0 \u2014 commercial needs Enterprise license) \u2022 Detect, segment, pose, track, classify \u2022 \u26a0\ufe0f aging \u2022 Frederick, MD"
     },
     {
       "model": "DBRX",
@@ -472,7 +487,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "132B fine-grained MoE (36B active) • Databricks Open License (commercial limits) • Trained on 12T tokens • ⚠️ aging • SF"
+      "notes": "132B fine-grained MoE (36B active) \u2022 Databricks Open License (commercial limits) \u2022 Trained on 12T tokens \u2022 \u26a0\ufe0f aging \u2022 SF"
     },
     {
       "model": "StripedHyena / RedPajama",
@@ -483,7 +498,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "In-house open models (Apache 2.0) • StripedHyena: from-scratch Hyena + attention hybrid arch • RedPajama: open weights + full RedPajama-Data-1T • ⚠️ aging • SF"
+      "notes": "In-house open models (Apache 2.0) \u2022 StripedHyena: from-scratch Hyena + attention hybrid arch \u2022 RedPajama: open weights + full RedPajama-Data-1T \u2022 \u26a0\ufe0f aging \u2022 SF"
     },
     {
       "model": "Bark",
@@ -493,17 +508,17 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open text-to-audio / TTS (MIT) • Suno's only open model (music model closed) • EnCodec codec is CC BY-NC • ⚠️ aging • Cambridge, MA"
+      "notes": "Open text-to-audio / TTS (MIT) \u2022 Suno's only open model (music model closed) \u2022 EnCodec codec is CC BY-NC \u2022 \u26a0\ufe0f aging \u2022 Cambridge, MA"
     },
     {
-      "model": "Laguna M.1 / XS-2.1",
+      "model": "Laguna M.1 / S-2.1 / XS-2.1",
       "company": "Poolside",
       "released": "2026-07-01",
       "baseScore": 95,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "SF coding lab • Laguna-M.1 ~226B + Laguna-XS-2.1 33B open weights • agentic software engineering focus"
+      "notes": "SF coding lab \u2022 Laguna-M.1 ~226B + Laguna-S-2.1 118B + Laguna-XS-2.1 33B open weights \u2022 agentic software engineering focus"
     },
     {
       "model": "Nemotron-Cascade-2 30B-A3B",
@@ -513,7 +528,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Nemotron Labs cascade/reasoning open weights • 30B-A3B MoE"
+      "notes": "Nemotron Labs cascade/reasoning open weights \u2022 30B-A3B MoE"
     },
     {
       "model": "Nemotron-Labs Audex / Puzzle",
@@ -523,7 +538,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Specialist open Nemotron Labs drops • Audex (audio/code) + Puzzle 75B-A9B"
+      "notes": "Specialist open Nemotron Labs drops \u2022 Audex (audio/code) + Puzzle 75B-A9B"
     },
     {
       "model": "Nemotron-3 Embed + ASR 3.5",
@@ -533,7 +548,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Nemotron-3-Embed 1B/8B + nemotron-3.5 streaming ASR 0.6B • retrieval + speech"
+      "notes": "Nemotron-3-Embed 1B/8B + nemotron-3.5 streaming ASR 0.6B \u2022 retrieval + speech"
     },
     {
       "model": "diffusiongemma-26B-A4B",
@@ -543,7 +558,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open diffusion language model family (Gemma line) • 26B-A4B instruct"
+      "notes": "Open diffusion language model family (Gemma line) \u2022 26B-A4B instruct"
     },
     {
       "model": "Granite Vision / Speech / Switch / Swash",
@@ -554,7 +569,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "Granite 4.1 multimodal + Switch MoE previews + Swash small models • Apache 2.0 enterprise stack"
+      "notes": "Granite 4.1 multimodal + Switch MoE previews + Swash small models \u2022 Apache 2.0 enterprise stack"
     },
     {
       "model": "Sapiens2",
@@ -564,17 +579,17 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open human-centric vision suite (pose, seg, normals, pointmap) • facebook research"
+      "notes": "Open human-centric vision suite (pose, seg, normals, pointmap) \u2022 facebook research"
     },
     {
-      "model": "tmax (2B–27B)",
+      "model": "tmax (2B\u201327B)",
       "company": "Ai2 (allenai)",
       "released": "2026-06-22",
       "baseScore": 88,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open Ai2 tmax family • research post-trains + sizes 2B–27B"
+      "notes": "Open Ai2 tmax family \u2022 research post-trains + sizes 2B\u201327B"
     },
     {
       "model": "MolmoAct2",
@@ -586,7 +601,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Open robotics / action VLM (LIBERO etc.) • weights + research stack"
+      "notes": "Open robotics / action VLM (LIBERO etc.) \u2022 weights + research stack"
     },
     {
       "model": "OlmoEarth-v1.2",
@@ -598,7 +613,7 @@
       "fullOpen": true,
       "permissive": true,
       "access": "HF",
-      "notes": "Open Earth observation foundation models (Nano→Base) • fully open research"
+      "notes": "Open Earth observation foundation models (Nano\u2192Base) \u2022 fully open research"
     },
     {
       "model": "Claude Sonnet 5",
@@ -608,7 +623,7 @@
       "openSource": false,
       "closed": true,
       "access": "claude.ai / API",
-      "notes": "Closed mid-frontier Claude • coding + agents • use open US weights for sovereignty"
+      "notes": "Closed mid-frontier Claude \u2022 coding + agents \u2022 use open US weights for sovereignty"
     },
     {
       "model": "GPT-Live",
@@ -618,7 +633,7 @@
       "openSource": false,
       "closed": true,
       "access": "ChatGPT / API",
-      "notes": "Closed full-duplex voice model • natural conversation + live translation"
+      "notes": "Closed full-duplex voice model \u2022 natural conversation + live translation"
     },
     {
       "model": "ChatGPT Work",
@@ -628,7 +643,7 @@
       "openSource": false,
       "closed": true,
       "access": "ChatGPT",
-      "notes": "Closed work agent (Codex + GPT-5.6) • multi-app project execution • not open weights"
+      "notes": "Closed work agent (Codex + GPT-5.6) \u2022 multi-app project execution \u2022 not open weights"
     },
     {
       "model": "TabFM 1.0",
@@ -638,7 +653,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open tabular foundation model (PyTorch + JAX) • structured data classification"
+      "notes": "Open tabular foundation model (PyTorch + JAX) \u2022 structured data classification"
     },
     {
       "model": "GELab-Zero-4B-preview",
@@ -648,7 +663,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open GUI / computer-use agent preview (4B) • research weights"
+      "notes": "Open GUI / computer-use agent preview (4B) \u2022 research weights"
     },
     {
       "model": "privacy-filter",
@@ -658,7 +673,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 1B privacy / PII token classifier • safety utility model"
+      "notes": "Open 1B privacy / PII token classifier \u2022 safety utility model"
     },
     {
       "model": "HARC (Llama path)",
@@ -668,7 +683,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Research harness models • Llama-3.1-8B path qualifies (US base) • Qwen variant exists but foreign-base"
+      "notes": "Research harness models \u2022 Llama-3.1-8B path qualifies (US base) \u2022 Qwen variant exists but foreign-base"
     },
     {
       "model": "Antidoom",
@@ -679,7 +694,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + GitHub",
-      "notes": "Open FTPO method + dataset to kill reasoning doom-loops • not a foundation model • weights optional LoRA recipe"
+      "notes": "Open FTPO method + dataset to kill reasoning doom-loops \u2022 not a foundation model \u2022 weights optional LoRA recipe"
     },
     {
       "model": "parakeet-tdt-0.6b-v3",
@@ -689,7 +704,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open multilingual ASR (0.6B FastConformer-TDT) • 25 European languages • high-throughput NeMo"
+      "notes": "Open multilingual ASR (0.6B FastConformer-TDT) \u2022 25 European languages \u2022 high-throughput NeMo"
     },
     {
       "model": "LocateAnything-3B",
@@ -699,7 +714,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open 3B VLM for localization / grounding • open weights"
+      "notes": "Open 3B VLM for localization / grounding \u2022 open weights"
     },
     {
       "model": "Cosmos3-Nano / Super",
@@ -709,7 +724,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open world-model family (Cosmos3 Nano ~16B + Super ~65B) • physical AI / simulation"
+      "notes": "Open world-model family (Cosmos3 Nano ~16B + Super ~65B + Edge) \u2022 physical AI / simulation"
     },
     {
       "model": "GR00T-N1.7-3B",
@@ -719,7 +734,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open humanoid robotics foundation model (3B) • GR00T N1.7 line"
+      "notes": "Open humanoid robotics foundation model (3B) \u2022 GR00T N1.7 line"
     },
     {
       "model": "embeddinggemma-300m",
@@ -729,7 +744,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 300M text embedding model (Gemma line) • on-device / retrieval"
+      "notes": "Open 300M text embedding model (Gemma line) \u2022 on-device / retrieval"
     },
     {
       "model": "MedGemma (1.5-4B / 4B / 27B)",
@@ -739,7 +754,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open medical multimodal Gemma family (1.5-4B, 4B-it, 27B-it) • clinical imaging + text"
+      "notes": "Open medical multimodal Gemma family (1.5-4B, 4B-it, 27B-it) \u2022 clinical imaging + text"
     },
     {
       "model": "Gemma 3 4B / PaliGemma 3B",
@@ -749,7 +764,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open older small Gemma 3 / PaliGemma VLMs • still widely used • ⚠️ aging"
+      "notes": "Open older small Gemma 3 / PaliGemma VLMs \u2022 still widely used \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "whisper-large-v3 / turbo",
@@ -760,17 +775,17 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open ASR standard (large-v3 + turbo) • Apache-class ecosystem ubiquity • ⚠️ aging"
+      "notes": "Open ASR standard (large-v3 + turbo) \u2022 Apache-class ecosystem ubiquity \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "Llama 3.1 / 3.2 / 3 (8B–70B class)",
+      "model": "Llama 3.1 / 3.2 / 3 (8B\u201370B class)",
       "company": "Meta",
       "released": "2024-07-23",
       "baseScore": 88,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open Llama 3 family still heavily deployed (3.1-8B, 3.2-3B, Meta-Llama-3-8B) • ⚠️ aging • Llama 4 is the current flagship"
+      "notes": "Open Llama 3 family still heavily deployed (3.1-8B, 3.2-3B, Meta-Llama-3-8B) \u2022 \u26a0\ufe0f aging \u2022 Llama 4 is the current flagship"
     },
     {
       "model": "SAM 3 / SAM 3.1",
@@ -780,7 +795,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open Segment Anything 3 / 3.1 mask generation • facebook research"
+      "notes": "Open Segment Anything 3 / 3.1 mask generation \u2022 facebook research"
     },
     {
       "model": "DINOv3",
@@ -790,7 +805,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open self-supervised vision backbone (ViT-L etc.) • feature extraction / pretrain"
+      "notes": "Open self-supervised vision backbone (ViT-L etc.) \u2022 feature extraction / pretrain"
     },
     {
       "model": "tribev2",
@@ -800,7 +815,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open facebook research model card (tribev2) • lower confidence entry • research weights"
+      "notes": "Open facebook research model card (tribev2) \u2022 lower confidence entry \u2022 research weights"
     },
     {
       "model": "TRELLIS.2-4B",
@@ -810,7 +825,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open image-to-3D generation (4B) • TRELLIS.2"
+      "notes": "Open image-to-3D generation (4B) \u2022 TRELLIS.2"
     },
     {
       "model": "Higgs TTS 3 (4B)",
@@ -820,7 +835,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open conversational TTS (100+ langs, cloning) • research/non-commercial license • Santa Clara"
+      "notes": "Open conversational TTS (100+ langs, cloning) \u2022 research/non-commercial license \u2022 Santa Clara"
     },
     {
       "model": "Chatterbox",
@@ -831,7 +846,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open expressive TTS (MIT) • zero-shot cloning • ⚠️ aging"
+      "notes": "Open expressive TTS (MIT) \u2022 zero-shot cloning \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Ideogram 4",
@@ -841,7 +856,7 @@
       "openSource": false,
       "closed": true,
       "access": "ideogram.ai",
-      "notes": "Closed text-to-image flagship • US company • strong typography"
+      "notes": "Closed text-to-image flagship \u2022 US company \u2022 strong typography"
     },
     {
       "model": "Kokoro-82M",
@@ -852,7 +867,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open tiny TTS (82M, Apache 2.0) • local/edge speech • ⚠️ aging"
+      "notes": "Open tiny TTS (82M, Apache 2.0) \u2022 local/edge speech \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "needle",
@@ -862,7 +877,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open edge micro-model (~30M) • on-device utility"
+      "notes": "Open edge micro-model (~30M) \u2022 on-device utility"
     },
     {
       "model": "Supra-Router-51M",
@@ -872,7 +887,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 51M model router • multi-model dispatch"
+      "notes": "Open 51M model router \u2022 multi-model dispatch"
     },
     {
       "model": "Anima",
@@ -882,7 +897,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open weights trending card • limited public docs • provisional score"
+      "notes": "Open weights trending card \u2022 limited public docs \u2022 provisional score"
     },
     {
       "model": "rampart",
@@ -902,7 +917,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 2B video-text model • NVIDIA ecosystem adjacent"
+      "notes": "Open 2B video-text model \u2022 NVIDIA ecosystem adjacent"
     },
     {
       "model": "Nemotron-3-Nano-Omni-30B-A3B",
@@ -912,7 +927,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open omni/reasoning Nano MoE (30B-A3B) • BF16/NVFP4 • agentic multimodal"
+      "notes": "Open omni/reasoning Nano MoE (30B-A3B) \u2022 BF16/NVFP4 \u2022 agentic multimodal"
     },
     {
       "model": "Nemotron-Labs TwoTower 30B-A3B",
@@ -932,7 +947,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open audio↔audio persona / speech model (~7–8B)"
+      "notes": "Open audio\u2194audio persona / speech model (~7\u20138B)"
     },
     {
       "model": "NL-Diffusion-Image",
@@ -965,14 +980,14 @@
       "notes": "Open 2B world-reasoning VLM (Cosmos Reason line)"
     },
     {
-      "model": "Nemotron-OCR / Parse v1.2",
+      "model": "Nemotron-OCR / Parse v1.2 / 2.0",
       "company": "NVIDIA",
-      "released": "2026-05-22",
-      "baseScore": 86,
+      "released": "2026-08-03",
+      "baseScore": 87,
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open document OCR + parse (nemotron-ocr-v2, Nemotron-Parse-v1.2)"
+      "notes": "Open document OCR + parse \u2022 Parse 2.0: multilingual/CJK + charts + handwriting gains over v1.2"
     },
     {
       "model": "PiD",
@@ -1022,7 +1037,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open time-series foundation model (timesfm-2.5-200m) • transformers + pytorch"
+      "notes": "Open time-series foundation model (timesfm-2.5-200m) \u2022 transformers + pytorch"
     },
     {
       "model": "SigLIP2",
@@ -1032,7 +1047,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open vision-language encoder (siglip2-base) • zero-shot classification / retrieval"
+      "notes": "Open vision-language encoder (siglip2-base) \u2022 zero-shot classification / retrieval"
     },
     {
       "model": "BitNet b1.58 2B-4T",
@@ -1042,7 +1057,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 1.58-bit ternary LLM (2B-class) • extreme efficiency research"
+      "notes": "Open 1.58-bit ternary LLM (2B-class) \u2022 extreme efficiency research"
     },
     {
       "model": "VibeVoice 1.5B / ASR",
@@ -1092,7 +1107,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open massively multilingual MT classic • ⚠️ aging"
+      "notes": "Open massively multilingual MT classic \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "CLIP ViT-B/32",
@@ -1102,7 +1117,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open vision-language encoder evergreen • ⚠️ aging"
+      "notes": "Open vision-language encoder evergreen \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Granite Docling 258M + TTM r3",
@@ -1113,7 +1128,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Open doc understanding (docling-258M) + granite timeseries TTM-r3 • Apache 2.0"
+      "notes": "Open doc understanding (docling-258M) + granite timeseries TTM-r3 \u2022 Apache 2.0"
     },
     {
       "model": "LFM2.5-Embedding-350M",
@@ -1133,7 +1148,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open real-time detection family successor to YOLO11 • detect/segment/pose"
+      "notes": "Open real-time detection family successor to YOLO11 \u2022 detect/segment/pose"
     },
     {
       "model": "CSM-1B (Sesame)",
@@ -1143,7 +1158,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open conversational speech model (CSM-1B) • Sesame"
+      "notes": "Open conversational speech model (CSM-1B) \u2022 Sesame"
     },
     {
       "model": "voyage-4-nano",
@@ -1153,7 +1168,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open nano embedding model (voyage-4-nano) • retrieval"
+      "notes": "Open nano embedding model (voyage-4-nano) \u2022 retrieval"
     },
     {
       "model": "Chandra OCR 2 / Lift",
@@ -1163,7 +1178,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open OCR + layout (chandra-ocr-2, lift) • document AI"
+      "notes": "Open OCR + layout (chandra-ocr-2, lift) \u2022 document AI"
     },
     {
       "model": "OmniCoder-9B",
@@ -1183,7 +1198,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open tabular foundation (tabpfn_3) • classification"
+      "notes": "Open tabular foundation (tabpfn_3) \u2022 classification"
     },
     {
       "model": "ZAYA1-8B",
@@ -1193,7 +1208,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open ~8–9B LLM (ZAYA1) • Zyphra"
+      "notes": "Open ~8\u20139B LLM (ZAYA1) \u2022 Zyphra"
     },
     {
       "model": "void-model",
@@ -1223,7 +1238,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open small LLM + VLM line (SmolLM2-1.7B, SmolVLM-256M) • NYC HF • ⚠️ aging vs SmolLM3"
+      "notes": "Open small LLM + VLM line (SmolLM2-1.7B, SmolVLM-256M) \u2022 NYC HF \u2022 \u26a0\ufe0f aging vs SmolLM3"
     },
     {
       "model": "Hermes 4.3 36B",
@@ -1233,7 +1248,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open Hermes 4.3 36B instruct • community flagship beyond Hermes 3"
+      "notes": "Open Hermes 4.3 36B instruct \u2022 community flagship beyond Hermes 3"
     },
     {
       "model": "RWKV7-G1",
@@ -1283,7 +1298,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open fusion-embedding preview family • retrieval experiments"
+      "notes": "Open fusion-embedding preview family \u2022 retrieval experiments"
     },
     {
       "model": "OpenMed privacy-filter multilingual v2",
@@ -1303,7 +1318,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open small Phi-4 mini instruct • efficient local"
+      "notes": "Open small Phi-4 mini instruct \u2022 efficient local"
     },
     {
       "model": "CWIP-1.0",
@@ -1313,7 +1328,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open small NVIDIA research card (CWIP-1.0) • provisional"
+      "notes": "Open small NVIDIA research card (CWIP-1.0) \u2022 provisional"
     },
     {
       "model": "Inkling",
@@ -1326,7 +1341,81 @@
       "foreignTeacher": true,
       "foreignTeacherLabel": "Kimi K2.5 (Moonshot) + open peers as SFT synth generators",
       "access": "HF",
-      "whyFlagged": "SF lab (Murati) • 975B/41B MoE • own pretrain claimed • native multimodal + Apache 2.0 • SFT bootstrap used foreign model outputs as teachers — noted, soft −15 (not hard 0)"
+      "whyFlagged": "SF lab (Murati) \u2022 975B/41B MoE \u2022 own pretrain claimed \u2022 native multimodal + Apache 2.0 \u2022 SFT bootstrap used foreign model outputs as teachers \u2014 noted, soft \u221215 (not hard 0)"
+    },
+    {
+      "model": "Instella-MoE 16B-A3B",
+      "company": "AMD",
+      "released": "2026-07-24",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "access": "HF",
+      "notes": "From-scratch MoE 16B/2.8B active on Instinct MI300X \u2022 full stage checkpoints (pretrain\u2192RL) \u2022 ResearchRAIL \u2022 Santa Clara"
+    },
+    {
+      "model": "Maple-Preview",
+      "company": "DeepGrove",
+      "released": "2026-08-04",
+      "baseScore": 91,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "SF/YC ternary 20B-A1B on-device reasoning \u2022 MIT \u2022 200+ tok/s Mac Mini M4 \u2022 own arch (not Qwen compress)"
+    },
+    {
+      "model": "NemotronLabs VoiceChat 11B",
+      "company": "NVIDIA",
+      "released": "2026-08-03",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open full-duplex speech-to-speech \u2022 Nemotron Nano backbone \u2022 ~450ms turn-taking \u2022 first open FD with tool calling \u2022 research"
+    },
+    {
+      "model": "Alpamayo2-Super",
+      "company": "NVIDIA",
+      "released": "2026-08-04",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open AV foundation VLA ~34B \u2022 Cosmos3 Super Reasoner + diffusion action expert \u2022 trajectory + VQA + grounding"
+    },
+    {
+      "model": "Antares (350M\u20133B)",
+      "company": "Cisco Foundation AI",
+      "released": "2026-07-22",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Agentic vuln localization on Granite 4.0 (US base) \u2022 terminal agent \u2022 Apache 2.0 \u2022 beats much larger models on VLoc Bench"
+    },
+    {
+      "model": "Magenta RealTime 2",
+      "company": "Google",
+      "released": "2026-06-04",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Open live music generation \u2022 on-device streaming \u2022 text/audio/MIDI control \u2022 SpectroStream + MusicCoCa + LLM"
+    },
+    {
+      "model": "Skala 1.1",
+      "company": "Microsoft",
+      "released": "2026-04-21",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open DFT exchange-correlation functional (MSR AI for Science) \u2022 MIT \u2022 chemistry accuracy vs hybrid functionals at meta-GGA cost"
     }
   ],
   "flagged": [
@@ -1339,7 +1428,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen 3.5 + Gemma 4",
       "access": "HF",
-      "whyFlagged": "Santa Clara US lab • MIT open weights + full RL research • Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) • Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) • Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); foreign foundation on large MoEs"
+      "whyFlagged": "Santa Clara US lab \u2022 MIT open weights + full RL research \u2022 Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) \u2022 Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) \u2022 Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); foreign foundation on large MoEs"
     },
     {
       "model": "INTELLECT-3.1",
@@ -1372,7 +1461,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "QwQ-32B (Qwen)",
       "access": "HF",
-      "whyFlagged": "Distributed US RL on Qwen base • ⚠️ aging"
+      "whyFlagged": "Distributed US RL on Qwen base \u2022 \u26a0\ufe0f aging"
     },
     {
       "model": "Composer 2.5",
@@ -1394,7 +1483,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.6 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Pasadena / Caltech spinoff • Apache 2.0 1-bit & ternary compression • phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B • edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch)"
+      "whyFlagged": "Pasadena / Caltech spinoff \u2022 Apache 2.0 1-bit & ternary compression \u2022 phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B \u2022 edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch)"
     },
     {
       "model": "Arctic-LSTM-Speculator",
@@ -1405,7 +1494,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3-32B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "US company speculative-decoding draft models • trained against Qwen3-32B targets • foreign foundation, not US from-scratch LLM"
+      "whyFlagged": "US company speculative-decoding draft models \u2022 trained against Qwen3-32B targets \u2022 foreign foundation, not US from-scratch LLM"
     },
     {
       "model": "canary-qwen-2.5b",
@@ -1416,7 +1505,42 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen (Alibaba)",
       "access": "HF + NGC",
-      "whyFlagged": "NVIDIA ASR hybrid card naming Qwen foundation • foreign base path disqualifies USAbench sovereignty score"
+      "whyFlagged": "NVIDIA ASR hybrid card naming Qwen foundation \u2022 foreign base path disqualifies USAbench sovereignty score"
+    },
+    {
+      "model": "Fara1.5 (4B / 9B / 27B)",
+      "company": "Microsoft",
+      "released": "2026-05-21",
+      "baseScore": 72,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Computer-use agent CUA family \u2022 MIT weights \u2022 SFT on Qwen3.5 vision bases \u2022 MagenticLite harness"
+    },
+    {
+      "model": "MagenticBrain 14B",
+      "company": "Microsoft",
+      "released": "2026-05-14",
+      "baseScore": 70,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-14B (Alibaba)",
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "Kimi-2.5 synth traces",
+      "access": "HF",
+      "whyFlagged": "Orchestration agent on Qwen3-14B \u2022 also used Kimi-2.5 reasoning traces in post-train mix"
+    },
+    {
+      "model": "Mage-VL / Mage-ViT",
+      "company": "Microsoft",
+      "released": "2026-07-26",
+      "baseScore": 74,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-4B (Alibaba) LLM backbone",
+      "access": "HF",
+      "whyFlagged": "Codec-native streaming VLM \u2022 Mage-ViT from-scratch but pairs Qwen3-4B decoder \u2022 foreign language foundation"
     }
   ]
 }
