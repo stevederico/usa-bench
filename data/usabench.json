@@ -121,6 +121,17 @@
       "notes": "Open weights pioneer \u2022 \u26a0\ufe0f aging"
     },
     {
+      "model": "Muse Glimmer 30B",
+      "company": "Meta",
+      "released": "2026-08-10",
+      "baseScore": 96,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + llama.cpp / MLX / vLLM",
+      "notes": "MSL open agentic 30B dense \u2022 Apache 2.0 \u2022 local always-on agents \u2022 multimodal \u2022 distilled from Muse Spark \u2022 first Meta open weights since Llama 4"
+    },
+    {
       "model": "Muse Spark 1.2 / Muse Code",
       "company": "Meta",
       "released": "2026-08-05",
@@ -128,7 +139,7 @@
       "openSource": false,
       "closed": true,
       "access": "meta.ai / Meta Model API / Muse Code",
-      "notes": "MSL coding agent + Muse Spark 1.2 \u2022 multi-agent harness \u2022 1M ctx \u2022 co-trained model+agent \u2022 closed US"
+      "notes": "MSL coding agent + Muse Spark 1.2 \u2022 multi-agent harness \u2022 1M ctx \u2022 co-trained model+agent \u2022 closed US \u2022 open weights promised soon"
     },
     {
       "model": "Phi-4 + Reflection",
@@ -785,7 +796,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open Llama 3 family still heavily deployed (3.1-8B, 3.2-3B, Meta-Llama-3-8B) \u2022 \u26a0\ufe0f aging \u2022 Llama 4 is the current flagship"
+      "notes": "Open Llama 3 family still heavily deployed (3.1-8B, 3.2-3B, Meta-Llama-3-8B) \u2022 \u26a0\ufe0f aging \u2022 Muse Glimmer is the current open flagship"
     },
     {
       "model": "SAM 3 / SAM 3.1",
