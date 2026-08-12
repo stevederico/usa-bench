@@ -1,4 +1,4 @@
-<img width="1456" height="1139" alt="comeandtake" src="banner.png" />
+<img width="1584" height="1248" alt="comeandtake" src="banner.png" />
 
 *Image credit: [@levelsio](https://x.com/levelsio/status/2070979198928277842)*
 
