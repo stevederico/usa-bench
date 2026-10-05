@@ -162,6 +162,7 @@ const ACCESS_LINKS = {
   "runwayml.com": "https://runwayml.com",
   "heygen.com": "https://heygen.com",
   "krea.ai": "https://krea.ai",
+  "platform.reflection.ai": "https://platform.reflection.ai",
 };
 
 // Linkify each known token in an access string, preserving " + " / " / " separators

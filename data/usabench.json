@@ -71,6 +71,16 @@
       "notes": "MIT spinoff \u2022 edge/on-device \u2022 230M\u201324B MoE \u2022 VL + Audio \u2022 LFM Open License ($10M commercial cap)"
     },
     {
+      "model": "Beam",
+      "company": "Reflection AI",
+      "released": "2026-10-05",
+      "baseScore": 94,
+      "openSource": false,
+      "closed": true,
+      "access": "platform.reflection.ai",
+      "notes": "Brooklyn lab \u2022 from-scratch pretrain \u2022 501B/23B MoE \u2022 text agentic coding \u2022 self-reported near GLM 5.2 (SWE-bench Verified 80.9) \u2022 Apache 2.0 weights later Oct 2026 \u2022 waitlist only until then"
+    },
+    {
       "model": "Claude Opus 4.6 / Fable 5",
       "company": "Anthropic",
       "released": "2026-06-01",
