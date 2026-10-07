@@ -1,0 +1,54 @@
+name: Nightly refresh
+
+on:
+  schedule:
+    # 06:00 UTC is 11:00pm PDT and 10:00pm PST. GitHub may start it late.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: usabench-nightly
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Require API key
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          if [ -z "$XAI_API_KEY" ]; then
+            echo "Set the XAI_API_KEY repo secret from console.x.ai, then re-run."
+            exit 1
+          fi
+
+      - name: Install Grok
+        run: curl -fsSL https://x.ai/cli/install.sh | bash
+
+      - name: Git identity
+        run: |
+          git config user.name "Steve Derico"
+          git config user.email "424734+stevederico@users.noreply.github.com"
+
+      - name: Refresh the board
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          GROK_DISABLE_AUTOUPDATER: "1"
+        run: |
+          export PATH="$HOME/.grok/bin:$PATH"
+          grok \
+            --cwd "$GITHUB_WORKSPACE" \
+            --prompt-file scripts/nightly-prompt.md \
+            --yolo \
+            --output-format plain \
+            --no-auto-update
