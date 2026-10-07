@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-07-01",
-  "pulseLabel": "July 2026",
-  "daysSinceMajorRelease": 0,
+  "pulseDate": "2026-10-07",
+  "pulseLabel": "October 2026",
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -81,44 +81,44 @@
       "notes": "Brooklyn lab \u2022 from-scratch pretrain \u2022 501B/23B MoE \u2022 text agentic coding \u2022 self-reported near GLM 5.2 (SWE-bench Verified 80.9) \u2022 Apache 2.0 weights later Oct 2026 \u2022 waitlist only until then"
     },
     {
-      "model": "Claude Opus 4.6 / Fable 5",
+      "model": "Claude Opus 5.5 / Fable 5.1",
       "company": "Anthropic",
-      "released": "2026-06-01",
-      "baseScore": 88,
+      "released": "2026-09-22",
+      "baseScore": 90,
       "openSource": false,
       "closed": true,
       "access": "claude.ai / API",
-      "notes": "Reasoning, safety, agents"
+      "notes": "Opus 5.5 default (Sep 22) \u2022 Fable 5.1 premium (Sep 1) \u2022 Mythos 5.1 vetted \u2022 1M ctx \u2022 closed"
     },
     {
-      "model": "GPT-5.6 (Sol/Terra/Luna)",
+      "model": "GPT-6.1 Sol / GPT-6 (Astra/Sol/Luna)",
       "company": "OpenAI",
-      "released": "2026-05-01",
-      "baseScore": 87,
+      "released": "2026-09-29",
+      "baseScore": 89,
       "openSource": false,
       "closed": true,
       "access": "API (vetted)",
-      "notes": "All-round + elite"
+      "notes": "GPT-6 Astra (Sep 3) flagship \u2022 Sol/Luna (Sep 22) \u2022 6.1 Sol (Sep 29) near Astra at Sol price \u2022 closed API"
     },
     {
-      "model": "Grok 4.5 / 4.3 / 4.20 / 5",
+      "model": "Grok 4.7 / 4.6",
       "company": "xAI",
-      "released": "2026-07-08",
-      "baseScore": 87,
+      "released": "2026-09-21",
+      "baseScore": 88,
       "openSource": false,
       "closed": true,
       "access": "x.ai / X / API",
-      "notes": "Coding, agentic, real-time"
+      "notes": "4.7 on a larger base than 4.6 \u2022 500k ctx \u2022 $2/$6 \u2022 coding + knowledge work \u2022 closed"
     },
     {
-      "model": "Gemini 3 + Nano Banana / Veo",
+      "model": "Gemini 4 Argon / 3.8 + Nano Banana 2.1",
       "company": "Google",
-      "released": "2026-06-01",
-      "baseScore": 85,
+      "released": "2026-10-06",
+      "baseScore": 86,
       "openSource": false,
       "closed": true,
       "access": "gemini.google.com",
-      "notes": "Multimodal, video \u2022 use Gemma 4 for open"
+      "notes": "Argon (Sep 30, limited Fairwind) \u2022 3.8 Flash (Sep 2) \u2022 Nano Banana 2.1 (Oct 6) \u2022 use Gemma 4 for open"
     },
     {
       "model": "Llama 4 Maverick / Scout",
@@ -142,14 +142,14 @@
       "notes": "MSL open agentic 30B dense \u2022 Apache 2.0 \u2022 local always-on agents \u2022 multimodal \u2022 distilled from Muse Spark \u2022 first Meta open weights since Llama 4"
     },
     {
-      "model": "Muse Spark 1.2 / Muse Code",
+      "model": "Muse Spark 1.3 / Muse Code",
       "company": "Meta",
-      "released": "2026-08-05",
-      "baseScore": 87,
+      "released": "2026-09-02",
+      "baseScore": 88,
       "openSource": false,
       "closed": true,
       "access": "meta.ai / Meta Model API / Muse Code",
-      "notes": "MSL coding agent + Muse Spark 1.2 \u2022 multi-agent harness \u2022 1M ctx \u2022 co-trained model+agent \u2022 closed US \u2022 open weights promised soon"
+      "notes": "MSL Muse Spark 1.3 + Muse Code \u2022 1M ctx \u2022 closed US \u2022 open weights still promised"
     },
     {
       "model": "Phi-4 + Reflection",
@@ -162,14 +162,14 @@
       "notes": "Small & efficient open \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "MAI Code / Image / Thinking",
+      "model": "MAI Code / Image 2.6 / Voice 2.1",
       "company": "Microsoft",
-      "released": "2025-09-01",
-      "baseScore": 83,
+      "released": "2026-10-01",
+      "baseScore": 84,
       "openSource": false,
       "closed": true,
       "access": "Azure",
-      "notes": "In-house coding + multimodal \u2022 use Phi-4 / Nemotron for open"
+      "notes": "MAI-Image-2.6-Flash \u2022 MAI-Voice-2.1 \u2022 MAI-Transcribe-2 \u2022 closed Azure \u2022 use Phi-4 / Nemotron for open"
     },
     {
       "model": "INTELLECT-1",
@@ -194,15 +194,15 @@
       "notes": "Fully open \u2014 weights + data + training code"
     },
     {
-      "model": "Granite 4.1",
+      "model": "Granite 4.2",
       "company": "IBM",
-      "released": "2026-04-29",
-      "baseScore": 94,
+      "released": "2026-08-25",
+      "baseScore": 95,
       "openSource": true,
       "closed": false,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "Hybrid Mamba-Transformer \u2022 Enterprise, RAG, coding, tool calling \u2022 Apache 2.0 \u2022 ISO 42001 certified"
+      "notes": "Granite 4.2 3B / 8B / 30B \u2022 hybrid Mamba-Transformer \u2022 enterprise RAG, coding, tools \u2022 Apache 2.0"
     },
     {
       "model": "OLMo 3.1 32B (Instruct / Think)",
@@ -237,24 +237,24 @@
       "notes": "Large Action Models for agents \u2022 Strong function calling & planning \u2022 Open research versions (xLAM)"
     },
     {
-      "model": "Grok Imagine",
+      "model": "Grok Imagine Video 1.5 / Voice Transcribe 2",
       "company": "xAI",
-      "released": "2026-06-01",
-      "baseScore": 84,
+      "released": "2026-10-01",
+      "baseScore": 85,
       "openSource": false,
       "closed": true,
       "access": "x.ai / X",
-      "notes": "Image + video \u2022 real-time generation"
+      "notes": "Imagine Video 1.5 Lite (Oct 1) \u2022 Voice Transcribe 2.0 (Sep 18) \u2022 image + video + speech \u2022 closed"
     },
     {
-      "model": "Sora 2 / DALL\u00b7E",
+      "model": "GPT Image 2.5 / Sora 2",
       "company": "OpenAI",
-      "released": "2026-06-01",
-      "baseScore": 83,
+      "released": "2026-09-08",
+      "baseScore": 84,
       "openSource": false,
       "closed": true,
       "access": "API",
-      "notes": "Video + image \u2022 closed API"
+      "notes": "GPT Image 2.5 Flare + Sunburst \u2022 Sora 2 video line \u2022 closed API"
     },
     {
       "model": "Midjourney",
@@ -590,7 +590,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "Granite 4.1 multimodal + Switch MoE previews + Swash small models \u2022 Apache 2.0 enterprise stack"
+      "notes": "Granite 4.1 multimodal + Switch MoE + Swash beside Granite 4.2 text \u2022 Apache 2.0"
     },
     {
       "model": "Sapiens2",
@@ -637,14 +637,14 @@
       "notes": "Open Earth observation foundation models (Nano\u2192Base) \u2022 fully open research"
     },
     {
-      "model": "Claude Sonnet 5",
+      "model": "Claude Sonnet 5.5",
       "company": "Anthropic",
-      "released": "2026-06-30",
-      "baseScore": 85,
+      "released": "2026-09-28",
+      "baseScore": 86,
       "openSource": false,
       "closed": true,
       "access": "claude.ai / API",
-      "notes": "Closed mid-frontier Claude \u2022 coding + agents \u2022 use open US weights for sovereignty"
+      "notes": "Closed fast Claude 5.5 \u2022 $2/$10 \u2022 near Opus on most work \u2022 use open US weights for sovereignty"
     },
     {
       "model": "GPT-Live",
@@ -664,7 +664,7 @@
       "openSource": false,
       "closed": true,
       "access": "ChatGPT",
-      "notes": "Closed work agent (Codex + GPT-5.6) \u2022 multi-app project execution \u2022 not open weights"
+      "notes": "Closed work agent (Codex + GPT-6) \u2022 multi-app project execution \u2022 not open weights"
     },
     {
       "model": "TabFM 1.0",
@@ -758,14 +758,14 @@
       "notes": "Open humanoid robotics foundation model (3B) \u2022 GR00T N1.7 line"
     },
     {
-      "model": "embeddinggemma-300m",
+      "model": "EmbeddingGemma 2",
       "company": "Google",
-      "released": "2025-09-01",
-      "baseScore": 86,
+      "released": "2026-10-06",
+      "baseScore": 88,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open 300M text embedding model (Gemma line) \u2022 on-device / retrieval"
+      "notes": "Open 740M Gemma embedding \u2022 text + vision/video vectors \u2022 on-device retrieval"
     },
     {
       "model": "MedGemma (1.5-4B / 4B / 27B)",
@@ -891,14 +891,14 @@
       "notes": "Open tiny TTS (82M, Apache 2.0) \u2022 local/edge speech \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "needle",
+      "model": "Needle 3",
       "company": "Cactus Compute",
-      "released": "2026-07-01",
-      "baseScore": 76,
+      "released": "2026-09-17",
+      "baseScore": 78,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open edge micro-model (~30M) \u2022 on-device utility"
+      "notes": "Open edge vector model \u2022 Needle 3 121M \u2022 Needle 2 was 45M \u2022 Cactus Compute"
     },
     {
       "model": "Supra-Router-51M",
@@ -949,6 +949,16 @@
       "closed": false,
       "access": "HF + NGC",
       "notes": "Open omni/reasoning Nano MoE (30B-A3B) \u2022 BF16/NVFP4 \u2022 agentic multimodal"
+    },
+    {
+      "model": "Nemotron 3.5 Lightning",
+      "company": "NVIDIA",
+      "released": "2026-08-11",
+      "baseScore": 93,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open Nemotron 3.5 Lightning 30B-A3B \u2022 fast reasoning MoE"
     },
     {
       "model": "Nemotron-Labs TwoTower 30B-A3B",
@@ -1051,14 +1061,14 @@
       "notes": "Open ARDY G1/Core robot policy stacks (Horizon variants)"
     },
     {
-      "model": "TimesFM 2.5 (200M)",
+      "model": "TimesFM 3 (330M)",
       "company": "Google",
-      "released": "2026-04-10",
-      "baseScore": 88,
+      "released": "2026-08-31",
+      "baseScore": 89,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open time-series foundation model (timesfm-2.5-200m) \u2022 transformers + pytorch"
+      "notes": "Open time-series foundation (TimesFM-3, 330M) \u2022 successor to 2.5-200M"
     },
     {
       "model": "SigLIP2",
@@ -1312,14 +1322,14 @@
       "notes": "Open TTS variants (nano + Dramabox) beyond Chatterbox"
     },
     {
-      "model": "GLiNER2 privacy filter",
+      "model": "GLiNER2.5-Decide",
       "company": "Fastino",
-      "released": "2026-06-22",
-      "baseScore": 80,
+      "released": "2026-09-24",
+      "baseScore": 82,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open PII / privacy token classification (gliner2-privacy-filter)"
+      "notes": "Open 340M decide / PII line \u2022 Fastino \u2022 successor to GLiNER2 privacy filter"
     },
     {
       "model": "Fusion Embedding previews",

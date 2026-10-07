@@ -51,7 +51,7 @@ clamp 0-100; `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty o
 
 ## Refreshing scores (pulse date)
 
-USAbench scores are anchored to **`data/usabench.json`** → `pulseDate` (currently July 2026).
+USAbench scores are anchored to **`data/usabench.json`** → `pulseDate` (currently October 2026).
 
 When the pulse advances or a model release changes:
 
