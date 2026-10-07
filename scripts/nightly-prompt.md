@@ -1,4 +1,4 @@
-Refresh USA-Bench at /Users/sd/Projects/usa-bench.
+Refresh USA-Bench in this checkout. You are on a GitHub Actions runner, not a laptop. The git remote is already authenticated. Push to origin master and push the tag. Do not change the remote URL. Do not force-push.
 
 Follow Agents.md in this repo. One table. Do not split LLM and non-LLM.
 
