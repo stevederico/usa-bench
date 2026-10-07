@@ -234,6 +234,8 @@ const COMPANY_LINKS = {
   "Nous Research": "NousResearch",
   "BlinkDL": "BlinkDL",
   "Fastino": "fastino",
+  "Cloudflare": "Cloudflare",
+  "Perplexity": "perplexity-ai",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",

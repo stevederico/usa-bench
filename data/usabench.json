@@ -1,7 +1,7 @@
 {
   "pulseDate": "2026-10-07",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -572,6 +572,16 @@
       "notes": "Nemotron-3-Embed 1B/8B + nemotron-3.5 streaming ASR 0.6B \u2022 retrieval + speech"
     },
     {
+      "model": "Nemotron-3-Diarization",
+      "company": "NVIDIA",
+      "released": "2026-09-23",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open 99M Nemotron-3 voice activity and diarization \u2022 specialist beside ASR 3.5"
+    },
+    {
       "model": "diffusiongemma-26B-A4B",
       "company": "Google",
       "released": "2026-07-01",
@@ -645,6 +655,16 @@
       "closed": true,
       "access": "claude.ai / API",
       "notes": "Closed fast Claude 5.5 \u2022 $2/$10 \u2022 near Opus on most work \u2022 use open US weights for sovereignty"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "company": "Anthropic",
+      "released": "2026-10-07",
+      "baseScore": 83,
+      "openSource": false,
+      "closed": true,
+      "access": "claude.ai / API",
+      "notes": "Closed small Claude \u2022 cheapest and fastest Haiku \u2022 about 75% less to run than Haiku 4.5"
     },
     {
       "model": "GPT-Live",
@@ -899,6 +919,17 @@
       "closed": false,
       "access": "HF",
       "notes": "Open edge vector model \u2022 Needle 3 121M \u2022 Needle 2 was 45M \u2022 Cactus Compute"
+    },
+    {
+      "model": "Whistle",
+      "company": "Cactus Compute",
+      "released": "2026-10-02",
+      "baseScore": 75,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Open on-device speech-to-text \u2022 16.9 MB \u2022 Needle decoder \u2022 Apache 2.0 \u2022 same runtime as Needle 3"
     },
     {
       "model": "Supra-Router-51M",
@@ -1182,6 +1213,16 @@
       "notes": "Open 3.1B edge VLM on LFM2.5-2.6B + SigLIP2 400M NaFlex \u2022 screen/UI, grounding, OCR, tools \u2022 228 tok/s M5 Max \u2022 LFM Open License ($10M commercial cap)"
     },
     {
+      "model": "Open d1 (3B / Omni 600M)",
+      "company": "Liquid AI",
+      "released": "2026-10-07",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + LEAP",
+      "notes": "Open decision models on LFM2.5 \u2022 d1-3B text+vision \u2022 d1-omni-600M text+image or audio \u2022 one forward pass, zero output tokens \u2022 Decision Index 48.57 \u2022 LFM Open License"
+    },
+    {
       "model": "YOLO26",
       "company": "Ultralytics",
       "released": "2026-02-12",
@@ -1240,6 +1281,16 @@
       "closed": false,
       "access": "HF",
       "notes": "Open tabular foundation (tabpfn_3) \u2022 classification"
+    },
+    {
+      "model": "Kumo Tabular",
+      "company": "NVIDIA",
+      "released": "2026-09-29",
+      "baseScore": 87,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + NGC",
+      "notes": "Open NVIDIA tabular foundation \u2022 classification and regression \u2022 OpenMDW 1.1"
     },
     {
       "model": "ZAYA1-8B",
@@ -1516,15 +1567,15 @@
       "whyFlagged": "US company; closed API on Kimi checkpoint"
     },
     {
-      "model": "Bonsai 27B / Bonsai family",
+      "model": "Bonsai 2 / Bonsai family",
       "company": "PrismML",
-      "released": "2026-07-14",
-      "baseScore": 70,
+      "released": "2026-09-17",
+      "baseScore": 72,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.6 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Pasadena / Caltech spinoff \u2022 Apache 2.0 1-bit & ternary compression \u2022 phone-class 27B (~3.9 GB) + earlier 8B/4B/1.7B \u2022 edge/on-device intelligence density; foreign foundation (Qwen quant/compress, not US from-scratch)"
+      "whyFlagged": "Ternary Bonsai 2 27B (Sep 17) plus earlier 8B/4B/1.7B \u2022 Pasadena / Caltech spinoff \u2022 Apache 2.0 ternary compression \u2022 foreign Qwen foundation, not US from-scratch"
     },
     {
       "model": "Arctic-LSTM-Speculator",
@@ -1582,6 +1633,72 @@
       "chinaBaseLabel": "Qwen3-4B (Alibaba) LLM backbone",
       "access": "HF",
       "whyFlagged": "Codec-native streaming VLM \u2022 Mage-ViT from-scratch but pairs Qwen3-4B decoder \u2022 foreign language foundation"
+    },
+    {
+      "model": "Clef / Clef-flash",
+      "company": "Cloudflare",
+      "released": "2026-10-01",
+      "baseScore": 74,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Open decision VLMs, Apache 2.0 \u2022 Clef 27B and Clef-flash 9B \u2022 card says post-train of Qwen3.8"
+    },
+    {
+      "model": "AstaBrief-8B",
+      "company": "Ai2 (allenai)",
+      "released": "2026-10-02",
+      "baseScore": 70,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-8B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Cited research-report model \u2022 Apache 2.0 \u2022 initialized from Qwen3-8B \u2022 DPO mix also used DeepSeek judges"
+    },
+    {
+      "model": "FrogNano-4B",
+      "company": "Microsoft",
+      "released": "2026-09-22",
+      "baseScore": 68,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Compact repo coding agent \u2022 Apache 2.0 \u2022 RL post-train on Qwen3.5-4B \u2022 Leaf harness"
+    },
+    {
+      "model": "PixelUMM",
+      "company": "NVIDIA",
+      "released": "2026-10-01",
+      "baseScore": 72,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-8B (Alibaba)",
+      "access": "HF + NGC",
+      "whyFlagged": "Pixel image and video generator \u2022 ~15B \u2022 language backbone is Qwen3-8B \u2022 checkpoint is NVIDIA noncommercial"
+    },
+    {
+      "model": "pplx-decider-v1-27b",
+      "company": "Perplexity",
+      "released": "2026-10-01",
+      "baseScore": 70,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Decision model \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.8-27B"
+    },
+    {
+      "model": "pplx-embed-v2-context-9b",
+      "company": "Perplexity",
+      "released": "2026-09-30",
+      "baseScore": 68,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Contextual embedding preview \u2022 MIT \u2022 card tag pplx_contextual_qwen3_5 \u2022 foreign weight foundation"
     }
   ]
 }
