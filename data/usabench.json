@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-07",
+  "pulseDate": "2026-10-09",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 0,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1679,15 +1679,15 @@
       "whyFlagged": "Pixel image and video generator \u2022 ~15B \u2022 language backbone is Qwen3-8B \u2022 checkpoint is NVIDIA noncommercial"
     },
     {
-      "model": "pplx-decider-v1-27b",
+      "model": "pplx-decider-v1.1-27b",
       "company": "Perplexity",
-      "released": "2026-10-01",
+      "released": "2026-10-05",
       "baseScore": 70,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Decision model \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.8-27B"
+      "whyFlagged": "Decision model \u2022 Apache 2.0 \u2022 v1.1 fine-tune of Qwen3.8-27B \u2022 Decision Index 61.56"
     },
     {
       "model": "pplx-embed-v2-context-9b",
@@ -1699,6 +1699,28 @@
       "chinaBaseLabel": "Qwen3.5 (Alibaba)",
       "access": "HF",
       "whyFlagged": "Contextual embedding preview \u2022 MIT \u2022 card tag pplx_contextual_qwen3_5 \u2022 foreign weight foundation"
+    },
+    {
+      "model": "KittenTTS 2",
+      "company": "Stellon Labs",
+      "released": "2026-10-07",
+      "baseScore": 72,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-1.7B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Voice cloning TTS \u2022 1.7B speech LM \u2022 Qwen3ForCausalLM \u2022 RL weights 7 Oct \u2022 Stellon community license"
+    },
+    {
+      "model": "Interfaze 1 Lite",
+      "company": "Interfaze",
+      "released": "2026-10-05",
+      "baseScore": 74,
+      "openSource": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "SF document model \u2022 Apache glue \u2022 reasoning core is Qwen3.8-27B FP8 \u2022 also bundles PaddleOCR"
     }
   ]
 }

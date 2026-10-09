@@ -171,10 +171,12 @@
 | 157  | AstaBrief-8B | Ai2 (allenai) | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Cited research-report model • Apache 2.0 • initialized from Qwen3-8B • DPO mix also used DeepSeek judges | HF |
 | 158  | FrogNano-4B | Microsoft | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.5-4B (Alibaba) • Compact repo coding agent • Apache 2.0 • RL post-train on Qwen3.5-4B • Leaf harness | HF |
 | 159  | PixelUMM | NVIDIA | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Pixel image and video generator • ~15B • language backbone is Qwen3-8B • checkpoint is NVIDIA noncommercial | HF + NGC |
-| 160  | pplx-decider-v1-27b | Perplexity | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • Decision model • Apache 2.0 • fine-tune of Qwen3.8-27B | HF |
+| 160  | pplx-decider-v1.1-27b | Perplexity | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • Decision model • Apache 2.0 • v1.1 fine-tune of Qwen3.8-27B • Decision Index 61.56 | HF |
 | 161  | pplx-embed-v2-context-9b | Perplexity | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Contextual embedding preview • MIT • card tag pplx_contextual_qwen3_5 • foreign weight foundation | HF |
+| 162  | KittenTTS 2 | Stellon Labs | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-1.7B (Alibaba) • Voice cloning TTS • 1.7B speech LM • Qwen3ForCausalLM • RL weights 7 Oct • Stellon community license | HF |
+| 163  | Interfaze 1 Lite | Interfaze | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • SF document model • Apache glue • reasoning core is Qwen3.8-27B FP8 • also bundles PaddleOCR | HF |
 
-> **US AI Pulse · October 2026** — **0 days** since the last major US release
+> **US AI Pulse · October 2026** — **2 days** since the last major US release
 
 ### Criteria
 - US HQ + US-built

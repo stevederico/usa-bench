@@ -236,6 +236,8 @@ const COMPANY_LINKS = {
   "Fastino": "fastino",
   "Cloudflare": "Cloudflare",
   "Perplexity": "perplexity-ai",
+  "Stellon Labs": "KittenML",
+  "Interfaze": "interfaze-ai",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
