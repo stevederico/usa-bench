@@ -4,6 +4,16 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.22.0
+
+  Flag Microsoft Decision
+  Flag H2O Lightning
+  Flag Nace Drex
+  Flag Loop OpenJev
+  Update Clef Omni
+  Update Perplexity embed
+  Advance October pulse
+
 0.21.0
 
   Flag KittenTTS 2

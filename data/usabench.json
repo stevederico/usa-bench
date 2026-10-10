@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-09",
+  "pulseDate": "2026-10-10",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1635,15 +1635,15 @@
       "whyFlagged": "Codec-native streaming VLM \u2022 Mage-ViT from-scratch but pairs Qwen3-4B decoder \u2022 foreign language foundation"
     },
     {
-      "model": "Clef / Clef-flash",
+      "model": "Clef / Clef-flash / Omni",
       "company": "Cloudflare",
-      "released": "2026-10-01",
-      "baseScore": 74,
+      "released": "2026-10-09",
+      "baseScore": 76,
       "openSource": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.8 (Alibaba)",
+      "chinaBaseLabel": "Qwen3.8 + Qwen3-Omni (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Open decision VLMs, Apache 2.0 \u2022 Clef 27B and Clef-flash 9B \u2022 card says post-train of Qwen3.8"
+      "whyFlagged": "Open decision models, Apache 2.0 \u2022 Clef 27B and Clef-flash 9B on Qwen3.8 \u2022 Clef-omni 30B-A3B (9 Oct) post-train of Qwen3-Omni \u2022 text, image, audio, video"
     },
     {
       "model": "AstaBrief-8B",
@@ -1690,15 +1690,15 @@
       "whyFlagged": "Decision model \u2022 Apache 2.0 \u2022 v1.1 fine-tune of Qwen3.8-27B \u2022 Decision Index 61.56"
     },
     {
-      "model": "pplx-embed-v2-context-9b",
+      "model": "pplx-embed-v2 (context / late)",
       "company": "Perplexity",
-      "released": "2026-09-30",
-      "baseScore": 68,
+      "released": "2026-10-07",
+      "baseScore": 70,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.5 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Contextual embedding preview \u2022 MIT \u2022 card tag pplx_contextual_qwen3_5 \u2022 foreign weight foundation"
+      "whyFlagged": "Embed v2 family \u2022 MIT \u2022 context-9b plus late ColBERT 0.6B and 9B (7 Oct) \u2022 built on Qwen3.5 \u2022 foreign weight foundation"
     },
     {
       "model": "KittenTTS 2",
@@ -1721,6 +1721,55 @@
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF",
       "whyFlagged": "SF document model \u2022 Apache glue \u2022 reasoning core is Qwen3.8-27B FP8 \u2022 also bundles PaddleOCR"
+    },
+    {
+      "model": "Microsoft-Decision-1",
+      "company": "Microsoft",
+      "released": "2026-10-09",
+      "baseScore": 78,
+      "openSource": false,
+      "closed": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-9B (Alibaba)",
+      "access": "Foundry",
+      "whyFlagged": "Closed Foundry decision scorer \u2022 post-train of Qwen3.5-9B \u2022 announced 9 Oct \u2022 Foundry card date 8 Oct \u2022 weights not released \u2022 rebase on MAI and OpenAI planned"
+    },
+    {
+      "model": "H2O-Lightning-4B",
+      "company": "H2O.ai",
+      "released": "2026-10-02",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Mountain View decision VLM \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.5-4B \u2022 JevBench open composite lead (7 Oct) \u2022 v1.2 card refresh 10 Oct"
+    },
+    {
+      "model": "Drex 1.5 / DLM",
+      "company": "Nace",
+      "released": "2026-10-09",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5 via MiMo + Qwen3 via Efficient-DLM",
+      "access": "HF",
+      "whyFlagged": "Palo Alto \u2022 Drex 1.5 9B open-sourced 9 Oct on Xiaomi MiMo-V2.6 distill of Qwen3.5 \u2022 Drex DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B \u2022 Open RAIL-M and CC BY-NC"
+    },
+    {
+      "model": "OpenJev",
+      "company": "Loop",
+      "released": "2026-09-20",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "San Francisco restaurant-ops lab \u2022 fine-tune of Qwen3.8-27B \u2022 CC BY-NC \u2022 released 20 Sep \u2022 screenshot decisions \u2022 not TypeSafe Jev"
     }
   ]
 }

@@ -167,16 +167,21 @@
 | 153  | Fara1.5 (4B / 9B / 27B) | Microsoft | No | **0** ❌ | Released May 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Computer-use agent CUA family • MIT weights • SFT on Qwen3.5 vision bases • MagenticLite harness | HF |
 | 154  | MagenticBrain 14B | Microsoft | No | **0** ❌ | Released May 2026 • ❌ Foreign base: Qwen3-14B (Alibaba) • Orchestration agent on Qwen3-14B • also used Kimi-2.5 reasoning traces in post-train mix | HF |
 | 155  | Mage-VL / Mage-ViT | Microsoft | No | **0** ❌ | Released Jul 2026 • ❌ Foreign base: Qwen3-4B (Alibaba) LLM backbone • Codec-native streaming VLM • Mage-ViT from-scratch but pairs Qwen3-4B decoder • foreign language foundation | HF |
-| 156  | Clef / Clef-flash | Cloudflare | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8 (Alibaba) • Open decision VLMs, Apache 2.0 • Clef 27B and Clef-flash 9B • card says post-train of Qwen3.8 | HF |
+| 156  | Clef / Clef-flash / Omni | Cloudflare | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8 + Qwen3-Omni (Alibaba) • Open decision models, Apache 2.0 • Clef 27B and Clef-flash 9B on Qwen3.8 • Clef-omni 30B-A3B (9 Oct) post-train of Qwen3-Omni • text, image, audio, video | HF |
 | 157  | AstaBrief-8B | Ai2 (allenai) | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Cited research-report model • Apache 2.0 • initialized from Qwen3-8B • DPO mix also used DeepSeek judges | HF |
 | 158  | FrogNano-4B | Microsoft | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.5-4B (Alibaba) • Compact repo coding agent • Apache 2.0 • RL post-train on Qwen3.5-4B • Leaf harness | HF |
 | 159  | PixelUMM | NVIDIA | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Pixel image and video generator • ~15B • language backbone is Qwen3-8B • checkpoint is NVIDIA noncommercial | HF + NGC |
 | 160  | pplx-decider-v1.1-27b | Perplexity | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • Decision model • Apache 2.0 • v1.1 fine-tune of Qwen3.8-27B • Decision Index 61.56 | HF |
-| 161  | pplx-embed-v2-context-9b | Perplexity | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Contextual embedding preview • MIT • card tag pplx_contextual_qwen3_5 • foreign weight foundation | HF |
+| 161  | pplx-embed-v2 (context / late) | Perplexity | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Embed v2 family • MIT • context-9b plus late ColBERT 0.6B and 9B (7 Oct) • built on Qwen3.5 • foreign weight foundation | HF |
 | 162  | KittenTTS 2 | Stellon Labs | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-1.7B (Alibaba) • Voice cloning TTS • 1.7B speech LM • Qwen3ForCausalLM • RL weights 7 Oct • Stellon community license | HF |
 | 163  | Interfaze 1 Lite | Interfaze | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • SF document model • Apache glue • reasoning core is Qwen3.8-27B FP8 • also bundles PaddleOCR | HF |
+| 164  | Microsoft-Decision-1 | Microsoft | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-9B (Alibaba) • Closed Foundry decision scorer • post-train of Qwen3.5-9B • announced 9 Oct • Foundry card date 8 Oct • weights not released • rebase on MAI and OpenAI planned | Foundry |
+| 165  | H2O-Lightning-4B | H2O.ai | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-4B (Alibaba) • Mountain View decision VLM • Apache 2.0 • fine-tune of Qwen3.5-4B • JevBench open composite lead (7 Oct) • v1.2 card refresh 10 Oct | HF |
+| 166  | Drex 1.5 / DLM | Nace | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 via MiMo + Qwen3 via Efficient-DLM • Palo Alto • Drex 1.5 9B open-sourced 9 Oct on Xiaomi MiMo-V2.6 distill of Qwen3.5 • Drex DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B • Open RAIL-M and CC BY-NC | HF |
+| 167  | OpenJev | Loop | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco restaurant-ops lab • fine-tune of Qwen3.8-27B • CC BY-NC • released 20 Sep • screenshot decisions • not TypeSafe Jev | HF |
 
-> **US AI Pulse · October 2026** — **2 days** since the last major US release
+> **US AI Pulse · October 2026**  
+> **3 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built
