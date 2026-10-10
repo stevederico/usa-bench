@@ -238,6 +238,8 @@ const COMPANY_LINKS = {
   "Perplexity": "perplexity-ai",
   "Stellon Labs": "KittenML",
   "Interfaze": "interfaze-ai",
+  "Nace": "nace-ai",
+  "Loop": "openjev",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
