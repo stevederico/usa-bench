@@ -179,9 +179,11 @@
 | 165  | H2O-Lightning-4B | H2O.ai | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-4B (Alibaba) • Mountain View decision VLM • Apache 2.0 • fine-tune of Qwen3.5-4B • JevBench open composite lead (7 Oct) • v1.2 card refresh 10 Oct | HF |
 | 166  | Drex 1.5 / DLM | Nace | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 via MiMo + Qwen3 via Efficient-DLM • Palo Alto • Drex 1.5 9B open-sourced 9 Oct on Xiaomi MiMo-V2.6 distill of Qwen3.5 • Drex DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B • Open RAIL-M and CC BY-NC | HF |
 | 167  | OpenJev | Loop | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco restaurant-ops lab • fine-tune of Qwen3.8-27B • CC BY-NC • released 20 Sep • screenshot decisions • not TypeSafe Jev | HF |
+| 168  | Vela 2.0 (0.3B–9B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Open routing family • Apache 2.0 • 0.8B, 4B, and 9B decoders on Qwen3.5 via Decision 2.0 • 0.3B encoder continues Johns Hopkins mmBERT • safety, PII spans, hallucination • vLLM Semantic Router with KR Labs • 6 Oct | HF |
+| 169  | CLM-8B | Stanford / NVIDIA | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Stanford and NVIDIA Research • Apache 2.0 projection heads • frozen Qwen3-8B encoder • agent action scoring • posted 23 Sep | HF |
 
 > **US AI Pulse · October 2026**  
-> **3 days** since the last major US release — USAbench recency anchor
+> **4 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built
