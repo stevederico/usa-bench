@@ -240,6 +240,8 @@ const COMPANY_LINKS = {
   "Interfaze": "interfaze-ai",
   "Nace": "nace-ai",
   "Loop": "openjev",
+  "vLLM": "vllm-sr",
+  "Stanford / NVIDIA": "Contrastive-LM",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
