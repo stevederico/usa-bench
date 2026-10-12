@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-11",
+  "pulseDate": "2026-10-12",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 4,
+  "daysSinceMajorRelease": 5,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1794,6 +1794,57 @@
       "chinaBaseLabel": "Qwen3-8B (Alibaba)",
       "access": "HF",
       "whyFlagged": "Stanford and NVIDIA Research \u2022 Apache 2.0 projection heads \u2022 frozen Qwen3-8B encoder \u2022 agent action scoring \u2022 posted 23 Sep"
+    },
+    {
+      "model": "Decision 3.0 (0.6B\u201327B)",
+      "company": "vLLM",
+      "released": "2026-10-11",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B + Qwen3.5 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Multimodal decision family \u2022 Apache 2.0 \u2022 d3 27B on Qwen3.8-27B \u2022 flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5 \u2022 weights 10 Oct \u2022 announced 11 Oct"
+    },
+    {
+      "model": "ALoDLM (1.7B / 8B)",
+      "company": "Amazon",
+      "released": "2026-10-02",
+      "baseScore": 72,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-1.7B / Qwen3-8B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Seattle diffusion language models \u2022 CC BY-NC \u2022 initialized from Qwen3 \u2022 adaptive looped denoiser \u2022 card 2 Oct \u2022 refresh 7 Oct"
+    },
+    {
+      "model": "AesCode (8B / 32B)",
+      "company": "Microsoft",
+      "released": "2026-09-29",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-VL-8B / 32B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "HTML and CSS visual artifacts \u2022 Apache 2.0 \u2022 SFT plus GDPO on Qwen3-VL \u2022 created 29 Sep \u2022 card refresh 7 Oct"
+    },
+    {
+      "model": "Carbon-A 1.2B",
+      "company": "Hugging Face Bio",
+      "released": "2026-10-08",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "GENERanno (Alibaba Cloud)",
+      "access": "HF",
+      "whyFlagged": "Eukaryotic gene annotator \u2022 Apache 2.0 pipeline \u2022 blog 8 Oct \u2022 1.2B weights preserved from GenerTeam GENERanno \u2022 Alibaba Cloud foundation"
     }
   ]
 }

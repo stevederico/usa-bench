@@ -10,6 +10,7 @@
 
 ### Models
 
+
 | Rank | Model / Family | Company | Open Source | USAbench | Notes | Access |
 |------|----------------|---------|-------------|----------|-------|--------|
 | 1    | Muse Glimmer 30B | [Meta](https://huggingface.co/meta-llama) | Yes | **99** ⭐⭐⭐ | Released Aug 2026 • MSL open agentic 30B dense • Apache 2.0 • local always-on agents • multimodal • distilled from Muse Spark • first Meta open weights since Llama 4 | [HF](https://huggingface.co) + llama.cpp / MLX / vLLM |
@@ -181,9 +182,13 @@
 | 167  | OpenJev | Loop | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco restaurant-ops lab • fine-tune of Qwen3.8-27B • CC BY-NC • released 20 Sep • screenshot decisions • not TypeSafe Jev | HF |
 | 168  | Vela 2.0 (0.3B–9B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Open routing family • Apache 2.0 • 0.8B, 4B, and 9B decoders on Qwen3.5 via Decision 2.0 • 0.3B encoder continues Johns Hopkins mmBERT • safety, PII spans, hallucination • vLLM Semantic Router with KR Labs • 6 Oct | HF |
 | 169  | CLM-8B | Stanford / NVIDIA | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Stanford and NVIDIA Research • Apache 2.0 projection heads • frozen Qwen3-8B encoder • agent action scoring • posted 23 Sep | HF |
+| 170  | Decision 3.0 (0.6B–27B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B + Qwen3.5 (Alibaba) • Multimodal decision family • Apache 2.0 • d3 27B on Qwen3.8-27B • flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5 • weights 10 Oct • announced 11 Oct | HF |
+| 171  | ALoDLM (1.7B / 8B) | Amazon | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-1.7B / Qwen3-8B (Alibaba) • Seattle diffusion language models • CC BY-NC • initialized from Qwen3 • adaptive looped denoiser • card 2 Oct • refresh 7 Oct | HF |
+| 172  | AesCode (8B / 32B) | Microsoft | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-VL-8B / 32B (Alibaba) • HTML and CSS visual artifacts • Apache 2.0 • SFT plus GDPO on Qwen3-VL • created 29 Sep • card refresh 7 Oct | HF |
+| 173  | Carbon-A 1.2B | Hugging Face Bio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: GENERanno (Alibaba Cloud) • Eukaryotic gene annotator • Apache 2.0 pipeline • blog 8 Oct • 1.2B weights preserved from GenerTeam GENERanno • Alibaba Cloud foundation | HF |
 
 > **US AI Pulse · October 2026**  
-> **4 days** since the last major US release — USAbench recency anchor
+> **5 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built

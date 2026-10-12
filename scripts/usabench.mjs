@@ -242,6 +242,8 @@ const COMPANY_LINKS = {
   "Loop": "openjev",
   "vLLM": "vllm-sr",
   "Stanford / NVIDIA": "Contrastive-LM",
+  "Amazon": "amazon",
+  "Hugging Face Bio": "HuggingFaceBio",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
