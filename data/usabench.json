@@ -1,7 +1,7 @@
 {
   "pulseDate": "2026-10-12",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 5,
+  "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -140,6 +140,26 @@
       "permissive": true,
       "access": "HF + llama.cpp / MLX / vLLM",
       "notes": "MSL open agentic 30B dense \u2022 Apache 2.0 \u2022 local always-on agents \u2022 multimodal \u2022 distilled from Muse Spark \u2022 first Meta open weights since Llama 4"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "company": "Meta",
+      "released": "2026-10-12",
+      "baseScore": 90,
+      "openSource": false,
+      "closed": true,
+      "access": "Muse Code",
+      "notes": "MSL closed flagship \u2022 own Prometheus pretrain \u2022 1M ctx \u2022 image/video/audio in, text out \u2022 AA Index 56 (Opus 5.5 is 58) \u2022 PSI 59.1 \u2022 DeepSWE 79.0 \u2022 SWE-Marathon 57.5 \u2022 Muse Code subscribers"
+    },
+    {
+      "model": "Muse Wonder",
+      "company": "Meta",
+      "released": "2026-10-12",
+      "baseScore": 89,
+      "openSource": false,
+      "closed": true,
+      "access": "meta.ai / Meta Model API / Muse Code",
+      "notes": "MSL fast frontier \u2022 own Prometheus pretrain \u2022 1M ctx \u2022 AA Index 52 \u2022 PSI 54.3 \u2022 MemoryBench 85.6 \u2022 DeepSWE 78.8 \u2022 Meta Model API + Muse Code"
     },
     {
       "model": "Muse Spark 1.3 / Muse Code",
