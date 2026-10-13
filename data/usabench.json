@@ -1,5 +1,5 @@
 {
-  "pulseDate": "2026-10-12",
+  "pulseDate": "2026-10-13",
   "pulseLabel": "October 2026",
   "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
@@ -111,14 +111,24 @@
       "notes": "4.7 on a larger base than 4.6 \u2022 500k ctx \u2022 $2/$6 \u2022 coding + knowledge work \u2022 closed"
     },
     {
-      "model": "Gemini 4 Argon / 3.8 + Nano Banana 2.1",
+      "model": "Gemini 4 Argon",
+      "company": "Google",
+      "released": "2026-10-13",
+      "baseScore": 86,
+      "openSource": false,
+      "closed": true,
+      "access": "gemini.google.com / Gemini API / AI Studio / Antigravity",
+      "notes": "GA Oct 13 after limited Fairwind preview (Sep 30) \u2022 1M unified in/out token limit \u2022 #1 Vals Index (Google claim) \u2022 ERQA 87% \u2022 intro $2/$10 per 1M (to $4/$20 after Nov 30) \u2022 closed, use Gemma 4 for open"
+    },
+    {
+      "model": "Gemini 3.8 + Nano Banana 2.1",
       "company": "Google",
       "released": "2026-10-06",
       "baseScore": 86,
       "openSource": false,
       "closed": true,
       "access": "gemini.google.com",
-      "notes": "Argon (Sep 30, limited Fairwind) \u2022 3.8 Flash (Sep 2) \u2022 Nano Banana 2.1 (Oct 6) \u2022 use Gemma 4 for open"
+      "notes": "3.8 Flash (Sep 2) \u2022 Nano Banana 2.1 (Oct 6) \u2022 use Gemma 4 for open"
     },
     {
       "model": "Llama 4 Maverick / Scout",
