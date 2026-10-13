@@ -51,14 +51,15 @@
       "notes": "Efficient local + multimodal"
     },
     {
-      "model": "Arcee Trinity Large",
+      "model": "Arcee Trinity-Large-Thinking",
       "company": "Arcee AI",
-      "released": "2026-03-01",
-      "baseScore": 97,
+      "released": "2026-04-01",
+      "baseScore": 96,
       "openSource": true,
       "closed": false,
-      "access": "HF",
-      "notes": "Agentic open"
+      "permissive": true,
+      "access": "HF + Arcee API + OpenRouter",
+      "notes": "398B/13B MoE on own Trinity-Large-Base \u2022 reasoning + agentic RL \u2022 OpenMDW-1.1 \u2022 no foreign teacher disclosed \u2022 score basis vs Nemotron 3 Super cards: GPQA 76.3/79.2, MMLU-Pro 83.4/83.7, AIME25 96.3/90.2, SWE-V 63.2/60.5, Tau2 Airline 88.0/56.3, IFBench 52.3/72.6 \u2022 above gpt-oss-120b, trails GLM-5 / Kimi K2.5"
     },
     {
       "model": "Liquid LFM2.5 / LFM2",
@@ -1875,6 +1876,19 @@
       "chinaBaseLabel": "GENERanno (Alibaba Cloud)",
       "access": "HF",
       "whyFlagged": "Eukaryotic gene annotator \u2022 Apache 2.0 pipeline \u2022 blog 8 Oct \u2022 1.2B weights preserved from GenerTeam GENERanno \u2022 Alibaba Cloud foundation"
+    },
+    {
+      "model": "NousCoder-14B",
+      "company": "Nous Research",
+      "released": "2025-12-23",
+      "baseScore": 0,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-14B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Competitive coding RL post-train \u2022 Apache 2.0 \u2022 LiveCodeBench v6 67.87 (Qwen3-14B 60.79) \u2022 HF created 23 Dec 2025 \u2022 Qwen3-14B weight foundation"
     }
   ]
 }
