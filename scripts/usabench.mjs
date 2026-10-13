@@ -2,10 +2,10 @@
 /**
  * USAbench score calculator (v2) — anchored to data/usabench.json pulseDate.
  * Rewards US open-weights sovereignty + recency + full transparency.
- * No separate closed section — closed models just get stricter cap.
+ * No separate closed section — closed models just take a flat penalty.
  *
  * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china − foreignTeacher
- * Closed models capped (default 82). foreign weight base → hard 0; foreign teacher → soft note + penalty.
+ * Closed models −closedPenalty (default 10) after all other adjustments. foreign weight base → hard 0; foreign teacher → soft note + penalty.
  *
  * Usage:
  *   node scripts/usabench.mjs           # print scores + markdown rows
@@ -83,7 +83,7 @@ function isForeignDisqualified(entry) {
   return Boolean(entry.chinaBase);
 }
 
-function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedCap) {
+function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedPenalty) {
   let recency = 0;
   let ageMonths = null;
 
@@ -104,7 +104,8 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   const totalPenalty = recency + china + teacher;
 
   score -= totalPenalty;
-  if (entry.closed) score = Math.min(score, closedCap);
+  const closed = entry.closed ? closedPenalty : 0;
+  score -= closed;
   score = Math.max(0, Math.min(100, score));
   // foreign weight base → hard 0; foreign teacher is soft penalty only
   if (isForeignDisqualified(entry)) score = 0;
@@ -117,6 +118,7 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
     recencyPenalty: recency,
     chinaPenalty: china,
     foreignTeacherPenalty: teacher,
+    closedPenalty: closed,
     totalPenalty,
     fullOpenBonus: fullOpen,
     permissiveBonus: permissive,
@@ -138,10 +140,10 @@ const chinaBasePenalty = data.chinaBasePenalty ?? 25;
 const foreignTeacherPenalty = data.foreignTeacherPenalty ?? 15;
 const fullOpenBonus = data.fullOpenBonus ?? 0;
 const permissiveBonus = data.permissiveBonus ?? 0;
-const closedCap = data.closedCap ?? 82;
+const closedPenalty = data.closedPenalty ?? 10;
 
 const models = [...data.frontier, ...data.flagged]
-  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedCap))
+  .map((e) => scoreEntry(e, pulse, data.decay, chinaBasePenalty, foreignTeacherPenalty, fullOpenBonus, permissiveBonus, closedPenalty))
   .sort((a, b) => b.score - a.score)
   .map((e, i) => ({ ...e, rank: i + 1 }));
 
@@ -273,7 +275,7 @@ const output = {
   foreignTeacherPenalty,
   fullOpenBonus,
   permissiveBonus,
-  closedCap,
+  closedPenalty,
   models,
 };
 
@@ -286,7 +288,7 @@ const days = data.daysSinceMajorRelease ?? 0;
 const daysLabel = days === 0 ? "**0 days**" : days === 1 ? "**1 day**" : `**${days} days**`;
 
 console.log(`USAbench pulse (v2): ${data.pulseLabel} (${data.pulseDate})\n`);
-console.log(`params: fullOpenBonus=${fullOpenBonus}, permissiveBonus=${permissiveBonus}, closedCap=${closedCap}, chinaPenalty=${chinaBasePenalty}, foreignTeacherPenalty=${foreignTeacherPenalty}`);
+console.log(`params: fullOpenBonus=${fullOpenBonus}, permissiveBonus=${permissiveBonus}, closedPenalty=${closedPenalty}, chinaPenalty=${chinaBasePenalty}, foreignTeacherPenalty=${foreignTeacherPenalty}`);
 console.log(`recency decay: ${JSON.stringify(data.decay)}\n`);
 console.log("## README pulse callout\n");
 console.log(`> **US AI Pulse · ${data.pulseLabel}**  `);
@@ -304,10 +306,11 @@ for (const e of models) {
   const parts = [`−${e.recencyPenalty} recency`];
   if (e.chinaPenalty) parts.push(`−${e.chinaPenalty} China`);
   if (e.foreignTeacherPenalty) parts.push(`−${e.foreignTeacherPenalty} foreign teacher`);
+  if (e.closedPenalty) parts.push(`−${e.closedPenalty} closed`);
   if (!e.chinaPenalty && !e.foreignTeacherPenalty) {
     // keep compact −N when only recency
   }
-  const penaltyDetail = e.chinaPenalty || e.foreignTeacherPenalty
+  const penaltyDetail = e.chinaPenalty || e.foreignTeacherPenalty || e.closedPenalty
     ? parts.join(", ")
     : `−${e.totalPenalty}`;
   console.log(

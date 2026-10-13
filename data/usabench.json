@@ -6,7 +6,7 @@
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
   "permissiveBonus": 3,
-  "closedCap": 82,
+  "closedPenalty": 10,
   "decay": [
     {
       "maxMonths": 3,
