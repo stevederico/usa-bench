@@ -25,17 +25,17 @@ Thank you for your interest in contributing to **USA-Bench** — the US AI sover
 
 ## USAbench Scoring Guide
 
-USAbench (v2) weights **US open-weights sovereignty + recency + full transparency**. One table for everything (no separate closed section). Closed models simply get a stricter cap. baseScore is the curator's quality anchor; bonuses are mechanical.
+USAbench (v2) weights **US open-weights sovereignty + recency + full transparency**. One table for everything (no separate closed section). Closed models simply take a flat penalty. baseScore is the curator's quality anchor; bonuses are mechanical.
 
 - **95-100** ⭐⭐⭐: Recent pure-US open with strong base + bonuses
-- **80-94** ⭐⭐: Strong open or capped closed frontier
+- **80-94** ⭐⭐: Strong open or top closed frontier (after the closed penalty)
 - **60-79** ⭐: Older US open (recency hurts) or soft-noted foreign teacher
 - **0**: Foreign weight base only (`chinaBase`)
 
 **Scoring formula (in script)**
 baseScore + fullOpenBonus (5) + permissiveBonus (3) − recency − chinaPenalty(25) − foreignTeacherPenalty(15)
-if closed: min(score, closedCap=82)
-clamp 0-100; `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty only
+if closed: score − closedPenalty (10), after all other adjustments
+clamp 0-100 (floored at 0); `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty only
 
 **Scoring checklist**
 1. US HQ + primary dev in USA (required)
@@ -45,7 +45,7 @@ clamp 0-100; `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty o
 5. Steeper recency decay (0–3mo:0 • 4–6:3 • 7–12:8 • 13–18:15 • 19+:22)
 6. Foreign weight base → `flagged` + `chinaBase: true` + labels → hard 0
 7. Foreign SFT/RL teacher/synth (own pretrain) → `frontier` + `foreignTeacher: true` + labels → soft −15 (note, not zero)
-8. Closed models capped at 82 (stricter than before)
+8. Closed models (`closed: true`) take a flat −10 after all other adjustments (floored at 0)
 
 **Foreign influence:** weight foundation = hard 0. Own-US pretrain + foreign SFT/synth teacher = note + soft ding (default −15).
 

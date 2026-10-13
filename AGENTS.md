@@ -41,7 +41,7 @@ Agent instructions for **USA-Bench** — US AI sovereignty leaderboard.
 - **Foreign weight foundation** (Qwen / GLM / Kimi / DeepSeek / etc. as weight base): `flagged` + `chinaBase: true` + hard score **0**
 - **Foreign teacher** (SFT/RL synth from foreign generators; own pretrain claimed): stay on `frontier` with `foreignTeacher: true` + soft `foreignTeacherPenalty` (default **15**) — **note, do not hard-zero**
 - **US org quantizing foreign bases** (e.g. `nvidia/*-NVFP4` of GLM): flag, do not rank as US-open
-- **Closed US** (`closed: true`): cap 82
+- **Closed US** (`closed: true`): flat `closedPenalty` **−10** after all other adjustments (floored at 0)
 
 ## Discover new models — Hugging Face Trending technique
 
