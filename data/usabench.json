@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-13",
+  "pulseDate": "2026-10-14",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 0,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -64,12 +64,12 @@
     {
       "model": "Liquid LFM2.5 / LFM2",
       "company": "Liquid AI",
-      "released": "2026-06-01",
+      "released": "2026-10-13",
       "baseScore": 96,
       "openSource": true,
       "closed": false,
       "access": "HF + LEAP + Ollama",
-      "notes": "MIT spinoff \u2022 edge/on-device \u2022 230M\u201324B MoE \u2022 VL + Audio \u2022 LFM Open License ($10M commercial cap)"
+      "notes": "MIT spinoff \u2022 LFM2.5-24B-A2B (13 Oct) largest/final family member \u2022 24B/2.45B MoE \u2022 131K ctx \u2022 33T pretrain \u2022 agentic RL \u2022 LiveClaw 48.09 \u2022 184 tok/s M5 Max \u2022 230M\u201324B + VL + Audio \u2022 LFM Open License ($10M commercial cap)"
     },
     {
       "model": "Beam",
@@ -1284,14 +1284,14 @@
       "notes": "Open nano embedding model (voyage-4-nano) \u2022 retrieval"
     },
     {
-      "model": "Chandra OCR 2 / Lift",
+      "model": "Chandra OCR 2 / Lift / Indra",
       "company": "Datalab",
-      "released": "2026-05-07",
+      "released": "2026-10-13",
       "baseScore": 84,
       "openSource": true,
       "closed": false,
       "access": "HF",
-      "notes": "Open OCR + layout (chandra-ocr-2, lift) \u2022 document AI"
+      "notes": "Open OCR + layout \u2022 Chandra 2 flagship \u2022 Lift extract \u2022 Indra 1M CPU OCR (13 Oct) 49 pg/s \u2022 document AI"
     },
     {
       "model": "OmniCoder-9B",
@@ -1889,6 +1889,31 @@
       "chinaBaseLabel": "Qwen3-14B (Alibaba)",
       "access": "HF",
       "whyFlagged": "Competitive coding RL post-train \u2022 Apache 2.0 \u2022 LiveCodeBench v6 67.87 (Qwen3-14B 60.79) \u2022 HF created 23 Dec 2025 \u2022 Qwen3-14B weight foundation"
+    },
+    {
+      "model": "Drama 3",
+      "company": "Fish Audio",
+      "released": "2026-10-13",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-35B-A3B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Palo Alto TTS lab \u2022 35B/3B MoE \u2022 open weights 13 Oct \u2022 Fish Audio Community License \u2022 initialized from Qwen3.5-35B-A3B LM backbone \u2022 own codebook-MTP decoder"
+    },
+    {
+      "model": "Underdog Saluki 27B",
+      "company": "Conway Research",
+      "released": "2026-10-08",
+      "baseScore": 70,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "San Francisco lab (Underdog) \u2022 2-bit GGUF of Qwen3.8-27B \u2022 7.89 GB \u2022 Apache 2.0 \u2022 tool-calling quant \u2022 8 Oct"
     }
   ]
 }

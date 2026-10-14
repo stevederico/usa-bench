@@ -4,6 +4,14 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.29.0
+
+  Update LFM2.5-24B-A2B
+  Add Indra OCR
+  Flag Drama 3
+  Flag Underdog Saluki
+  Advance October pulse
+
 0.28.0
 
   Update Trinity-Large-Thinking
