@@ -228,6 +228,8 @@ const COMPANY_LINKS = {
   "Sesame": "sesame",
   "Voyage AI": "voyageai",
   "Datalab": "datalab-to",
+  "Fish Audio": "fishaudio",
+  "Conway Research": "ConwayResearch",
   "Tesslate": "Tesslate",
   "Prior Labs": "Prior-Labs",
   "Zyphra": "Zyphra",
