@@ -43,6 +43,21 @@ Agent instructions for **USA-Bench** — US AI sovereignty leaderboard.
 - **US org quantizing foreign bases** (e.g. `nvidia/*-NVFP4` of GLM): flag, do not rank as US-open
 - **Closed US** (`closed: true`): flat `closedPenalty` **−10** after all other adjustments (floored at 0)
 
+### Score cap (100 = fully open AND US-made)
+
+No score ever exceeds 100 at any step. Only clean, fully open US models can hit 100.
+
+| Step | Rule |
+|------|------|
+| Cap | `cap = 100` only if `fullOpen && !foreignTeacher && !chinaBase && !closed`, else `cap = 99` |
+| 1. Bonuses | `score = Math.min(cap, baseScore + fullOpenBonus + permissiveBonus)` |
+| 2. Penalties | subtract recency + china + `foreignTeacherPenalty` + `closedPenalty` |
+| 3. Clamp | `score = clamp(score, 0, cap)` |
+| 4. Foreign base | `chinaBase` → hard **0** |
+
+- Bonuses over the cap are lost, so penalties bite from the cap, not from the raw sum
+- `cap` is exposed on each scored entry (`--json`)
+
 ## Discover new models — Hugging Face Trending technique
 
 Use this when asked to find / refresh candidate models.
