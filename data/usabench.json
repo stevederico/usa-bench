@@ -1640,13 +1640,13 @@
     {
       "model": "Bonsai 2 / Bonsai family",
       "company": "PrismML",
-      "released": "2026-09-17",
+      "released": "2026-10-15",
       "baseScore": 72,
       "openSource": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.6 (Alibaba)",
+      "chinaBaseLabel": "Qwen3.5 + Qwen3.8 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Ternary Bonsai 2 27B (Sep 17) plus earlier 8B/4B/1.7B \u2022 Pasadena / Caltech spinoff \u2022 Apache 2.0 ternary compression \u2022 foreign Qwen foundation, not US from-scratch"
+      "whyFlagged": "Ternary Bonsai 2 2B / 4B / 9B launched 15 Oct on Qwen3.5-2B/4B/9B plus 27B (Sep 17) on Qwen3.8-27B \u2022 Pasadena / Caltech spinoff \u2022 Apache 2.0 ternary compression (~9x smaller) \u2022 reasoning, vision, tool calling on-device \u2022 no training data or recipes \u2022 foreign Qwen foundation, not US from-scratch"
     },
     {
       "model": "Arctic-LSTM-Speculator",
@@ -1855,7 +1855,7 @@
       "whyFlagged": "San Francisco restaurant-ops lab \u2022 fine-tune of Qwen3.8-27B \u2022 CC BY-NC \u2022 released 20 Sep \u2022 screenshot decisions \u2022 not TypeSafe Jev"
     },
     {
-      "model": "Vela 2.0 (0.3B–9B)",
+      "model": "Vela 2.0 (0.3B\u20139B)",
       "company": "vLLM",
       "released": "2026-10-06",
       "baseScore": 74,
