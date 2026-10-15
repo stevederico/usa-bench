@@ -170,6 +170,18 @@
       "notes": "Open weights pioneer \u2022 \u26a0\ufe0f aging"
     },
     {
+      "model": "Muse Spark Open",
+      "company": "Meta",
+      "released": "2026-10-15",
+      "baseScore": 98,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": false,
+      "permissive": false,
+      "access": "HF (gated) + MLX / vLLM / SGLang / llama.cpp",
+      "notes": "MSL open-weights Muse Spark \u2022 816B-A42B MoE \u2022 1M ctx \u2022 text/image/video/audio in \u2022 Muse Model License (custom, gated) \u2022 weights only, no data/recipes \u2022 BF16 + NVFP4 \u2022 runs on 2x M5 Ultra Mac Studio via MLX \u2022 no foreign teacher disclosed"
+    },
+    {
       "model": "Muse Glimmer 30B",
       "company": "Meta",
       "released": "2026-08-10",

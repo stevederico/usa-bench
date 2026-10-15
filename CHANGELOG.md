@@ -4,6 +4,11 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.33.0
+
+  Add Muse Spark Open (Meta, open weights, custom license)
+  Rerank models
+
 0.32.0
 
   Add score cap (100 only for clean fullOpen US)
