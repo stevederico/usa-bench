@@ -4,6 +4,13 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.31.0
+
+  Add Nemotron 3.5 Super VL
+  Add Nemotron 3.5 Bolt
+  Note foreign SFT teachers (soft −15, own NVIDIA base)
+  Reset pulse to 0 days
+
 0.30.0
 
   Flag NV-Reason-CT

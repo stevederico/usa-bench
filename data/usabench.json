@@ -1,7 +1,7 @@
 {
   "pulseDate": "2026-10-15",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -39,6 +39,34 @@
       "closed": false,
       "access": "NGC + HF",
       "notes": "Enterprise, agentic"
+    },
+    {
+      "model": "Nemotron 3.5 Super VL",
+      "company": "NVIDIA",
+      "released": "2026-10-15",
+      "baseScore": 98,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "Qwen3 / DeepSeek-R1 / Kimi-K2 as SFT synth generators",
+      "access": "HF + NGC",
+      "whyFlagged": "120B/12B hybrid Mamba-2 + MoE + attention on own NVIDIA weights \u2022 C-RADIO vision \u2022 1M ctx \u2022 text/image/doc/video \u2022 MTP \u2022 OpenMDW-1.1 \u2022 weights + data + recipes open \u2022 score basis vs Nemotron 3 Ultra: GPQA-D 89.5/87.0, LCB v6 88.2/89.2, SWE-V 71.1/73.9, SWE-Pro 51.8/49.7 \u2022 card discloses foreign SFT synth teachers, noted, soft \u221215 (not hard 0, same rule as Inkling)"
+    },
+    {
+      "model": "Nemotron 3.5 Bolt",
+      "company": "NVIDIA",
+      "released": "2026-10-15",
+      "baseScore": 96,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "Qwen3 / DeepSeek-R1 / Kimi-K2 SFT synth + Kimi-K3 / GLM 5.2 trajectories",
+      "access": "HF + NGC",
+      "whyFlagged": "74B/9B pruned + distilled from Super VL (own NVIDIA weights) \u2022 2-bit QAT fits ~24GB (RTX Spark / GB10 local agents) \u2022 256K ctx \u2022 multimodal \u2022 OpenMDW-1.1 \u2022 weights + data + recipes open \u2022 GPQA-D 86.4 (Lightning 75.6) \u2022 foreign SFT synth + agent trajectories, noted, soft \u221215 (not hard 0)"
     },
     {
       "model": "Gemma 4",
