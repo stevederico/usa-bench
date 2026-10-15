@@ -4,8 +4,14 @@
  * Rewards US open-weights sovereignty + recency + full transparency.
  * No separate closed section — closed models just take a flat penalty.
  *
- * baseScore (curator anchor) + fullOpenBonus + permissiveBonus − recency − china − foreignTeacher
- * Closed models −closedPenalty (default 10) after all other adjustments. foreign weight base → hard 0; foreign teacher → soft note + penalty.
+ * Score cap (no score ever exceeds 100 at any step; 100 = fully open AND US-made):
+ *   cap = 100 only if fullOpen && !foreignTeacher && !chinaBase && !closed, else cap = 99
+ *
+ * Steps:
+ *   1. score = min(cap, baseScore + fullOpenBonus + permissiveBonus)
+ *   2. score −= recency + china + foreignTeacher + closedPenalty (default 10)
+ *   3. score = clamp(score, 0, cap)
+ *   4. foreign weight base (chinaBase) → hard 0; foreign teacher → soft note + penalty only
  *
  * Usage:
  *   node scripts/usabench.mjs           # print scores + markdown rows
@@ -97,7 +103,9 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   const fullOpen = entry.fullOpen ? fullOpenBonus : 0;
   const permissive = entry.permissive ? permissiveBonus : 0;
   const bonuses = fullOpen + permissive;
-  score += bonuses;
+  // 100 is reserved for fully open + clean US-made; everyone else tops out at 99
+  const cap = entry.fullOpen && !entry.foreignTeacher && !entry.chinaBase && !entry.closed ? 100 : 99;
+  score = Math.min(cap, score + bonuses);
 
   const china = entry.chinaBase ? chinaBasePenalty : 0;
   const teacher = entry.foreignTeacher && !entry.chinaBase ? foreignTeacherPenalty : 0;
@@ -106,7 +114,7 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   score -= totalPenalty;
   const closed = entry.closed ? closedPenalty : 0;
   score -= closed;
-  score = Math.max(0, Math.min(100, score));
+  score = Math.max(0, Math.min(cap, score));
   // foreign weight base → hard 0; foreign teacher is soft penalty only
   if (isForeignDisqualified(entry)) score = 0;
 
@@ -115,6 +123,7 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   return {
     ...entry,
     score,
+    cap,
     recencyPenalty: recency,
     chinaPenalty: china,
     foreignTeacherPenalty: teacher,

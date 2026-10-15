@@ -33,9 +33,10 @@ USAbench (v2) weights **US open-weights sovereignty + recency + full transparenc
 - **0**: Foreign weight base only (`chinaBase`)
 
 **Scoring formula (in script)**
-baseScore + fullOpenBonus (5) + permissiveBonus (3) − recency − chinaPenalty(25) − foreignTeacherPenalty(15)
-if closed: score − closedPenalty (10), after all other adjustments
-clamp 0-100 (floored at 0); `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty only
+cap = 100 only if fullOpen && !foreignTeacher && !chinaBase && !closed, else 99
+score = min(cap, baseScore + fullOpenBonus (5) + permissiveBonus (3))
+score −= recency + chinaPenalty(25) + foreignTeacherPenalty(15) + closedPenalty(10 if closed)
+clamp 0-cap; `chinaBase` forces **0**; `foreignTeacher` is soft note + penalty only
 
 **Scoring checklist**
 1. US HQ + primary dev in USA (required)
