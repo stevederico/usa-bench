@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-14",
+  "pulseDate": "2026-10-15",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1708,6 +1708,18 @@
       "chinaBaseLabel": "Qwen3-8B (Alibaba)",
       "access": "HF + NGC",
       "whyFlagged": "Pixel image and video generator \u2022 ~15B \u2022 language backbone is Qwen3-8B \u2022 checkpoint is NVIDIA noncommercial"
+    },
+    {
+      "model": "NV-Reason-CT",
+      "company": "NVIDIA",
+      "released": "2026-09-08",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
+      "access": "HF + NGC",
+      "whyFlagged": "NVIDIA MedTech 3D CT VLM \u2022 OpenMDW-1.1 \u2022 own Primus 3D ViT plus Qwen3.5-4B language backbone \u2022 chest and abdominal CT reports \u2022 HF created 8 Sep"
     },
     {
       "model": "pplx-decider-v1.1-27b",
