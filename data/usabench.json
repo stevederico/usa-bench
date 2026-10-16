@@ -1,5 +1,5 @@
 {
-  "pulseDate": "2026-10-15",
+  "pulseDate": "2026-10-16",
   "pulseLabel": "October 2026",
   "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
@@ -102,12 +102,14 @@
     {
       "model": "Beam",
       "company": "Reflection AI",
-      "released": "2026-10-05",
-      "baseScore": 94,
-      "openSource": false,
-      "closed": true,
-      "access": "platform.reflection.ai",
-      "notes": "Brooklyn lab \u2022 from-scratch pretrain \u2022 501B/23B MoE \u2022 text agentic coding \u2022 self-reported near GLM 5.2 (SWE-bench Verified 80.9) \u2022 Apache 2.0 weights later Oct 2026 \u2022 waitlist only until then"
+      "released": "2026-10-16",
+      "baseScore": 97,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": false,
+      "permissive": true,
+      "access": "HF + platform.reflection.ai",
+      "notes": "Brooklyn lab \u2022 from-scratch pretrain \u2022 501B/23B MoE Apache 2.0 weights 16 Oct \u2022 1M ctx \u2022 SWE-V 81.6 \u2022 Terminal Bench 2.1 80.1 \u2022 GPQA-D 90.6 \u2022 BF16/FP8/NVFP4 + DFlash2 drafter \u2022 Mirror CLI \u2022 40+ partners \u2022 weights + tokenizer + reference, no training data"
     },
     {
       "model": "Claude Opus 5.5 / Fable 5.1",
@@ -1294,6 +1296,16 @@
       "notes": "Open decision models on LFM2.5 \u2022 d1-3B text+vision \u2022 d1-omni-600M text+image or audio \u2022 one forward pass, zero output tokens \u2022 Decision Index 48.57 \u2022 LFM Open License"
     },
     {
+      "model": "d1-ultra",
+      "company": "Liquid AI",
+      "released": "2026-10-15",
+      "baseScore": 90,
+      "openSource": false,
+      "closed": true,
+      "access": "console.liquid.ai",
+      "notes": "Closed decision flagship \u2022 multimodal text+image \u2022 AA Decision Index 65 \u2022 44 langs \u2022 one forward pass, zero output tokens \u2022 $0.042/1M input \u2022 larger LFM open-weight backbone with Liquid customizations \u2022 API only, use Open d1 for weights"
+    },
+    {
       "model": "YOLO26",
       "company": "Ultralytics",
       "released": "2026-02-12",
@@ -1760,6 +1772,18 @@
       "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
       "access": "HF + NGC",
       "whyFlagged": "NVIDIA MedTech 3D CT VLM \u2022 OpenMDW-1.1 \u2022 own Primus 3D ViT plus Qwen3.5-4B language backbone \u2022 chest and abdominal CT reports \u2022 HF created 8 Sep"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-FP4-Local",
+      "company": "NVIDIA",
+      "released": "2026-10-05",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-Flash-Next (Alibaba)",
+      "access": "HF + NGC",
+      "whyFlagged": "NVIDIA NVFP4 local quant of Qwen3.8-Flash-Next \u2022 125B/6B MoE plus PLE \u2022 DGX Spark / RTX PRO 6000 \u2022 NVIDIA Open Model Agreement plus Qwen Community License \u2022 foreign Qwen foundation"
     },
     {
       "model": "pplx-decider-v1.1-27b",

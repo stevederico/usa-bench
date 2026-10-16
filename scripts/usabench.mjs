@@ -174,6 +174,7 @@ const ACCESS_LINKS = {
   "heygen.com": "https://heygen.com",
   "krea.ai": "https://krea.ai",
   "platform.reflection.ai": "https://platform.reflection.ai",
+  "console.liquid.ai": "https://console.liquid.ai",
 };
 
 // Linkify each known token in an access string, preserving " + " / " / " separators
@@ -190,6 +191,7 @@ const COMPANY_LINKS = {
   "NVIDIA": "nvidia",
   "Google": "google",
   "Liquid AI": "LiquidAI",
+  "Reflection AI": "reflection",
   "Arcee AI": "arcee-ai",
   "Ai2 (allenai)": "allenai",
   "IBM": "ibm-granite",
