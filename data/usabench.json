@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-16",
+  "pulseDate": "2026-10-17",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 0,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -67,6 +67,17 @@
       "foreignTeacherLabel": "Qwen3 / DeepSeek-R1 / Kimi-K2 SFT synth + Kimi-K3 / GLM 5.2 trajectories",
       "access": "HF + NGC",
       "whyFlagged": "74B/9B pruned + distilled from Super VL (own NVIDIA weights) \u2022 2-bit QAT fits ~24GB (RTX Spark / GB10 local agents) \u2022 256K ctx \u2022 multimodal \u2022 OpenMDW-1.1 \u2022 weights + data + recipes open \u2022 GPQA-D 86.4 (Lightning 75.6) \u2022 foreign SFT synth + agent trajectories, noted, soft \u221215 (not hard 0)"
+    },
+    {
+      "model": "Nemotron Labs Dory 1.0",
+      "company": "NVIDIA",
+      "released": "2026-10-16",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Looped 4B nGPT \u2022 own pretrain 6T \u2022 256K \u2022 elastic 1/2/4 loops \u2022 OpenMDW-1.1 \u2022 BF16/MXFP8/NVFP4/GGUF \u2022 GPQA-D 69.2 \u2022 SWE-V 50.3 \u2022 SFT teacher GPT-OSS-120B (US)"
     },
     {
       "model": "Gemma 4",
@@ -1784,6 +1795,30 @@
       "chinaBaseLabel": "Qwen3.8-Flash-Next (Alibaba)",
       "access": "HF + NGC",
       "whyFlagged": "NVIDIA NVFP4 local quant of Qwen3.8-Flash-Next \u2022 125B/6B MoE plus PLE \u2022 DGX Spark / RTX PRO 6000 \u2022 NVIDIA Open Model Agreement plus Qwen Community License \u2022 foreign Qwen foundation"
+    },
+    {
+      "model": "GLM-5.3-Flash-FP4-Local",
+      "company": "NVIDIA",
+      "released": "2026-10-05",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "GLM-5.3-Flash (Z.ai)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 local quant of GLM-5.3-Flash \u2022 320B/18B MoE \u2022 ~166GB \u2022 2\u00d7 DGX Spark or 2\u00d7 RTX PRO 6000 \u2022 NVIDIA Open Model Agreement plus MIT on the Z.ai base \u2022 foreign GLM foundation"
+    },
+    {
+      "model": "Qwen-Image-NVFP4",
+      "company": "NVIDIA",
+      "released": "2026-10-12",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen-Image (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 quant of Qwen-Image \u2022 ~20B DiT \u2022 text-to-image \u2022 NVIDIA Open Model Agreement \u2022 foreign Qwen foundation"
     },
     {
       "model": "pplx-decider-v1.1-27b",
