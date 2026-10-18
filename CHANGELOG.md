@@ -4,6 +4,12 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.37.0
+
+  Add Grok Voice
+  Note Lightning v1.3.1
+  Advance October pulse
+
 0.36.0
 
   Add Dory 1.0

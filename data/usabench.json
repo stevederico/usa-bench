@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-17",
+  "pulseDate": "2026-10-18",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -329,6 +329,16 @@
       "closed": true,
       "access": "x.ai / X",
       "notes": "Imagine Video 1.5 Lite (Oct 1) \u2022 Voice Transcribe 2.0 (Sep 18) \u2022 image + video + speech \u2022 closed"
+    },
+    {
+      "model": "Grok Voice 3.0",
+      "company": "xAI",
+      "released": "2026-10-14",
+      "baseScore": 85,
+      "openSource": false,
+      "closed": true,
+      "access": "x.ai / Voice Agent API",
+      "notes": "Speech-to-speech Voice Agent API (Oct 14) \u2022 AA Speech Index 86.9 \u2022 $0.08/min \u2022 grok-voice-3.0 \u2022 Voice 2.0 deprecated \u2022 closed"
     },
     {
       "model": "GPT Image 2.5 / Sora 2",
@@ -1887,7 +1897,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Mountain View decision VLM \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.5-4B \u2022 JevBench open composite lead (7 Oct) \u2022 v1.2 card refresh 10 Oct"
+      "whyFlagged": "Mountain View decision VLM \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.5-4B \u2022 JevBench open composite lead (7 Oct through 18 Oct) \u2022 main weights v1.3.1 \u2022 still Qwen3.5-4B"
     },
     {
       "model": "Drex 1.5 / DLM",
