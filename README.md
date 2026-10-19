@@ -10,7 +10,6 @@
 
 ### Models
 
-
 | Rank | Model / Family | Company | Open Source | USAbench | Notes | Access |
 |------|----------------|---------|-------------|----------|-------|--------|
 | 1    | Beam | [Reflection AI](https://huggingface.co/reflection) | Yes | **99** ⭐⭐⭐ | Released Oct 2026 • Brooklyn lab • from-scratch pretrain • 501B/23B MoE Apache 2.0 weights 16 Oct • 1M ctx • SWE-V 81.6 • Terminal Bench 2.1 80.1 • GPQA-D 90.6 • BF16/FP8/NVFP4 + DFlash2 drafter • Mirror CLI • 40+ partners • weights + tokenizer + reference, no training data | [HF](https://huggingface.co) + [platform.reflection.ai](https://platform.reflection.ai) |
@@ -191,20 +190,21 @@
 | 176  | Interfaze 1 Lite | Interfaze | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • SF document model • Apache glue • reasoning core is Qwen3.8-27B FP8 • also bundles PaddleOCR | HF |
 | 177  | Microsoft-Decision-1 | Microsoft | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-9B (Alibaba) • Closed Foundry decision scorer • post-train of Qwen3.5-9B • announced 9 Oct • Foundry card date 8 Oct • weights not released • rebase on MAI and OpenAI planned | Foundry |
 | 178  | H2O-Lightning-4B | H2O.ai | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-4B (Alibaba) • Mountain View decision VLM • Apache 2.0 • fine-tune of Qwen3.5-4B • JevBench open composite lead (7 Oct through 18 Oct) • main weights v1.3.1 • still Qwen3.5-4B | HF |
-| 179  | Drex 1.5 / DLM | Nace | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 via MiMo + Qwen3 via Efficient-DLM • Palo Alto • Drex 1.5 9B open-sourced 9 Oct on Xiaomi MiMo-V2.6 distill of Qwen3.5 • Drex DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B • Open RAIL-M and CC BY-NC | HF |
-| 180  | OpenJev | Loop | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco restaurant-ops lab • fine-tune of Qwen3.8-27B • CC BY-NC • released 20 Sep • screenshot decisions • not TypeSafe Jev | HF |
-| 181  | Vela 2.0 (0.3B–9B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Open routing family • Apache 2.0 • 0.8B, 4B, and 9B decoders on Qwen3.5 via Decision 2.0 • 0.3B encoder continues Johns Hopkins mmBERT • safety, PII spans, hallucination • vLLM Semantic Router with KR Labs • 6 Oct | HF |
-| 182  | CLM-8B | Stanford / NVIDIA | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Stanford and NVIDIA Research • Apache 2.0 projection heads • frozen Qwen3-8B encoder • agent action scoring • posted 23 Sep | HF |
-| 183  | Decision 3.0 (0.6B–27B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B + Qwen3.5 (Alibaba) • Multimodal decision family • Apache 2.0 • d3 27B on Qwen3.8-27B • flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5 • weights 10 Oct • announced 11 Oct | HF |
-| 184  | ALoDLM (1.7B / 8B) | Amazon | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-1.7B / Qwen3-8B (Alibaba) • Seattle diffusion language models • CC BY-NC • initialized from Qwen3 • adaptive looped denoiser • card 2 Oct • refresh 7 Oct | HF |
-| 185  | AesCode (8B / 32B) | Microsoft | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-VL-8B / 32B (Alibaba) • HTML and CSS visual artifacts • Apache 2.0 • SFT plus GDPO on Qwen3-VL • created 29 Sep • card refresh 7 Oct | HF |
-| 186  | Carbon-A 1.2B | Hugging Face Bio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: GENERanno (Alibaba Cloud) • Eukaryotic gene annotator • Apache 2.0 pipeline • blog 8 Oct • 1.2B weights preserved from GenerTeam GENERanno • Alibaba Cloud foundation | HF |
-| 187  | NousCoder-14B | Nous Research | No | **0** ❌ | Released Dec 2025 • ❌ Foreign base: Qwen3-14B (Alibaba) • Competitive coding RL post-train • Apache 2.0 • LiveCodeBench v6 67.87 (Qwen3-14B 60.79) • HF created 23 Dec 2025 • Qwen3-14B weight foundation | HF |
-| 188  | Drama 3 | Fish Audio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-35B-A3B (Alibaba) • Palo Alto TTS lab • 35B/3B MoE • open weights 13 Oct • Fish Audio Community License • initialized from Qwen3.5-35B-A3B LM backbone • own codebook-MTP decoder | HF |
-| 189  | Underdog Saluki 27B | Conway Research | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco lab (Underdog) • 2-bit GGUF of Qwen3.8-27B • 7.89 GB • Apache 2.0 • tool-calling quant • 8 Oct | HF |
+| 179  | Drex Max / 2.0 | Nace | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.6-35B-A3B (Alibaba); 1.5 via MiMo Qwen3.5 • Palo Alto • Drex Max API-only 19 Oct (screens, images, video; Decision Index 67.6; no open weights) • Drex 2.0 open weights 12 Oct, 35B/3B built on Qwen3.6-35B-A3B • Drex 1.5 9B on Xiaomi MiMo-V2.6 distill of Qwen3.5 • DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B | HF + console.nace.ai |
+| 180  | OrcaCyber Nano / Zero | OrcaRouter | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-27B (Alibaba); Zero on GLM-5.3 • Continuum AI (US) gateway • Nano 1.0 GGUF announced 18 Oct (HF repo 16 Oct) • card lists Qwen3_5ForConditionalGeneration, 64 layers, hidden 5120, 48 linear + 16 full attention, 262K, MTP • same geometry as Qwen3.5-27B • no from-scratch pretrain • Zero 1.0 is a GLM-5.3 post-train (29 Sep) | HF |
+| 181  | OpenJev | Loop | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco restaurant-ops lab • fine-tune of Qwen3.8-27B • CC BY-NC • released 20 Sep • screenshot decisions • not TypeSafe Jev | HF |
+| 182  | Vela 2.0 (0.3B–9B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Open routing family • Apache 2.0 • 0.8B, 4B, and 9B decoders on Qwen3.5 via Decision 2.0 • 0.3B encoder continues Johns Hopkins mmBERT • safety, PII spans, hallucination • vLLM Semantic Router with KR Labs • 6 Oct | HF |
+| 183  | CLM-8B | Stanford / NVIDIA | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-8B (Alibaba) • Stanford and NVIDIA Research • Apache 2.0 projection heads • frozen Qwen3-8B encoder • agent action scoring • posted 23 Sep | HF |
+| 184  | Decision 3.0 (0.6B–27B) | vLLM | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B + Qwen3.5 (Alibaba) • Multimodal decision family • Apache 2.0 • d3 27B on Qwen3.8-27B • flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5 • weights 10 Oct • announced 11 Oct | HF |
+| 185  | ALoDLM (1.7B / 8B) | Amazon | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-1.7B / Qwen3-8B (Alibaba) • Seattle diffusion language models • CC BY-NC • initialized from Qwen3 • adaptive looped denoiser • card 2 Oct • refresh 7 Oct | HF |
+| 186  | AesCode (8B / 32B) | Microsoft | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3-VL-8B / 32B (Alibaba) • HTML and CSS visual artifacts • Apache 2.0 • SFT plus GDPO on Qwen3-VL • created 29 Sep • card refresh 7 Oct | HF |
+| 187  | Carbon-A 1.2B | Hugging Face Bio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: GENERanno (Alibaba Cloud) • Eukaryotic gene annotator • Apache 2.0 pipeline • blog 8 Oct • 1.2B weights preserved from GenerTeam GENERanno • Alibaba Cloud foundation | HF |
+| 188  | NousCoder-14B | Nous Research | No | **0** ❌ | Released Dec 2025 • ❌ Foreign base: Qwen3-14B (Alibaba) • Competitive coding RL post-train • Apache 2.0 • LiveCodeBench v6 67.87 (Qwen3-14B 60.79) • HF created 23 Dec 2025 • Qwen3-14B weight foundation | HF |
+| 189  | Drama 3 | Fish Audio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-35B-A3B (Alibaba) • Palo Alto TTS lab • 35B/3B MoE • open weights 13 Oct • Fish Audio Community License • initialized from Qwen3.5-35B-A3B LM backbone • own codebook-MTP decoder | HF |
+| 190  | Underdog Saluki 27B | Conway Research | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • San Francisco lab (Underdog) • 2-bit GGUF of Qwen3.8-27B • 7.89 GB • Apache 2.0 • tool-calling quant • 8 Oct | HF |
 
 > **US AI Pulse · October 2026**  
-> **2 days** since the last major US release — USAbench recency anchor
+> **3 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built

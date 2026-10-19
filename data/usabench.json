@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-18",
+  "pulseDate": "2026-10-19",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1900,16 +1900,28 @@
       "whyFlagged": "Mountain View decision VLM \u2022 Apache 2.0 \u2022 fine-tune of Qwen3.5-4B \u2022 JevBench open composite lead (7 Oct through 18 Oct) \u2022 main weights v1.3.1 \u2022 still Qwen3.5-4B"
     },
     {
-      "model": "Drex 1.5 / DLM",
+      "model": "Drex Max / 2.0",
       "company": "Nace",
-      "released": "2026-10-09",
-      "baseScore": 74,
+      "released": "2026-10-19",
+      "baseScore": 76,
       "openSource": true,
       "closed": false,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.5 via MiMo + Qwen3 via Efficient-DLM",
+      "chinaBaseLabel": "Qwen3.6-35B-A3B (Alibaba); 1.5 via MiMo Qwen3.5",
+      "access": "HF + console.nace.ai",
+      "whyFlagged": "Palo Alto \u2022 Drex Max API-only 19 Oct (screens, images, video; Decision Index 67.6; no open weights) \u2022 Drex 2.0 open weights 12 Oct, 35B/3B built on Qwen3.6-35B-A3B \u2022 Drex 1.5 9B on Xiaomi MiMo-V2.6 distill of Qwen3.5 \u2022 DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B"
+    },
+    {
+      "model": "OrcaCyber Nano / Zero",
+      "company": "OrcaRouter",
+      "released": "2026-10-18",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-27B (Alibaba); Zero on GLM-5.3",
       "access": "HF",
-      "whyFlagged": "Palo Alto \u2022 Drex 1.5 9B open-sourced 9 Oct on Xiaomi MiMo-V2.6 distill of Qwen3.5 \u2022 Drex DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B \u2022 Open RAIL-M and CC BY-NC"
+      "whyFlagged": "Continuum AI (US) gateway \u2022 Nano 1.0 GGUF announced 18 Oct (HF repo 16 Oct) \u2022 card lists Qwen3_5ForConditionalGeneration, 64 layers, hidden 5120, 48 linear + 16 full attention, 262K, MTP \u2022 same geometry as Qwen3.5-27B \u2022 no from-scratch pretrain \u2022 Zero 1.0 is a GLM-5.3 post-train (29 Sep)"
     },
     {
       "model": "OpenJev",
