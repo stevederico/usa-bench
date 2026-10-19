@@ -254,6 +254,7 @@ const COMPANY_LINKS = {
   "Stellon Labs": "KittenML",
   "Interfaze": "interfaze-ai",
   "Nace": "nace-ai",
+  "OrcaRouter": "orcarouter",
   "Loop": "openjev",
   "vLLM": "vllm-sr",
   "Stanford / NVIDIA": "Contrastive-LM",
