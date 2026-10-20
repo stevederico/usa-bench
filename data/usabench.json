@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-19",
+  "pulseDate": "2026-10-20",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -761,14 +761,24 @@
       "notes": "Closed small Claude \u2022 cheapest and fastest Haiku \u2022 about 75% less to run than Haiku 4.5"
     },
     {
-      "model": "GPT-Live",
+      "model": "GPT-Live 1.1 / Quip",
       "company": "OpenAI",
-      "released": "2026-07-08",
+      "released": "2026-10-15",
       "baseScore": 84,
       "openSource": false,
       "closed": true,
       "access": "ChatGPT / API",
-      "notes": "Closed full-duplex voice model \u2022 natural conversation + live translation"
+      "notes": "Closed full-duplex voice \u2022 1.1 successor to GPT-Live-1 (Plus default, 15 Oct) \u2022 Quip successor to mini \u2022 13 new voices \u2022 API still gpt-live-1"
+    },
+    {
+      "model": "Mercury 3",
+      "company": "Inception Labs",
+      "released": "2026-10-19",
+      "baseScore": 85,
+      "openSource": false,
+      "closed": true,
+      "access": "inceptionlabs.ai / OpenRouter",
+      "notes": "Palo Alto diffusion LLM \u2022 closed API 19 Oct \u2022 1M ctx \u2022 1,068 tok/s claimed \u2022 company benches above Haiku 5.5 and GPT-6 Luna \u2022 $0.20/$0.70 ($0.10/$0.35 launch) \u2022 Inception API, OpenRouter, Baseten, Vercel"
     },
     {
       "model": "ChatGPT Work",
@@ -1831,15 +1841,15 @@
       "whyFlagged": "NVIDIA NVFP4 quant of Qwen-Image \u2022 ~20B DiT \u2022 text-to-image \u2022 NVIDIA Open Model Agreement \u2022 foreign Qwen foundation"
     },
     {
-      "model": "pplx-decider-v1.1-27b",
+      "model": "pplx-decider-v1.2 / flash",
       "company": "Perplexity",
-      "released": "2026-10-05",
+      "released": "2026-10-16",
       "baseScore": 70,
       "openSource": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "chinaBaseLabel": "Qwen3.8-27B and Qwen3.5-4B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Decision model \u2022 Apache 2.0 \u2022 v1.1 fine-tune of Qwen3.8-27B \u2022 Decision Index 61.56"
+      "whyFlagged": "Decision family \u2022 Apache 2.0 \u2022 v1.2 on Qwen3.8-27B \u2022 flash 4B distilled onto Qwen3.5-4B \u2022 Decision Index 68.09 \u2022 16 Oct"
     },
     {
       "model": "pplx-embed-v2 (context / late)",
@@ -2047,6 +2057,19 @@
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF",
       "whyFlagged": "San Francisco lab (Underdog) \u2022 2-bit GGUF of Qwen3.8-27B \u2022 7.89 GB \u2022 Apache 2.0 \u2022 tool-calling quant \u2022 8 Oct"
+    },
+    {
+      "model": "Nemotron-3.5-Rerank-8B",
+      "company": "NVIDIA",
+      "released": "2026-10-20",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Ministral-3-8B (Mistral, France)",
+      "access": "HF",
+      "whyFlagged": "Multimodal reranker \u2022 OpenMDW-1.1 \u2022 8.38B on Ministral-3-8B \u2022 Pixtral vision encoder \u2022 text and page images \u2022 HF 20 Oct \u2022 foreign weight foundation, hard 0"
     }
   ]
 }
