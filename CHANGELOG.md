@@ -4,6 +4,14 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.39.0
+
+  Add Mercury 3
+  Flag Nemotron rerank
+  Update Decider family
+  Update GPT-Live
+  Advance October pulse
+
 0.38.0
 
   Flag OrcaCyber Nano
