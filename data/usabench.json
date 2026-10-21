@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-20",
+  "pulseDate": "2026-10-21",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -553,6 +553,17 @@
       "notes": "Open DNA / genomics foundation model up to 40B (Apache 2.0) \u2022 Fully open \u2014 weights + code + OpenGenome2 (~9T bp) \u2022 Predicts & designs genetic code \u2022 Palo Alto nonprofit"
     },
     {
+      "model": "RFD4-Proteina",
+      "company": "NVIDIA",
+      "released": "2026-10-19",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Baker Lab (UW) + NVIDIA GenAIR \u2022 flow-matching sequence and all-atom structure \u2022 436M \u2022 BSD-3 weights and code \u2022 training data on HF \u2022 current pair dated 19 Oct \u2022 GTC Berlin 21 Oct \u2022 specialist beside Evo 2"
+    },
+    {
       "model": "Foundation-Sec-8B",
       "company": "Cisco Foundation AI",
       "released": "2025-04-01",
@@ -862,14 +873,14 @@
       "notes": "Open 3B VLM for localization / grounding \u2022 open weights"
     },
     {
-      "model": "Cosmos3-Nano / Super",
+      "model": "Cosmos3-Super / Edge",
       "company": "NVIDIA",
       "released": "2026-07-01",
       "baseScore": 90,
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Open world-model family (Cosmos3 Nano ~16B + Super ~65B + Edge) \u2022 physical AI / simulation"
+      "notes": "Open world models \u2022 Super ~64B and Edge 4B (Nemotron reasoner) \u2022 physical AI \u2022 Nano and H-Dreams flagged (Qwen3-VL tower)"
     },
     {
       "model": "GR00T-N1.7-3B",
@@ -1146,14 +1157,15 @@
       "notes": "Open 2B world-reasoning VLM (Cosmos Reason line)"
     },
     {
-      "model": "Nemotron-OCR / Parse v1.2 / 2.0",
+      "model": "Nemotron Parse 3.5",
       "company": "NVIDIA",
-      "released": "2026-08-03",
-      "baseScore": 87,
+      "released": "2026-10-17",
+      "baseScore": 88,
       "openSource": true,
       "closed": false,
+      "permissive": true,
       "access": "HF + NGC",
-      "notes": "Open document OCR + parse \u2022 Parse 2.0: multilingual/CJK + charts + handwriting gains over v1.2"
+      "notes": "Document parser \u2022 631M \u2022 C-RADIOv4-SO400M + 10-layer mBART decoder \u2022 OpenMDW-1.1 \u2022 HF 17 Oct \u2022 ParseBench 75.20 vs Parse 2.0 63.91 \u2022 own NVIDIA vision tower"
     },
     {
       "model": "PiD",
@@ -1626,15 +1638,15 @@
   ],
   "flagged": [
     {
-      "model": "Ornith-1.0",
+      "model": "Ornith 1.5",
       "company": "DeepReinforce",
-      "released": "2026-06-25",
+      "released": "2026-10-20",
       "baseScore": 68,
       "openSource": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen 3.5 + Gemma 4",
+      "chinaBaseLabel": "Qwen3.5 MoE",
       "access": "HF",
-      "whyFlagged": "Santa Clara US lab \u2022 MIT open weights + full RL research \u2022 Self-scaffolding: jointly RL-learns task scaffolds/harnesses + solutions (no human harnesses) \u2022 Sizes: 9B (Qwen3.5 base), 31B (Gemma4), 35B/397B (Qwen3.5-MoE) \u2022 Strong agentic coding (397B: 82.4 SWE-Bench Verified, 77.5 TB 2.1); foreign foundation on large MoEs"
+      "whyFlagged": "Santa Clara lab (ornith-ai) \u2022 MIT \u2022 122B MoE on HF 20 Oct (Qwen3_5Moe) \u2022 1.5 continues 1.0, which is continued pretrain on Qwen3.5 \u2022 also 9B, 35B-A3B, 397B from 19 Aug \u2022 foreign weight foundation, hard 0"
     },
     {
       "model": "INTELLECT-3.1",
@@ -2070,6 +2082,18 @@
       "chinaBaseLabel": "Ministral-3-8B (Mistral, France)",
       "access": "HF",
       "whyFlagged": "Multimodal reranker \u2022 OpenMDW-1.1 \u2022 8.38B on Ministral-3-8B \u2022 Pixtral vision encoder \u2022 text and page images \u2022 HF 20 Oct \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "Cosmos3-Nano / H-Dreams",
+      "company": "NVIDIA",
+      "released": "2026-10-20",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-VL-8B-Instruct + Wan2.2 VAE",
+      "access": "HF",
+      "whyFlagged": "H-Dreams 15.17B surgical student \u2022 HF and GitHub 20 Oct \u2022 initialized from Cosmos3-H-Embodied-Nano \u2022 card says the Cosmos3-Nano MoT pairs a Qwen3-VL-8B-Instruct reasoning tower with a diffusion expert on Wan2.2 VAE latents \u2022 foreign weight foundation, hard 0 \u2022 Super and Edge stay on the frontier row"
     }
   ]
 }
