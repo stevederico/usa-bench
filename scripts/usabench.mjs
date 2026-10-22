@@ -260,6 +260,8 @@ const COMPANY_LINKS = {
   "Stanford / NVIDIA": "Contrastive-LM",
   "Amazon": "amazon",
   "Hugging Face Bio": "HuggingFaceBio",
+  "Recursive": "RecursiveSI",
+  "Base Labs": "baselabs",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
