@@ -4,6 +4,15 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.41.0
+
+  Add Flint
+  Add Granite Speech
+  Flag Nemotron Embed
+  Flag Mammoth Elephant
+  Flag Carbon-X
+  Advance October pulse
+
 0.40.0
 
   Add RFD4-Proteina

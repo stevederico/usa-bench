@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-21",
+  "pulseDate": "2026-10-22",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -121,6 +121,17 @@
       "permissive": true,
       "access": "HF + platform.reflection.ai",
       "notes": "Brooklyn lab \u2022 from-scratch pretrain \u2022 501B/23B MoE Apache 2.0 weights 16 Oct \u2022 1M ctx \u2022 SWE-V 81.6 \u2022 Terminal Bench 2.1 80.1 \u2022 GPQA-D 90.6 \u2022 BF16/FP8/NVFP4 + DFlash2 drafter \u2022 Mirror CLI \u2022 40+ partners \u2022 weights + tokenizer + reference, no training data"
+    },
+    {
+      "model": "Flint",
+      "company": "Recursive",
+      "released": "2026-10-21",
+      "baseScore": 94,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + rec",
+      "notes": "SF lab \u2022 from-scratch pretrain \u2022 39.8B/2.5B MoE \u2022 Apache 2.0 \u2022 262K ctx \u2022 SWE-V 74.2 \u2022 SWE-Pro v2 89.7 \u2022 Terminal-Bench 2.1 54.9 \u2022 weights + tokenizer, no training data \u2022 score basis vs Muse Glimmer 30B and Beam: leads MoE under 50B on Recursive cards, trails those larger US peers on some agent benches"
     },
     {
       "model": "Claude Opus 5.5 / Fable 5.1",
@@ -674,7 +685,7 @@
       "openSource": true,
       "closed": false,
       "access": "HF + NGC",
-      "notes": "Nemotron-3-Embed 1B/8B + nemotron-3.5 streaming ASR 0.6B \u2022 retrieval + speech"
+      "notes": "Nemotron-3-Embed 1B/8B text retrieval + nemotron-3.5 streaming ASR 0.6B \u2022 3.5 multimodal embed flagged (Ministral vision)"
     },
     {
       "model": "Nemotron-3-Diarization",
@@ -705,7 +716,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + Ollama",
-      "notes": "Granite 4.1 multimodal + Switch MoE + Swash beside Granite 4.2 text \u2022 Apache 2.0"
+      "notes": "Granite 4.1 vision + Switch MoE + Swash beside Granite 4.2 text \u2022 speech line is Granite Speech 5.0 \u2022 Apache 2.0"
     },
     {
       "model": "Sapiens2",
@@ -911,6 +922,17 @@
       "closed": false,
       "access": "HF",
       "notes": "Open medical multimodal Gemma family (1.5-4B, 4B-it, 27B-it) \u2022 clinical imaging + text"
+    },
+    {
+      "model": "Granite Speech 5.0",
+      "company": "IBM",
+      "released": "2026-10-20",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "2B speech LM on granite-4.0-1b-base \u2022 Apache 2.0 \u2022 ASR + speech translation \u2022 EN/FR/DE/ES/PT/JA \u2022 HF 20 Oct \u2022 successor to granite-speech-4.1-2b"
     },
     {
       "model": "Gemma 3 4B / PaliGemma 3B",
@@ -2094,6 +2116,45 @@
       "chinaBaseLabel": "Qwen3-VL-8B-Instruct + Wan2.2 VAE",
       "access": "HF",
       "whyFlagged": "H-Dreams 15.17B surgical student \u2022 HF and GitHub 20 Oct \u2022 initialized from Cosmos3-H-Embodied-Nano \u2022 card says the Cosmos3-Nano MoT pairs a Qwen3-VL-8B-Instruct reasoning tower with a diffusion expert on Wan2.2 VAE latents \u2022 foreign weight foundation, hard 0 \u2022 Super and Edge stay on the frontier row"
+    },
+    {
+      "model": "Nemotron 3.5 Embed",
+      "company": "NVIDIA",
+      "released": "2026-10-20",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Ministral-3-8B vision encoder (Mistral, France)",
+      "access": "HF + NGC",
+      "whyFlagged": "Multimodal embed 8B/1B \u2022 OpenMDW-1.1 \u2022 HF 20 Oct \u2022 vision encoder initialized from Ministral-3-8B \u2022 language frozen from Nemotron-3-Embed \u2022 text-only Nemotron-3 Embed stays on the frontier row \u2022 foreign vision foundation, hard 0"
+    },
+    {
+      "model": "Mammoth-1 / Elephant-1",
+      "company": "Base Labs",
+      "released": "2026-10-21",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5 (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Baseten SF lab \u2022 decision models \u2022 mammoth-1 27B and elephant-1 9B \u2022 MIT \u2022 full fine-tunes of Qwen3.5 \u2022 Jev Decision Index 71.24 (vendor) \u2022 21 Oct \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "Carbon-X",
+      "company": "Hugging Face Bio",
+      "released": "2026-10-22",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3-14B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "14.8B DNA chat model \u2022 Apache 2.0 \u2022 midtrained on Qwen3-14B \u2022 300B DNA and English tokens \u2022 HF 22 Oct \u2022 foreign weight foundation, hard 0 \u2022 Carbon-A stays a separate flagged row"
     }
   ]
 }
