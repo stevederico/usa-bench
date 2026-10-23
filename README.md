@@ -211,9 +211,11 @@
 | 197  | Nemotron 3.5 Embed | NVIDIA | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Ministral-3-8B vision encoder (Mistral, France) • Multimodal embed 8B/1B • OpenMDW-1.1 • HF 20 Oct • vision encoder initialized from Ministral-3-8B • language frozen from Nemotron-3-Embed • text-only Nemotron-3 Embed stays on the frontier row • foreign vision foundation, hard 0 | HF + NGC |
 | 198  | Mammoth-1 / Elephant-1 | Base Labs | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5 (Alibaba) • Baseten SF lab • decision models • mammoth-1 27B and elephant-1 9B • MIT • full fine-tunes of Qwen3.5 • Jev Decision Index 71.24 (vendor) • 21 Oct • foreign weight foundation, hard 0 | HF |
 | 199  | Carbon-X | Hugging Face Bio | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3-14B (Alibaba) • 14.8B DNA chat model • Apache 2.0 • midtrained on Qwen3-14B • 300B DNA and English tokens • HF 22 Oct • foreign weight foundation, hard 0 • Carbon-A stays a separate flagged row | HF |
+| 200  | Flora (Captioner / TempSeg / Rewarder) | NVIDIA | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.5-27B and Qwen3.5-9B (Alibaba) • Robotics data engine for GR00T-2 • captioner 27B and rewarder 27B post-trained on Qwen3.5-27B • TempSeg 9B LoRA on Qwen3.5-9B • NVIDIA OneWay Noncommercial • HF card date 15 Oct • foreign weight foundation, hard 0 • GR00T-N1.7 stays on the frontier row | HF |
+| 201  | GLiDE v1.2 | Fastino | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • SF lab • 26B decision model • Fastino Community License • modified Qwen3.8-27B • text, JSON, and images • Decision Index 71.5 (vendor) • weights 22 Oct • foreign weight foundation, hard 0 • GLiNER2.5 stays on the frontier row | HF + api.fastino.ai |
 
 > **US AI Pulse · October 2026**  
-> **1 day** since the last major US release — USAbench recency anchor
+> **2 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built
