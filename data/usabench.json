@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-22",
+  "pulseDate": "2026-10-23",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -2155,6 +2155,30 @@
       "chinaBaseLabel": "Qwen3-14B (Alibaba)",
       "access": "HF",
       "whyFlagged": "14.8B DNA chat model \u2022 Apache 2.0 \u2022 midtrained on Qwen3-14B \u2022 300B DNA and English tokens \u2022 HF 22 Oct \u2022 foreign weight foundation, hard 0 \u2022 Carbon-A stays a separate flagged row"
+    },
+    {
+      "model": "Flora (Captioner / TempSeg / Rewarder)",
+      "company": "NVIDIA",
+      "released": "2026-10-15",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-27B and Qwen3.5-9B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Robotics data engine for GR00T-2 \u2022 captioner 27B and rewarder 27B post-trained on Qwen3.5-27B \u2022 TempSeg 9B LoRA on Qwen3.5-9B \u2022 NVIDIA OneWay Noncommercial \u2022 HF card date 15 Oct \u2022 foreign weight foundation, hard 0 \u2022 GR00T-N1.7 stays on the frontier row"
+    },
+    {
+      "model": "GLiDE v1.2",
+      "company": "Fastino",
+      "released": "2026-10-22",
+      "baseScore": 83,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF + api.fastino.ai",
+      "whyFlagged": "SF lab \u2022 26B decision model \u2022 Fastino Community License \u2022 modified Qwen3.8-27B \u2022 text, JSON, and images \u2022 Decision Index 71.5 (vendor) \u2022 weights 22 Oct \u2022 foreign weight foundation, hard 0 \u2022 GLiNER2.5 stays on the frontier row"
     }
   ]
 }
