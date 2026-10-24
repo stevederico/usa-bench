@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-23",
+  "pulseDate": "2026-10-24",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1656,6 +1656,17 @@
       "permissive": true,
       "access": "HF",
       "notes": "Open DFT exchange-correlation functional (MSR AI for Science) \u2022 MIT \u2022 chemistry accuracy vs hybrid functionals at meta-GGA cost"
+    },
+    {
+      "model": "Underdog Bark 3.0",
+      "company": "Conway Research",
+      "released": "2026-10-15",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "SF lab (Underdog) \u2022 English ASR 0.6B \u2022 CC-BY-4.0 \u2022 163 MB pack \u2022 Open ASR average 4.94, tied with Parakeet TDT 0.6B v3 \u2022 built on NVIDIA parakeet-tdt-0.6b-v3 through moondream/parakeet-ultra \u2022 English only \u2022 site and HF 15 Oct \u2022 score basis vs Granite Speech 5.0: specialist compress, not a multilingual speech LM"
     }
   ],
   "flagged": [
@@ -2179,6 +2190,18 @@
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF + api.fastino.ai",
       "whyFlagged": "SF lab \u2022 26B decision model \u2022 Fastino Community License \u2022 modified Qwen3.8-27B \u2022 text, JSON, and images \u2022 Decision Index 71.5 (vendor) \u2022 weights 22 Oct \u2022 foreign weight foundation, hard 0 \u2022 GLiNER2.5 stays on the frontier row"
+    },
+    {
+      "model": "FastH3 Omni",
+      "company": "Hao AI Lab",
+      "released": "2026-10-20",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "MiniMax H3 (MiniMax, China)",
+      "access": "HF",
+      "whyFlagged": "UC San Diego lab \u2022 8-step reference video and audio distill \u2022 weights and training code 20 Oct \u2022 keeps the MiniMax H3 text encoder, video VAE, and audio VAE \u2022 MiniMax H3 Community License \u2022 foreign weight foundation, hard 0"
     }
   ]
 }
