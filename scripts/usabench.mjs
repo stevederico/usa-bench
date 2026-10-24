@@ -262,6 +262,7 @@ const COMPANY_LINKS = {
   "Hugging Face Bio": "HuggingFaceBio",
   "Recursive": "RecursiveSI",
   "Base Labs": "baselabs",
+  "Hao AI Lab": "FastVideo",
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
