@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-24",
+  "pulseDate": "2026-10-25",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 4,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -67,6 +67,17 @@
       "foreignTeacherLabel": "Qwen3 / DeepSeek-R1 / Kimi-K2 SFT synth + Kimi-K3 / GLM 5.2 trajectories",
       "access": "HF + NGC",
       "whyFlagged": "74B/9B pruned + distilled from Super VL (own NVIDIA weights) \u2022 2-bit QAT fits ~24GB (RTX Spark / GB10 local agents) \u2022 256K ctx \u2022 multimodal \u2022 OpenMDW-1.1 \u2022 weights + data + recipes open \u2022 GPQA-D 86.4 (Lightning 75.6) \u2022 foreign SFT synth + agent trajectories, noted, soft \u221215 (not hard 0)"
+    },
+    {
+      "model": "Nemotron 3.5 Bolt E4B",
+      "company": "NVIDIA",
+      "released": "2026-10-23",
+      "baseScore": 88,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + NGC",
+      "notes": "8B/4B post-train of Gemma 4 E4B (US base) \u2022 64K \u2022 Q4_K_M ~4GB target \u2022 OpenMDW-1.1 \u2022 RL with NeMo Gym \u2022 named synth teacher GPT-OSS-120B (US) \u2022 conversational agents on RTX and Jetson \u2022 HF 23 Oct \u2022 score basis vs Dory 4B (86) and Granite Speech 5.0 (88): leads Gemma 4 E4B on NVIDIA agent benches, stays in the small-model band"
     },
     {
       "model": "Nemotron Labs Dory 1.0",
@@ -2015,9 +2026,9 @@
       "whyFlagged": "Stanford and NVIDIA Research \u2022 Apache 2.0 projection heads \u2022 frozen Qwen3-8B encoder \u2022 agent action scoring \u2022 posted 23 Sep"
     },
     {
-      "model": "Decision 3.0 (0.6B\u201327B)",
+      "model": "Decision 3.0 / d3-turbo",
       "company": "vLLM",
-      "released": "2026-10-11",
+      "released": "2026-10-19",
       "baseScore": 80,
       "openSource": true,
       "closed": false,
@@ -2025,7 +2036,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.8-27B + Qwen3.5 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Multimodal decision family \u2022 Apache 2.0 \u2022 d3 27B on Qwen3.8-27B \u2022 flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5 \u2022 weights 10 Oct \u2022 announced 11 Oct"
+      "whyFlagged": "Multimodal decision family \u2022 Apache 2.0 \u2022 d3-turbo 27B (19 Oct) on Qwen3.8-27B \u2022 d3 alias points at turbo \u2022 flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5"
     },
     {
       "model": "ALoDLM (1.7B / 8B)",
