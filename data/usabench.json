@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-25",
+  "pulseDate": "2026-10-26",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 4,
+  "daysSinceMajorRelease": 5,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1241,6 +1241,17 @@
       "notes": "Open ARDY G1/Core robot policy stacks (Horizon variants)"
     },
     {
+      "model": "MotionBricks",
+      "company": "NVIDIA",
+      "released": "2026-10-23",
+      "baseScore": 83,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Real-time pose in-betweener • ~200M SOMA + Unitree G1 • from-scratch on Bones RigPlay • NVIDIA Open Model Agreement • Apache 2.0 code • HF 23 Oct • no training data • score basis vs ARDY (82): specialist motion generator, not a robot foundation"
+    },
+    {
       "model": "TimesFM 3 (330M)",
       "company": "Google",
       "released": "2026-08-31",
@@ -2213,6 +2224,18 @@
       "chinaBaseLabel": "MiniMax H3 (MiniMax, China)",
       "access": "HF",
       "whyFlagged": "UC San Diego lab \u2022 8-step reference video and audio distill \u2022 weights and training code 20 Oct \u2022 keeps the MiniMax H3 text encoder, video VAE, and audio VAE \u2022 MiniMax H3 Community License \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "InternVideo2-CLIP anomaly",
+      "company": "NVIDIA",
+      "released": "2026-10-22",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "InternVideo2-CLIP-L14 (OpenGVLab, Shanghai AI Lab)",
+      "access": "HF",
+      "whyFlagged": "0.37B video-text embed • TAO LoRA on OpenGVLab InternVideo2-CLIP-L14 • frozen Apple MobileCLIP text tower • research-only license • HF created 22 Oct • foreign weight foundation, hard 0"
     }
   ]
 }
