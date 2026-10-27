@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-26",
+  "pulseDate": "2026-10-27",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 5,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -163,6 +163,16 @@
       "closed": true,
       "access": "API (vetted)",
       "notes": "GPT-6 Astra (Sep 3) flagship \u2022 Sol/Luna (Sep 22) \u2022 6.1 Sol (Sep 29) near Astra at Sol price \u2022 closed API"
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "company": "OpenAI",
+      "released": "2026-10-26",
+      "baseScore": 86,
+      "openSource": false,
+      "closed": true,
+      "access": "ChatGPT Work / Codex / API",
+      "notes": "Closed efficient GPT-6.1 \u2022 gpt-6.1-terra \u2022 26 Oct \u2022 1M input \u2022 text and image \u2022 computer use \u2022 $1/$5 \u2022 matches Astra on Agents' Last Exam at one-tenth Astra token price \u2022 over 3\u00d7 faster than Astra and Sol \u2022 score basis vs Sol (89) and Sonnet 5.5 (86): everyday tier, use Sol or Astra for hard coding"
     },
     {
       "model": "Grok 4.7 / 4.6",
@@ -2037,17 +2047,17 @@
       "whyFlagged": "Stanford and NVIDIA Research \u2022 Apache 2.0 projection heads \u2022 frozen Qwen3-8B encoder \u2022 agent action scoring \u2022 posted 23 Sep"
     },
     {
-      "model": "Decision 3.0 / d3-turbo",
+      "model": "Decision 3.0 / d3-ultra",
       "company": "vLLM",
-      "released": "2026-10-19",
+      "released": "2026-10-26",
       "baseScore": 80,
       "openSource": true,
       "closed": false,
       "permissive": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.8-27B + Qwen3.5 (Alibaba)",
+      "chinaBaseLabel": "Qwen3.5 / Qwen3.8-27B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Multimodal decision family \u2022 Apache 2.0 \u2022 d3-turbo 27B (19 Oct) on Qwen3.8-27B \u2022 d3 alias points at turbo \u2022 flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5"
+      "whyFlagged": "Multimodal decision family \u2022 Apache 2.0 \u2022 d3-ultra 27B Qwen3.5 backbone \u2022 HF created 24 Oct, card 26 Oct \u2022 d3-turbo (19 Oct) on Qwen3.8-27B \u2022 flash 9B, mini 4B, nano 2B, lite and edge on Qwen3.5"
     },
     {
       "model": "ALoDLM (1.7B / 8B)",
