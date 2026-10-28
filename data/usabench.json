@@ -1,5 +1,5 @@
 {
-  "pulseDate": "2026-10-27",
+  "pulseDate": "2026-10-28",
   "pulseLabel": "October 2026",
   "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
@@ -122,6 +122,16 @@
       "notes": "MIT spinoff \u2022 LFM2.5-24B-A2B (13 Oct) largest/final family member \u2022 24B/2.45B MoE \u2022 131K ctx \u2022 33T pretrain \u2022 agentic RL \u2022 LiveClaw 48.09 \u2022 184 tok/s M5 Max \u2022 230M\u201324B + VL + Audio \u2022 LFM Open License ($10M commercial cap)"
     },
     {
+      "model": "Liquid LFM3",
+      "company": "Liquid AI",
+      "released": "2026-10-27",
+      "baseScore": 92,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + LEAP",
+      "notes": "New tri-hybrid (gated conv + sliding-window attention + global attention) \u2022 own pretrain 22T on LFM3-1.7B-Base \u2022 256K \u2022 six ~2B models: text, VL, audio, omni, d1-2B, d1-Omni-2B \u2022 LFM Open License \u2022 weights on HF 27 Oct \u2022 specialist RL teachers are the model's own checkpoints \u2022 LiveClaw 45.60 vs LFM2.5-2.6B 14.70 \u2022 score basis vs Bolt E4B (88) and the LFM2.5 family (96): leads the 2B agent band, trails the 24B line"
+    },
+    {
       "model": "Beam",
       "company": "Reflection AI",
       "released": "2026-10-16",
@@ -205,6 +215,26 @@
       "notes": "3.8 Flash (Sep 2) \u2022 Nano Banana 2.1 (Oct 6) \u2022 use Gemma 4 for open"
     },
     {
+      "model": "Genie 4",
+      "company": "Google",
+      "released": "2026-10-27",
+      "baseScore": 82,
+      "openSource": false,
+      "closed": true,
+      "access": "Project Genie",
+      "notes": "Closed world model \u2022 research preview 27 Oct \u2022 native audio and live language steering \u2022 about 2 min scene consistency \u2022 Gemini 3.8 Flash in the loop \u2022 no weights \u2022 trusted testers now, AI Ultra and Gemini API planned \u2022 score basis vs Runway Gen-4 (80) and Imagine Video (85): newer interactive world model, still a limited preview"
+    },
+    {
+      "model": "Gemini Robotics ER 2",
+      "company": "Google",
+      "released": "2026-07-30",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "Gemini API / AI Studio",
+      "notes": "Closed embodied-reasoning planner \u2022 launched 30 Jul on the Gemini API and AI Studio \u2022 high-level robot brain, hands motion to a VLA \u2022 public Cloud preview 27 Oct \u2022 no weights \u2022 score basis vs GR00T-N1.7 (88 open): frontier planner, closed line sits under the open robotics row after the closed penalty"
+    },
+    {
       "model": "Llama 4 Maverick / Scout",
       "company": "Meta",
       "released": "2025-04-01",
@@ -278,14 +308,14 @@
       "notes": "Small & efficient open \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "MAI Code / Image 2.6 / Voice 2.1",
+      "model": "MAI Code / Image 2.7 / Voice 2.1",
       "company": "Microsoft",
-      "released": "2026-10-01",
+      "released": "2026-10-27",
       "baseScore": 84,
       "openSource": false,
       "closed": true,
       "access": "Azure",
-      "notes": "MAI-Image-2.6-Flash \u2022 MAI-Voice-2.1 \u2022 MAI-Transcribe-2 \u2022 closed Azure \u2022 use Phi-4 / Nemotron for open"
+      "notes": "MAI-Image-2.7 preview (27 Oct) \u2022 editing ahead of GPT Image 2.5 Flare on Artificial Analysis, Arena Edit #3 \u2022 text-to-image still coming \u2022 MAI-Voice-2.1 \u2022 MAI-Transcribe-2 \u2022 closed \u2022 use Phi-4 / Nemotron for open"
     },
     {
       "model": "INTELLECT-1",
@@ -371,6 +401,16 @@
       "closed": true,
       "access": "x.ai / Voice Agent API",
       "notes": "Speech-to-speech Voice Agent API (Oct 14) \u2022 AA Speech Index 86.9 \u2022 $0.08/min \u2022 grok-voice-3.0 \u2022 Voice 2.0 deprecated \u2022 closed"
+    },
+    {
+      "model": "Prism",
+      "company": "Rime",
+      "released": "2026-10-28",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "rime.ai",
+      "notes": "San Francisco speech-to-speech \u2022 28 Oct \u2022 own studio conversational data \u2022 inspectable text before speech \u2022 $0.08/min \u2022 \u03c4-Voice 56.6 (Rime) \u2022 cloud or on-prem \u2022 closed \u2022 score basis vs Grok Voice 3.0 (85) and GPT-Live 1.1 (84): same minute price as Grok Voice, smaller lab"
     },
     {
       "model": "GPT Image 2.5 / Sora 2",
@@ -1259,7 +1299,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF",
-      "notes": "Real-time pose in-betweener • ~200M SOMA + Unitree G1 • from-scratch on Bones RigPlay • NVIDIA Open Model Agreement • Apache 2.0 code • HF 23 Oct • no training data • score basis vs ARDY (82): specialist motion generator, not a robot foundation"
+      "notes": "Real-time pose in-betweener \u2022 ~200M SOMA + Unitree G1 \u2022 from-scratch on Bones RigPlay \u2022 NVIDIA Open Model Agreement \u2022 Apache 2.0 code \u2022 HF 23 Oct \u2022 no training data \u2022 score basis vs ARDY (82): specialist motion generator, not a robot foundation"
     },
     {
       "model": "TimesFM 3 (330M)",
@@ -2245,7 +2285,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "InternVideo2-CLIP-L14 (OpenGVLab, Shanghai AI Lab)",
       "access": "HF",
-      "whyFlagged": "0.37B video-text embed • TAO LoRA on OpenGVLab InternVideo2-CLIP-L14 • frozen Apple MobileCLIP text tower • research-only license • HF created 22 Oct • foreign weight foundation, hard 0"
+      "whyFlagged": "0.37B video-text embed \u2022 TAO LoRA on OpenGVLab InternVideo2-CLIP-L14 \u2022 frozen Apple MobileCLIP text tower \u2022 research-only license \u2022 HF created 22 Oct \u2022 foreign weight foundation, hard 0"
     }
   ]
 }
