@@ -172,6 +172,7 @@ const ACCESS_LINKS = {
   "midjourney.com": "https://midjourney.com",
   "runwayml.com": "https://runwayml.com",
   "heygen.com": "https://heygen.com",
+  "mirendil.com": "https://mirendil.com",
   "krea.ai": "https://krea.ai",
   "platform.reflection.ai": "https://platform.reflection.ai",
   "console.liquid.ai": "https://console.liquid.ai",
