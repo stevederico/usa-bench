@@ -1,5 +1,5 @@
 {
-  "pulseDate": "2026-10-28",
+  "pulseDate": "2026-10-29",
   "pulseLabel": "October 2026",
   "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
@@ -203,6 +203,16 @@
       "closed": true,
       "access": "gemini.google.com / Gemini API / AI Studio / Antigravity",
       "notes": "GA Oct 13 after limited Fairwind preview (Sep 30) \u2022 1M unified in/out token limit \u2022 #1 Vals Index (Google claim) \u2022 ERQA 87% \u2022 intro $2/$10 per 1M (to $4/$20 after Nov 30) \u2022 closed, use Gemma 4 for open"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "company": "Google",
+      "released": "2026-10-28",
+      "baseScore": 91,
+      "openSource": false,
+      "closed": true,
+      "access": "Fairwind",
+      "notes": "Closed frontier \u2022 28 Oct \u2022 Fairwind cyber defenders first \u2022 intro $2/$10 then $4/$20, same as Argon \u2022 AA Index v5 59 \u2022 SEC-bench Pro 88.2 \u2022 no weights \u2022 score basis vs Opus 5.5 (90) and Argon (86): one index point over Opus, still closed"
     },
     {
       "model": "Gemini 3.8 + Nano Banana 2.1",
@@ -864,6 +874,16 @@
       "notes": "Palo Alto diffusion LLM \u2022 closed API 19 Oct \u2022 1M ctx \u2022 1,068 tok/s claimed \u2022 company benches above Haiku 5.5 and GPT-6 Luna \u2022 $0.20/$0.70 ($0.10/$0.35 launch) \u2022 Inception API, OpenRouter, Baseten, Vercel"
     },
     {
+      "model": "Fern 0.1",
+      "company": "Mirendil",
+      "released": "2026-10-26",
+      "baseScore": 82,
+      "openSource": false,
+      "closed": true,
+      "access": "mirendil.com",
+      "notes": "San Francisco lab \u2022 from-scratch pretrain on Mirendil-Base \u2022 0.1-0.5T \u2022 up to 10M ctx \u2022 short post-train \u2022 early access 26 Oct \u2022 no weights \u2022 vendor SWE-Bench Verified 73.4 \u2022 Terminal-Bench 4.0 6.1 \u2022 score basis vs Genie 4 (82) and Haiku 5.5 (83): context is the lead, agent benches trail production Claudes"
+    },
+    {
       "model": "ChatGPT Work",
       "company": "OpenAI",
       "released": "2026-07-09",
@@ -933,6 +953,17 @@
       "closed": false,
       "access": "HF + NGC",
       "notes": "Open multilingual ASR (0.6B FastConformer-TDT) \u2022 25 European languages \u2022 high-throughput NeMo"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "company": "NVIDIA",
+      "released": "2026-10-28",
+      "baseScore": 89,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + NGC",
+      "notes": "34B/4.3B speech LLM on Nemotron 3.5 Lightning \u2022 own NVIDIA encoder and Nemotron-3 diarization \u2022 OpenMDW-1.1 \u2022 40 languages \u2022 hour-long recordings \u2022 speech translation \u2022 Granary v2 \u2022 HF 28 Oct \u2022 open ASR lead \u2022 score basis vs Granite Speech 5.0 (88) and parakeet-tdt-0.6b-v3 (88): larger speech model, leads the open ASR boards"
     },
     {
       "model": "LocateAnything-3B",
