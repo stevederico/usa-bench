@@ -267,6 +267,7 @@ const COMPANY_LINKS = {
   "Eximius Labs": "EximiusLabs",
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
+  "Pika": "Pika-Labs",
 };
 
 function linkifyCompany(company) {

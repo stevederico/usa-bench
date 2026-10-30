@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-29",
+  "pulseDate": "2026-10-30",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1333,6 +1333,17 @@
       "notes": "Real-time pose in-betweener \u2022 ~200M SOMA + Unitree G1 \u2022 from-scratch on Bones RigPlay \u2022 NVIDIA Open Model Agreement \u2022 Apache 2.0 code \u2022 HF 23 Oct \u2022 no training data \u2022 score basis vs ARDY (82): specialist motion generator, not a robot foundation"
     },
     {
+      "model": "Metatron v1",
+      "company": "NVIDIA",
+      "released": "2026-10-27",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Unitree G1 whole-body policy \u2022 walking, recovery, and scene interaction \u2022 MaskedMimic student of NVIDIA experts \u2022 NVIDIA Open Model License \u2022 Apache 2.0 code \u2022 HF 27 Oct \u2022 no training data \u2022 ProtoMotions \u2022 score basis vs MotionBricks (83) and ARDY (82): deployable G1 controller, under GR00T-N1.7 (88)"
+    },
+    {
       "model": "TimesFM 3 (330M)",
       "company": "Google",
       "released": "2026-08-31",
@@ -2317,6 +2328,42 @@
       "chinaBaseLabel": "InternVideo2-CLIP-L14 (OpenGVLab, Shanghai AI Lab)",
       "access": "HF",
       "whyFlagged": "0.37B video-text embed \u2022 TAO LoRA on OpenGVLab InternVideo2-CLIP-L14 \u2022 frozen Apple MobileCLIP text tower \u2022 research-only license \u2022 HF created 22 Oct \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "Pika H3 Flex",
+      "company": "Pika",
+      "released": "2026-10-29",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "MiniMax H3 (MiniMax, China)",
+      "access": "HF + pika.art",
+      "whyFlagged": "Palo Alto video lab \u2022 33B post-train of MiniMax H3 \u2022 six-step synced audio and video \u2022 up to 12 references \u2022 weights 29 Oct \u2022 MiniMax H3 Community License \u2022 4K and stems stay on the Pika API \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "Particle-1",
+      "company": "Particle",
+      "released": "2026-10-28",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "DeepSeek V4.1 Flash (DeepSeek)",
+      "access": "particle.ai / OpenRouter",
+      "whyFlagged": "San Francisco lab \u2022 closed API 28 Oct \u2022 rank-64 LoRA post-train on DeepSeek V4.1 Flash \u2022 coding token efficiency \u2022 vendor pass rate near the base \u2022 weights not released \u2022 Particle API and OpenRouter \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "Open-H3 Regenerate 2K",
+      "company": "NVIDIA",
+      "released": "2026-10-26",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "MiniMax H3 (MiniMax, China)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVlabs Sana line \u2022 3-step 2K video refiner \u2022 LoRA on MiniMax H3 \u2022 weights 26 Oct under Efficient-Large-Model \u2022 MiniMax H3 Community License \u2022 foreign weight foundation, hard 0 \u2022 FastH3 Omni stays a separate flagged row"
     }
   ]
 }

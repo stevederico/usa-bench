@@ -4,6 +4,14 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.49.0
+
+  Add Metatron policy
+  Flag Pika Flex
+  Flag Particle-1
+  Flag Open-H3
+  Advance October pulse
+
 0.48.0
 
   Add Gemini Carbon
