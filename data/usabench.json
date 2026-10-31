@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-30",
+  "pulseDate": "2026-10-31",
   "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -528,6 +528,17 @@
       "notes": "Open small multimodal reasoning model (MIT) \u2022 Frontier-level perf on single GPU \u2022 Built with NVIDIA Nemotron tech"
     },
     {
+      "model": "Apriel Voice 27B",
+      "company": "ServiceNow",
+      "released": "2026-10-29",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Santa Clara lab \u2022 preview speech model \u2022 Gemma 4 26B-A4B backbone (US) plus Whisper large-v3-turbo encoder (US) \u2022 MIT \u2022 text and tool calls, external TTS \u2022 EVA-A 51.27 \u2022 \u03c4-Voice 65.51 \u2022 LibriSpeech clean WER 2.23 \u2022 HF card 29 Oct \u2022 score basis vs Apriel-1.5 (82), Ultravox (80), and Granite Speech 5.0 (88): larger spoken-agent preview, under the open ASR leads"
+    },
+    {
       "model": "MolmoMotion 4B",
       "company": "Ai2 (allenai)",
       "released": "2026-06-01",
@@ -767,6 +778,17 @@
       "closed": false,
       "access": "HF + NGC",
       "notes": "Open 99M Nemotron-3 voice activity and diarization \u2022 specialist beside ASR 3.5"
+    },
+    {
+      "model": "NemotronLabs RE-USE",
+      "company": "NVIDIA",
+      "released": "2026-10-22",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "9.6M universal speech enhancement \u2022 own Mamba encoder-decoder \u2022 OpenMDW-1.1 \u2022 8\u201348 kHz \u2022 URGENT 2025 CAcc 89.17 vs noisy 81.29 \u2022 HF 22 Oct \u2022 score basis vs Nemotron-3-Diarization (84): smaller enhancer, sits with that specialist"
     },
     {
       "model": "diffusiongemma-26B-A4B",
@@ -1352,6 +1374,16 @@
       "closed": false,
       "access": "HF",
       "notes": "Open time-series foundation (TimesFM-3, 330M) \u2022 successor to 2.5-200M"
+    },
+    {
+      "model": "TimeH2O-v1",
+      "company": "H2O.ai",
+      "released": "2026-10-26",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Mountain View \u2022 108M zero-shot forecasting foundation \u2022 covariates \u2022 5.8M tiny sibling \u2022 non-commercial license \u2022 GIFT-Eval CRPS 0.441 vs TimesFM-3 0.456 \u2022 fev-bench SQL skill 50.83 \u2022 announced 26 Oct \u2022 score basis vs TimesFM 3 (89): leads those benches, smaller and non-commercial"
     },
     {
       "model": "SigLIP2",
@@ -2364,6 +2396,18 @@
       "chinaBaseLabel": "MiniMax H3 (MiniMax, China)",
       "access": "HF",
       "whyFlagged": "NVIDIA NVlabs Sana line \u2022 3-step 2K video refiner \u2022 LoRA on MiniMax H3 \u2022 weights 26 Oct under Efficient-Large-Model \u2022 MiniMax H3 Community License \u2022 foreign weight foundation, hard 0 \u2022 FastH3 Omni stays a separate flagged row"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash NVFP4",
+      "company": "NVIDIA",
+      "released": "2026-10-30",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "DeepSeek-V4.1-Flash-1017 (DeepSeek)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 quant of DeepSeek-V4.1-Flash-1017 \u2022 552B backbone \u2022 Model Optimizer \u2022 HF 30 Oct \u2022 NVIDIA does not own the base \u2022 foreign DeepSeek foundation, hard 0"
     }
   ]
 }
