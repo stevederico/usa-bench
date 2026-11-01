@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-10-31",
-  "pulseLabel": "October 2026",
-  "daysSinceMajorRelease": 3,
+  "pulseDate": "2026-11-01",
+  "pulseLabel": "November 2026",
+  "daysSinceMajorRelease": 4,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1557,6 +1557,16 @@
       "notes": "Open OCR + layout \u2022 Chandra 2 flagship \u2022 Lift extract \u2022 Indra 1M CPU OCR (13 Oct) 49 pg/s \u2022 document AI"
     },
     {
+      "model": "Surya OCR 2.5",
+      "company": "Datalab",
+      "released": "2026-10-29",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Manhattan document lab \u2022 689M OCR, layout, and HTML tables \u2022 own train on a Qwen3.5-style arch \u2022 no foreign base declared \u2022 OpenRAIL-M weights (startups under $5M) \u2022 Apache code \u2022 OmniParseBench 85.9 \u2022 olmOCR-bench 83.7 \u2022 4.5 pg/s on one H100 \u2022 HF 29 Oct \u2022 score basis vs Chandra OCR 2 (84) and Nemotron Parse 3.5: best open OCR under 1B on Datalab's bench, sits under the larger Chandra row"
+    },
+    {
       "model": "OmniCoder-9B",
       "company": "Tesslate",
       "released": "2026-03-13",
@@ -1929,15 +1939,15 @@
       "whyFlagged": "Orchestration agent on Qwen3-14B \u2022 also used Kimi-2.5 reasoning traces in post-train mix"
     },
     {
-      "model": "Mage-VL / Mage-ViT",
+      "model": "Mage-VL-Cowork / Mage-VL",
       "company": "Microsoft",
-      "released": "2026-07-26",
+      "released": "2026-10-30",
       "baseScore": 74,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3-4B (Alibaba) LLM backbone",
       "access": "HF",
-      "whyFlagged": "Codec-native streaming VLM \u2022 Mage-ViT from-scratch but pairs Qwen3-4B decoder \u2022 foreign language foundation"
+      "whyFlagged": "4B hybrid computer-use post-train of Mage-VL \u2022 Mage-ViT from-scratch but the language backbone is Qwen3-4B \u2022 Apache 2.0 \u2022 OSWorld-Verified 66.0 \u2022 HF 30 Oct \u2022 foreign language foundation, hard 0"
     },
     {
       "model": "Clef / Clef-flash / Omni",
