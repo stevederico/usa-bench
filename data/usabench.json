@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-01",
+  "pulseDate": "2026-11-02",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 4,
+  "daysSinceMajorRelease": 5,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1128,6 +1128,17 @@
       "closed": false,
       "access": "HF",
       "notes": "Open conversational TTS (100+ langs, cloning) \u2022 research/non-commercial license \u2022 Santa Clara"
+    },
+    {
+      "model": "Audio8 TTS Realistic",
+      "company": "Edge0",
+      "released": "2026-10-29",
+      "baseScore": 81,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Bay Area on-device lab \u2022 0.6B DualAR TTS \u2022 own Audio8 preview weights \u2022 Apache 2.0 \u2022 23 languages \u2022 zero-shot clone \u2022 HF Realistic Air \u2022 public weights 29 Oct \u2022 vendor CV3 4.86 vs Higgs Audio v3 4.41 \u2022 score basis vs Higgs TTS 3 (88) and Kokoro (82): newer Apache speech model, trails the 4B Higgs line"
     },
     {
       "model": "Chatterbox",
@@ -2298,9 +2309,9 @@
       "whyFlagged": "Multimodal embed 8B/1B \u2022 OpenMDW-1.1 \u2022 HF 20 Oct \u2022 vision encoder initialized from Ministral-3-8B \u2022 language frozen from Nemotron-3-Embed \u2022 text-only Nemotron-3 Embed stays on the frontier row \u2022 foreign vision foundation, hard 0"
     },
     {
-      "model": "Mammoth-1 / Elephant-1",
+      "model": "Mammoth-1 / Elephant-1 / Joey-1",
       "company": "Base Labs",
-      "released": "2026-10-21",
+      "released": "2026-10-29",
       "baseScore": 84,
       "openSource": true,
       "closed": false,
@@ -2308,7 +2319,7 @@
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.5 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Baseten SF lab \u2022 decision models \u2022 mammoth-1 27B and elephant-1 9B \u2022 MIT \u2022 full fine-tunes of Qwen3.5 \u2022 Jev Decision Index 71.24 (vendor) \u2022 21 Oct \u2022 foreign weight foundation, hard 0"
+      "whyFlagged": "Baseten SF lab \u2022 decision models \u2022 mammoth-1 27B and elephant-1 9B (21 Oct) \u2022 joey-1 2B (29 Oct) post-trained from Qwen3.5-2B \u2022 MIT \u2022 Jev public split 63.30 \u2022 $0.01 per 1M on Baseten \u2022 foreign weight foundation, hard 0"
     },
     {
       "model": "Carbon-X",
@@ -2418,6 +2429,19 @@
       "chinaBaseLabel": "DeepSeek-V4.1-Flash-1017 (DeepSeek)",
       "access": "HF",
       "whyFlagged": "NVIDIA NVFP4 quant of DeepSeek-V4.1-Flash-1017 \u2022 552B backbone \u2022 Model Optimizer \u2022 HF 30 Oct \u2022 NVIDIA does not own the base \u2022 foreign DeepSeek foundation, hard 0"
+    },
+    {
+      "model": "Edge0-35B / 8B",
+      "company": "Edge0",
+      "released": "2026-09-16",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.6-35B-A3B (Alibaba) and Ling-3.0-tiny (inclusionAI)",
+      "access": "HF",
+      "whyFlagged": "Bay Area on-device lab \u2022 35B int4 adapter on Qwen3.6-35B-A3B \u2022 8B int4 adapter on inclusionAI Ling-3.0-tiny \u2022 Apache 2.0 \u2022 SSD expert offload \u2022 paper 16 Sep \u2022 four native engines 30 Sep \u2022 foreign weight foundation, hard 0 \u2022 Audio8 TTS stays on the frontier row"
     }
   ]
 }
