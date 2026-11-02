@@ -268,6 +268,7 @@ const COMPANY_LINKS = {
   "OpenMed": "OpenMed",
   "Ultralytics": "ultralytics",
   "Pika": "Pika-Labs",
+  "Edge0": "Edge0",
 };
 
 function linkifyCompany(company) {
