@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-02",
+  "pulseDate": "2026-11-03",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 5,
+  "daysSinceMajorRelease": 6,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1405,6 +1405,17 @@
       "closed": false,
       "access": "HF",
       "notes": "Open vision-language encoder (siglip2-base) \u2022 zero-shot classification / retrieval"
+    },
+    {
+      "model": "Primal VAE",
+      "company": "Ostris",
+      "released": "2026-10-30",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Denver lab \u2022 80M image autoencoder \u2022 2x1 and 2x2 \u2022 Apache 2.0 \u2022 own pretrain \u2022 patch to Flux shaped latents \u2022 no scale or shift \u2022 HF 30 Oct \u2022 score basis vs SigLIP2 (86) and Kokoro (82): smaller codec, trails those encoders"
     },
     {
       "model": "BitNet b1.58 2B-4T",
