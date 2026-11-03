@@ -269,6 +269,7 @@ const COMPANY_LINKS = {
   "Ultralytics": "ultralytics",
   "Pika": "Pika-Labs",
   "Edge0": "Edge0",
+  "Ostris": "ostris",
 };
 
 function linkifyCompany(company) {
