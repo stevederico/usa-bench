@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-03",
+  "pulseDate": "2026-11-04",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 6,
+  "daysSinceMajorRelease": 7,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1284,6 +1284,17 @@
       "notes": "Open NVIDIA diffusion image generation model"
     },
     {
+      "model": "NLD-Uni",
+      "company": "NVIDIA",
+      "released": "2026-10-27",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "18.3B unified understand and generate model on the Nemotron diffusion language model \u2022 text and image in, text and image out \u2022 NVIDIA Open Model License \u2022 HF card 27 Oct \u2022 no public bench scores, smoke tests only \u2022 score basis vs NL-Diffusion-Image (85) and Cosmos3 Super T2I (89): newer unified checkpoint, still short of the Cosmos3 generation heads"
+    },
+    {
       "model": "Cosmos3 Super T2I / I2V",
       "company": "NVIDIA",
       "released": "2026-07-01",
@@ -1375,6 +1386,39 @@
       "permissive": true,
       "access": "HF",
       "notes": "Unitree G1 whole-body policy \u2022 walking, recovery, and scene interaction \u2022 MaskedMimic student of NVIDIA experts \u2022 NVIDIA Open Model License \u2022 Apache 2.0 code \u2022 HF 27 Oct \u2022 no training data \u2022 ProtoMotions \u2022 score basis vs MotionBricks (83) and ARDY (82): deployable G1 controller, under GR00T-N1.7 (88)"
+    },
+    {
+      "model": "GEM-X",
+      "company": "NVIDIA",
+      "released": "2026-10-30",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Monocular video to SOMA body motion \u2022 46.8M temporal transformer \u2022 own NVIDIA weights \u2022 NVIDIA Open Model License \u2022 Apache 2.0 code \u2022 HF and GitHub 30 Oct \u2022 internal W-MPJPE 100.2 mm \u2022 score basis vs MotionBricks (83): smaller pose estimator, under that motion generator"
+    },
+    {
+      "model": "STRATA",
+      "company": "NVIDIA",
+      "released": "2026-11-02",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF",
+      "notes": "331.7M kilometer-scale atmosphere emulator \u2022 own PixelDiT \u2022 OpenMDW-1.1 \u2022 weights, PhysicsNeMo code, and CC BY 4.0 SCREAM data \u2022 HF 2 Nov \u2022 score basis vs TimesFM 3 (89) and TimeH2O (86): same size band as TimesFM, storm-resolving specialist under the general forecaster"
+    },
+    {
+      "model": "LidarVerse",
+      "company": "NVIDIA",
+      "released": "2026-10-06",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "2B LiDAR world model \u2022 tokenizer plus diffusion teacher and four-step student \u2022 continued from NVIDIA Cosmos-Predict2-T2V-2B \u2022 research only \u2022 11 FPS on one H100 \u2022 GitHub 11 Sep \u2022 HF 6 Oct \u2022 stage-3 package 28 Oct \u2022 score basis vs Cosmos-Reason2-2B (84): specialist sensor model, under the Cosmos reasoning line"
     },
     {
       "model": "TimesFM 3 (330M)",
@@ -2135,14 +2179,14 @@
     {
       "model": "Drex Max / 2.0",
       "company": "Nace",
-      "released": "2026-10-19",
+      "released": "2026-10-30",
       "baseScore": 76,
       "openSource": true,
       "closed": false,
       "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.6-35B-A3B (Alibaba); 1.5 via MiMo Qwen3.5",
+      "chinaBaseLabel": "Qwen3.5 / Qwen3.6 (Alibaba); 1.5 via MiMo Qwen3.5",
       "access": "HF + console.nace.ai",
-      "whyFlagged": "Palo Alto \u2022 Drex Max API-only 19 Oct (screens, images, video; Decision Index 67.6; no open weights) \u2022 Drex 2.0 open weights 12 Oct, 35B/3B built on Qwen3.6-35B-A3B \u2022 Drex 1.5 9B on Xiaomi MiMo-V2.6 distill of Qwen3.5 \u2022 DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B"
+      "whyFlagged": "Palo Alto \u2022 Drex Max v1 open weights 30 Oct \u2022 dense 27B qwen3_5 backbone \u2022 Nace Open RAIL-M \u2022 Decision Index 0.4 is 67.52 \u2022 API line was 19 Oct \u2022 Drex 2.0 open weights 12 Oct, 35B/3B on Qwen3.6-35B-A3B \u2022 Drex 1.5 9B on Xiaomi MiMo-V2.6 distill of Qwen3.5 \u2022 DLM 8B on NVIDIA Efficient-DLM continued from Qwen3-8B \u2022 foreign weight foundation, hard 0"
     },
     {
       "model": "OrcaCyber Nano / Zero",
