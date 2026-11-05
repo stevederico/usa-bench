@@ -4,6 +4,14 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.55.0
+
+  Add Ripple 65B
+  Add TwIL 8B
+  Add SWE-2 Flash
+  Update GPT Image
+  Advance November pulse
+
 0.54.0
 
   Add NLD Uni

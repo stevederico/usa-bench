@@ -262,6 +262,8 @@ const COMPANY_LINKS = {
   "Amazon": "amazon",
   "Hugging Face Bio": "HuggingFaceBio",
   "Recursive": "RecursiveSI",
+  "Ricursive Intelligence": "ricursiveAI",
+  "webAI": "webAI-Official",
   "Base Labs": "baselabs",
   "Hao AI Lab": "FastVideo",
   "Eximius Labs": "EximiusLabs",

@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-04",
+  "pulseDate": "2026-11-05",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 7,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -153,6 +153,17 @@
       "permissive": true,
       "access": "HF + rec",
       "notes": "SF lab \u2022 from-scratch pretrain \u2022 39.8B/2.5B MoE \u2022 Apache 2.0 \u2022 262K ctx \u2022 SWE-V 74.2 \u2022 SWE-Pro v2 89.7 \u2022 Terminal-Bench 2.1 54.9 \u2022 weights + tokenizer, no training data \u2022 score basis vs Muse Glimmer 30B and Beam: leads MoE under 50B on Recursive cards, trails those larger US peers on some agent benches"
+    },
+    {
+      "model": "Ripple-65B Preview",
+      "company": "Ricursive Intelligence",
+      "released": "2026-11-04",
+      "baseScore": 95,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + OpenRouter",
+      "notes": "Palo Alto lab \u2022 from-scratch dense 65B \u2022 12T pretrain \u2022 1M ctx \u2022 Apache 2.0 \u2022 Gemma-3N-like arch after an Olmo 3 recipe baseline \u2022 Terminal-Bench 2.1 80.5 \u2022 SWE-V 76.5 \u2022 GPQA-D 85.2 \u2022 BF16/NVFP4 + DFlash2 \u2022 HF 4 Nov \u2022 score basis vs Beam (97) and Flint (94): leads US open weights on Terminal-Bench 2.1, trails Beam on SWE-V and GPQA"
     },
     {
       "model": "Claude Opus 5.5 / Fable 5.1",
@@ -423,14 +434,14 @@
       "notes": "San Francisco speech-to-speech \u2022 28 Oct \u2022 own studio conversational data \u2022 inspectable text before speech \u2022 $0.08/min \u2022 \u03c4-Voice 56.6 (Rime) \u2022 cloud or on-prem \u2022 closed \u2022 score basis vs Grok Voice 3.0 (85) and GPT-Live 1.1 (84): same minute price as Grok Voice, smaller lab"
     },
     {
-      "model": "GPT Image 2.5 / Sora 2",
+      "model": "GPT Image 2.6 / Sora 2",
       "company": "OpenAI",
-      "released": "2026-09-08",
-      "baseScore": 84,
+      "released": "2026-11-04",
+      "baseScore": 85,
       "openSource": false,
       "closed": true,
       "access": "API",
-      "notes": "GPT Image 2.5 Flare + Sunburst \u2022 Sora 2 video line \u2022 closed API"
+      "notes": "GPT Image 2.6 Flare + Sunburst (4 Nov) \u2022 GIFs, markup, SVG \u2022 50% faster than 2.5 \u2022 Sora 2 video line \u2022 closed API \u2022 score basis vs Imagine Video 1.5 (85): same closed image band"
     },
     {
       "model": "Midjourney",
@@ -620,6 +631,16 @@
       "permissive": true,
       "access": "HF",
       "notes": "8B open-weights base + instruct (Apache 2.0) \u2022 Trained from scratch \u2022 Code / STEM / tool-calling \u2022 Released Essential-Web v1.0 corpus \u2022 Founded by 'Attention Is All You Need' co-authors \u2022 SF"
+    },
+    {
+      "model": "TwIL-8B",
+      "company": "webAI",
+      "released": "2026-11-04",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Austin lab \u2022 8.8B post-train of Granite 4.2 8B (US) \u2022 131K \u2022 non-commercial \u2022 MATH-500 98.2 \u2022 LiveCodeBench 81.6 \u2022 GPQA-D 70.2 \u2022 Q4 about 5GB \u2022 launch 4 Nov \u2022 score basis vs Rnj-1 (86) and Granite 4.2 (95): small reasoning post-train, under the Apache Granite line"
     },
     {
       "model": "Nomic Embed Text v2 (MoE)",
@@ -904,6 +925,16 @@
       "closed": true,
       "access": "mirendil.com",
       "notes": "San Francisco lab \u2022 from-scratch pretrain on Mirendil-Base \u2022 0.1-0.5T \u2022 up to 10M ctx \u2022 short post-train \u2022 early access 26 Oct \u2022 no weights \u2022 vendor SWE-Bench Verified 73.4 \u2022 Terminal-Bench 4.0 6.1 \u2022 score basis vs Genie 4 (82) and Haiku 5.5 (83): context is the lead, agent benches trail production Claudes"
+    },
+    {
+      "model": "SWE-2 Flash",
+      "company": "Cognition",
+      "released": "2026-11-04",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "access": "devin.ai",
+      "notes": "SF lab \u2022 276B/12B post-train of Inkling-Small (US) \u2022 Devin Desktop and CLI \u2022 4 Nov \u2022 free through 30 Nov \u2022 weights gated \u2022 DeepSWE 60.1 \u2022 FrontierCode 2.0 24.0 \u2022 Terminal-Bench 4.0 20.0 \u2022 score basis vs Haiku 5.5 (83): coding SKU in the same band, weights not public"
     },
     {
       "model": "ChatGPT Work",
