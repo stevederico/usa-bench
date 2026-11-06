@@ -312,11 +312,18 @@
 
 ### Hardware
 
-US-built computers for running AI locally. US content is by component cost, as the maker reports it.
+US-built computers for running AI locally. Scored like the [American-Made Cars Index](https://www.cars.com/american-made-index/): parts content plus where it is built.
 
-| Hardware | Company / HQ | Category | Status | US content | Notes |
-|----------|--------------|----------|--------|------------|-------|
-| [BlueChip](https://www.qualcomm.com/news/releases/2026/10/anduril-and-qualcomm-unveil-bluechip-to-rebuild-american-compute) | [Anduril](https://www.anduril.com) (Costa Mesa, CA) + [Qualcomm](https://www.qualcomm.com) (San Diego, CA) | Laptop | Announced Oct 2026 • preorder 2027 | ~32% US • >90% US + allied (prototype) • 65%+ US target at launch | Palmer Luckey's "anti-surveillance computer" • Arm Snapdragon X fabbed at TSMC Arizona • circuit boards built at Anduril Arsenal-1, Pickaway County, OH • US cover glass • display still China-made • hardened, for government, military, and first responders first • auditable parts and software • on-device AI • price TBA, ~20% over a high-end PC (Luckey) • roadmap to 100% domestic |
+| Rank | Hardware | Company / HQ | Category | USAbench | US content | Built in | Notes |
+|------|----------|--------------|----------|----------|------------|----------|-------|
+| 1    | [BlueChip](https://www.qualcomm.com/news/releases/2026/10/anduril-and-qualcomm-unveil-bluechip-to-rebuild-american-compute) | Anduril (Costa Mesa, CA) + Qualcomm (San Diego, CA) | Laptop | **68** ⭐ | ~32% US • >90% US + allied • 65%+ US target at launch | Designed in CA • boards at Anduril Arsenal-1, Pickaway County, OH • Snapdragon X fabbed at TSMC Arizona • final assembly US (site not named) • display made in China | Announced Oct 2026 • Prototype • preorder 2027 • Palmer Luckey's "anti-surveillance computer" • US cover glass • hardened, for government, military, and first responders first • auditable parts and software • on-device AI • price TBA, ~20% over a high-end PC (Luckey) • roadmap to 100% domestic |
+
+**Hardware USAbench (0–100)**
+- **40** × US share of component cost (maker-reported)
+- **20** final assembly in the US • **10** circuit boards built in the US
+- **15** main chip fabbed in the US • **5** display made in the US
+- **10** designed in the US by a US HQ company
+- **100 = every part US-made and US-built**; anything less caps at 99
 
 ### Contributing
 - Add pure-US entries (Released date + score) to `data/usabench.json`

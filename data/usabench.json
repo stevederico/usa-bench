@@ -2586,5 +2586,32 @@
       "access": "HF",
       "whyFlagged": "Bay Area on-device lab \u2022 35B int4 adapter on Qwen3.6-35B-A3B \u2022 8B int4 adapter on inclusionAI Ling-3.0-tiny \u2022 Apache 2.0 \u2022 SSD expert offload \u2022 paper 16 Sep \u2022 four native engines 30 Sep \u2022 foreign weight foundation, hard 0 \u2022 Audio8 TTS stays on the frontier row"
     }
+  ],
+  "hardwareWeights": {
+    "usParts": 40,
+    "finalAssembly": 20,
+    "boardAssembly": 10,
+    "chipFab": 15,
+    "display": 5,
+    "usDesign": 10
+  },
+  "hardware": [
+    {
+      "name": "BlueChip",
+      "link": "https://www.qualcomm.com/news/releases/2026/10/anduril-and-qualcomm-unveil-bluechip-to-rebuild-american-compute",
+      "company": "Anduril (Costa Mesa, CA) + Qualcomm (San Diego, CA)",
+      "category": "Laptop",
+      "announced": "2026-10-27",
+      "status": "Prototype \u2022 preorder 2027",
+      "usContentPct": 32,
+      "usContentLabel": "~32% US \u2022 >90% US + allied \u2022 65%+ US target at launch",
+      "usDesign": true,
+      "finalAssemblyUS": true,
+      "boardAssemblyUS": true,
+      "chipFabUS": true,
+      "displayUS": false,
+      "builtIn": "Designed in CA \u2022 boards at Anduril Arsenal-1, Pickaway County, OH \u2022 Snapdragon X fabbed at TSMC Arizona \u2022 final assembly US (site not named) \u2022 display made in China",
+      "notes": "Palmer Luckey's \"anti-surveillance computer\" \u2022 US cover glass \u2022 hardened, for government, military, and first responders first \u2022 auditable parts and software \u2022 on-device AI \u2022 price TBA, ~20% over a high-end PC (Luckey) \u2022 roadmap to 100% domestic"
+    }
   ]
 }

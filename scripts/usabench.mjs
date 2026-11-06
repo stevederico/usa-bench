@@ -291,6 +291,42 @@ function modelRow(e) {
   return `| ${String(e.rank).padEnd(4)} | ${model} | ${company} | ${openLabel} | ${scoreCell} | ${e.notes} | ${access} |`;
 }
 
+/**
+ * Hardware score (0–100): US parts content + where it is built.
+ *   usParts × (usContentPct / 100)  — US share of component cost, as the maker reports it
+ *   + finalAssembly + boardAssembly + chipFab + display  — built in the US
+ *   + usDesign  — designed by a US HQ company in the US
+ * 100 only when every part is US (100% content + all built-in-US flags); else cap 99.
+ */
+const HW_DEFAULT_WEIGHTS = { usParts: 40, finalAssembly: 20, boardAssembly: 10, chipFab: 15, display: 5, usDesign: 10 };
+const hwWeights = { ...HW_DEFAULT_WEIGHTS, ...(data.hardwareWeights ?? {}) };
+
+function scoreHardware(h, w) {
+  const parts = Math.round(w.usParts * (h.usContentPct ?? 0) / 100);
+  const built = {
+    finalAssembly: h.finalAssemblyUS ? w.finalAssembly : 0,
+    boardAssembly: h.boardAssemblyUS ? w.boardAssembly : 0,
+    chipFab: h.chipFabUS ? w.chipFab : 0,
+    display: h.displayUS ? w.display : 0,
+    usDesign: h.usDesign ? w.usDesign : 0,
+  };
+  const allUS = h.usContentPct === 100 && h.finalAssemblyUS && h.boardAssemblyUS && h.chipFabUS && h.displayUS && h.usDesign;
+  const cap = allUS ? 100 : 99;
+  const score = Math.max(0, Math.min(cap, parts + Object.values(built).reduce((a, b) => a + b, 0)));
+  return { ...h, score, cap, partsPoints: parts, builtPoints: built, starLabel: stars(score) };
+}
+
+const hardware = (data.hardware ?? [])
+  .map((h) => scoreHardware(h, hwWeights))
+  .sort((a, b) => b.score - a.score)
+  .map((h, i) => ({ ...h, rank: i + 1 }));
+
+function hardwareRow(h) {
+  const name = h.link ? `[${h.name}](${h.link})` : h.name;
+  const released = h.announced ? `Announced ${formatReleased(h.announced)} • ` : "";
+  return `| ${String(h.rank).padEnd(4)} | ${name} | ${h.company} | ${h.category} | **${h.score}** ${h.starLabel} | ${h.usContentLabel ?? `${h.usContentPct}% US`} | ${h.builtIn ?? "—"} | ${released}${h.status ?? ""}${h.notes ? ` • ${h.notes}` : ""} |`;
+}
+
 const output = {
   pulseDate: data.pulseDate,
   pulseLabel: data.pulseLabel,
@@ -300,6 +336,8 @@ const output = {
   permissiveBonus,
   closedPenalty,
   models,
+  hardwareWeights: hwWeights,
+  hardware,
 };
 
 if (process.argv.includes("--json")) {
@@ -350,4 +388,11 @@ console.log(
 );
 for (const e of models) {
   console.log(modelRow(e));
+}
+console.log("\n## README table rows (Hardware)\n");
+console.log(`hardware weights: ${JSON.stringify(hwWeights)}\n`);
+console.log("| Rank | Hardware | Company / HQ | Category | USAbench | US content | Built in | Notes |");
+console.log("|------|----------|--------------|----------|----------|------------|----------|-------|");
+for (const h of hardware) {
+  console.log(hardwareRow(h));
 }
