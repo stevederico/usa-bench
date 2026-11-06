@@ -1851,7 +1851,10 @@
       "openSource": false,
       "closed": true,
       "access": "Tinker / Tinker Playground",
-      "notes": "SF lab \u2022 594B/17B MoE \u2022 1M ctx \u2022 image in/text out \u2022 variable effort \u2022 AA Intelligence Index 30.6 (~31) \u2022 FrontierCode 2.0 25.4 \u2022 DeepSWE 1.1 72.1 \u2022 SWEBench Pro v2 86.3 \u2022 Vibe Code Bench 81.6 \u2022 closed weights on Tinker today \u2022 Apache 2.0 full weights planned next week after safety testing \u2022 score basis vs Gemini 3.8 Flash (86) and Haiku 5.5 (83): AA 30.6 matches Gemini 3.8 Flash 30.8, trails Haiku 5.5 36.5; coding benches above SWE-2 Flash (84)"
+      "notes": "SF lab \u2022 594B/17B MoE \u2022 own US pretrain (H1 8.4T + H2 3.8T on GB300) \u2022 1M ctx \u2022 image in/text out \u2022 variable effort \u2022 AA Intelligence Index 30.6 (~31) \u2022 FrontierCode 2.0 25.4 \u2022 DeepSWE 1.1 72.1 \u2022 SWEBench Pro v2 86.3 \u2022 Vibe Code Bench 81.6 \u2022 closed weights on Tinker today \u2022 Apache 2.0 full weights planned next week after safety testing \u2022 H3/H4 used trajectories mostly from earlier models including Kimi K3 + own models \u2022 RL on Tinker StableReinforce \u2022 score basis vs Gemini 3.8 Flash (86) and Haiku 5.5 (83): AA 30.6 matches Gemini 3.8 Flash 30.8, trails Haiku 5.5 36.5; coding benches above SWE-2 Flash (84)",
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "Kimi K3 (Moonshot) trajectories in H3/H4 mix + own models",
+      "whyFlagged": "SF lab \u2022 own US pretrain claimed \u2022 H3 (~320B) and H4 (~34B) mixtures mostly trajectories from earlier models including Kimi K3 + own models, filtered \u2022 noted, soft \u221215 (not hard 0)"
     },
     {
       "model": "Inkling",
