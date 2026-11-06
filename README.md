@@ -310,6 +310,14 @@
 | Modular MAX | Los Altos, CA | Serving | Mojo-powered inference engine |
 | Ray Serve | San Francisco, CA (Anyscale) | Serving | Distributed multi-model serving |
 
+### Hardware
+
+US-built computers for running AI locally. US content is by component cost, as the maker reports it.
+
+| Hardware | Company / HQ | Category | Status | US content | Notes |
+|----------|--------------|----------|--------|------------|-------|
+| [BlueChip](https://www.qualcomm.com/news/releases/2026/10/anduril-and-qualcomm-unveil-bluechip-to-rebuild-american-compute) | [Anduril](https://www.anduril.com) (Costa Mesa, CA) + [Qualcomm](https://www.qualcomm.com) (San Diego, CA) | Laptop | Announced Oct 2026 • preorder 2027 | ~32% US • >90% US + allied (prototype) • 65%+ US target at launch | Palmer Luckey's "anti-surveillance computer" • Arm Snapdragon X fabbed at TSMC Arizona • circuit boards built at Anduril Arsenal-1, Pickaway County, OH • US cover glass • display still China-made • hardened, for government, military, and first responders first • auditable parts and software • on-device AI • price TBA, ~20% over a high-end PC (Luckey) • roadmap to 100% domestic |
+
 ### Contributing
 - Add pure-US entries (Released date + score) to `data/usabench.json`
 - PRs welcome • [CONTRIBUTING.md](CONTRIBUTING.md)
