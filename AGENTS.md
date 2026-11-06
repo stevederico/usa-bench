@@ -8,7 +8,7 @@ Agent instructions for **USA-Bench** — US AI sovereignty leaderboard.
 |------|------|
 | `data/usabench.json` | Source of truth: `frontier` + `flagged`, pulse date, scoring params |
 | `scripts/usabench.mjs` | Score calculator + README table rows |
-| `README.md` | Published Models table (paste from script); Tools and Hardware tables are hand-edited, unscored |
+| `README.md` | Published Models + Hardware tables (paste from script); Tools table is hand-edited, unscored |
 | `CONTRIBUTING.md` | Human scoring guide |
 | `CHANGELOG.md` | Version log + to-do (commit skill format) |
 
@@ -161,3 +161,20 @@ Catches releases that never hit top trending.
 ## 🦅 Free + Open Models from the Land of the Free 🦅   ← centered h2
 *Ranked by USAbench…*
 ```
+
+## Hardware (`hardware` array)
+
+Scored separately from models: parts content + where it is built (Cars.com index style). Weights in `hardwareWeights`.
+
+| Field | Points |
+|-------|--------|
+| `usContentPct` | 40 × US share of component cost (maker-reported, US only, not US + allied) |
+| `finalAssemblyUS` | 20 |
+| `boardAssemblyUS` | 10 (circuit boards built in the US) |
+| `chipFabUS` | 15 (main processor fabbed in the US) |
+| `displayUS` | 5 |
+| `usDesign` | 10 (designed in the US by a US HQ company) |
+
+- 100 only when `usContentPct` is 100 and every flag is true, else cap 99
+- Use the current shipping/prototype figure, not the launch target; put targets in `usContentLabel`
+- Replace README `### Hardware` table with the script's Hardware rows
