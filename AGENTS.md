@@ -8,7 +8,7 @@ Agent instructions for **USA-Bench** — US AI sovereignty leaderboard.
 |------|------|
 | `data/usabench.json` | Source of truth: `frontier` + `flagged`, pulse date, scoring params |
 | `scripts/usabench.mjs` | Score calculator + README table rows |
-| `README.md` | Published Models table (paste from script) |
+| `README.md` | Published Models table (paste from script); Tools and Hardware tables are hand-edited, unscored |
 | `CONTRIBUTING.md` | Human scoring guide |
 | `CHANGELOG.md` | Version log + to-do (commit skill format) |
 
