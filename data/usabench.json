@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-06",
+  "pulseDate": "2026-11-07",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1964,6 +1964,26 @@
       "permissive": true,
       "access": "HF",
       "notes": "SF lab (Underdog) \u2022 English ASR 0.6B \u2022 CC-BY-4.0 \u2022 163 MB pack \u2022 Open ASR average 4.94, tied with Parakeet TDT 0.6B v3 \u2022 built on NVIDIA parakeet-tdt-0.6b-v3 through moondream/parakeet-ultra \u2022 English only \u2022 site and HF 15 Oct \u2022 score basis vs Granite Speech 5.0: specialist compress, not a multilingual speech LM"
+    },
+    {
+      "model": "Mirage",
+      "company": "Cactus Compute",
+      "released": "2026-11-06",
+      "baseScore": 77,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "On-device vision \u2022 51.3M \u2022 about 22 MB at 2-bit \u2022 own HConvGLU encoder \u2022 scene, boxes, masks, OCR, relations \u2022 same runtime as Needle 3 \u2022 blog and HF 6 Nov \u2022 score basis vs Needle 3 (78) and Moondream 3 (80): smaller vision model, beside Needle"
+    },
+    {
+      "model": "Underdog Woof",
+      "company": "Conway Research",
+      "released": "2026-11-05",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "SF lab (Underdog) \u2022 English TTS \u2022 38.2M \u2022 31.7 MB one voice, 40.6 MB two voices \u2022 numpy runtime \u2022 non-commercial license \u2022 vendor Gradium hard-case WER 1.42% (Mira) \u2022 speech model is theirs \u2022 audio decoder adapted from Kyutai Mimi \u2022 HF 5 Nov \u2022 score basis vs Whistle (75) and Kokoro-82M (82): tiny TTS, under the Apache Kokoro base"
     }
   ],
   "flagged": [
@@ -2585,6 +2605,31 @@
       "chinaBaseLabel": "Qwen3.6-35B-A3B (Alibaba) and Ling-3.0-tiny (inclusionAI)",
       "access": "HF",
       "whyFlagged": "Bay Area on-device lab \u2022 35B int4 adapter on Qwen3.6-35B-A3B \u2022 8B int4 adapter on inclusionAI Ling-3.0-tiny \u2022 Apache 2.0 \u2022 SSD expert offload \u2022 paper 16 Sep \u2022 four native engines 30 Sep \u2022 foreign weight foundation, hard 0 \u2022 Audio8 TTS stays on the frontier row"
+    },
+    {
+      "model": "Arete-27B",
+      "company": "Nous Research",
+      "released": "2026-11-06",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "US lab \u2022 Apache 2.0 SFT of Qwen3.8-27B \u2022 Inkling used as the teacher \u2022 vision encoder frozen \u2022 vendor propaganda rate 22% to 0.9% \u2022 Hermes Bench 65.60 vs base 65.77 \u2022 HF 6 Nov \u2022 foreign weight foundation, hard 0 \u2022 Hermes 4.3 stays on the frontier row"
+    },
+    {
+      "model": "Verne V0.5",
+      "company": "Verne",
+      "released": "2026-11-04",
+      "baseScore": 86,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Wan2.2-TI2V-5B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "San Francisco lab \u2022 8.2B world action model \u2022 initialized from Wan2.2-TI2V-5B, then pretrained on 1.7M demos \u2022 custom license \u2022 LIBERO 99.3 \u2022 RoboTwin 2.0 81.0 clean and 73.4 randomized \u2022 HF 4 Nov \u2022 foreign video foundation, hard 0 \u2022 GR00T-N1.7 stays on the frontier row"
     }
   ],
   "hardwareWeights": {

@@ -242,6 +242,7 @@ const COMPANY_LINKS = {
   "Datalab": "datalab-to",
   "Fish Audio": "fishaudio",
   "Conway Research": "ConwayResearch",
+  "Verne": "vernerobotics",
   "Tesslate": "Tesslate",
   "Prior Labs": "Prior-Labs",
   "Zyphra": "Zyphra",
