@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-07",
+  "pulseDate": "2026-11-08",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 4,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -2630,6 +2630,18 @@
       "chinaBaseLabel": "Wan2.2-TI2V-5B (Alibaba)",
       "access": "HF",
       "whyFlagged": "San Francisco lab \u2022 8.2B world action model \u2022 initialized from Wan2.2-TI2V-5B, then pretrained on 1.7M demos \u2022 custom license \u2022 LIBERO 99.3 \u2022 RoboTwin 2.0 81.0 clean and 73.4 randomized \u2022 HF 4 Nov \u2022 foreign video foundation, hard 0 \u2022 GR00T-N1.7 stays on the frontier row"
+    },
+    {
+      "model": "Ampersand v0.1",
+      "company": "Humans&",
+      "released": "2026-10-20",
+      "baseScore": 84,
+      "openSource": false,
+      "closed": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "GLM 5.3 (Z.ai)",
+      "access": "Agents API / Vercel",
+      "whyFlagged": "Redwood City lab \u2022 closed Agents API \u2022 RL post-train of GLM 5.3 \u2022 744B/40B MoE \u2022 1M ctx \u2022 text only \u2022 model card 20 Oct \u2022 Vercel AI Gateway 6 Nov, free through 13 Nov \u2022 vendor SWE-bench Pro v2 Hard-51 82.4 \u2022 no weights \u2022 foreign weight foundation, hard 0 \u2022 score basis vs Particle-1 (84): same closed foreign-base band"
     }
   ],
   "hardwareWeights": {

@@ -254,9 +254,10 @@
 | 240  | Edge0-35B / 8B | Edge0 | No | **0** ❌ | Released Sep 2026 • ❌ Foreign base: Qwen3.6-35B-A3B (Alibaba) and Ling-3.0-tiny (inclusionAI) • Bay Area on-device lab • 35B int4 adapter on Qwen3.6-35B-A3B • 8B int4 adapter on inclusionAI Ling-3.0-tiny • Apache 2.0 • SSD expert offload • paper 16 Sep • four native engines 30 Sep • foreign weight foundation, hard 0 • Audio8 TTS stays on the frontier row | HF |
 | 241  | Arete-27B | Nous Research | No | **0** ❌ | Released Nov 2026 • ❌ Foreign base: Qwen3.8-27B (Alibaba) • US lab • Apache 2.0 SFT of Qwen3.8-27B • Inkling used as the teacher • vision encoder frozen • vendor propaganda rate 22% to 0.9% • Hermes Bench 65.60 vs base 65.77 • HF 6 Nov • foreign weight foundation, hard 0 • Hermes 4.3 stays on the frontier row | HF |
 | 242  | Verne V0.5 | Verne | No | **0** ❌ | Released Nov 2026 • ❌ Foreign base: Wan2.2-TI2V-5B (Alibaba) • San Francisco lab • 8.2B world action model • initialized from Wan2.2-TI2V-5B, then pretrained on 1.7M demos • custom license • LIBERO 99.3 • RoboTwin 2.0 81.0 clean and 73.4 randomized • HF 4 Nov • foreign video foundation, hard 0 • GR00T-N1.7 stays on the frontier row | HF |
+| 243  | Ampersand v0.1 | Humans& | No | **0** ❌ | Released Oct 2026 • ❌ Foreign base: GLM 5.3 (Z.ai) • Redwood City lab • closed Agents API • RL post-train of GLM 5.3 • 744B/40B MoE • 1M ctx • text only • model card 20 Oct • Vercel AI Gateway 6 Nov, free through 13 Nov • vendor SWE-bench Pro v2 Hard-51 82.4 • no weights • foreign weight foundation, hard 0 • score basis vs Particle-1 (84): same closed foreign-base band | Agents API / Vercel |
 
 > **US AI Pulse · November 2026**  
-> **3 days** since the last major US release — USAbench recency anchor
+> **4 days** since the last major US release — USAbench recency anchor
 
 ### Criteria
 - US HQ + US-built
