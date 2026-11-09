@@ -228,6 +228,7 @@ const COMPANY_LINKS = {
   "AMD": "amd",
   "DeepGrove": "deepgrove",
   "Krea": "krea",
+  "Linum": "Linum-AI",
   "PrismML": "prism-ml",
   "Boson AI": "bosonai",
   "Resemble AI": "ResembleAI",

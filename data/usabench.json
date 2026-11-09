@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-08",
+  "pulseDate": "2026-11-09",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 4,
+  "daysSinceMajorRelease": 5,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -502,6 +502,17 @@
       "closed": false,
       "access": "HF + krea.ai",
       "notes": "Open-weight T2I DiT ~12\u201313B \u2022 Turbo + Raw checkpoints \u2022 community license \u2022 SF"
+    },
+    {
+      "model": "P-JiT 21K",
+      "company": "Linum",
+      "released": "2026-11-04",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "SF lab \u2022 from-scratch 2.18B Pyramid-JiT \u2022 Apache 2.0 \u2022 pixel-space T2I \u2022 660M samples \u2022 field note 4 Nov, HF created 3 Nov \u2022 frozen Qwen3.5-4B text encoder, not in the weights \u2022 research checkpoint, no rendered text \u2022 score basis vs Krea 2 (84): smaller research T2I, under that production base"
     },
     {
       "model": "Mochi 1",
