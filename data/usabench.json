@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-10",
+  "pulseDate": "2026-11-12",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -284,6 +284,16 @@
       "closed": true,
       "access": "Robotics partners",
       "notes": "Closed VLA \u2022 10 Nov \u2022 partner rollout \u2022 200-task dexterity eval \u2022 30 to 100% higher success than prior baselines \u2022 Apollo 2 kitting 96% on Mercedes-Benz lines \u2022 trained with Gemini 4 Argon sim data \u2022 no weights \u2022 score basis vs Gemini Robotics ER 2 (84) and GR00T-N1.7 (88): newer action model, still closed and partner-only"
+    },
+    {
+      "model": "Gemini Decision 1",
+      "company": "Google",
+      "released": "2026-11-11",
+      "baseScore": 81,
+      "openSource": false,
+      "closed": true,
+      "access": "Gemini API / AI Studio",
+      "notes": "Closed decision model \u2022 11 Nov \u2022 gemini-decision-1 \u2022 up to 1,000 yes/no, choice, or rubric scores in one pass \u2022 text, image, audio, video, PDF \u2022 256K \u2022 $0.10 per 1M input, $0 output \u2022 150\u2013250 ms \u2022 no weights \u2022 score basis vs Haiku 5.5 (83) and Muse Ember (84): specialist router, under the small general models"
     },
     {
       "model": "Gemini Robotics ER 2",
@@ -1975,6 +1985,17 @@
       "notes": "Open AV foundation VLA ~34B \u2022 Cosmos3 Super Reasoner + diffusion action expert \u2022 trajectory + VQA + grounding"
     },
     {
+      "model": "Alpamayo 2 Edge",
+      "company": "NVIDIA",
+      "released": "2026-11-10",
+      "baseScore": 85,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "2B driving VLA on Cosmos 3 Edge (US Nemotron backbone) \u2022 SigLIP2 vision \u2022 0.2B diffusion action expert \u2022 OpenMDW-1.1 \u2022 DRIVE AGX Thor \u2022 HF 10 Nov \u2022 Lingo-Judge 75.2 \u2022 AlpaSim 15.15 km per at-fault incident \u2022 minADE_6 0.52 m \u2022 score basis vs Alpamayo2-Super (89) and GR00T-N1.7 (88): smaller in-vehicle sibling, under the 34B Super row"
+    },
+    {
       "model": "Antares (350M\u20133B)",
       "company": "Cisco Foundation AI",
       "released": "2026-07-22",
@@ -2644,6 +2665,18 @@
       "chinaBaseLabel": "DeepSeek-V4.1-Flash-1017 (DeepSeek)",
       "access": "HF",
       "whyFlagged": "NVIDIA NVFP4 quant of DeepSeek-V4.1-Flash-1017 \u2022 552B backbone \u2022 Model Optimizer \u2022 HF 30 Oct \u2022 NVIDIA does not own the base \u2022 foreign DeepSeek foundation, hard 0"
+    },
+    {
+      "model": "Kimi-K3.1-Pro NVFP4",
+      "company": "NVIDIA",
+      "released": "2026-11-10",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Kimi-K3.1-Pro (Moonshot)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 quant of Moonshot Kimi-K3.1-Pro \u2022 2.8T/104B MoE \u2022 Model Optimizer \u2022 HF 10 Nov \u2022 NVIDIA does not own the base \u2022 foreign Kimi foundation, hard 0"
     },
     {
       "model": "Edge0-35B / 8B",
