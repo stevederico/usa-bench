@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-12",
+  "pulseDate": "2026-11-13",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -246,6 +246,16 @@
       "notes": "Closed frontier \u2022 28 Oct \u2022 Fairwind cyber defenders first \u2022 intro $2/$10 then $4/$20, same as Argon \u2022 AA Index v5 59 \u2022 SEC-bench Pro 88.2 \u2022 no weights \u2022 score basis vs Opus 5.5 (90) and Argon (86): one index point over Opus, still closed"
     },
     {
+      "model": "Gemini 4 Hydrogen",
+      "company": "Google",
+      "released": "2026-11-12",
+      "baseScore": 87,
+      "openSource": false,
+      "closed": true,
+      "access": "gemini.google.com / Gemini API / AI Studio / Antigravity",
+      "notes": "Closed daily driver \u2022 12 Nov \u2022 agentic coding and Search default \u2022 1M in and out \u2022 $1.50/$7.50 per 1M \u2022 AA Index 51 at high, 54 at xhigh \u2022 beats Argon (50) and trails Carbon (59) \u2022 no weights \u2022 score basis vs Argon (86) and Carbon (91): one index point over Argon, still the fast tier"
+    },
+    {
       "model": "Gemini 3.8 + Nano Banana 2.1",
       "company": "Google",
       "released": "2026-10-06",
@@ -337,6 +347,16 @@
       "permissive": true,
       "access": "HF + llama.cpp / MLX / vLLM",
       "notes": "MSL open agentic 30B dense \u2022 Apache 2.0 \u2022 local always-on agents \u2022 multimodal \u2022 distilled from Muse Spark \u2022 first Meta open weights since Llama 4"
+    },
+    {
+      "model": "MetaEncoder v1",
+      "company": "Meta",
+      "released": "2026-11-12",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "28B multimodal encoder \u2022 finetune of Muse Glimmer 30B \u2022 text, image, and video retrieval plus closed-set decide \u2022 6656-d vectors \u2022 arXiv 2610.11316 \u2022 HF 12 Nov \u2022 v1 card publishes no license \u2022 Sep 30 checkpoint stays Apache \u2022 score basis vs EmbeddingGemma 2 (88) and Nomic Embed v2 (90): larger Muse encoder, trails the 30B generative parent"
     },
     {
       "model": "Muse Wonder Full",
@@ -1087,7 +1107,18 @@
       "closed": false,
       "permissive": true,
       "access": "HF + NGC",
-      "notes": "34B/4.3B speech LLM on Nemotron 3.5 Lightning \u2022 own NVIDIA encoder and Nemotron-3 diarization \u2022 OpenMDW-1.1 \u2022 40 languages \u2022 hour-long recordings \u2022 speech translation \u2022 Granary v2 \u2022 HF 28 Oct \u2022 open ASR lead \u2022 score basis vs Granite Speech 5.0 (88) and parakeet-tdt-0.6b-v3 (88): larger speech model, leads the open ASR boards"
+      "notes": "34B/4.3B speech LLM on Nemotron 3.5 Lightning \u2022 own NVIDIA encoder and Nemotron-3 diarization \u2022 OpenMDW-1.1 \u2022 40 languages \u2022 hour-long recordings \u2022 speech translation \u2022 Granary v2 \u2022 HF 28 Oct \u2022 score basis vs Granite Speech 5.0 (88) and parakeet-tdt-0.6b-v3 (88): larger speech model, trails SOV-Transcribe-1 on AA-WER"
+    },
+    {
+      "model": "SOV-Transcribe-1",
+      "company": "Salesforce",
+      "released": "2026-11-12",
+      "baseScore": 91,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "San Francisco lab \u2022 26.6B/4.6B speech LM \u2022 Whisper large-v3 encoder on Gemma 4 26B-A4B \u2022 Apache 2.0 \u2022 non-streaming ASR \u2022 7 languages \u2022 AA open WER 2.28% vs Nemotron 3.5 Transcribe 2.81% \u2022 VoiceCodeBench #2 of 23 \u2022 blog 12 Nov \u2022 US Gemma and Whisper weights \u2022 score basis vs Nemotron 3.5 Transcribe (89) and whisper-large-v3 (90): new open ASR lead, same active size as Nemotron"
     },
     {
       "model": "LocateAnything-3B",
@@ -2690,6 +2721,18 @@
       "chinaBaseLabel": "Qwen3.6-35B-A3B (Alibaba) and Ling-3.0-tiny (inclusionAI)",
       "access": "HF",
       "whyFlagged": "Bay Area on-device lab \u2022 35B int4 adapter on Qwen3.6-35B-A3B \u2022 8B int4 adapter on inclusionAI Ling-3.0-tiny \u2022 Apache 2.0 \u2022 SSD expert offload \u2022 paper 16 Sep \u2022 four native engines 30 Sep \u2022 foreign weight foundation, hard 0 \u2022 Audio8 TTS stays on the frontier row"
+    },
+    {
+      "model": "Edge0-145B / 120B",
+      "company": "Edge0",
+      "released": "2026-11-11",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-Flash-Next (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Bay Area on-device lab \u2022 145B/10B latent MoE and 120B sibling \u2022 qwen4exp arch \u2022 NVFP4 and Q3_K packs \u2022 Edge0 Community License plus Qwen terms \u2022 HF 11 Nov \u2022 base model Qwen3.8-Flash-Next \u2022 foreign weight foundation, hard 0 \u2022 Audio8 TTS stays on the frontier row"
     },
     {
       "model": "Arete-27B",
