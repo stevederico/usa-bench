@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-13",
+  "pulseDate": "2026-11-14",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1707,6 +1707,16 @@
       "notes": "Open 3.1B edge VLM on LFM2.5-2.6B + SigLIP2 400M NaFlex \u2022 screen/UI, grounding, OCR, tools \u2022 228 tok/s M5 Max \u2022 LFM Open License ($10M commercial cap)"
     },
     {
+      "model": "LiquidCodec",
+      "company": "Liquid AI",
+      "released": "2026-11-12",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "~74M streaming speech codec \u2022 own causal LFM3 encoder-decoder \u2022 grouped finite scalar quantization \u2022 24 kHz \u2022 12.5 Hz \u2022 ~1.65 kbps \u2022 264k hours \u2022 107 languages \u2022 LFM Open License \u2022 tokenizer for LFM3 Audio and Omni \u2022 blog and HF 12 Nov \u2022 best ViSQOL of the codecs they tested \u2022 score basis vs Nemotron-3-Diarization (84) and RE-USE (80): small speech specialist, under the user-facing diarizer"
+    },
+    {
       "model": "Open d1 (3B / Omni 600M)",
       "company": "Liquid AI",
       "released": "2026-10-07",
@@ -2770,6 +2780,19 @@
       "chinaBaseLabel": "GLM 5.3 (Z.ai)",
       "access": "Agents API / Vercel",
       "whyFlagged": "Redwood City lab \u2022 closed Agents API \u2022 RL post-train of GLM 5.3 \u2022 744B/40B MoE \u2022 1M ctx \u2022 text only \u2022 model card 20 Oct \u2022 Vercel AI Gateway 6 Nov, free through 13 Nov \u2022 vendor SWE-bench Pro v2 Hard-51 82.4 \u2022 no weights \u2022 foreign weight foundation, hard 0 \u2022 score basis vs Particle-1 (84): same closed foreign-base band"
+    },
+    {
+      "model": "ARC 1.0",
+      "company": "Rayline",
+      "released": "2026-11-11",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-0.8B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Franklin, TN lab (Atlas Futures) \u2022 0.8B agent router \u2022 Apache 2.0 \u2022 success, token, PII, and question heads on a frozen Qwen3.5-0.8B backbone \u2022 announced 11 Nov \u2022 HF created 10 Nov \u2022 foreign weight foundation, hard 0"
     }
   ],
   "hardwareWeights": {
