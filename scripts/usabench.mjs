@@ -254,6 +254,7 @@ const COMPANY_LINKS = {
   "Fastino": "fastino",
   "Cloudflare": "Cloudflare",
   "Perplexity": "perplexity-ai",
+  "Runway": "runwayml",
   "Stellon Labs": "KittenML",
   "Interfaze": "interfaze-ai",
   "Nace": "nace-ai",

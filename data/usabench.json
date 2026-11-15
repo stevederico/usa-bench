@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-14",
+  "pulseDate": "2026-11-15",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1149,6 +1149,17 @@
       "closed": false,
       "access": "HF + NGC",
       "notes": "Open humanoid robotics foundation model (3B) \u2022 GR00T N1.7 line"
+    },
+    {
+      "model": "Praxis-1",
+      "company": "Runway",
+      "released": "2026-11-11",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + GitHub",
+      "notes": "NYC lab \u2022 27.2B MoE diffusion transformer \u2022 world action model \u2022 Apache 2.0 \u2022 own Runway video pretrain \u2022 predicts video plus 1.6s of actions \u2022 RoboLab-120 46.2 vs Cosmos3 Nano 36.8 and \u03c00.5 28.0 \u2022 SimplerEnv 80.0 on unseen RT-1 vs the RT-1 policy 52.4 \u2022 base, DROID, YAM, SO-101, LeRobot, NVFP4 \u2022 public weights 11 Nov \u2022 weights and fine-tune code, no training data \u2022 score basis vs GR00T-N1.7 (88), Alpamayo2-Super (89), and Cosmos3 Super (90): leads the cited open robot-policy board, sits in the US physical-AI band"
     },
     {
       "model": "EmbeddingGemma 2",
@@ -2330,15 +2341,15 @@
       "whyFlagged": "NVIDIA NVFP4 quant of Qwen-Image \u2022 ~20B DiT \u2022 text-to-image \u2022 NVIDIA Open Model Agreement \u2022 foreign Qwen foundation"
     },
     {
-      "model": "pplx-decider-v1.2 / flash",
+      "model": "pplx-decider-v1.3 / flash",
       "company": "Perplexity",
-      "released": "2026-10-16",
+      "released": "2026-11-09",
       "baseScore": 70,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.8-27B and Qwen3.5-4B (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Decision family \u2022 Apache 2.0 \u2022 v1.2 on Qwen3.8-27B \u2022 flash 4B distilled onto Qwen3.5-4B \u2022 Decision Index 68.09 \u2022 16 Oct"
+      "whyFlagged": "Decision family \u2022 Apache 2.0 \u2022 v1.3 on Qwen3.8-27B adds Locate span extraction \u2022 flash v1.3 distilled onto Qwen3.5-4B \u2022 HF 9 Nov \u2022 v1.2 Decision Index was 68.09 \u2022 foreign Qwen foundation, hard 0"
     },
     {
       "model": "pplx-embed-v2 (context / late)",
