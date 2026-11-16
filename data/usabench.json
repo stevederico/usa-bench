@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-15",
+  "pulseDate": "2026-11-16",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 4,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1738,14 +1738,14 @@
       "notes": "Open decision models on LFM2.5 \u2022 d1-3B text+vision \u2022 d1-omni-600M text+image or audio \u2022 one forward pass, zero output tokens \u2022 Decision Index 48.57 \u2022 LFM Open License"
     },
     {
-      "model": "d1-ultra",
+      "model": "d1.2 / d1.2-ultra",
       "company": "Liquid AI",
-      "released": "2026-10-15",
-      "baseScore": 90,
+      "released": "2026-11-16",
+      "baseScore": 92,
       "openSource": false,
       "closed": true,
       "access": "console.liquid.ai",
-      "notes": "Closed decision flagship \u2022 multimodal text+image \u2022 AA Decision Index 65 \u2022 44 langs \u2022 one forward pass, zero output tokens \u2022 $0.042/1M input \u2022 larger LFM open-weight backbone with Liquid customizations \u2022 API only, use Open d1 for weights"
+      "notes": "Closed decision flagship \u2022 16 Nov \u2022 d1.2 at $0.02 and d1.2-ultra at $0.042 per 1M input \u2022 text, image, and audio \u2022 read, spans, boxes, estimates, and multi-choice \u2022 AA Decision Index v2.1 75, two points over the prior best \u2022 calibration error 0.8 on ultra and 1.2 on d1.2 \u2022 $0 output \u2022 weights still closed \u2022 score basis vs Gemini Decision 1 (81) and Open d1 (89): leads the closed decision index, open weights stay on the Open d1 row"
     },
     {
       "model": "YOLO26",
