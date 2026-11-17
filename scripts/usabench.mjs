@@ -1,22 +1,4 @@
 #!/usr/bin/env node
-/**
- * USAbench score calculator (v2) — anchored to data/usabench.json pulseDate.
- * Rewards US open-weights sovereignty + recency + full transparency.
- * No separate closed section — closed models just take a flat penalty.
- *
- * Score cap (no score ever exceeds 100 at any step; 100 = fully open AND US-made):
- *   cap = 100 only if fullOpen && !foreignTeacher && !chinaBase && !closed, else cap = 99
- *
- * Steps:
- *   1. score = min(cap, baseScore + fullOpenBonus + permissiveBonus)
- *   2. score −= recency + china + foreignTeacher + closedPenalty (default 10)
- *   3. score = clamp(score, 0, cap)
- *   4. foreign weight base (chinaBase) → hard 0; foreign teacher → soft note + penalty only
- *
- * Usage:
- *   node scripts/usabench.mjs           # print scores + markdown rows
- *   node scripts/usabench.mjs --json    # machine-readable output
- */
 
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -24,7 +6,6 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(readFileSync(join(__dirname, "../data/usabench.json"), "utf8"));
-
 
 const MONTHS = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -69,7 +50,6 @@ function entryNotes(entry, ageMonths, releasedLabel) {
   if (entry.chinaBase) {
     text = `❌ Foreign base: ${entry.chinaBaseLabel} • ${entry.whyFlagged ?? ""}`;
   } else if (entry.foreignTeacher) {
-    // Soft note: own pretrain ranks; foreign SFT/synth teachers ding score, do not zero
     text = `⚠️ Foreign teacher: ${entry.foreignTeacherLabel} • ${entry.whyFlagged ?? entry.notes ?? ""}`;
   } else {
     text = entry.notes ?? "";
@@ -85,7 +65,6 @@ function entryNotes(entry, ageMonths, releasedLabel) {
 }
 
 function isForeignDisqualified(entry) {
-  // Hard zero only for foreign weight foundation (Qwen/GLM/Kimi bases, etc.)
   return Boolean(entry.chinaBase);
 }
 
@@ -103,7 +82,6 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   const fullOpen = entry.fullOpen ? fullOpenBonus : 0;
   const permissive = entry.permissive ? permissiveBonus : 0;
   const bonuses = fullOpen + permissive;
-  // 100 is reserved for fully open + clean US-made; everyone else tops out at 99
   const cap = entry.fullOpen && !entry.foreignTeacher && !entry.chinaBase && !entry.closed ? 100 : 99;
   score = Math.min(cap, score + bonuses);
 
@@ -115,7 +93,6 @@ function scoreEntry(entry, pulse, decayTable, chinaBasePenalty, foreignTeacherPe
   const closed = entry.closed ? closedPenalty : 0;
   score -= closed;
   score = Math.max(0, Math.min(cap, score));
-  // foreign weight base → hard 0; foreign teacher is soft penalty only
   if (isForeignDisqualified(entry)) score = 0;
 
   const openLabel = entry.openSource ? "Yes" : "No";
@@ -178,7 +155,6 @@ const ACCESS_LINKS = {
   "console.liquid.ai": "https://console.liquid.ai",
 };
 
-// Linkify each known token in an access string, preserving " + " / " / " separators
 function linkifyAccess(access) {
   if (!access) return "—";
   return access
@@ -187,7 +163,6 @@ function linkifyAccess(access) {
     .join("");
 }
 
-// Company → Hugging Face org (open-weights orgs only; closed-shop companies stay plain)
 const COMPANY_LINKS = {
   "NVIDIA": "nvidia",
   "Google": "google",
@@ -285,7 +260,6 @@ function linkifyCompany(company) {
 }
 
 function modelRow(e) {
-  // Disqualified models (USAbench < 10): red ❌ on name + score, no green check, no promotional links
   const dq = e.score < 10;
   const model = e.model;
   const scoreCell = dq ? `**${e.score}** ❌` : `**${e.score}** ${e.starLabel}`;
@@ -295,13 +269,6 @@ function modelRow(e) {
   return `| ${String(e.rank).padEnd(4)} | ${model} | ${company} | ${openLabel} | ${scoreCell} | ${e.notes} | ${access} |`;
 }
 
-/**
- * Hardware score (0–100): US parts content + where it is built.
- *   usParts × (usContentPct / 100)  — US share of component cost, as the maker reports it
- *   + finalAssembly + boardAssembly + chipFab + display  — built in the US
- *   + usDesign  — designed by a US HQ company in the US
- * 100 only when every part is US (100% content + all built-in-US flags); else cap 99.
- */
 const HW_DEFAULT_WEIGHTS = { usParts: 40, finalAssembly: 20, boardAssembly: 10, chipFab: 15, display: 5, usDesign: 10 };
 const hwWeights = { ...HW_DEFAULT_WEIGHTS, ...(data.hardwareWeights ?? {}) };
 
@@ -373,7 +340,6 @@ for (const e of models) {
   if (e.foreignTeacherPenalty) parts.push(`−${e.foreignTeacherPenalty} foreign teacher`);
   if (e.closedPenalty) parts.push(`−${e.closedPenalty} closed`);
   if (!e.chinaPenalty && !e.foreignTeacherPenalty) {
-    // keep compact −N when only recency
   }
   const penaltyDetail = e.chinaPenalty || e.foreignTeacherPenalty || e.closedPenalty
     ? parts.join(", ")
