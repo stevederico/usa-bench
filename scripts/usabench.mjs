@@ -59,6 +59,7 @@ const COMPANY_LINKS = {
   "Ai2 (allenai)": "allenai",
   "IBM": "ibm-granite",
   "OpenAI": "openai",
+  "Apple": "apple",
   "xAI": "xai-org",
   "Meta": "meta-llama",
   "Microsoft / Reflection": "microsoft",

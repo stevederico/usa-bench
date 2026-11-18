@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-17",
+  "pulseDate": "2026-11-18",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 5,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -214,6 +214,26 @@
       "closed": true,
       "access": "API / Codex (Daybreak Red)",
       "notes": "Closed cyber SKU of GPT-6 Astra \u2022 5 Nov \u2022 Daybreak Red \u2022 ExploitGym 48.5 vs GPT-5.6 Cyber 32.1 \u2022 81 novel Firefox high-severity bugs \u2022 948 Linux exploits \u2022 $20/$100 \u2022 1.05M ctx \u2022 Critical cyber rating \u2022 score basis vs Sol (89) and SWE-2 Flash (84): specialist of Astra, restricted access"
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "company": "OpenAI",
+      "released": "2026-11-17",
+      "baseScore": 92,
+      "openSource": false,
+      "closed": true,
+      "access": "ChatGPT Work / Codex / API",
+      "notes": "Closed flagship \u2022 17 Nov \u2022 gpt-6.2-astra \u2022 1.05M ctx \u2022 $8/$40, 20% under GPT-6 Astra \u2022 AA Index 62 vs Fable 5.2 65 and Carbon 60 \u2022 first public High self-improvement rating \u2022 Critical cyber \u2022 no weights \u2022 score basis vs Fable 5.2 (93) and Carbon (91): three AA points under Fable, two over Carbon"
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "company": "OpenAI",
+      "released": "2026-11-17",
+      "baseScore": 90,
+      "openSource": false,
+      "closed": true,
+      "access": "ChatGPT Work / Codex / API",
+      "notes": "Closed everyday \u2022 17 Nov \u2022 gpt-6.2-sol \u2022 1.05M ctx \u2022 $2/$10 \u2022 AA Index 57, level with GPT-6 Astra at about 15% of that cost \u2022 FrontierCode 2.0 within 0.5 of Astra at one-fifth the cost \u2022 no weights \u2022 score basis vs GPT-6.1 Sol family (89) and Terra (86): current Sol, two AA points over 6.1 Sol"
     },
     {
       "model": "Grok 4.7 / 4.6",
@@ -2805,6 +2825,30 @@
       "chinaBaseLabel": "Qwen3.5-0.8B (Alibaba)",
       "access": "HF",
       "whyFlagged": "Franklin, TN lab (Atlas Futures) \u2022 0.8B agent router \u2022 Apache 2.0 \u2022 success, token, PII, and question heads on a frozen Qwen3.5-0.8B backbone \u2022 announced 11 Nov \u2022 HF created 10 Nov \u2022 foreign weight foundation, hard 0"
+    },
+    {
+      "model": "FastFrames (S / L)",
+      "company": "Apple",
+      "released": "2026-11-17",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Wan2.1-T2V-1.3B / 14B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Apple AIML \u2022 FastFrames-S 1.3B from Wan2.1-T2V-1.3B \u2022 FastFrames-L 14B distilled from Wan2.1-T2V-14B \u2022 two-step causal 480p video \u2022 arXiv 2611.23226 \u2022 HF 17 Nov \u2022 Apple Sample Code License \u2022 foreign Wan foundation, hard 0"
+    },
+    {
+      "model": "Qwen3.8-27B Draft (4B / 0.8B)",
+      "company": "NVIDIA",
+      "released": "2026-11-17",
+      "baseScore": 70,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-4B / Qwen3.5-0.8B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Speculative decoding drafts for Qwen3.8-27B \u2022 NVIDIA Open Model Agreement plus Qwen Apache \u2022 HF 17 Nov \u2022 4B acceptance 5.58 vs the target MTP head 3.81 \u2022 0.8B sibling \u2022 Llama-3.2-1B vocab-swap sibling exists \u2022 foreign Qwen foundation, hard 0"
     }
   ],
   "hardwareWeights": {
