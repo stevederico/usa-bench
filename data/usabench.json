@@ -1,5 +1,5 @@
 {
-  "pulseDate": "2026-11-18",
+  "pulseDate": "2026-11-19",
   "pulseLabel": "November 2026",
   "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
@@ -274,6 +274,16 @@
       "closed": true,
       "access": "gemini.google.com / Gemini API / AI Studio / Antigravity",
       "notes": "Closed daily driver \u2022 12 Nov \u2022 agentic coding and Search default \u2022 1M in and out \u2022 $1.50/$7.50 per 1M \u2022 AA Index 51 at high, 54 at xhigh \u2022 beats Argon (50) and trails Carbon (59) \u2022 no weights \u2022 score basis vs Argon (86) and Carbon (91): one index point over Argon, still the fast tier"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "company": "Google",
+      "released": "2026-11-18",
+      "baseScore": 92,
+      "openSource": false,
+      "closed": true,
+      "access": "gemini.google.com / Gemini API / AI Studio / Antigravity",
+      "notes": "Closed mid-flagship \u2022 18 Nov \u2022 gemini-4-neon \u2022 1M ctx \u2022 $3/$15 \u2022 AA Index 61 at xhigh, two over Carbon (59) and one under GPT-6.2 Astra (62) \u2022 Vals Index #2 70.9 \u2022 Coding Agent Index 58.6 \u2022 no weights \u2022 score basis vs Carbon (91) and Astra (92): two AA points over Carbon, one under Astra"
     },
     {
       "model": "Gemini 3.8 + Nano Banana 2.1",
@@ -1979,6 +1989,17 @@
       "notes": "Open small Phi-4 mini instruct \u2022 efficient local"
     },
     {
+      "model": "Aion 1.0 Instruct 2.3B",
+      "company": "Microsoft",
+      "released": "2026-11-18",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Windows Applied Sciences SLM \u2022 2.3B \u2022 MIT \u2022 own AionInstruct arch \u2022 32K \u2022 8 languages \u2022 successor to Phi Silica \u2022 MMLU 55.15 \u2022 GPQA 28.18 \u2022 IFEval 83.90 \u2022 MATH-500 48 \u2022 HF 18 Nov \u2022 score basis vs Phi-4-mini (88) and SmolLM3 (85): on-device Windows SLM, trails those on MMLU"
+    },
+    {
       "model": "CWIP-1.0",
       "company": "NVIDIA",
       "released": "2026-07-01",
@@ -2130,6 +2151,17 @@
       "closed": false,
       "access": "HF",
       "notes": "SF lab (Underdog) \u2022 English TTS \u2022 38.2M \u2022 31.7 MB one voice, 40.6 MB two voices \u2022 numpy runtime \u2022 non-commercial license \u2022 vendor Gradium hard-case WER 1.42% (Mira) \u2022 speech model is theirs \u2022 audio decoder adapted from Kyutai Mimi \u2022 HF 5 Nov \u2022 score basis vs Whistle (75) and Kokoro-82M (82): tiny TTS, under the Apache Kokoro base"
+    },
+    {
+      "model": "Voice Isolator / SAVA",
+      "company": "Inworld AI",
+      "released": "2026-11-18",
+      "baseScore": 82,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Mountain View lab \u2022 Apache 2.0 \u2022 48 kHz voice denoise (offline 64M + 20 ms realtime 58M) plus SAVA semantic VAD and end-of-turn \u2022 VIBE 0.768 vs MossFormer2 0.695 \u2022 SAVA median 71 ms turn detect \u2022 HF 18 Nov \u2022 score basis vs NemotronLabs RE-USE (80) and Nemotron-3-Diarization (84): newer open speech utilities, sit with that specialist band"
     }
   ],
   "flagged": [
@@ -2788,6 +2820,19 @@
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF",
       "whyFlagged": "US lab \u2022 Apache 2.0 SFT of Qwen3.8-27B \u2022 Inkling used as the teacher \u2022 vision encoder frozen \u2022 vendor propaganda rate 22% to 0.9% \u2022 Hermes Bench 65.60 vs base 65.77 \u2022 HF 6 Nov \u2022 foreign weight foundation, hard 0 \u2022 Hermes 4.3 stays on the frontier row"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "company": "RadixArk",
+      "released": "2026-11-18",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "Palo Alto lab \u2022 Apache 2.0 RL post-train of Qwen3.8-27B \u2022 Miles async RL \u2022 Terminal-Bench 4.1 12.0 vs base 5.6 \u2022 DeepSWE 46.2 vs 42.2 \u2022 HF 18 Nov \u2022 foreign Qwen foundation, hard 0 \u2022 Arete-27B stays a separate flagged row"
     },
     {
       "model": "Verne V0.5",

@@ -139,6 +139,8 @@ const COMPANY_LINKS = {
   "Edge0": "Edge0",
   "Rayline": "rayline-ai",
   "Ostris": "ostris",
+  "Inworld AI": "inworld",
+  "RadixArk": "RadixArk",
 };
 
 function linkifyCompany(company) {
