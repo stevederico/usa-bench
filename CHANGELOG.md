@@ -4,6 +4,16 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.75.0
+
+  Add Marin Mochi
+  Add Sigma family
+  Add Depth Pro
+  Flag Clairic
+  Flag Qwen QAD
+  Flag Lyra
+  Advance November pulse
+
 0.74.0
 
   Add Gemini Neon

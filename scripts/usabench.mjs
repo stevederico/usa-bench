@@ -116,6 +116,7 @@ const COMPANY_LINKS = {
   "BlinkDL": "BlinkDL",
   "Fastino": "fastino",
   "Cloudflare": "Cloudflare",
+  "Open Athena": "open-athena",
   "Perplexity": "perplexity-ai",
   "Runway": "runwayml",
   "Stellon Labs": "KittenML",

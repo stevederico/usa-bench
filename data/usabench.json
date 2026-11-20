@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-19",
+  "pulseDate": "2026-11-20",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -492,6 +492,18 @@
       "permissive": true,
       "access": "HF",
       "notes": "Fully open (weights + Dolma data + OLMo-core + recipes) \u2022 Strong reasoning \u2022 Transparent research model"
+    },
+    {
+      "model": "Marin Mochi 535B-A23B",
+      "company": "Open Athena",
+      "released": "2026-11-17",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "fullOpen": true,
+      "permissive": true,
+      "access": "HF",
+      "notes": "NY/SF nonprofit (Stanford Marin) \u2022 from-scratch 535B/23B MoE \u2022 18.2T pretrain \u2022 57 Hero checkpoints \u2022 OpenMDW 1.1 \u2022 marin-tokenizer \u2022 weights, code, and data sources public \u2022 base only, no instruct \u2022 HF 17 Nov \u2022 research artifact, evals still running \u2022 score basis vs OLMo 3.1 (94) and Instella-MoE (89): larger fully open US MoE, pretrain-only so under the finished OLMo instruct line"
     },
     {
       "model": "SmolLM3-3B",
@@ -1469,6 +1481,17 @@
       "notes": "18.3B unified understand and generate model on the Nemotron diffusion language model \u2022 text and image in, text and image out \u2022 NVIDIA Open Model License \u2022 HF card 27 Oct \u2022 no public bench scores, smoke tests only \u2022 score basis vs NL-Diffusion-Image (85) and Cosmos3 Super T2I (89): newer unified checkpoint, still short of the Cosmos3 generation heads"
     },
     {
+      "model": "Nemotron-Labs-Sigma (3B / 8B)",
+      "company": "NVIDIA",
+      "released": "2026-11-12",
+      "baseScore": 85,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "Continuous diffusion LM \u2022 3B and 8B \u2022 14 checkpoints (base, instruct, NFE 2/4/8/16 distill, self-speculative) \u2022 NVIDIA Nemotron Open Model License \u2022 16-D embedding space \u2022 block-parallel decode \u2022 same NVIDIA corpus as Nemotron-Labs-Diffusion (~1.3T) \u2022 HF 12 Nov, X 16 Nov \u2022 Sigma-8B six-task 71.16 vs NLD-8B 70.22 \u2022 GSM8K instruct 91.96 \u2022 Ministral-style decoder, AR init is NVIDIA's 1T-token run \u2022 score basis vs NLD-Uni (84) and NL-Diffusion-Image (85): new continuous-diffusion family, sits with that Nemotron Labs diffusion band"
+    },
+    {
       "model": "Cosmos3 Super T2I / I2V",
       "company": "NVIDIA",
       "released": "2026-07-01",
@@ -1634,6 +1657,16 @@
       "closed": false,
       "access": "HF",
       "notes": "Open vision-language encoder (siglip2-base) \u2022 zero-shot classification / retrieval"
+    },
+    {
+      "model": "Depth Pro 2",
+      "company": "Apple",
+      "released": "2026-11-19",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "access": "HF + GitHub",
+      "notes": "Apple AIML \u2022 metric monocular depth for photos and video \u2022 S 24M / B 97M / L 334M / H+ 872M plus 23.5M focal estimator \u2022 Apple Machine Learning Research Model license (research only) \u2022 arXiv 2611.26603 \u2022 HF 19 Nov \u2022 native-resolution DPT \u2022 score basis vs SigLIP2 (86) and DINOv3 (88): specialist depth, research license sits under those vision backbones"
     },
     {
       "model": "Primal VAE",
@@ -2300,6 +2333,19 @@
       "whyFlagged": "Open decision models, Apache 2.0 \u2022 Clef 27B and Clef-flash 9B on Qwen3.8 \u2022 Clef-omni 30B-A3B (9 Oct) post-train of Qwen3-Omni \u2022 text, image, audio, video"
     },
     {
+      "model": "Clairic / Clairic-flash",
+      "company": "Cloudflare",
+      "released": "2026-11-18",
+      "baseScore": 76,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B / Qwen3.5-9B (Alibaba)",
+      "access": "HF + Workers AI",
+      "whyFlagged": "Workers AI Superintelligence \u2022 27B Clairic on Qwen3.8-27B plus 9B Clairic-flash on Qwen3.5-9B \u2022 Apache 2.0 \u2022 extraction, estimates, forecasts, PDFs \u2022 blog 18 Nov \u2022 Clef stays the decision row \u2022 foreign Qwen foundation, hard 0"
+    },
+    {
       "model": "AstaBrief-8B",
       "company": "Ai2 (allenai)",
       "released": "2026-10-02",
@@ -2894,6 +2940,30 @@
       "chinaBaseLabel": "Qwen3.5-4B / Qwen3.5-0.8B (Alibaba)",
       "access": "HF",
       "whyFlagged": "Speculative decoding drafts for Qwen3.8-27B \u2022 NVIDIA Open Model Agreement plus Qwen Apache \u2022 HF 17 Nov \u2022 4B acceptance 5.58 vs the target MTP head 3.81 \u2022 0.8B sibling \u2022 Llama-3.2-1B vocab-swap sibling exists \u2022 foreign Qwen foundation, hard 0"
+    },
+    {
+      "model": "Qwen3.8-27B-NVFP4-QAD",
+      "company": "NVIDIA",
+      "released": "2026-11-04",
+      "baseScore": 74,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 quantization-aware distill of Qwen3.8-27B \u2022 NVIDIA Open Model Agreement plus Qwen Apache \u2022 HF 4 Nov \u2022 GPQA-D 87.94 vs BF16 88.19 \u2022 foreign Qwen foundation, hard 0 \u2022 Qwen3.8-27B Draft stays a separate flagged row"
+    },
+    {
+      "model": "Lyra 2.0",
+      "company": "NVIDIA",
+      "released": "2026-04-15",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "WAN-14B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA Spatial Intelligence Lab \u2022 14B explorable 3D worlds from one image \u2022 developed based on WAN-14B \u2022 NVIDIA Internal Scientific Research license \u2022 GitHub 15 Apr, HF card 13 Nov \u2022 foreign Wan foundation, hard 0 \u2022 FastFrames stays the Apple Wan row"
     }
   ],
   "hardwareWeights": {
