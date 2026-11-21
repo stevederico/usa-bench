@@ -4,6 +4,14 @@
 - Add ten US open-weight models (Nomic Embed v2, Evo 2, Essential Rnj-1, Foundation-Sec-8B, Orpheus TTS, Ultravox, YOLO11, DBRX, StripedHyena/RedPajama, Bark)
 - Link ten more companies to Hugging Face orgs
 
+0.76.0
+
+  Add Inkling Mini
+  Update MAI family
+  Add MAI Cyber
+  Rebase Decision 1.1
+  Advance November pulse
+
 0.75.0
 
   Add Marin Mochi

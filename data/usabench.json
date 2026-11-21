@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-20",
+  "pulseDate": "2026-11-21",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -336,6 +336,16 @@
       "notes": "Closed decision model \u2022 11 Nov \u2022 gemini-decision-1 \u2022 up to 1,000 yes/no, choice, or rubric scores in one pass \u2022 text, image, audio, video, PDF \u2022 256K \u2022 $0.10 per 1M input, $0 output \u2022 150\u2013250 ms \u2022 no weights \u2022 score basis vs Haiku 5.5 (83) and Muse Ember (84): specialist router, under the small general models"
     },
     {
+      "model": "Microsoft-Decision-1.1",
+      "company": "Microsoft",
+      "released": "2026-11-17",
+      "baseScore": 83,
+      "openSource": false,
+      "closed": true,
+      "access": "Foundry / OpenRouter / Vercel",
+      "notes": "Closed decision scorer \u2022 17 Nov GA \u2022 post-train of Gemma 4 26B-A4B (US) \u2022 text and image \u2022 AA Decision Index v2.1 68, six over Decision-1 \u2022 123 ms vs 274 ms on 1.0 \u2022 $0.042 per 1M input, $0 output \u2022 32K \u2022 no weights \u2022 score basis vs Gemini Decision 1 (81) and Liquid d1.2 (92): ahead of Gemini on that index, trails d1.2 (75)"
+    },
+    {
       "model": "Gemini Robotics ER 2",
       "company": "Google",
       "released": "2026-07-30",
@@ -439,14 +449,24 @@
       "notes": "Small & efficient open \u2022 \u26a0\ufe0f aging"
     },
     {
-      "model": "MAI Code / Image 2.7 / Voice 2.1",
+      "model": "MAI Code 2 / Image 2.7 / Realtime 1",
       "company": "Microsoft",
-      "released": "2026-10-27",
-      "baseScore": 84,
+      "released": "2026-11-17",
+      "baseScore": 87,
       "openSource": false,
       "closed": true,
-      "access": "Azure",
-      "notes": "MAI-Image-2.7 preview (27 Oct) \u2022 editing ahead of GPT Image 2.5 Flare on Artificial Analysis, Arena Edit #3 \u2022 text-to-image still coming \u2022 MAI-Voice-2.1 \u2022 MAI-Transcribe-2 \u2022 closed \u2022 use Phi-4 / Nemotron for open"
+      "access": "GitHub Copilot / Foundry / Azure",
+      "notes": "Closed MAI family \u2022 17 Nov Ignite \u2022 Code 2 and Code 2 Flash in Copilot: 98% of GPT-6.1 Sol at 40% cost, 96% of Opus 5.5 at 5% cost on DeepSWE 1.1 / Terminal Bench 2.1 / SWE-Atlas / FrontierCode v1.1 \u2022 Image 2.7 AA-Image-Editing v2.1 #1 vs GPT Image 2.6 Sunburst \u2022 Realtime 1 speech-to-speech $0.01/min, vendor Pareto vs GPT-Realtime 2.1 \u2022 Transcribe 2 still in Dragon Copilot \u2022 licensed weights for Azure customers \u2022 no public weights \u2022 score basis vs SWE-2 Flash (84) and GPT-6.1 Sol (89): everyday coding SKU, trails Sol as a general model"
+    },
+    {
+      "model": "MAI Cyber 2 Flash",
+      "company": "Microsoft",
+      "released": "2026-11-17",
+      "baseScore": 87,
+      "openSource": false,
+      "closed": true,
+      "access": "Microsoft security products (MDASH)",
+      "notes": "Closed cyber SKU \u2022 17 Nov \u2022 1M ctx, 4\u00d7 MAI Cyber 1.1 Flash \u2022 CyberGym-E2E 92.3 vs GPT-6 Astra 91.5 at under 2% cost per task \u2022 WebExploitBench 40.4 vs GPT-5.6 Cyber 38.4 \u2022 $0.10/$0.50 \u2022 MDASH mid-December, not a public API \u2022 no weights \u2022 score basis vs GPT-6 Cyber (88) and SWE-2 Flash (84): specialist Flash, product-only access"
     },
     {
       "model": "INTELLECT-1",
@@ -2057,6 +2077,20 @@
       "whyFlagged": "SF lab \u2022 594B/17B MoE \u2022 own US pretrain claimed \u2022 Apache 2.0 weights 12 Nov (NVFP4 native, MXFP8 sibling) \u2022 1M ctx \u2022 image in/text out \u2022 AA Index 30.6 \u2022 DeepSWE 72.1 \u2022 SWEBench Pro v2 Hard 86.3 \u2022 ARC-AGI-2 81.7 \u2022 H3 (~320B) and H4 (~34B) mixtures mostly trajectories from earlier models including Kimi K3 + own models, filtered \u2022 noted, soft \u221215 (not hard 0)"
     },
     {
+      "model": "Inkling 2 Mini",
+      "company": "Thinking Machines Lab",
+      "released": "2026-11-20",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + Tinker",
+      "notes": "SF lab \u2022 26.4B/3.4B looped MoE (5.4B effective active) \u2022 own US pretrain from the Inkling 2 ladder, then prune 384\u2192128 experts and heal from a larger internal Inkling \u2022 1M ctx \u2022 image in/text out \u2022 Apache 2.0 weights 20 Nov (NVFP4 native, MXFP8 last four layers, ~20GB) \u2022 AA Index 20.1 \u2022 DeepSWE 48.2 \u2022 SWE-V 79.2 \u2022 SWEBench Pro v2 Hard 77.9 \u2022 Vals Index 46.5 \u2022 TML-d24-varloop-research sibling \u2022 score basis vs Inkling 2 Small (86) and SWE-2 Flash (84): leads open models under 100B on DeepSWE, trails Small on AA",
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "SFT mix similar to Inkling 2 Small (Kimi K3 trajectories in H3/H4) plus on-policy distillation",
+      "whyFlagged": "SF lab \u2022 26.4B/3.4B looped MoE \u2022 own US pretrain claimed \u2022 Apache 2.0 weights 20 Nov \u2022 AA Index 20.1 \u2022 DeepSWE 48.2 \u2022 SFT mix similar to Inkling 2 Small including Kimi K3 trajectories, noted, soft \u221215 (not hard 0)"
+    },
+    {
       "model": "Inkling",
       "company": "Thinking Machines Lab",
       "released": "2026-07-15",
@@ -2482,18 +2516,6 @@
       "chinaBaseLabel": "Qwen3.8-27B (Alibaba)",
       "access": "HF",
       "whyFlagged": "SF document model \u2022 Apache glue \u2022 reasoning core is Qwen3.8-27B FP8 \u2022 also bundles PaddleOCR"
-    },
-    {
-      "model": "Microsoft-Decision-1",
-      "company": "Microsoft",
-      "released": "2026-10-09",
-      "baseScore": 78,
-      "openSource": false,
-      "closed": true,
-      "chinaBase": true,
-      "chinaBaseLabel": "Qwen3.5-9B (Alibaba)",
-      "access": "Foundry",
-      "whyFlagged": "Closed Foundry decision scorer \u2022 post-train of Qwen3.5-9B \u2022 announced 9 Oct \u2022 Foundry card date 8 Oct \u2022 weights not released \u2022 rebase on MAI and OpenAI planned"
     },
     {
       "model": "H2O-Lightning-4B",
