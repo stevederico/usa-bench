@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-21",
+  "pulseDate": "2026-11-23",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1829,6 +1829,17 @@
       "closed": true,
       "access": "console.liquid.ai",
       "notes": "Closed decision flagship \u2022 16 Nov \u2022 d1.2 at $0.02 and d1.2-ultra at $0.042 per 1M input \u2022 text, image, and audio \u2022 read, spans, boxes, estimates, and multi-choice \u2022 AA Decision Index v2.1 75, two points over the prior best \u2022 calibration error 0.8 on ultra and 1.2 on d1.2 \u2022 $0 output \u2022 weights still closed \u2022 score basis vs Gemini Decision 1 (81) and Open d1 (89): leads the closed decision index, open weights stay on the Open d1 row"
+    },
+    {
+      "model": "bison-1 / groundhog-1",
+      "company": "Base Labs",
+      "released": "2026-11-20",
+      "baseScore": 93,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF + Baseten",
+      "notes": "Baseten SF lab \u2022 31B dense bison-1 on Gemma 4 31B (US) plus 26B/4B groundhog-1 on Gemma 4 26B-A4B (US) \u2022 MIT weights plus Apache Gemma \u2022 text and image \u2022 131K \u2022 $0.10 / $0.035 per 1M \u2022 AA Decision Index v2.1 76, one over d1.2-ultra 75 \u2022 Brier 0.14 \u2022 blog and HF 20 Nov \u2022 score basis vs d1.2 (92) and Open d1 (89): leads the public decision index, open US Gemma 4"
     },
     {
       "model": "YOLO26",
