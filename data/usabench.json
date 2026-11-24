@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-23",
+  "pulseDate": "2026-11-24",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 3,
+  "daysSinceMajorRelease": 4,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -2240,6 +2240,18 @@
       "permissive": true,
       "access": "HF",
       "notes": "Mountain View lab \u2022 Apache 2.0 \u2022 48 kHz voice denoise (offline 64M + 20 ms realtime 58M) plus SAVA semantic VAD and end-of-turn \u2022 VIBE 0.768 vs MossFormer2 0.695 \u2022 SAVA median 71 ms turn detect \u2022 HF 18 Nov \u2022 score basis vs NemotronLabs RE-USE (80) and Nemotron-3-Diarization (84): newer open speech utilities, sit with that specialist band"
+    },
+    {
+      "model": "OCRia-nano-1",
+      "company": "LlamaIndex",
+      "released": "2026-11-23",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "foreignTeacher": true,
+      "foreignTeacherLabel": "OCRia-1 (Qwen3.5-4B fine-tune) labels as distillation teacher",
+      "whyFlagged": "SF lab \u2022 8.1M ONNX CPU document parser \u2022 own tiny arch (depthwise detector, CTC recognizers, LayoutNet) \u2022 ParseBench-2 59.2 vs Indra 55.1 vs Marker 52.5 \u2022 27.8 pg/s on 16 vCPUs \u2022 Open RAIL-M ($2M commercial cap) \u2022 blog and HF 23 Nov \u2022 distilled with OCRia-1 labels, noted, soft \u221215 (not hard 0) \u2022 score basis vs Chandra OCR 2 (84) and Surya OCR 2.5 (82): tiny CPU pipeline that beats Indra, sits under the 4B/689M OCR rows"
     }
   ],
   "flagged": [
@@ -2997,6 +3009,43 @@
       "chinaBaseLabel": "WAN-14B (Alibaba)",
       "access": "HF",
       "whyFlagged": "NVIDIA Spatial Intelligence Lab \u2022 14B explorable 3D worlds from one image \u2022 developed based on WAN-14B \u2022 NVIDIA Internal Scientific Research license \u2022 GitHub 15 Apr, HF card 13 Nov \u2022 foreign Wan foundation, hard 0 \u2022 FastFrames stays the Apple Wan row"
+    },
+    {
+      "model": "OCRia-1",
+      "company": "LlamaIndex",
+      "released": "2026-10-22",
+      "baseScore": 84,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "SF lab \u2022 4B document VLM \u2022 fine-tune of Qwen3.5-4B \u2022 ParseBench 87.4 \u2022 olmOCR-bench 92.9 \u2022 Open RAIL-M \u2022 LlamaParse 22 Oct, HF weights 13 Nov \u2022 arXiv 2611.00092 \u2022 foreign Qwen foundation, hard 0 \u2022 OCRia-nano stays on the frontier row"
+    },
+    {
+      "model": "Shot Reader v2",
+      "company": "Voyager",
+      "released": "2026-11-22",
+      "baseScore": 72,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-9B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "YC F26 NYC/SF \u2022 9B camera/scene VLM \u2022 LoRA on Qwen3.5-9B \u2022 Apache 2.0 \u2022 zoom vs dolly 95%/90% \u2022 camera+lens 92% \u2022 HF 22 Nov \u2022 v1 was Qwen3-VL-8B \u2022 foreign Qwen foundation, hard 0"
+    },
+    {
+      "model": "MiMo-V2.6-Flash-RL-NVFP4",
+      "company": "NVIDIA",
+      "released": "2026-11-17",
+      "baseScore": 80,
+      "openSource": true,
+      "closed": false,
+      "chinaBase": true,
+      "chinaBaseLabel": "MiMo-V2.6-Flash-RL (Xiaomi)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA NVFP4 quant of Xiaomi MiMo-V2.6-Flash-RL \u2022 309B/15B MoE \u2022 Model Optimizer \u2022 HF 17 Nov \u2022 NVIDIA does not own the base \u2022 foreign Xiaomi foundation, hard 0"
     }
   ],
   "hardwareWeights": {

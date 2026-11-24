@@ -142,6 +142,8 @@ const COMPANY_LINKS = {
   "Ostris": "ostris",
   "Inworld AI": "inworld",
   "RadixArk": "RadixArk",
+  "LlamaIndex": "llamaindex",
+  "Voyager": "voyager-so",
 };
 
 function linkifyCompany(company) {
