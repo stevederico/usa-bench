@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-24",
+  "pulseDate": "2026-11-25",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 4,
+  "daysSinceMajorRelease": 0,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1480,6 +1480,16 @@
       "notes": "Open audio\u2194audio persona / speech model (~7\u20138B)"
     },
     {
+      "model": "Nemotron-Labs-Image-30B-A3B",
+      "company": "NVIDIA",
+      "released": "2026-11-25",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "access": "HF",
+      "notes": "Autoregressive T2I 30B/3B MoE from Nemotron 3 Nano \u2022 Nemotron-H hybrid Mamba-2 + attention \u2022 bundled 642M Leech-lattice tokenizer \u2022 VisualCreation GenEval 92.86 vs GPT Image 2 89 \u2022 LongTextBench 97.98 vs 96 \u2022 BizGenEval 86.0 vs 83.2 \u2022 NVIDIA noncommercial license \u2022 HF 25 Nov \u2022 VisionCode and harness pending legal clearance \u2022 score basis vs Cosmos3 Super T2I (89) and NL-Diffusion-Image (85): newer AR generator, leads GPT Image 2 on several NVIDIA tables"
+    },
+    {
       "model": "NL-Diffusion-Image",
       "company": "NVIDIA",
       "released": "2026-07-01",
@@ -2311,15 +2321,15 @@
       "whyFlagged": "US company; closed API on Kimi checkpoint"
     },
     {
-      "model": "Bonsai 2 / Bonsai family",
+      "model": "Bonsai 2.5 / Bonsai family",
       "company": "PrismML",
-      "released": "2026-10-15",
+      "released": "2026-11-24",
       "baseScore": 72,
       "openSource": true,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.5 + Qwen3.8 (Alibaba)",
       "access": "HF",
-      "whyFlagged": "Ternary Bonsai 2 2B / 4B / 9B launched 15 Oct on Qwen3.5-2B/4B/9B plus 27B (Sep 17) on Qwen3.8-27B \u2022 Pasadena / Caltech spinoff \u2022 Apache 2.0 ternary compression (~9x smaller) \u2022 reasoning, vision, tool calling on-device \u2022 no training data or recipes \u2022 foreign Qwen foundation, not US from-scratch"
+      "whyFlagged": "Ternary Bonsai 2.5 27B launched 24 Nov on Qwen3.8-27B \u2022 agentic recast of Bonsai 2 (same 5.93 GB ternary) \u2022 SWE-V 75.6 vs Bonsai 2 60.8 vs FP16 80.6 \u2022 DeepSWE 27.0 vs 0 \u2022 AppWorld 90.5 vs 51.2 \u2022 2B / 4B / 9B still Bonsai 2 on Qwen3.5 \u2022 Pasadena / Caltech spinoff \u2022 Apache 2.0 \u2022 foreign Qwen foundation, hard 0"
     },
     {
       "model": "Arctic-LSTM-Speculator",
@@ -3046,6 +3056,19 @@
       "chinaBaseLabel": "MiMo-V2.6-Flash-RL (Xiaomi)",
       "access": "HF",
       "whyFlagged": "NVIDIA NVFP4 quant of Xiaomi MiMo-V2.6-Flash-RL \u2022 309B/15B MoE \u2022 Model Optimizer \u2022 HF 17 Nov \u2022 NVIDIA does not own the base \u2022 foreign Xiaomi foundation, hard 0"
+    },
+    {
+      "model": "BioReason-Pro 2",
+      "company": "NVIDIA",
+      "released": "2026-11-24",
+      "baseScore": 78,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Qwen3.5-9B (Alibaba)",
+      "access": "HF",
+      "whyFlagged": "NVIDIA BioNeMo protein-function reasoner \u2022 SFT + RL 9B checkpoints 24 Nov \u2022 OpenMDW-1.1 \u2022 LoRA-merged Qwen3.5-9B decoder \u2022 frozen ESM3 encoder downloaded separately (US) \u2022 NVIDIA projector and GO graph encoder \u2022 foreign Qwen foundation, hard 0"
     }
   ],
   "hardwareWeights": {
