@@ -144,6 +144,7 @@ const COMPANY_LINKS = {
   "RadixArk": "RadixArk",
   "LlamaIndex": "llamaindex",
   "Voyager": "voyager-so",
+  "Strands Labs": "StrandsAgents",
 };
 
 function linkifyCompany(company) {

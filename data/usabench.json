@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-25",
+  "pulseDate": "2026-11-26",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 0,
+  "daysSinceMajorRelease": 1,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1852,6 +1852,17 @@
       "notes": "Baseten SF lab \u2022 31B dense bison-1 on Gemma 4 31B (US) plus 26B/4B groundhog-1 on Gemma 4 26B-A4B (US) \u2022 MIT weights plus Apache Gemma \u2022 text and image \u2022 131K \u2022 $0.10 / $0.035 per 1M \u2022 AA Decision Index v2.1 76, one over d1.2-ultra 75 \u2022 Brier 0.14 \u2022 blog and HF 20 Nov \u2022 score basis vs d1.2 (92) and Open d1 (89): leads the public decision index, open US Gemma 4"
     },
     {
+      "model": "Strands Decider v2",
+      "company": "Strands Labs",
+      "released": "2026-11-23",
+      "baseScore": 90,
+      "openSource": true,
+      "closed": false,
+      "permissive": true,
+      "access": "HF",
+      "notes": "AWS Strands Labs Seattle \u2022 five Gemma 4 sizes E2B to 31B (US) \u2022 Apache 2.0 \u2022 one-pass choice / yes-no / score \u2022 text and image \u2022 32K default, 131K max \u2022 Decision Index 0.3 71.5 (31B) \u2022 JevBench 93.1 \u2022 99 ms H100 \u2022 blog 23 Nov, HF 17 Nov \u2022 score basis vs bison-1 (93) and Open d1 (89): open Gemma 4 decider, trails bison on the public index"
+    },
+    {
       "model": "YOLO26",
       "company": "Ultralytics",
       "released": "2026-02-12",
@@ -2713,7 +2724,7 @@
       "whyFlagged": "San Francisco lab (Underdog) \u2022 2-bit GGUF of Qwen3.8-27B \u2022 7.89 GB \u2022 Apache 2.0 \u2022 tool-calling quant \u2022 8 Oct"
     },
     {
-      "model": "Nemotron-3.5-Rerank-8B",
+      "model": "Nemotron-3.5-Rerank (8B / 1B)",
       "company": "NVIDIA",
       "released": "2026-10-20",
       "baseScore": 82,
@@ -2721,9 +2732,9 @@
       "closed": false,
       "permissive": true,
       "chinaBase": true,
-      "chinaBaseLabel": "Ministral-3-8B (Mistral, France)",
+      "chinaBaseLabel": "Ministral-3-8B / 3B (Mistral, France)",
       "access": "HF",
-      "whyFlagged": "Multimodal reranker \u2022 OpenMDW-1.1 \u2022 8.38B on Ministral-3-8B \u2022 Pixtral vision encoder \u2022 text and page images \u2022 HF 20 Oct \u2022 foreign weight foundation, hard 0"
+      "whyFlagged": "Multimodal reranker family \u2022 OpenMDW-1.1 \u2022 8.38B on Ministral-3-8B plus 1.55B distilled on Ministral-3-3B \u2022 Pixtral vision encoder \u2022 text and page images \u2022 8B HF 20 Oct, 1B on Hub 25 Nov \u2022 foreign weight foundation, hard 0"
     },
     {
       "model": "Cosmos3-Nano / H-Dreams",
