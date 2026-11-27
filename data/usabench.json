@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-26",
+  "pulseDate": "2026-11-27",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 1,
+  "daysSinceMajorRelease": 2,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -1087,7 +1087,7 @@
       "openSource": false,
       "closed": true,
       "access": "devin.ai",
-      "notes": "SF lab \u2022 276B/12B post-train of Inkling-Small (US) \u2022 Devin Desktop and CLI \u2022 4 Nov \u2022 free through 30 Nov \u2022 weights gated \u2022 DeepSWE 60.1 \u2022 FrontierCode 2.0 24.0 \u2022 Terminal-Bench 4.0 20.0 \u2022 score basis vs Haiku 5.5 (83): coding SKU in the same band, weights not public"
+      "notes": "SF lab \u2022 276B/12B post-train of Inkling-Small (US) \u2022 Devin Desktop and CLI \u2022 4 Nov \u2022 weights gated \u2022 DeepSWE 60.1 \u2022 FrontierCode 2.0 24.0 \u2022 Terminal-Bench 4.0 20.0 \u2022 SWE-2.1 Kimi line is flagged \u2022 score basis vs Haiku 5.5 (83): coding SKU in the same band, weights not public"
     },
     {
       "model": "ChatGPT Work",
@@ -2470,16 +2470,16 @@
       "whyFlagged": "Pixel image and video generator \u2022 ~15B \u2022 language backbone is Qwen3-8B \u2022 checkpoint is NVIDIA noncommercial"
     },
     {
-      "model": "NV-Reason-CT",
+      "model": "NV-Reason-CT / PathWSI",
       "company": "NVIDIA",
-      "released": "2026-09-08",
+      "released": "2026-11-25",
       "baseScore": 76,
       "openSource": true,
       "closed": false,
       "chinaBase": true,
       "chinaBaseLabel": "Qwen3.5-4B (Alibaba)",
       "access": "HF + NGC",
-      "whyFlagged": "NVIDIA MedTech 3D CT VLM \u2022 OpenMDW-1.1 \u2022 own Primus 3D ViT plus Qwen3.5-4B language backbone \u2022 chest and abdominal CT reports \u2022 HF created 8 Sep"
+      "whyFlagged": "NVIDIA MedTech VLMs \u2022 OpenMDW-1.1 \u2022 NV-Reason-CT (8 Sep) own Primus 3D ViT plus Qwen3.5-4B \u2022 PathWSI 4.54B pathology WSI VLM on Qwen3.5-4B, HF card ~25 Nov, weights pending paper \u2022 foreign Qwen foundation, hard 0"
     },
     {
       "model": "Qwen3.8-Flash-Next-FP4-Local",
@@ -3080,6 +3080,18 @@
       "chinaBaseLabel": "Qwen3.5-9B (Alibaba)",
       "access": "HF",
       "whyFlagged": "NVIDIA BioNeMo protein-function reasoner \u2022 SFT + RL 9B checkpoints 24 Nov \u2022 OpenMDW-1.1 \u2022 LoRA-merged Qwen3.5-9B decoder \u2022 frozen ESM3 encoder downloaded separately (US) \u2022 NVIDIA projector and GO graph encoder \u2022 foreign Qwen foundation, hard 0"
+    },
+    {
+      "model": "SWE-2.1 / Lightning / Cyber",
+      "company": "Cognition",
+      "released": "2026-11-24",
+      "baseScore": 86,
+      "openSource": false,
+      "closed": true,
+      "chinaBase": true,
+      "chinaBaseLabel": "Kimi K3 (Moonshot)",
+      "access": "devin.ai",
+      "whyFlagged": "SF lab \u2022 closed Devin SKU 24 Nov \u2022 pure RL on Kimi K3 (2.8T/104B) \u2022 SWE-2.1 plus Lightning (Cerebras, 600 tok/s) and Cyber (Devin Security) \u2022 Terminal-Bench 4.1 50.0 vs SWE-2 24.2 \u2022 FrontierCode 2.0 41.3 vs 24.1 \u2022 ExploitBench 80.0 vs 36.1 \u2022 no weights \u2022 SWE-2 Flash stays on the frontier row (Inkling-Small US) \u2022 foreign Kimi foundation, hard 0"
     }
   ],
   "hardwareWeights": {
