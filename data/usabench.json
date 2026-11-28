@@ -1,7 +1,7 @@
 {
-  "pulseDate": "2026-11-27",
+  "pulseDate": "2026-11-28",
   "pulseLabel": "November 2026",
-  "daysSinceMajorRelease": 2,
+  "daysSinceMajorRelease": 3,
   "chinaBasePenalty": 25,
   "foreignTeacherPenalty": 15,
   "fullOpenBonus": 5,
@@ -343,7 +343,7 @@
       "openSource": false,
       "closed": true,
       "access": "Foundry / OpenRouter / Vercel",
-      "notes": "Closed decision scorer \u2022 17 Nov GA \u2022 post-train of Gemma 4 26B-A4B (US) \u2022 text and image \u2022 AA Decision Index v2.1 68, six over Decision-1 \u2022 123 ms vs 274 ms on 1.0 \u2022 $0.042 per 1M input, $0 output \u2022 32K \u2022 no weights \u2022 score basis vs Gemini Decision 1 (81) and Liquid d1.2 (92): ahead of Gemini on that index, trails d1.2 (75)"
+      "notes": "Closed decision scorer \u2022 17 Nov GA \u2022 post-train of Gemma 4 26B-A4B (US) \u2022 text and image \u2022 AA Decision Index v2.1 68, six over Decision-1 \u2022 123 ms vs 274 ms on 1.0 \u2022 $0.042 per 1M input, $0 output \u2022 32K \u2022 no weights \u2022 score basis vs Gemini Decision 1 (81) and Liquid d1.3-ultra (93): ahead of Gemini on that index, trails d1.3-ultra (76)"
     },
     {
       "model": "Gemini Robotics ER 2",
@@ -1831,14 +1831,14 @@
       "notes": "Open decision models on LFM2.5 \u2022 d1-3B text+vision \u2022 d1-omni-600M text+image or audio \u2022 one forward pass, zero output tokens \u2022 Decision Index 48.57 \u2022 LFM Open License"
     },
     {
-      "model": "d1.2 / d1.2-ultra",
+      "model": "d1.3-ultra",
       "company": "Liquid AI",
-      "released": "2026-11-16",
-      "baseScore": 92,
+      "released": "2026-11-27",
+      "baseScore": 93,
       "openSource": false,
       "closed": true,
       "access": "console.liquid.ai",
-      "notes": "Closed decision flagship \u2022 16 Nov \u2022 d1.2 at $0.02 and d1.2-ultra at $0.042 per 1M input \u2022 text, image, and audio \u2022 read, spans, boxes, estimates, and multi-choice \u2022 AA Decision Index v2.1 75, two points over the prior best \u2022 calibration error 0.8 on ultra and 1.2 on d1.2 \u2022 $0 output \u2022 weights still closed \u2022 score basis vs Gemini Decision 1 (81) and Open d1 (89): leads the closed decision index, open weights stay on the Open d1 row"
+      "notes": "Closed decision flagship \u2022 27 Nov \u2022 d1.3-ultra at $0.042 per 1M input, d1.2 still $0.02 \u2022 text, image, and audio \u2022 rankings, picture/audio extraction, audio time spans \u2022 AA Decision Index v2.1 76 (Liquid 76.4), tied with bison-1 \u2022 191 ms \u2022 66K \u2022 $0 output \u2022 console today, OpenRouter and Vercel soon \u2022 no weights \u2022 score basis vs bison-1 (93) and Open d1 (89): ties bison on AA, stays closed"
     },
     {
       "model": "bison-1 / groundhog-1",
@@ -1849,7 +1849,7 @@
       "closed": false,
       "permissive": true,
       "access": "HF + Baseten",
-      "notes": "Baseten SF lab \u2022 31B dense bison-1 on Gemma 4 31B (US) plus 26B/4B groundhog-1 on Gemma 4 26B-A4B (US) \u2022 MIT weights plus Apache Gemma \u2022 text and image \u2022 131K \u2022 $0.10 / $0.035 per 1M \u2022 AA Decision Index v2.1 76, one over d1.2-ultra 75 \u2022 Brier 0.14 \u2022 blog and HF 20 Nov \u2022 score basis vs d1.2 (92) and Open d1 (89): leads the public decision index, open US Gemma 4"
+      "notes": "Baseten SF lab \u2022 31B dense bison-1 on Gemma 4 31B (US) plus 26B/4B groundhog-1 on Gemma 4 26B-A4B (US) \u2022 MIT weights plus Apache Gemma \u2022 text and image \u2022 131K \u2022 $0.10 / $0.035 per 1M \u2022 AA Decision Index v2.1 76, tied with d1.3-ultra \u2022 Brier 0.14 \u2022 blog and HF 20 Nov \u2022 score basis vs d1.3-ultra (93) and Open d1 (89): open US Gemma 4, same AA as closed d1.3-ultra"
     },
     {
       "model": "Strands Decider v2",
